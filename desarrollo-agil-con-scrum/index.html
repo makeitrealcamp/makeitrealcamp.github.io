@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Desarrollo ágil con Scrum </title>
+  <meta name="description" content="Scrum es una metodología de desarrollo ágil que ayuda a equipos pequeños a construir productos complejos de software. En este post te explicamos de dónde sur...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Desarrollo ágil con Scrum">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/desarrollo-agil-con-scrum/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/athletics-scrum.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2015-10-08T12:00:00-05:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/desarrollo-agil-con-scrum/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/athletics-scrum.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 8, 2015</time>
+                </div>
+                <h1>Desarrollo ágil con Scrum</h1>
+                <div class="post-body"><p>Scrum es una metodología de desarrollo ágil que ayuda a equipos pequeños a construir productos complejos de software. En este post te explicamos de dónde surge, conceptos, ventajas y desventajas.<!-- more --></p>
+
+<p>Antes de intentar explicar Scrum, empecemos por la metodología que se utilizaba para desarrollar software en los años 70’s, 80’s y parte de los 90’s.</p>
+
+<p>En ese entonces se creía que desarrollar software era como construir un puente o un edificio<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>. Que era posible definir desde un principio todos los requerimientos de la aplicación y hacer una especificación detallada de lo que se quería construir. Escribir el código era el equivalente a pegar ladrillos con cemento. A esto se le conoce como el <a href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada" target="_blank">modelo en cascada</a>.</p>
+
+<p><img src="/assets/images/waterfall.png" alt="Modelo en cascada" class="photo" /></p>
+
+<p class="photo-description">El modelo en cascada.</p>
+
+<p>Pero el desarrollo de software pocas veces sigue ese proceso lineal. A diferencia del puente o del edificio en donde generalmente se conoce el resultado final, en el desarrollo de software los requerimientos cambian frecuentemente y el resultado final puede ser muy diferente a lo que se había planteado en un principio.</p>
+
+<p>A finales de los 90’s empezaron a surgir alternativas como	Lean Software Development, Extreme Programming y Scrum. Lo que caracteriza a estas nuevas metodologías es que tienen en cuenta los cambios en los requerimientos a medida que los proyectos avanzan. Eventualmente, los líderes de las diferentes iniciativas ágiles redactaron lo que hoy conocemos como <a href="http://agilemanifesto.org/iso/es/principles.html" target="_blank">los 12 principios del Manifiesto Ágil</a>.</p>
+
+<p>En vez de definir un proceso lineal como el modelo en cascada, las metodologías ágiles utilizan un proceso iterativo. En cada iteración se revisan los requerimientos, se establecen las tareas que se van a realizar en esa iteración, se ejecutan esas tareas, se escriben pruebas, se hace refactorización del código<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> y se entrega parte del producto.</p>
+
+<p><img src="/assets/images/agile.png" alt="Modelo ágil" class="photo" /></p>
+
+<p class="photo-description">El modelo ágil se basa en iteraciones.</p>
+
+<div class="well">Antes de entrar en los detalles de Scrum es importante recordar que una metodología por si sola no va a garantizar el éxito o el fracaso de un proyecto. El equipo, el liderazgo y el apoyo (o la falta de apoyo) de los ejecutivos de la compañía tienen igual o mayor impacto. La metodología simplemente define el proceso que se debe seguir para que todos estén sincronizados.</div>
+
+<p>Hoy Scrum es la metodología ágil más utilizada en la industria. El principal objetivo de Scrum es balancear las necesidades del negocio (retorno de la inversión) con las necesidades del equipo (crear un producto de la mejor calidad).</p>
+
+<p>El problema es el siguiente. El principal interés de los usuarios <strong>no técnicos</strong> es que el producto funcione, no la calidad del código. Pero un código desorganizado y sin pruebas automatizadas tiene un costo a mediano y largo plazo. A medida que evoluciona el proyecto, agregar nuevas funcionalidades y hacer cambios se vuelve más difícil, lento y sujeto a errores. Eventualmente mantener el código se vuelve engorroso y muy costoso.</p>
+
+<p>Cualquier programador experimentado sabe que un código claro, con buena documentación y pruebas automatizadas permiten mantener la productividad a largo plazo.</p>
+
+<p>Los conceptos detrás de Scrum son muy simples, aunque con nombres sofisticados que intimidan a aquellos que no los conocen. Pero empecemos describiendo los roles de un equipo basado en la metodología Scrum.</p>
+
+<h2 id="los-tres-roles-del-equipo-scrum">Los tres roles del equipo Scrum</h2>
+
+<p>Por lo general, un equipo Scrum está compuesto de 5 a 9 participantes. Cada participante puede tener alguno de los siguientes roles: product owner (dueño del producto), scrum master (maestro scrum) o team member (miembro del equipo). Veamos cada uno de estos roles en más detalle.</p>
+
+<h3 id="product-owner">Product Owner</h3>
+
+<p>El dueño del producto es el responsable de definir y priorizar los requerimientos del producto que se está construyendo. Es la persona que tiene la visión del producto y representa los intereses del negocio.</p>
+
+<p>La forma en que se definen los requerimientos en Scrum es a través de historias de usuario, que tienen la siguiente forma: <em>Como &lt;rol X en la aplicación&gt;, deseo la &lt;funcionalidad Y&gt;, de modo que pueda lograr &lt;Z&gt;</em>. Por ejemplo, para un sistema de nómina, una historia puede ser la siguiente: <em>Como administrador de la compañía, deseo poder generar la nómina, para poderle pagar a los empleados a tiempo</em>.</p>
+
+<p>Adicionalmente, una vez que el equipo está de acuerdo con una historia de usuario (es estimable, valiosa, independiente, etc.) se deben definir los criterios de aceptación y se prioriza en el backlog del producto, que explicaremos más adelante.</p>
+
+<h3 id="scrum-master">Scrum Master</h3>
+
+<p>El Scrum master es el encargado de garantizar que la metodología se siga de la forma adecuada y remover cualquier impedimento que se presente en el camino.</p>
+
+<h3 id="team-member">Team Member</h3>
+
+<p>Los miembros del equipo son los que definen las estimaciones y deciden qué herramientas y tecnologías utilizar para ejecutar el trabajo (completar las historias de usuario).</p>
+
+<hr />
+
+<p>Ahora veamos los conceptos que debes conocer de Scrum:</p>
+
+<h2 id="el-backlog-de-producto">El backlog de producto</h2>
+
+<p>Es una lista organizada por prioridad con todos los items de trabajo que se deben implementar (nuevas funcionalidades, errores, etc.). El dueño del producto (product owner) es el encargado de definir la prioridad moviendo los items con mayor prioridad a la parte superior de la lista.</p>
+
+<h2 id="el-tablero-de-tareas">El tablero de tareas</h2>
+
+<p>Las tareas son en Scrum la unidad más básica de trabajo. Un item del backlog puede comprender varias tareas. El tablero de tareas lista las tareas por hacer, en progreso y completadas para que todo el equipo esté informado.</p>
+
+<h2 id="burn-charts">Burn charts</h2>
+
+<p>Son unas gráfica que nos muestra el trabajo por hacer y el hecho en relación al tiempo. Se utiliza cuando el equipo está usando alguna herramienta para hacer Scrum, que las generan de forma automática. Es muy raro que un equipo las haga manualmente.</p>
+
+<h2 id="el-sprint">El sprint</h2>
+
+<p>A las iteraciones (también conocidos como ciclos de desarrollo) en Scrum se les llama sprints. Un sprint es un periodo de tiempo fijo (generalmente 2 semanas) en el que se completan una serie de items del backlog (historias de usuario, corrección de errores, etc.).</p>
+
+<p>Cada sprint tiene su propio backlog (llamado el sprint backlog) que indica las historias de usuario que se van a implementar en ese sprint.</p>
+
+<p>Durante un sprint se llevan a cabo las siguientes reuniones: la planeación del sprint (sprint planning), el scrum diario (daily scrum), el tiempo de historia (story time), la revisión del sprint (sprint review) y la retrospectiva (retrospective).</p>
+
+<h3 id="la-planeación-del-sprint">La planeación del sprint</h3>
+
+<p>Marca el inicio de un sprint. Generalmente se divide en dos partes. En la primera parte el equipo se compromete con una serie de entregables. En la segunda parte del sprint se identifican las tareas que se deben completar para cumplir con los entregables. Esta reunión puede tomar de una a dos horas. El resultado de esta reunión es el sprint backlog, la lista de todas los items con sus tareas asociadas.</p>
+
+<h3 id="el-scrum-diario">El scrum diario</h3>
+
+<p>También se le conoce como el stand-up meeting (la reunión de pie). Es una reunión muy corta, generalmente al inicio del día, en que cada participante cuenta qué items ha completado, en cuál está trabajando y si ha tenido alguna dificultad.</p>
+
+<h3 id="tiempo-de-historia">Tiempo de historia</h3>
+
+<p>Es una reunión que generalmente se programa a la mitad de la semana con el fin de discutir y mejorar las historias de usuario de futuros sprints. Es posible que se dividan algunas historias, se reorganicen y para las que están más arriba se discuten los criterios de aceptación.</p>
+
+<h3 id="revisión-del-sprint">Revisión del sprint</h3>
+
+<p>Es la reunión que marca el final del sprint. Se revisan los items que se terminaron y los que no se terminaron. Generalmente están presentes todos los interesados en el proyecto.</p>
+
+<h3 id="retrospectiva">Retrospectiva</h3>
+
+<p>Esta es una reunión interna del equipo, generalmente después de la revisión del sprint en donde se identifican uno o dos cambios estratégicos para el siguiente sprint.</p>
+
+<h2 id="críticas-a-scrum">Críticas a Scrum</h2>
+
+<p>Tengo que aceptar que nunca he utilizado Scrum. Me parece muy complicado con sus sprints y múltiples reuniones. El backlog del producto es interesante aunque se puede convertir en una bolsa de los deseos (una lista de las ideas que nunca se van a implementar).</p>
+
+<p>Si vamos a la escencia del desarrollo ágil, lo más importante de un proyecto es definir lo que se debe hacer, cuándo se va a hacer (priorizar) y quién lo va a hacer. Pero obligar determinadas reuniones y definir ciclos de desarrollo tan estrictos se puede volver contraproducente para el avance del proyecto. Quizá en algunos casos funcione, especialmente cuando se tienen clientes externos en donde se debe hacer un mayor seguimiento<sup id="fnref:4"><a href="#fn:4" class="footnote">3</a></sup>.</p>
+
+<p>En Make it Real utilizamos un tablero de <a href="http://trello.com" target="_blank">Trello</a>, que es una herramienta gratuita que nos permite definir listas con tarjetas. Es parecido al tablero de tareas de Scrum pero la idea es de una metodología muy simple llamada <a href="https://es.wikipedia.org/wiki/Kanban_(desarrollo)" target="_blank">Kanban</a>. En <a href="http://trello.com" target="_blank">Trello</a> tenemos 4 listas: Backlog (realmente es la lista de los deseos), To do (las tareas a completar), Doing (tareas en progreso) y Done (tareas finalizadas). Y nos apoyamos de los <a href="" target="_blank">issues de Github</a> para reportar errores.</p>
+
+<p>Cada vez que terminamos una nueva funcionalidad o solucionamos un error en Make it Real, lo desplegamos a producción. Es un proceso ágil pero simple al mismo tiempo.</p>
+
+<p>Igual, es bueno conocer Scrum. Muchas empresas lo implementan de forma exitosa (al pie de la letra o con algunas variaciones).</p>
+
+<h2 id="más-información">Más información</h2>
+
+<ul>
+  <li><a href="http://scrumreferencecard.com/reference-card-de-scrum/">http://scrumreferencecard.com/reference-card-de-scrum/</a></li>
+  <li><a href="http://scrumtrainingseries.com/">http://scrumtrainingseries.com/</a> - Los conceptos de Scrum con ejemplos.</li>
+  <li><a href="http://www.amazon.com/Scrum-Breathtakingly-Brief-Agile-Introduction-ebook/dp/B007P5N8D4/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=">Un corto libro de $0.99 que utilicé como referencia para hacer este post. Vale la pena tenerlo.</a></li>
+  <li><a href="https://medium.com/product-love/the-dark-side-of-scrum-d36657e5bc61">https://medium.com/product-love/the-dark-side-of-scrum-d36657e5bc61</a> - Una crítica a Scrum.</li>
+</ul>
+
+<h3 id="notas">Notas</h3>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>No todo el mundo creía lo mismo. Ya existían varios proponentes de alguna forma de desarrollo ágil, pero la mayoría de proyectos seguían el modelo en cascada.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Acá me refiero a un producto sin pruebas, con código mal escrito, difícil de entender y ningún tipo de documentación.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>La verdad es que he tenido la fortuna de construir, mejorar y mantener mis propios productos como es el caso de <a href="http://elibom.com/">elibom.com</a> y Make it Real.&nbsp;<a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Desarrollo ágil con Scrum&url=http://blog.makeitreal.camp/desarrollo-agil-con-scrum/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/desarrollo-agil-con-scrum/&p[title]=Desarrollo ágil con Scrum" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/desarrollo-agil-con-scrum/&title=Desarrollo ágil con Scrum&summary=&source=http://blog.makeitreal.camp/desarrollo-agil-con-scrum/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+
+    </footer>
+  </body>
+</html>

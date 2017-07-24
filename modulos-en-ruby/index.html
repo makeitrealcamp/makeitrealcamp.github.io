@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Módulos en Ruby </title>
+  <meta name="description" content="Los módulos en Ruby cumplen una doble función: evitan colisiones de nombres y nos ayudan a reutilizar código. En este post te explicamos qué son, cómo se def...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Módulos en Ruby">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/modulos-en-ruby/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/modules.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2015-10-04T12:00:00-05:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/modulos-en-ruby/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/modules.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 4, 2015</time>
+                </div>
+                <h1>Módulos en Ruby</h1>
+                <div class="post-body"><p>Los módulos en Ruby cumplen una doble función: evitan colisiones de nombres y nos ayudan a reutilizar código. En este post te explicamos qué son, cómo se definen y cómo se utilizan.<!-- more --></p>
+
+<p>Un módulo es un contenedor que agrupa constantes, clases y métodos. Los módulos se definen utilizando la palabra clave <code class="highlighter-rouge">module</code>:</p>
+
+<pre><code class="language-ruby">module MyModule
+  MAX_CONNECTIONS = 5
+
+  def method_one
+  end
+
+  def method_two
+  end
+
+  class ThingOne
+  end
+
+  class ThingTwo
+  end
+end</code></pre>
+
+<p>En este ejemplo hemos definiendo un módulo llamado <code class="highlighter-rouge">MyModule</code> que contiene una constante <code class="highlighter-rouge">MAX_CONNECTIONS</code>, los métodos <code class="highlighter-rouge">method_one</code> y <code class="highlighter-rouge">method_two</code>, y las clases <code class="highlighter-rouge">ThingOne</code> y <code class="highlighter-rouge">ThingTwo</code>.</p>
+
+<p>Vamos a empezar explicando cómo los módulos nos ayudan a evitar colisiones de nombres y después hablaremos de las diferentes formas en que nos permiten reutilizar código.</p>
+
+<h2 id="los-módulos-evitan-colisiones-de-nombres">Los módulos evitan colisiones de nombres</h2>
+
+<p>Los módulos nos permiten definir clases con el mismo nombre pero que se encuentren en módulos diferentes. Al crear un módulo, estás creando un espacio de nombramiento (namespace) que minimiza la probabilidad de encontrar dos clases que se llamen igual (el módulo se vuelve parte del nombre de la clase). Por ejemplo:</p>
+
+<pre><code class="language-ruby">module ActiveRecord
+  class Base
+  end
+end
+
+module ActionView
+  class Base
+  end
+end</code></pre>
+
+<p>Fíjate que las dos clases se llaman <code class="highlighter-rouge">Base</code> pero se encuentran en diferentes módulos.</p>
+
+<p>Para referirse a una clase dentro de un módulo se debe especificar tanto el nombre del módulo como el nombre la clase separándolos con <code class="highlighter-rouge">::</code>. En el ejemplo anterior nos referiríamos a <code class="highlighter-rouge">ActiveRecord::Base</code> y <code class="highlighter-rouge">ActionView::Base</code>, por ejemplo.</p>
+
+<p>También es posible anidar módulos:</p>
+
+<pre><code class="language-ruby">module System
+  module Currency
+    class Dollar
+    end
+  end
+end</code></pre>
+
+<p>Dentro del módulo <code class="highlighter-rouge">System</code> estamos definiendo otro módulo llamado <code class="highlighter-rouge">Currency</code>, que a su vez define una clase llamada <code class="highlighter-rouge">Dollar</code>. En este caso, la forma de referirnos a la clase <code class="highlighter-rouge">Dollar</code> sería <code class="highlighter-rouge">System::Currency::Dollar</code>.</p>
+
+<h3 id="qué-pasa-si-hay-una-colisión-de-nombres">¿Qué pasa si hay una colisión de nombres?</h3>
+
+<p>En Ruby, si dos módulos se llaman igual, su contenido se mezcla en uno solo (lo mismo pasa con las clases). Esto nos permite extender y sobrescribir funcionalidad de librerías (gemas) o hasta del mismo lenguaje Ruby en nuestras aplicaciones. A esto se le conoce como <strong>monkey patching</strong>, y en general no se considera una buena práctica.</p>
+
+<p>Por ejemplo, supongamos que queremos incluir un método <code class="highlighter-rouge">palindrome?</code> dentro de la clase <code class="highlighter-rouge">String</code> que devuelva si una cadena es un palíndrome<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>:</p>
+
+<pre><code class="language-ruby">class String
+  def palindrome?
+    letters = self.downcase.scan(/\w/)
+    letters == letters.reverse
+  end
+end
+
+"anita lava la tina".palindrome? # =&gt; true
+"hora de irse".palindrome? # =&gt; false</code></pre>
+
+<p>Ten mucho cuidado al <strong>abrir módulos o clases</strong> como lo acabamos de hacer en este ejemplo, podrías dañar alguna funcionalidad importante de alguna librería o del mismo lenguaje.</p>
+
+<p>Ruby on Rails aprovecha el <strong>monkey patching</strong> para extender las clases estándar de Ruby. Por ejemplo, en <a href="https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/string/inflections.rb">este archivo</a>, Rails extiende la clase <code class="highlighter-rouge">String</code> con métodos como <code class="highlighter-rouge">pluralize</code>, <code class="highlighter-rouge">singularize</code> y <code class="highlighter-rouge">humanize</code>.</p>
+
+<h2 id="los-módulos-nos-permiten-reutilizar-código">Los módulos nos permiten reutilizar código</h2>
+
+<p>La segunda función de los módulos es definir métodos que se pueden incluir en otras clases. Por ejemplo:</p>
+
+<pre><code class="language-ruby">module Dancer
+  def dance
+    puts "I'm dancing"
+  end
+end
+
+class Human
+  include Dancer # incluye los métodos del módulo Dancer
+end
+
+class Dog
+  include Dancer # incluye los métodos del módulo Dancer
+end
+
+# ahora Humano y Perro pueden bailar
+pedro = Human.new
+pedro.dance # "I'm dancing"
+
+max = Perro.new
+max.dance # "I'm dancing"
+</code></pre>
+
+<p>El módulo <code class="highlighter-rouge">Dancer</code> está definiendo un método llamado <code class="highlighter-rouge">dance</code>. Las clases <code class="highlighter-rouge">Human</code> y <code class="highlighter-rouge">Dog</code> incluyen el módulo <code class="highlighter-rouge">Dancer</code> y por lo tanto “reciben” el método <code class="highlighter-rouge">dance</code>. De nuevo, es una buena forma de reutilizar código.</p>
+
+<p>Los módulos pueden llamar los métodos de la clase que los incluye. Sin embargo, es importante documentar estos requerimientos dentro del módulo.</p>
+
+<pre><code class="language-ruby"># To use this module, the class must provide a method +favorite_music+
+module Dancer
+  def dance
+    puts "I'm dancing #{favorite_music}"
+  end
+end
+
+class Dog
+  include Dancer
+
+  def favorite_music
+    "Rock &amp; Roll"
+  end
+end
+
+max = Dog.new
+max.dance # "I'm dancing Rock &amp; Roll"
+</code></pre>
+
+<p>Como te puedes dar cuenta, el método <code class="highlighter-rouge">dance</code> ahora utiliza el método <code class="highlighter-rouge">favorite_music</code>, que debe estar definido en las clases que incluyan el módulo <code class="highlighter-rouge">Dancer</code>.</p>
+
+<p>También es posible definir variables de instancia dentro de un módulo. Esas variables van a quedar almacenadas en las instancias de las clases que incluyan el módulo:</p>
+
+<pre><code class="language-ruby">module Dancer
+  def dance
+    @dancing = true # definimos la variable de instancia
+  end
+
+  def stop_dance
+    @dancing = false # definimos la variable de instancia
+  end
+
+  def is_dancing?
+    @dancing || false # si @dancing no está definida, retorna false
+  end
+end
+
+class Humano
+  include Dancer
+end
+
+pedro = Humano.new
+pedro.dance
+pedro.is_dancing? #=&gt; true
+pedro.stop_dance
+pedro.is_dancing? #=&gt; false</code></pre>
+
+<p>En este caso los métodos <code class="highlighter-rouge">dance</code> y <code class="highlighter-rouge">stop_dance</code> están definiendo una variable de instancia llamada <code class="highlighter-rouge">@dancing</code>. El método <code class="highlighter-rouge">is_dancing?</code> utiliza la variable para saber si está bailando o no.</p>
+
+<p>Cuando una clase tiene muchos métodos, una buena práctica es agruparlos en módulos:</p>
+
+<pre><code class="language-ruby">module Needs
+  # métodos relacionados con necesidades humanas
+end
+
+module Feelings
+  # métodos relacionados con sentimientos humanos
+end
+
+class Human
+  include Needs
+  include Feelings
+end</code></pre>
+
+<p>Si revisas las clases <a href="https://github.com/rails/rails/blob/v4.2.4/activejob/lib/active_job/base.rb">ActiveJob::Base</a> y <a href="https://github.com/rails/rails/blob/v4.2.4/activerecord/lib/active_record/base.rb">ActiveRecord::Base</a> de Ruby on Rails te darás cuenta que siguen el mismo patrón.</p>
+
+<p>Los módulos nos permiten definir constantes que necesitamos en nuestra aplicación:</p>
+
+<pre><code class="language-ruby">module HttpHeaders
+  CONTENT_TYPE = "Content-Type"
+  AUTHORIZATION = "X-Token"
+  ...
+end</code></pre>
+
+<p>La forma de acceder a las constantes es muy parecido a la forma que se hace con las clases: separando los módulos y la constante con <code class="highlighter-rouge">::</code>. En el ejemplo anterior tendríamos que escribir <code class="highlighter-rouge">HttpHeaders::AUTHORIZATION</code> para acceder a la constante <code class="highlighter-rouge">AUTHORIZATION</code>.</p>
+
+<p>Sin embargo, si incluyes el módulo dentro de una clase, ya no es necesario especificar el módulo para acceder a la constante:</p>
+
+<pre><code class="language-ruby">class WebServer
+  include HttpHeaders
+
+  def authenticate
+    auth_header = headers[AUTHORIZATION] # no es necesario especificar el módulo
+    ...
+  end
+end</code></pre>
+
+<p>Por último, los módulos son ideales para incluir los métodos utilitarios de tu aplicación, esos métodos que no parecen encajar en ninguna clase:</p>
+
+<pre><code class="language-ruby">module Utilities
+  def self.utility_one
+    ...
+  end
+
+  def self.utility_two(param1, param2)
+    ..
+  end
+end
+
+# llamemos nuestros métodos utilitarios
+Utilities.utility_one
+Utilities.utility_two("Hola", 1)</code></pre>
+
+<p>Fíjate que los métodos tiene un prefijo <code class="highlighter-rouge">self.</code> antes del nombre. De esa forma podemos llamarlos directamente sobre el módulo, sin necesidad de incluirlos en una clase.</p>
+
+<h3 id="incluir-un-módulo-vs-extender-una-clase">¿Incluir un módulo vs extender una clase?</h3>
+
+<p>Los módulos, al igual que la herencia, nos permiten reutilizar código. En vez de duplicar el método <code class="highlighter-rouge">dance</code> en las clases <code class="highlighter-rouge">Human</code> y <code class="highlighter-rouge">Dog</code>, lo definimos en un módulo que podemos incluir en las clases que tengan ese comportamiento.</p>
+
+<p>Es posible hacer lo mismo con herencia. En vez de definir un módulo, vamos a definir una clase <code class="highlighter-rouge">Dancer</code> con un método <code class="highlighter-rouge">dance</code>:</p>
+
+<pre><code class="language-ruby">class Dancer
+  def dance
+    puts "Estoy bailando"
+  end
+end
+
+class Human &lt; Dancer # extiende Dancer
+end
+
+class Dog &lt; Dancer # extiende Dancer
+end</code></pre>
+
+<p>El resultado es el mismo: <code class="highlighter-rouge">Human</code> y <code class="highlighter-rouge">Dog</code> “reciben” el método <code class="highlighter-rouge">dance</code> y se pueden utilizar igual que lo hicimos en un ejemplo anterior:</p>
+
+<pre><code class="language-ruby">pedro = Human.new
+pedro.dance # "I'm dancing"
+
+max = Perro.new
+max.dance # "I'm dancing"</code></pre>
+
+<p>Para saber cuándo incluir un módulo o extender de una clase te puedes hacer la siguiente pregunta: ¿La <code class="highlighter-rouge">ClaseHija</code> especializa a la <code class="highlighter-rouge">ClasePadre</code>? o mejor ¿<code class="highlighter-rouge">ClaseHija</code> <strong>es un</strong> <code class="highlighter-rouge">ClasePadre?</code> Si la respuesta es <strong>si</strong>, entonces es mejor crear una relación de herencia (extender una clase). De lo contrario, es mejor utilizar un módulo.</p>
+
+<p>Por ejemplo, supongamos que necesitamos definir la relación entre un <code class="highlighter-rouge">Bus</code> y un <code class="highlighter-rouge">Auto</code>. ¿<code class="highlighter-rouge">Bus</code> <strong>es un</strong> <code class="highlighter-rouge">Auto</code>? La respuesta es <strong>si</strong> y por lo tanto esta es una relación de herencia, <code class="highlighter-rouge">Bus</code> extiende <code class="highlighter-rouge">Auto</code>.</p>
+
+<p>En nuestro ejemplo de los humanos y perros bailadores, la pregunta es ¿<code class="highlighter-rouge">Human</code> <strong>es un</strong> <code class="highlighter-rouge">Dancer</code>? La respuesta es <strong>no</strong>. Ser un “bailador” es más una cualidad de los humanos (o de los perros), y por lo tanto es mejor utilizar un módulo.</p>
+
+<p>Hay ocasiones en que no tenemos opción sino utilizar un módulo. <strong>Ruby no permite múltiple herencia</strong>, es decir, una clase no puede extender varias clases a la vez, y si una clase ya extiende otra<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> a veces la única opción es crear un módulo e incluirlo así la relación sea de herencia.</p>
+
+<hr />
+
+<p>Los módulos son una herramienta muy particular de Ruby, especialmente porque cumplen la doble función de evitar colisiones de nombres y reutilizar código<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>.</p>
+
+<p>La mayoría de lenguajes Orientados a Objetos tienen algún mecanismo para evitar colisiones entre Clases. En Java se utilizan <a href="https://en.wikipedia.org/wiki/Java_package" target="_blank">paquetes</a>, en JavaScript se emula con <a href="http://stackoverflow.com/questions/1841916/how-to-avoid-global-variables-in-javascript" target="_blank">closures</a>, en C++ <a href="https://msdn.microsoft.com/en-us/library/5cb46ksf.aspx" target="_blank">namespaces</a>, etc.</p>
+
+<p>A los módulos como mecanismo de reutilización de código también se les llama <a href="https://en.wikipedia.org/wiki/Mixin" target="_blank">Mixins</a> en otros lenguajes. Otros, como Java, C++ y JavaScript, no incluyen esa funcionalidad, aunque generalmente existen formas de emularla.</p>
+
+<hr />
+
+<h3 id="notas">Notas</h3>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Un palíndrome es una palabra o frase que se lee igual hacia adelante que hacia atrás.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>En algunas ocasiones es posible redefinir la jerarquía de clases para lograr la relación deseada.&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Python funciona de forma similar aunque no es necesario definir el módulo, el mismo archivo actúa como un módulo.&nbsp;<a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Módulos en Ruby&url=http://blog.makeitreal.camp/modulos-en-ruby/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/modulos-en-ruby/&p[title]=Módulos en Ruby" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/modulos-en-ruby/&title=Módulos en Ruby&summary=&source=http://blog.makeitreal.camp/modulos-en-ruby/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> ¿Qué es código? </title>
+  <meta name="description" content="Semáforos, automóviles, aviones, aeropuertos, satélites, el sistema financiero, gran parte de nuestras vidas depende del código que varias generaciones de pr...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="¿Qué es código?">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/que-es-codigo/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/code.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2016-01-11T12:00:00-05:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/que-es-codigo/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/code.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Jan 11, 2016</time>
+                </div>
+                <h1>¿Qué es código?</h1>
+                <div class="post-body"><p>Semáforos, automóviles, aviones, aeropuertos, satélites, el sistema financiero, gran parte de nuestras vidas depende del código que varias generaciones de programadores han escrito. <!-- more -->Pero ¿qué es código? ¿quién lo ejecuta y cómo? En este post vamos a hacer un recorrido histórico para entender cómo es que la electricidad se convierte en código y cómo surgieron los lenguajes de programación.</p>
+
+<p>Empecemos.</p>
+
+<p>Código son una “serie de instrucciones” que son ejecutadas automáticamente por un computador, por un procesador para ser más exactos. Pero, para realmente entender qué es código debemos primero entender de dónde surgen y cómo funcionan los computadores.</p>
+
+<p>Los computadores existen porque en el siglo diecinueve descubrimos un fenómeno que ha cambiado nuestras vidas completamente: <strong>el electromagnetismo</strong>.</p>
+
+<p>El electromagnetismo es la unión de dos fenómenos que se creían independientes: la electricidad y el magnetismo. Lo interesante del electromagnetismo es que nos permite mover componentes mecánicos utilizando electricidad. Un electroíman no es más que un cable enrollado en una barra metálica; cuando se pasa corriente sobre el cable, la barra se convierte en un imán. Puede que eso no parezca muy emocionante al principio, pero es la base de los ventiladores, licuadoras, lavadoras, timbres, y en general, todo lo que necesita un motor eléctrico para funcionar.</p>
+
+<p><img src="/assets/images/electromagnet.gif" alt="Electroimán" class="photo" /></p>
+
+<p class="photo-description">El electroimán es un tipo de imán que se activa con una corriente eléctrica.</p>
+
+<p>Una de las primeras aplicaciones del electromagnetismo fue el telégrafo, inventado por <a href="https://es.wikipedia.org/wiki/Samuel_Morse" target="_blank">Samuel F. B. Morse</a> en 1836, que permitía enviar señales a larga distancia. Cuando se oprime un interruptor en uno de los extremos, se genera una corriente eléctrica a través de un cable que activa un electroimán al otro extremo<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p><img src="/assets/images/telegraph.jpg" alt="Telégrafo" class="photo" /></p>
+
+<p class="photo-description">Un telégrafo.</p>
+
+<p>Pero enviar una señal no es suficiente para establecer una comunicación, se necesita también poder representar un mensaje. Y para eso Samuel Morse inventó lo que se conoce hoy como el código Morse.</p>
+
+<p><img src="/assets/images/morse-code.jpg" alt="Código Morse" class="photo" /></p>
+
+<p class="photo-description">El código Morse. No sobra aprenderse el código de ayuda SOS.</p>
+
+<p>El código Morse es binario (solo tiene dos estados): punto o raya, o sonido largo y sonido corto. A cada letra y dígito se le asigna un código único (una combinación de puntos y rayas) y así podemos representar cualquier mensaje.</p>
+
+<p>Paralelamente al descubrimiento y aplicación del electromagnetismo se estaba desarrollando un tema más teórico y abstracto: el <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole" target="_blank">algebra booleana</a>, que es una rama del algebra convencional pero en donde los valores de las variables son verdadero y falso únicamente. (No te preocupes si no te acuerdas del algebra convencional, no la necesitas para el resto de este post)</p>
+
+<p>El <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole" target="_blank">algebra booleana</a> es lo que nos permite hacer operaciones lógicas (Y, O, negación, etc.). Y <strong>con algunos trucos con operaciones lógicas es posible hacer operaciones aritméticas y almacenar información</strong>, que es realmente lo único que sabe hacer un computador<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<p>Eventualmente el electromagnetismo y el algebra booleana se encontraron en lo que hoy conocemos como <a href="https://es.wikipedia.org/wiki/Puerta_l%C3%B3gica" target="_blank">compuertas lógicas</a>, que es un dispositivo físico que implementa alguna función del algebra booleana (p.e. Y, O, o negación).</p>
+
+<p><img src="/assets/images/logic-gate.png" alt="Compuerta lógica" class="photo" /></p>
+
+<p class="photo-description">Diagrama de una compuerta lógica.</p>
+
+<p>Las primeras compuertas lógicas se fabricaron a partir de <a href="https://es.wikipedia.org/wiki/Electroim%C3%A1n" target="_blank">electroimanes</a>, pero después fueron reemplazados por <a href="https://es.wikipedia.org/wiki/V%C3%A1lvula_termoi%C3%B3nica" target="_blank">tubos de vacío</a> porque los electroimanes son muy ruidosos. El problema de los tubos de vacío es que ocupan mucho espacio y a mitad de los años 50’s se empezaron a reemplazar con <a href="https://es.wikipedia.org/wiki/Transistor" target="_blank">transistores</a>.</p>
+
+<p><img src="/assets/images/transistor.jpg" alt="Transistor" class="photo" /></p>
+
+<p class="photo-description">Un transistor. Tu computador tiene varios billones (miles de millones) de estos en forma diminuta (generalmente empaquetados en un chip).</p>
+
+<p>Los transistores (al igual que los tubos de vacío y electroimanes previamente) se cablean de tal forma en que es posible ejecutar algunas operaciones básicas: AND, OR, XOR, etc. Con eso se construyen circuitos más complejos, y con esos circuitos se construyen dispositivos electrónicos.</p>
+
+<p>Uno de esos dispositivos es la <strong>memoria</strong> del computador, que no es más que un arreglo de compuertas lógicas cableadas de tal forma que nos permiten almacenar información (no confundas la memoria con el disco duro, la memoria guarda la información de forma temporal, lo que se conoce como memoria RAM). Para que te des una idea, para construir una memoria de 64Kb (64,000 bytes o 512,000 bits) se necesitan aproximadamente un par de millones de transistores. Para una memoria de 1GB (un smartphone moderno) se necesitan aproximadamente mil millones.</p>
+
+<p>Otro dispositivo que se construye cableando compuertas lógicas es el <strong>procesador</strong>, que nos permite realizar operaciones básicas como guardar un valor en alguna posición del la <strong>memoria</strong>, saltar a otra posición de memoria, hacer un AND o un OR entre posiciones de memoria, sumar los valores de dos posiciones de memoria, entre otras. Las operaciones exactas las define el fabricante del procesador y a cada una le asigna un <strong>código binario</strong> (p.e. 10011). Un procesador moderno se construye a partir de algunos billones de transistores.</p>
+
+<p>Pero un computador no está hecho solo de un procesador y una memoria. A un computador se le puede conectar un teclado, disco duro, tarjeta de red, micrófono, parlantes, impresora, etc. Lo interesante es que el procesador trata todos estos dispositivos por igual, es decir, el procesador envía y recibe información del dispositivo como si fuera una memoria. Es responsabilidad del software (del que vamos a hablar en un momento) enviar la información correcta e interpretar la información que recibe del dispositivo.</p>
+
+<p>Es por eso que a la memoria y a cualquier otro dispositivo que se pueda conectar con un computador se le conoce como un <strong>dispositivo de E/S (Entrada/Salida)</strong>.</p>
+
+<p>Es un diseño muy simple e ingenioso. El procesador es literalmente el computador. Pero el procesador sin (al menos) una memoria y algún otro dispositivo de E/S es inútil. Precisamente el objetivo de los computadores es que puedan interactuar con el mundo real para hacer cosas interesantes como transmitir video, calcular rutas, adivinar qué canción está sonando, cambiar el termostato según la hora del día, etc.</p>
+
+<h2 id="software">Software</h2>
+
+<p>En la memoria podemos cargar alguna combinación de operaciones del procesador (utilizando los códigos binarios) y luego pedirle al procesador que las ejecute secuencialmente. Eso es lo que llamamos <strong>software</strong>. Veamos un ejemplo.</p>
+
+<p>El Altair 8800 fue el primer computador de escritorio. Tenía un dispositivo de <strong>entrada</strong> (los interruptores) y uno de <strong>salida</strong> (los bombillos).</p>
+
+<p><img src="/assets/images/altair8800.jpg" alt="Altair" class="photo" /></p>
+
+<p class="photo-description">Altair 8800. Uno de los primeros computadores de escritorio.</p>
+
+<p>A través de los interruptores se ingresaban las instrucciones en representación binaria. Un interruptor representaba un bit (arriba 1, abajo 0). Cada instrucción ocupaba 3 direcciones de memoria y cada dirección ocupa un byte (ocho bits). Ingresar las instrucciones era un proceso bastante engorroso, pero aún así se lograban hacer <a href="https://www.youtube.com/watch?v=ZKeiQ8e18QY" target="_blank">cosas interesantes</a>.</p>
+
+<p>A las instrucciones en forma binaria (1’s y 0’s) se les llama <strong>código de máquina</strong> y es lo único que entiende el procesador.</p>
+
+<div class="well">La realidad es que los procesadores utilizan rangos de voltajes para diferenciar entre los dos estados (1 y 0).</div>
+
+<p>Programar en ese entonces consistía de tres pasos:</p>
+
+<ol>
+  <li>El programa se escribía en papel utilizando las operaciones del procesador (p.e. Move, Store, Add, etc.).</li>
+  <li>Las operaciones se traducían a código binario (utilizando el manual del procesador) y se introducían utilizando los interruptores.</li>
+  <li>Se ejecutaba el programa.</li>
+</ol>
+
+<p>Un programa solo funcionaba para un tipo de procesador específico porque las operaciones (con sus respectivos código) eran diferentes entre los tipos de procesadores (así fueran del mismo fabricante).</p>
+
+<p>Los primeros procesadores ofrecían muy pocas operaciones, por ejemplo no permitían multiplicar dos números directamente. Pero <strong>todo lo que no hace el procesador por hardware, se puede hacer con software</strong>. A medida que los procesadores evolucionaban, incluían más operaciones por hardware, que se ejecutan mucho más rápido que por software.</p>
+
+<p>Eventualmente los interruptores fueron reemplazados por teclados y los bombillos por impresoras y pantallas (aunque puedes pensar en una pantalla como la unión de muchos bombillos).</p>
+
+<h2 id="el-lenguaje-ensamblador">El lenguaje ensamblador</h2>
+
+<p>Con la llegada de los teclados ya no era necesario ingresar el <strong>código de máquina</strong> directamente. Se podía crear un archivo de texto con el nombre de las instrucciones como se hacía en papel. A esto se le llama el <strong>código fuente</strong>. Un programa luego convierte el código fuente a <strong>código de máquina</strong> (a 1’s y 0’s).</p>
+
+<p>De esa forma se inventó el primer lenguaje de programación, que era simplemente una representación uno a uno de las operaciones que podía hacer el procesador. Se le llamó <strong>lenguaje ensamblador</strong> (assembly language) y al programa que lo convertía a código de máquina se le llamó el <strong>ensamblador</strong> (assembler).</p>
+
+<p><img src="/assets/images/assembler.gif" alt="Lenguaje ensamblador" class="photo" /></p>
+
+<p class="photo-description">Lenguaje ensamblador. <a href="http://csecitsurepasses.weebly.com/distinguish-between-low-level-and-highlevel-programming-languages.html" target="_blank">Crédito</a>.</p>
+
+<p>Pero para poder escribir archivos de texto con código (programas), primero fue necesario que pudieramos representar texto y crear un sistema operativo.</p>
+
+<h2 id="representando-texto">Representando texto</h2>
+
+<p>Para representar texto se necesitaba desarrollar un sistema en donde cada carácter (letra, signo de puntuación y dígito) correspondiera a un código único, como el código Morse.</p>
+
+<p>El primer problema era definir un número de bits para representar cada carácter.</p>
+
+<p>Desafortunadamente al principio solo se tuvo en cuenta el idioma Inglés, que no tiene acentos, y se decidió que con 7 bits era suficiente. 7 bits nos permite representar 128 caracteres. Se desarrolló un estándar llamado <a href="https://es.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> (American Standard Code for Information Interchange), y es quizá uno de los estándares más importantes en la historia de la computación.</p>
+
+<p>Algunos caracteres del estándar ASCII son los siguientes:</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th class="text-center">Carácter ASCII</th>
+      <th class="text-center">Binario</th>
+      <th class="text-center">Decimal</th>
+      <th class="text-center">Hexadecimal</th>
+    </tr>
+  </thead>
+  <tbody>
+  	<tr>
+      <td class="text-center">Espacio</td>
+      <td class="text-center">0100000</td>
+      <td class="text-center">32</td>
+      <td class="text-center">20</td>
+    </tr>
+    <tr>
+      <td class="text-center">1</td>
+      <td class="text-center">0110001</td>
+      <td class="text-center">49</td>
+      <td class="text-center">31</td>
+    </tr>
+    <tr>
+      <td class="text-center">A</td>
+      <td class="text-center">1000001</td>
+      <td class="text-center">65</td>
+      <td class="text-center">41</td>
+    </tr>
+    <tr>
+      <td class="text-center">a</td>
+      <td class="text-center">1100001</td>
+      <td class="text-center">97</td>
+      <td class="text-center">61</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En <a href="http://www.ascii-code.com/" target="_blank">este enlace</a> puedes encontrar la tabla completa. En un momento te darás cuenta por qué incluí el código hexadecimal<sup id="fnref:4"><a href="#fn:4" class="footnote">3</a></sup> para cada carácter.</p>
+
+<p>Aunque ASCII solo necesitaba 7 bits, la mayoría de computadores almacenan la información en bytes (grupos de 8 bits). Eso permitió que se definieran una multitud de extensiones a ASCII, unas bien diseñadas, otras no tanto.</p>
+
+<p>La consecuencia es que hoy la mayor�a de programadores han experimentado en alg�n momento problemas con la codificaci�n debido a esta fragmentaci�n.</p>
+
+<p>En 1988 un grupo de compañías se reunieron y desarrollaron una alternativa a ASCII llamada <a href="https://es.wikipedia.org/wiki/Unicode" target="_blank">Unicode</a>, que permite representar texto en la mayoría de sistemas escritos, incluyendo <a href="https://es.wikipedia.org/wiki/Idioma_klingon" target="_blank">Klingon</a> y los caracteres <a href="https://es.wikipedia.org/wiki/Emoji" target="_blank">Emoji</a>. Cada carácter en Unicode tiene un código llamado code point y actualmente hay más de 120,000 caracteres codificados (con espacio para extenderse a más de un millón). Un code point se escribe en formato hexadecimal con el prefijo <code class="highlighter-rouge">U+</code>. Por ejemplo, el code point para el carácter A es <code class="highlighter-rouge">U+0041</code> (recuerda que en ASCII es 41), de modo que Unicode es compatible con ASCII.</p>
+
+<p>Lo interesante de Unicode es que puede ser implementado en diferentes <a href="https://es.wikipedia.org/wiki/Codificaci%C3%B3n_de_caracteres" target="_blank">codificaciones de caracteres</a>, siendo <a href="" target="_blank">UTF-8</a> el más popular actualmente, que usa un byte para los caracteres ASCII, y hasta 4 bytes para los demás (es de longitud variable).</p>
+
+<h2 id="sistemas-operativos">Sistemas operativos</h2>
+
+<p>Cuando un procesador se enciende o se reinicia, empieza a ejecutar código de máquina en una dirección particular de la memoria, generalmente en la primera posición 0000h (la h es de hexadecimal)<sup id="fnref:5"><a href="#fn:5" class="footnote">4</a></sup>.</p>
+
+<p><strong>Un sistema operativo no es más que un programa que nos facilita la vida desde el punto de vista de usuarios y programadores</strong>. La memoria, por ejemplo, no es más que información secuencial en forma binaria. Pero el sistema operativo se encarga de manejar esa información y de exponerla como un sistema de archivos. Esa es la razón por la cuál hoy no manipulas la memoria directamente, manipulas carpetas y archivos.</p>
+
+<p>La segunda tarea del sistema operativo es dividir las aplicaciones en procesos y decidir cuándo un proceso tiene “permiso” de utilizar el procesador. A cada proceso también le asigna cierta memoria.</p>
+
+<p>La tercera tarea del sistema operativo es actuar como intermediario entre el hardware y los procesos.</p>
+
+<p>Por último, el sistema operativo expone una funcionalidad para que los procesos puedan interactuar con él.</p>
+
+<p>El sistema operativo más importante de la antiguedad (mediados de los 70’s y principios de los 80’s) entre los computadores personales fue CP/M. En los 80’s fue modificado para usarse en un IBM PC, pero poco a poco fue desapareciendo debido a que IBM eligió Microsoft DOS, que después evolucionó en lo que hoy conocemos como Microsoft Windows.</p>
+
+<p>Al principio, los sistemas operativos únicamente permitían que se interactuara con ellos a través de un lenguaje de programación o a través de la línea de comandos (un programa que permitía al usuario ingresar comandos para realizar diferentes tareas como manipular archivos y correr programas). Después surgieron las interfaces gráficas que es lo que la mayoría de personas conoce hoy en día.</p>
+
+<h2 id="lenguajes-de-alto-nivel">Lenguajes de alto nivel</h2>
+
+<p>Escribir código en lenguaje ensamblador es como almorzar con un palillo. Es extremadamente lento, repetitivo y sujeto a errores. Al lenguaje ensamblador se le llama <strong>de bajo nivel</strong> por su cercanía al código de máquina.</p>
+
+<p>Por otro lado, un <strong>lenguaje de alto nivel</strong> es mucho más fácil de aprender, entender y es mucho más conciso que el lenguaje ensamblador. También permite reutilizar código más fácilmente. Alrededor de los lenguajes de alto nivel se crean comunidades de programadores que comparten código (en forma de librerías), se ayudan y mejoran el lenguaje entre todos.</p>
+
+<p>Algunos lenguajes de alto nivel necesitan un <strong>compilador</strong> para convertir los programas a código de máquina. Un <strong>compilador</strong> es como un ensamblador pero más sofisticado porque generalmente traduce una línea de código de alto nivel a muchas en código de máquina. Escribir un compilador no es fácil y se han escrito innumerables libros sobre el tema.</p>
+
+<p>Otros lenguajes usan <strong>interpretadorers</strong>, programas que van traduciendo el <strong>código fuente</strong> a <strong>código de máquina</strong> a medida que se van ejecutando. Estos lenguajes son más lentos que los lenguajes compilados, pero evitan la compilación cada vez que se hace un cambio en el <strong>código fuente</strong>. La mayoría de lenguajes interpretados también pueden ser compilados cuando se necesita mayor rendimiento, aunque no es muy común que se haga.</p>
+
+<p>Entre los primeros lenguajes de alto nivel se encuentran <a href="https://es.wikipedia.org/wiki/Fortran" target="_blank">FORTRAN</a>, <a href="https://es.wikipedia.org/wiki/COBOL" target="_blank">COBOL</a>, <a href="https://es.wikipedia.org/wiki/ALGOL" target="_blank">ALGOL</a> y <a href="https://es.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)" target="_blank">Pascal</a>. Existen muchos más pero estos fueron muy populares en su momento. Y después está <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)" target="_blank">C</a>, que es quizá el lenguaje más popular de todos los tiempos.</p>
+
+<p><a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)" target="_blank">C</a> fue inventado entre 1969 y 1973 por <a href="https://es.wikipedia.org/wiki/Dennis_Ritchie" target="_blank">Dennis Ritchie</a> en <a href="https://en.wikipedia.org/wiki/Bell_Labs" target="_blank">Bell Labs</a> para crear el sistema operativo <a href="https://es.wikipedia.org/wiki/Unix" target="_blank">UNIX</a>, que fue uno de los primeros sistemas operativos portables entre diferentes procesadores (la mayoría de sistemas operativos se escribían para un tipo de procesador específico). <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)" target="_blank">C</a> es catalogado como un lenguaje de ensamblador de alto nivel porque varias de sus instrucciones imitan algunos grupos de operaciones del procesador y es posible manipular la memoria directamente.</p>
+
+<p>Para un programador que ha iniciado su carrera en los últimos 15 años, C es prácticamente un lenguaje de bajo nivel. De hecho  la mayoría de los lenguajes de alto nivel modernos están escritos en C (p.e. Java, PHP, Ruby, Python, etc.).</p>
+
+<h2 id="la-explosión-de-los-lenguajes-de-programación">La explosión de los lenguajes de programación</h2>
+
+<p>Cuando empecé a programar a finales de los 90’s el lenguaje de moda era Java. La razón es que los programas escritos en Java podían correr en diferentes plataformas y sistemas operativos sin necesidad de tener que compilar individualmente para cada una, como se debía hacer con cualquier otro lenguaje.</p>
+
+<p>Para construir aplicaciones Web, PHP era muy popular en ese momento (y lo sigue siendo). Java se fortaleció en el mundo corporativo y sigue siendo muy popular.</p>
+
+<p>Pero desde el 2005 se ha producido una explosión de lenguajes: Ruby, Python, JavaScript, Objective-C, Swift, Go, C#, etc. Algunos de estos lenguajes existían desde hace muchos años atrás pero empezaron a ser usados masivamente. Otros, como JavaScript y Objective-C, se volvieron populares por las plataformas en que trabajan: JavaScript es la única opción si estás creando algo dinámico en el navegador y Objective-C (ahora Swift) para crear aplicaciones para el iPhone.</p>
+
+<p>Aunque la sintaxis (las reglas del lenguaje) varía entre estos lenguajes, la realidad es que al final todos se deben convertir a lenguaje de máquina de una forma u otra.</p>
+
+<p>¿Por qué no nos ponemos de acuerdo y utilizamos todos el mismo lenguaje? La respuesta es que aún no existe el lenguaje ideal, y quizá nunca vaya a existir. Cada lenguaje tiene sus ventajas y desventajas, y es un campo que sigue en constante evolución: seguimos probando nuevos paradigmas y estilos de programación. Otras veces no tenemos opción–como con JavaScript. Pero una de las razones principales es que ya existe una gran cantidad de código que las empresas necesitan seguir manteniendo y evolucionando. Es un tema complejo.</p>
+
+<h2 id="por-qué-es-tan-difícil-aprender-a-programar">¿Por qué es tan difícil (aprender a) programar?</h2>
+
+<p>Definitivamente hoy es más fácil (aprender a) programar que hace 30 años. Hoy es posible encontrar respuesta a la mayoría de problemas de programación en Internet. El problema son las abstracciones y todas las posibilidades que existen.</p>
+
+<p>Cuando escribes una aplicación Web, por ejemplo, no tienes que reinventar el sistema operativo o definir cómo se va a comunicar el navegador con el servidor. Es como manejar un automóvil, no necesitas conocer cómo funciona el sistema de inyección hidráulica o el árbol de levas; lo único que necesitas saber es cómo funcionan los pedales, la transmisión, el volante, etc. Algo muy parecido pasa con la programación.</p>
+
+<p>Cuando escribes y ejecutas un programa (en cualquier lenguaje), varias capas de abstracción estan involucradas en el proceso: las librerías que utilizaste en tu programa, el interpretador (si es un lenguaje interpretado), el sistema operativo, entre otros.</p>
+
+<p>Muchas cosas pueden salir mal. Quizá una de las librerías que utilizaste tiene un problema en el sistema operativo en el que estás ejecutando el programa, o cuando escribiste tu programa esperabas que un archivo estuviese en una ruta determinada pero ese archivo lo cambiaron en la nueva versión.</p>
+
+<p>La programación es caótica, muy caótica. Pensándolo bien, es increíble que algo funcione.</p>
+
+<p>Cualquier persona puede escribir un programa o una librería, y quizá muchos otros lo utilicen sin ninguna garantía. Eso genera un desarrollo increíblemente ágil y exponencial, pero caótico. Es diferente a los automóviles, que es una industria fuertemente regulada.</p>
+
+<p>Pero, para terminar, la analogía con el automóvil es buena. Un automóvil lo puedes utilizar para transportarte de un sitio a otro, o simplemente por diversión. Lo mismo ocurre con la programación. Y al igual que con la conducción, para programar lo único que necesitas es practicar.</p>
+
+<hr />
+
+<h3 id="notas">Notas</h3>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Al principio un boligrafo descendía sobre un rollo de papel que estaba en constante movimiento, pero los operadores rápidamente aprendieron a traducir el mensaje a partir del sonido que hacía el boligrafo sobre el papel.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>No vamos a entrar en los detalles de cómo es que eso es posible, pero si quieres conocerlos te recomiendo el siguiente libro: <a href="http://www.amazon.com/Code-Language-Computer-Developer-Practices-ebook/dp/B00JDMPOK2/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=" target="_blank">Code: The Hidden Language of Computer Hardware and Software</a>&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>El sistema hexadecimal permite representar un byte con dos caracteres en vez de ocho como ocurre en sistema binario. Un byte, en sistema binario, va desde 00000000 a 11111111. El equivalente en hexadecimal es 00 a FF. Las direcciones de memoria y los colores en formato RGB, entre otros, se escriben generalmente en sistema hexadecimal para ahorrar espacio.&nbsp;<a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>Estamos asumiendo que la memoria tiene máximo 65,535 direcciones, cada una de un byte, es decir, una memoria de 64k. Recuerda que cada dos posiciones hexadecimales representan un byte (8 bits).&nbsp;<a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=¿Qué es código?&url=http://blog.makeitreal.camp/que-es-codigo/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/que-es-codigo/&p[title]=¿Qué es código?" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/que-es-codigo/&title=¿Qué es código?&summary=&source=http://blog.makeitreal.camp/que-es-codigo/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+
+    </footer>
+  </body>
+</html>

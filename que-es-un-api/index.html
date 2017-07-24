@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> ¿Qué es un API? </title>
+  <meta name="description" content="Un API (Application Programming Interface) es la interfaz que un software utiliza para interactuar con otro software. Empecemos con una analogía. Observa la ...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="¿Qué es un API?">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/que-es-un-api/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/api-controls.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2015-09-17T12:00:00-05:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/que-es-un-api/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/api-controls.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Sep 17, 2015</time>
+                </div>
+                <h1>¿Qué es un API?</h1>
+                <div class="post-body"><p>Un <strong>API</strong> (Application Programming Interface) <strong>es la interfaz que un software utiliza para interactuar con otro software</strong>. Empecemos con una analogía. Observa la siguiente lavadora:<!-- more --></p>
+
+<p><img src="/assets/images/washing-machine.png" alt="Lavadora" class="photo" /></p>
+
+<p class="photo-description">Los botones, las perillas, el tambor y el dispensador <strong>exponen</strong> la funcionalidad que nos permite lavar la ropa.</p>
+
+<p>Genial ¿no? Esta máquina soluciona un problema específico: lavar la ropa. Pero para poder usarla necesitas saber dónde ubicar la ropa, dónde echar el jabón y qué secuencia de botones oprimir para que lave.</p>
+
+<p>Los botones, las perillas, el tambor y el dispensador son la <strong>interfaz del usuario</strong>, que es lo que te permite interactuar con la máquina.  Estoy seguro que sabes cómo oprimir un botón o girar una perilla, pero igual necesitas aprender a utilizar la lavadora.</p>
+
+<p>Piensa ahora en un automóvil. ¿Cuáles es su interfaz? ¿Qué necesitas aprender para manejar?</p>
+
+<p>Lo realmente importante de estas interfaces es que nos permiten usar la lavadora o el automóvil sin conocer los detalles internos. Es lo que en computación llamamos una <strong>abstracción</strong>. Aunque es necesario aprender algo muy específico para lavar o conducir, es preferible a lavar la ropa a mano o caminar hasta el destino.</p>
+
+<p>Los <strong>API’s</strong> son lo que hacen a la programación interesante. Por ejemplo, <a href="https://www.android.com/" target="_blank">Android</a> tiene un <strong>API</strong> que permite crear aplicaciones móviles con <a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)" target="_blank">Java</a>. Y a pesar de que he programado en <a href="https://es.wikipedia.org/wiki/Java_(lenguaje_de_programaci%C3%B3n)" target="_blank">Java</a> por muchos años, tendría que estudiar el <strong>API</strong> de <a href="https://www.android.com/" target="_blank">Android</a> para construir algo interesante. ¿Cómo mostrar un botón en la pantalla? ¿Cómo prender la cámara y capturar video? ¿Cómo obtener la posición con el GPS?<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>Eso significa que aprender a programar no es solo aprender a crear variables, condicionales, ciclos, etc. Esas son las bases que te van a permitir utilizar <strong>API’s</strong> para construir algo interesante.</p>
+
+<p>Todos los lenguajes de programación traen un <strong>API</strong> que nos permite manipular archivos, crear aplicaciones concurrentes, utilizar la red y trabajar con colecciones (arreglos, mapas, conjuntos, etc.), entre otros. Busca el API de <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#q=ruby%20api" target="_blank">Ruby</a> o el de <a href="https://www.google.com/search?q=java+api&amp;oq=java+api&amp;aqs=chrome.0.69i59j69i60l4j0.1575j0j9&amp;sourceid=chrome&amp;es_sm=119&amp;ie=UTF-8" target="">Java</a> para que te des una idea.</p>
+
+<p>Los navegadores también tienen su propio <strong>API</strong> para <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> que nos permite <a href="#" id="manipulate">manipular el código HTML/CSS</a>, <a href="#" id="show-alerts">mostrar alertas</a>, escuchar eventos (del mouse, teclado, etc.) y hacer llamados <a href="https://es.wikipedia.org/wiki/AJAX" target="_blank">AJAX</a>, entre otros. Hoy el API de los navegadores está casi estandarizado pero antes existían muchas diferencias entre navegadores, y por eso surgió <a href="https://es.wikipedia.org/wiki/JQuery" target="_blank">jQuery</a>, una librería con un <strong>API</strong> unificado y simple que “normaliza” esas diferencias.</p>
+
+<h2 id="web-apis">Web API’s</h2>
+
+<p>Cuando estaba construyendo mi primera empresa, <a href="http://elibom.com/" target="_blank">elibom.com</a>, creía que lo más importante era la interfaz Web que le permitiría a los usuarios enviar mensajes de texto SMS desde el navegador. Pero rápidamente nos dimos cuenta que el potencial estaba en permitir <strong>que otras aplicaciones se conectaran a nuestro servicio</strong> para enviar, por ejemplo, alertas bancarias de forma automatizada sin necesidad de conocer cómo funciona la conexión y el enrutamiento de los mensajes a los operadores móviles.</p>
+
+<p>Así aprendí la importancia y el potencial que tienen los API’s, pero en especial los <strong>Web API’s</strong>.</p>
+
+<p>Un <strong>Web API</strong> es un <strong>API</strong> que se invoca a través del protocolo <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a>. La ventaja de usar <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> es que es posible hacer peticiones desde cualquier lenguaje de programación, lo que hace a la Web un medio ideal para conectar aplicaciones.</p>
+
+<p>Es posible encontrar <strong>Web API’s</strong> para casi cualquier cosa: conocer el <a href="http://openweathermap.org/api" target="_blank">estado del tiempo</a>, las <a href="http://fixer.io/" target="_blank">tasas de cambio</a>, <a href="http://mandrill.com/" target="_blank">enviar emails</a>, <a href="https://stripe.com/" target="_blank">recibir pagos</a>, entre miles de ejemplos más.</p>
+
+<p>Muchos sitios y aplicaciones Web (Facebook, Twitter, Github, Trello, Google Maps, LinkedIn, Youtube, etc.) <strong>exponen</strong> gran parte de su funcionalidad a través de <strong>API’s</strong> permitiendo extender su funcionalidad en formas que ni los autores originales imaginaban (con el impacto positivo o negativo que eso implique).</p>
+
+<p>Existen empresas exitosas que se dedican a integrar estos servicios como <a href="https://ifttt.com/" target="_blank">IFTTT</a> o <a href="https://zapier.com/" target="_blank">Zapier</a>.</p>
+
+<p>Mi teoría es que gran parte del éxito de <a href="https://slack.com/" target="_blank">Slack</a> es su capacidad de integrarse con otras aplicaciones fácilmente. Nada de eso hubiese sido posible sin <strong>Web API’s</strong>.</p>
+
+<h2 id="cómo-funciona-un-web-api">¿Cómo funciona un Web API?</h2>
+
+<p>Cuando ingresas a una dirección Web (URL) desde un navegador, el navegador envía una petición <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> al servidor, que responde con código <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HTML</a> como se muestra en la siguiente ilustración:</p>
+
+<p><img src="/assets/images/web-apis-1.png" alt="Una petición HTTP" class="photo" /></p>
+
+<p class="photo-description">Una petición HTTP que retorna HTML.</p>
+
+<p>Un <strong>Web API</strong> funciona muy parecido. Se hace una petición <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> (generalmente desde algún lenguaje de programación), pero en vez de retornar una página <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">HTML</a>, el servidor retorna la información en una representación fácil de manipular en un lenguaje de programación.</p>
+
+<p><img src="/assets/images/web-apis-2.png" alt="Una petición HTTP" class="photo" /></p>
+
+<p class="photo-description">Una petición HTTP que retorna JSON.</p>
+
+<div class="well">A las URL's que reciben o retornan información de un Web API se les llama <strong>endpoints</strong> (solo para que conozcas la jerga que utilizan los programadores). En la imagen <code>http://infinanza.com/api/v1/transactions</code> es un <strong>endpoint</strong>.</div>
+
+<p>En la imagen anterior, el servidor está retornando la información en una representación (formato) llamado <a href="https://es.wikipedia.org/wiki/JSON" target="_blank">JSON</a> (JavaScript Object Notation). Hace algunos años el formato preferido entre los programadores para intercambiar información era <a href="https://es.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank">XML</a> (Extensible Markup Language) pero hoy <a href="https://es.wikipedia.org/wiki/JSON" target="_blank">JSON</a> es mucho más popular. En los dos formatos se puede expresar lo mismo, pero <a href="https://es.wikipedia.org/wiki/JSON" target="_blank">JSON</a> es mucho más simple.</p>
+
+<p>Veamos cómo se podría representar la información de un vuelo con <a href="https://es.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank">XML</a>:</p>
+
+<pre><code class="language-xml">&lt;flight&gt;
+  &lt;airline&gt;Oceanic&lt;/airline&gt;
+  &lt;status&gt;crashed&lt;/status&gt;
+  &lt;departure&gt;
+    &lt;iata&gt;SYD&lt;/iata&gt;
+    &lt;time&gt;2004-09-22 14:55&lt;/time&gt;
+  &lt;/departure&gt;
+&lt;/flight&gt;</code></pre>
+
+<p>Y ahora con <a href="https://es.wikipedia.org/wiki/JSON" target="_blank">JSON</a>:</p>
+
+<pre><code class="language-json">{
+  "airline": "Oceanic",
+  "status": "crashed",
+  "departure": {
+    "iata": "SYD",
+    "time": "2004-09-22 14:55"
+  }
+}</code></pre>
+
+<p>Es la misma información, pero el formato <a href="https://es.wikipedia.org/wiki/JSON" target="_blank">JSON</a> es mucho más simple.</p>
+
+<h2 id="web-apis-rest-apis-o-web-services">¿Web API’s, REST API’s o Web Services?</h2>
+
+<p>Actualmente existe mucha confusión entre estos tres términos. Este es mi intento de explicar la diferencia.</p>
+
+<p><a href="https://es.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST API’s</a> y <a href="https://es.wikipedia.org/wiki/Servicio_web" target="_blank">Web Services</a> son dos formas específicas de <strong>Web API’s</strong>.</p>
+
+<p>Si este es tu primer acercamiento con este tema, mi recomendación es que te detengas en este punto porque ahora nos volvemos muy técnicos ;)</p>
+
+<p>El nombre <a href="https://es.wikipedia.org/wiki/Servicio_web" target="_blank">Web Services</a> es muy desafortunado porque es muy genérico y crea confusión. La realidad es que <a href="https://es.wikipedia.org/wiki/Servicio_web" target="_blank">Web Services</a> es un grupo de tecnologías muy específicas para integrar aplicaciones utilizando <a href="https://es.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank">XML</a> y <a href="https://es.wikipedia.org/wiki/Simple_Object_Access_Protocol" target="_blank">SOAP</a> (Simple Object Access Protocol).</p>
+
+<p>El siguente ejemplo muestra un llamado <a href="https://es.wikipedia.org/wiki/Simple_Object_Access_Protocol" target="_blank">SOAP</a> utilizando <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> como transporte:</p>
+
+<pre><code class="language-http">POST /usersWS HTTP/1.1
+...
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2001/12/soap-envelope&quot; soap:encodingStyle=&quot;http://www.w3.org/2001/12/soap-encoding&quot;&gt;
+
+  &lt;soap:Body xmlns:m=&quot;http://www.example.org/usersWS&quot;&gt;
+    &lt;m:deleteUser&gt;
+      &lt;m:userId&gt;23&lt;/m:userId&gt;
+    &lt;/m:deleteUser&gt;
+  &lt;/soap:Body&gt;
+
+&lt;/soap:Envelope&gt;</code></pre>
+
+<p>Ahora veamos un llamado <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> equivalente utilizando un <a href="https://es.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST API</a>:</p>
+
+<pre><code class="language-none">DELETE /users/23 HTTP/1.1</code></pre>
+
+<p>Los <a href="https://es.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST API’s</a> están ligados (<strong>altamente acoplados</strong>) al protocolo <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a>. La URL se usa para definir el recurso (en este caso el <strong>usuario con identificador 23</strong>) y el verbo <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> para definir la acción que queremos hacer sobre ese recurso (en este caso eliminarlo). <a href="https://es.wikipedia.org/wiki/Simple_Object_Access_Protocol" target="_blank">SOAP</a>, por el contrario, siempre usa el verbo <a href="https://en.wikipedia.org/wiki/POST_(HTTP)" target="_blank">POST</a> y toda la información viaja dentro del <a href="https://es.wikipedia.org/wiki/Extensible_Markup_Language" target="_blank">XML</a>.</p>
+
+<p>Muchos argumentan que es mejorar desligar (<strong>desacoplar</strong>) el llamado al <strong>API</strong> del protocolo por el que se transporta. Pero al estar ligado (<strong>acoplado</strong>) se simplifican los llamados como se puede ver en el ejemplo anterior.</p>
+
+<p>Actualmente existe una iniciativa llamada <a href="http://jsonapi.org/" target="_blank">JSON API</a>, que es un <strong>Web API</strong> usando <a href="https://es.wikipedia.org/wiki/JSON" target="_blank">JSON</a> pero <strong>desacoplado</strong> del protocolo <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a>.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Un <strong>API</strong> es la interfaz que un software utiliza para interactuar con otro software. Un <strong>Web API</strong> es un tipo especial de <strong>API</strong> que utiliza el protocolo <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> como transporte.</p>
+
+<p>Actualmente <a href="https://es.wikipedia.org/wiki/Representational_State_Transfer" target="_blank">REST API</a> es la forma más popular de <strong>Web API</strong> y está <strong>altamente acoplado</strong> a <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a>. Es por eso que es tan importante para un <strong>Web Developer</strong> aprender del protocolo <a href="https://es.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a>.</p>
+
+<h2 id="más-información">Más información</h2>
+
+<ul>
+  <li><a href="http://www.restapitutorial.com/" target="_blank">REST API Tutorial</a></li>
+  <li><a href="http://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177" target="_blank">HTTP: El protocolo que todo Web Developer debe aprender - Parte 1</a></li>
+</ul>
+
+<hr />
+
+<h3 id="notas">Notas</h3>
+
+<script>
+  $('#manipulate').on('click', function(e) {
+    e.preventDefault();
+
+    $(this).parent().css('color', 'blue');
+    setTimeout(function() {
+      $('#manipulate').parent().css('color', '#303030')
+    }, 3000);
+  });
+
+  $('#show-alerts').on('click', function(e) {
+    e.preventDefault();
+
+    alert('Si, esto es una alerta');
+  });
+</script>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Seguramente la forma de empezar sería seguir algunos tutoriales y después consultar el API para crear aplicaciones diferentes.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=¿Qué es un API?&url=http://blog.makeitreal.camp/que-es-un-api/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/que-es-un-api/&p[title]=¿Qué es un API?" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/que-es-un-api/&title=¿Qué es un API?&summary=&source=http://blog.makeitreal.camp/que-es-un-api/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+
+    </footer>
+  </body>
+</html>
