@@ -6660,11 +6660,15 @@ nav.main {
 .btn-cta {
   background: #F04500;
   color: white;
-  font-size: 0.85em;
+  font-size: 0.7em;
   font-weight: 600;
-  padding: 5px 12px;
+  padding: 7px 8px;
   border: 1px solid #d73e00;
   border-radius: 3px; }
+  @media (min-width: 576px) {
+    .btn-cta {
+      font-size: 0.85em;
+      padding: 5px 12px; } }
   .btn-cta:hover {
     color: white;
     background: #d73e00; }
