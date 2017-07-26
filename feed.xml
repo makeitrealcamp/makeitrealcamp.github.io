@@ -1,4 +1,103 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-07-26T01:42:30-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Qué es concurrencia?</title><link href="http://blog.makeitreal.camp/concurrencia/" rel="alternate" type="text/html" title="¿Qué es concurrencia?" /><published>2017-07-12T12:00:00-05:00</published><updated>2017-07-12T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/concurrencia</id><content type="html" xml:base="http://blog.makeitreal.camp/concurrencia/">&lt;p&gt;En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-07-26T10:00:23-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Responsive design: media queries</title><link href="http://blog.makeitreal.camp/responsive-design-media-queries/" rel="alternate" type="text/html" title="Responsive design: media queries" /><published>2017-07-26T06:00:00-05:00</published><updated>2017-07-26T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/responsive-design-media-queries</id><content type="html" xml:base="http://blog.makeitreal.camp/responsive-design-media-queries/">&lt;p&gt;En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;A través de &lt;strong&gt;media queries&lt;/strong&gt; podemos definir reglas CSS que se activan cuando ciertas condiciones se cumplen, por ejemplo cuando el ancho de la pantalla sea mayor a cierto tamaño.&lt;/p&gt;
+
+&lt;p&gt;Un &lt;strong&gt;media query&lt;/strong&gt; se define utilizando la palabra clave &lt;code class=&quot;highlighter-rouge&quot;&gt;@media&lt;/code&gt; como se muestra a continuación:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;992px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c&quot;&gt;/* acá van las reglas CSS que aplican para este media query */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Los &lt;strong&gt;media queries&lt;/strong&gt; tienen reglas CSS que se activan cuando se cumple la expresión que está entre paréntesis. En este caso la expresión es &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 992px&lt;/code&gt;, es decir, las reglas CSS que se encuentran dentro de este &lt;strong&gt;media query&lt;/strong&gt; se activan sólo cuando la pantalla tiene un ancho igual o superior a 992 pixeles.&lt;/p&gt;
+
+&lt;p&gt;Además de &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width&lt;/code&gt; también existe &lt;code class=&quot;highlighter-rouge&quot;&gt;max-width&lt;/code&gt; para definir el ancho máximo de la pantalla para el que aplica el &lt;strong&gt;media query&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, si queremos que el color de fondo sea rojo cuando el ancho de la pantalla sea de máximo 700 pixeles podemos hacer lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;700px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Puedes ver y jugar con este ejemplo en Codepen ingresando a &lt;a href=&quot;https://codepen.io/germanescobar/pen/qXEgJj?editors=0100&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;. Cambia el ancho del área donde se muestra el resultado para ver en qué punto cambia el color de fondo.&lt;/p&gt;
+
+&lt;h2 id=&quot;puntos-de-quiebre-breakpoints&quot;&gt;Puntos de quiebre (breakpoints)&lt;/h2&gt;
+
+&lt;p&gt;Los puntos de quiebre (o breakpoints) son los anchos (en pixeles) en los que ocurren cambios en nuestra página para que se adapte a diferentes pantallas.&lt;/p&gt;
+
+&lt;p&gt;En vez de utilizar los valores que se nos ocurran para los anchos de diferentes pantallas, se han definido ciertos valores para determinar el tipo de pantalla que se está usando:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hasta &lt;code class=&quot;highlighter-rouge&quot;&gt;575px&lt;/code&gt; son teléfonos móviles en modo vertical.&lt;/li&gt;
+  &lt;li&gt;De &lt;code class=&quot;highlighter-rouge&quot;&gt;576px&lt;/code&gt; a &lt;code class=&quot;highlighter-rouge&quot;&gt;767px&lt;/code&gt; son teléfonos móviles en modo horizontal.&lt;/li&gt;
+  &lt;li&gt;De &lt;code class=&quot;highlighter-rouge&quot;&gt;768px&lt;/code&gt; a &lt;code class=&quot;highlighter-rouge&quot;&gt;991px&lt;/code&gt; son tabletas.&lt;/li&gt;
+  &lt;li&gt;De &lt;code class=&quot;highlighter-rouge&quot;&gt;992px&lt;/code&gt; a &lt;code class=&quot;highlighter-rouge&quot;&gt;1199px&lt;/code&gt; son pantallas de escritorio normales.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1200px&lt;/code&gt; o más son pantallas grandes como televisores.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estos valores son sólo una referencia. El ancho de la mayoría de pantallas de escritorio hoy en día, por ejemplo, es de más de &lt;code class=&quot;highlighter-rouge&quot;&gt;1200px&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;mobile-first&quot;&gt;Mobile first&lt;/h2&gt;
+
+&lt;p&gt;¿Dónde ubicamos y organizamos los &lt;strong&gt;media quieries&lt;/strong&gt; en nuestros archivos CSS? Lo que se recomienda es utilizar una estrategia llamada &lt;strong&gt;mobile first&lt;/strong&gt; en donde primero se definen las reglas dirigidas a teléfonos móviles y con &lt;strong&gt;media queries&lt;/strong&gt; ajustamos el contenido para pantallas más anchas.&lt;/p&gt;
+
+&lt;p&gt;Veamos un ejemplo. Imagina que queremos ir incrementando el tamaño de la letra de acuerdo al ancho de la pantalla:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;14px&lt;/code&gt; en teléfonos móviles.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;15px&lt;/code&gt; para tabletas.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;16px&lt;/code&gt; para pantallas de escritorio normales.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;17px&lt;/code&gt; para pantallas grandes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lo primero que vamos a definir es el estilo para telefonos móviles y después utilizamos &lt;strong&gt;media queries&lt;/strong&gt; para los demás:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* mobile first */&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;14px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* tabletas */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;768px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* escritorio normales */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;992px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;16px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* pantallas grandes */&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;17px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Primero estamos definiendo el tamaño por defecto de &lt;code class=&quot;highlighter-rouge&quot;&gt;14px&lt;/code&gt;. Después utilizamos un &lt;strong&gt;media query&lt;/strong&gt; con expresión &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 768px&lt;/code&gt; que cambia el tamaño a &lt;code class=&quot;highlighter-rouge&quot;&gt;15px&lt;/code&gt;, sobrescribiendo el valor anterior. Lo mismo ocurre con los otros dos &lt;strong&gt;media queries&lt;/strong&gt;: si se activan sobrescriben el valor anterior.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, si el ancho de la pantalla es de &lt;code class=&quot;highlighter-rouge&quot;&gt;1000px&lt;/code&gt; esto es lo que ocurre:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El navegador encuentra el tamaño por defecto de &lt;code class=&quot;highlighter-rouge&quot;&gt;14px&lt;/code&gt; y lo aplica.&lt;/li&gt;
+  &lt;li&gt;Encuentra el primer &lt;strong&gt;media query&lt;/strong&gt; con expresión &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 768px&lt;/code&gt; y, como la pantalla supera los &lt;code class=&quot;highlighter-rouge&quot;&gt;768px&lt;/code&gt;, sobrescribe el tamaño de la letra que queda con un valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;15px&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Continúa con el segundo &lt;strong&gt;media query&lt;/strong&gt; con expresión &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 992px&lt;/code&gt; y de nuevo sobrescribe el tamaño de la letra que queda con un valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;16px&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Por último, evalúa el último &lt;strong&gt;media query&lt;/strong&gt; con expresión &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 1200px&lt;/code&gt;, pero esta condición no se cumple, así que lo ignora.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Al final el tamaño de la letra que se va a utilizar es &lt;code class=&quot;highlighter-rouge&quot;&gt;16px&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ten mucho cuidado con el orden. Si por ejemplo, movieramos el valor por defecto al final, después de todos los otros &lt;strong&gt;media queries&lt;/strong&gt;, la letra siempre quedaría de &lt;code class=&quot;highlighter-rouge&quot;&gt;14px&lt;/code&gt;. ¿Puedes explicar por qué?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Si quieres ver ejemplos de responsive design te recomiendo estos dos sitios:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mediaqueri.es/&quot;&gt;https://mediaqueri.es/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://responsivedesign.is/examples/&quot;&gt;https://responsivedesign.is/examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/responsive-design.jpg" /></entry><entry><title type="html">¿Qué es concurrencia?</title><link href="http://blog.makeitreal.camp/concurrencia/" rel="alternate" type="text/html" title="¿Qué es concurrencia?" /><published>2017-07-12T12:00:00-05:00</published><updated>2017-07-12T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/concurrencia</id><content type="html" xml:base="http://blog.makeitreal.camp/concurrencia/">&lt;p&gt;En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Concurrencia&lt;/strong&gt; es la habilidad que tiene un computador de realizar varias tareas a la vez.&lt;/p&gt;
 
@@ -782,76 +881,4 @@ Imaginen que tenemos una idea y buscamos cinco equipos para que cada uno se enca
 &lt;p&gt;Hoy en día me siento completamente satisfecho de todo lo que he podido vivir en los últimos meses, ha sido un camino que superó mis expectativas con creces, estoy muy agradecido con Make It Real ya que fue el primer escalón para ampliar el espectro de oportunidades y entrar a un mundo de posibilidades que jamás había considerado, conocer gente excepcional de otros lugares del mundo que a través del código hablamos un mismo lenguaje en donde podemos aprender los unos de los otros, vivir experiencias de aprendizaje extremo y sobre todo trabajar con pasión cada día.&lt;/p&gt;
 
 &lt;p&gt;Me emociona mucho hacer parte esta familia y quiero compartir todo lo que he podido aprender hasta ahora con nuestros estudiantes del siguiente bootcamp presencial que haremos en la ciudad de Medellín donde tendré el privilegio de estar como mentor. Si también quieres vivir esta experiencia te invito a que visites nuestro programa &lt;a href=&quot;http://www.makeitreal.camp/full-stack-medellin&quot; target=&quot;_blank&quot;&gt;Full Stack WEB Developer Presencial en Medellín&lt;/a&gt; y te registres.&lt;/p&gt;
-&lt;p class=&quot;photo-description&quot;&gt;Si quieren saber un poco mas sobre mí evolución y progreso visiten mi &lt;a href=&quot;http://mardiniii.github.io/&quot; target=&quot;_blank&quot;&gt;portafolio online&lt;/a&gt;, pueden contactarme por cualquier medio de los que ahí se encuentran.&lt;/p&gt;</content><author><name>Sebastian Zapata Mardini</name></author><summary type="html">Esta historia comienza hace ya casi dos años, cuando cursaba octavo semestre de Ingeniería Electrónica en la Universidad de Antioquia, para ese entonces estaba un poco insatisfecho y decepcionado de lo que había recogido hasta ese momento en la Universidad</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/two-years-after-make-it-real.jpg" /></entry><entry><title type="html">Guía para trabajar como freelance en desarrollo Web</title><link href="http://blog.makeitreal.camp/guia-freelance-desarrollo-web/" rel="alternate" type="text/html" title="Guía para trabajar como freelance en desarrollo Web" /><published>2016-09-01T12:00:00-05:00</published><updated>2016-09-01T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/guia-freelance-desarrollo-web</id><content type="html" xml:base="http://blog.makeitreal.camp/guia-freelance-desarrollo-web/">&lt;p&gt;Un freelancer es una persona que ofrece sus servicios profesionales a empresas de forma independiente. Es una alternativa a un empleo con salario fijo que ofrece varias ventajas como flexibilidad horaria, capacidad de cobrar más por tu trabajo y no tener un jefe. Pero también presenta retos como encontrar clientes y cobrarles.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Varios ex-alumnos de Make it Real trabajan como freelancers y he recopilado las experiencias de ellos. Considera este post como una guía de lo que debes tener en cuenta para ser un freelance exitoso. No vamos a hablar sobre cómo conseguir clientes (ese es un tema para otro post), voy a asumir que tienes un cliente potencial que te ha solicitado una aplicación y quieres saber cuánto cobrarle y qué debes tener en cuenta para que el resultado sea exitoso.&lt;/p&gt;
-
-&lt;h2 id=&quot;cuanto-cobrar&quot;&gt;Cuanto cobrar&lt;/h2&gt;
-
-&lt;p&gt;La pregunta más común de un freelancer que está empezando es ¿cuánto cobro?&lt;/p&gt;
-
-&lt;p&gt;Existen dos modelos: &lt;strong&gt;por hora y por proyecto&lt;/strong&gt;. Cada uno tiene sus ventajas y desventajas, pero mi recomendación es que empieces cobrando por hora. Un precio razonable para alguien que está empezando es de &lt;strong&gt;$10&lt;/strong&gt; a &lt;strong&gt;$20&lt;/strong&gt; dólares, pero ese precio puede aumentar rápidamente después de algunos proyectos exitosos.&lt;/p&gt;
-
-&lt;p&gt;Puedes hacer descuentos por volúmenes de horas. Por ejemplo, entre 20 y 100 horas la tarifa es X y más de 100 horas la tarifa cambia a Y. Utiliza una herramienta como &lt;a href=&quot;https://toggl.com/&quot; target=&quot;_blank&quot;&gt;Toggl&lt;/a&gt; para llevar el registro de tus horas y que tu cliente pueda ver el avance de tu trabajo. Intenta ser lo más transparente posible.&lt;/p&gt;
-
-&lt;p&gt;Aunque cobrar por hora es lo más razonable y la mejor forma de no perder dinero, es muy probable que el cliente igual te pida un estimado en horas o en dinero para organizar su presupuesto. Y eso nos lleva al siguiente punto.&lt;/p&gt;
-
-&lt;h2 id=&quot;cómo-estimar&quot;&gt;Cómo estimar&lt;/h2&gt;
-
-&lt;p&gt;Estimar un proyecto es difícil tanto para principiantes como para veteranos. El problema es que se trabaja con información limitada del proyecto y es muy posible que el mismo cliente no sepa qué es lo que quiere. O peor, que crea saber, pero que en el camino descubra que quería algo diferente.&lt;/p&gt;
-
-&lt;p&gt;Mi recomendación es que le propongas al cliente &lt;strong&gt;empezar con un producto mínimo viable y avancen de forma iterativa utilizando alguna metodología ágil&lt;/strong&gt; de desarrollo como &lt;a href=&quot;/desarrollo-agil-con-scrum/&quot; target=&quot;_blank&quot;&gt;Scrum&lt;/a&gt;. Eso obliga al cliente a pensar en la funcionalidad más importante y facilita la estimación.&lt;/p&gt;
-
-&lt;p&gt;Define con el cliente los perfiles de usuarios y la funcionalidad que puede realizar cada uno. Para cada funcionalidad define qué datos necesitas pedir o mostrar. También define si tienen alguna preferencia en donde alojar la aplicación, a quienes se tendría que capacitar, etc.&lt;/p&gt;
-
-&lt;p&gt;Una vez que tengas esta información busca el apoyo de alguien con más experiencia que te ayude a estimar las horas. Y por último multiplica ese número por dos. La razón de duplicar las horas estimadas es que lo más demorado de un proyecto son los detalles que uno no piensa cuando lo está estimando.&lt;/p&gt;
-
-&lt;p&gt;Con ese precio habla con el cliente y pregúntale cuál es su presupuesto. Si el presupuesto es menor deberán limitar el alcance del proyecto. Trata de no reducir tu precio por hora. También aclárale que es un estimado y depende de varios factores.&lt;/p&gt;
-
-&lt;h2 id=&quot;el-contrato&quot;&gt;El contrato&lt;/h2&gt;
-
-&lt;p&gt;Quizá lo más importante que debes aprender como desarrollador Web freelance es &lt;strong&gt;nunca trabajar sin un contrato&lt;/strong&gt;, así sea una aplicación para alguien conocido. No tienes que involucrar abogados a menos de que el proyecto sea muy grande, pero si aclarar temas como:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;¿Quién se encarga del diseño gráfico y quién lo va a integrar a la aplicación?&lt;/strong&gt; Muchos clientes asumen que los desarrolladores son diseñadores gráficos y es parte del costo. Esto es importante aclararlo.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si el cliente decide cancelar el proyecto o simplemente no usarlo?&lt;/strong&gt; Esto no es problema tuyo y debe ser claro que en caso de que suceda la empresa debe pagar igual.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Cómo es el plan de pagos?&lt;/strong&gt; Se debe cobrar el 50% del valor acordado (las horas estimadas) antes de empezar y el otro 50% cuando se cumplan las horas acordadas independientemente si se ha finalizado el proyecto o no.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si se acaba el paquete de horas?&lt;/strong&gt; Dejar claro que el cliente deberá adquirir un nuevo paquete independiente de si el proyecto se ha terminado o no.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si el cliente no paga?&lt;/strong&gt; Al menos se deberían cobrar algo de intereses.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si el cliente pide cambios no especificados?&lt;/strong&gt; Debe ser claro que esto generaría horas adicionales de trabajo.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Quién va a recibir el proyecto?&lt;/strong&gt; Debe existir un único punto de contacto con el cliente que debe ser el encargado de responder las preguntas y de hacer las revisiones en máximo dos días habiles (no quieres que te dejen esperando a que el cliente decida revisarlo 2 meses después). De lo contrario se entiende que el cliente acepta los cambios o la entrega del proyecto.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Cuáles son los criterios de aceptación para el cierre del proyecto?&lt;/strong&gt; Acá se deben especificar todos los requerimientos que se van a implementar.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿En dónde se va a publicar el proyecto?&lt;/strong&gt; Algunos clientes tienen alguna preferencia de hosting, o tienen servidores propios.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si ocurre un error en producción después de 1 año?&lt;/strong&gt; Debe existir un periodo de garantía (mi recomendación es intentar que sea 3 meses, máximo 6) y solo aplica para errores, no para cambios o nueva funcionalidad.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Para el cliente también es importante saber:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si no se cumple con la estimación?&lt;/strong&gt; Dejar claro que se registrarán todas las horas de trabajo, pero que la estimación es solo eso, una estimación y la duración del proyecto puede variar ampliamente según los cambios solicitados, dificultades no contempladas, etc.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;¿Qué pasa si no cumples las horas establecidas y te estás demorando más de lo esperado?&lt;/strong&gt; Para muchos clientes el tiempo es lo que más valoran. Si no cumples las horas en el tiempo establecido debería exitir una penalidad de tu lado. Esto lo puedes negociar y si el cliente no lo pide no tienes que incluirlo, aunque siempre intenta ser lo más responsable posible y trabajar las horas que te comprometes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;la-comunicación&quot;&gt;La comunicación&lt;/h2&gt;
-
-&lt;p&gt;Lo más importante es mantener una buena comunicación con el cliente, mantenerlo informado de avances, problemas, retrasos, etc. Este tiempo es importante incluirlo en la estimación de horas de trabajo.&lt;/p&gt;
-
-&lt;p&gt;Intenta ser lo más puntual posible. Nada molesta más a los clientes que los desarrolladores cancelen las reuniones a último minuto.&lt;/p&gt;
-
-&lt;p&gt;Si te contacta el cliente intenta responder lo antes posible, así sea para decirle que en el momento estás ocupado y que lo contactarás en tanto tiempo.&lt;/p&gt;
-
-&lt;p&gt;Si surge algo imprevisto y no puedes completar las horas a las que te comprometiste, habla con el cliente, cuéntale lo que sucede y cuánto más te vas a demorar.&lt;/p&gt;
-
-&lt;h2 id=&quot;sé-profesional&quot;&gt;Sé profesional&lt;/h2&gt;
-
-&lt;p&gt;Más que el dinero, lo que el cliente busca es que seas profesional. Si te vas a comprometer con un número de horas de desarrollo asegúrate que tienes el tiempo. Si tienes vacaciones planeadas asegúrate de dejar claro eso en el cronograma. Lo más importante es lograr iterar rápido, mostrarle avances al cliente y ser muy responsable con tu trabajo.&lt;/p&gt;
-
-&lt;p&gt;Otras preguntas que surgen son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;¿Debo cobrar las horas en las que estoy aprendiendo? Sí. Tu precio por hora refleja que estás aprendiendo. Contabilízala y cóbrala.&lt;/li&gt;
-  &lt;li&gt;¿Qué pasa si el cliente no quiere firmar un contrato? Eso representa una bandera roja. Sé muy claro con él y &lt;strong&gt;dile que tu no trabajas sin un contrato firmado&lt;/strong&gt;.&lt;/li&gt;
-  &lt;li&gt;¿Puedo poner mi firma en la aplicación? En general no. Si lo quieres hacer puedes darle un descuento al cliente (si es una aplicación muy visible te puede ayudar a conseguir más clientes y es un punto de negociación con tu cliente). Pero al menos deja claro que podrás publicar el proyecto en tu portafolio; si el cliente no lo desea le puedes cobrar un extra de 10% o algo por no hacerlo.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Por último, no olvides dejar todo por escrito ya sea a través de alguna herramienta o correo electrónico.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Un freelancer es una persona que ofrece sus servicios profesionales a empresas de forma independiente. Es una alternativa a un empleo con salario fijo que ofrece varias ventajas como flexibilidad horaria, capacidad de cobrar más por tu trabajo y no tener un jefe. Pero también presenta retos como encontrar clientes y cobrarles.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/freelancing.jpg" /></entry></feed>
+&lt;p class=&quot;photo-description&quot;&gt;Si quieren saber un poco mas sobre mí evolución y progreso visiten mi &lt;a href=&quot;http://mardiniii.github.io/&quot; target=&quot;_blank&quot;&gt;portafolio online&lt;/a&gt;, pueden contactarme por cualquier medio de los que ahí se encuentran.&lt;/p&gt;</content><author><name>Sebastian Zapata Mardini</name></author><summary type="html">Esta historia comienza hace ya casi dos años, cuando cursaba octavo semestre de Ingeniería Electrónica en la Universidad de Antioquia, para ese entonces estaba un poco insatisfecho y decepcionado de lo que había recogido hasta ese momento en la Universidad</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/two-years-after-make-it-real.jpg" /></entry></feed>
