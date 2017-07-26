@@ -71,9 +71,9 @@
                 <h1>Responsive design: media queries</h1>
                 <div class="post-body"><p>En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.<!-- more --></p>
 
-<p>A través de <strong>media queries</strong> podemos definir reglas CSS que se activan cuando ciertas condiciones se cumplen, por ejemplo cuando el ancho de la pantalla sea mayor a cierto tamaño.</p>
+<p>A través de <strong>media queries</strong> podemos definir <strong>reglas CSS</strong> (estilos) que se activan cuando ciertas condiciones se cumplen, por ejemplo cuando el ancho de la pantalla sea mayor a cierto tamaño.</p>
 
-<p>Un <strong>media query</strong> se define utilizando la palabra clave <code class="highlighter-rouge">@media</code> como se muestra a continuación:</p>
+<p>Un <strong>media query</strong> se declara utilizando la palabra clave <code class="highlighter-rouge">@media</code> seguido de una expresión entre paréntesis y un bloque de <strong>reglas CSS</strong> como se muestra a continuación:</p>
 
 <div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">992px</span><span class="p">)</span> <span class="p">{</span>
   <span class="c">/* acá van las reglas CSS que aplican para este media query */</span>
@@ -81,7 +81,7 @@
 </code></pre>
 </div>
 
-<p>Los <strong>media queries</strong> tienen reglas CSS que se activan cuando se cumple la expresión que está entre paréntesis. En este caso la expresión es <code class="highlighter-rouge">min-width: 992px</code>, es decir, las reglas CSS que se encuentran dentro de este <strong>media query</strong> se activan sólo cuando la pantalla tiene un ancho igual o superior a 992 pixeles.</p>
+<p>Las <strong>reglas CSS</strong> se activan únicamente cuando se cumple la expresión que está entre paréntesis. En este caso la expresión es <code class="highlighter-rouge">min-width: 992px</code>, es decir, cuando la pantalla tiene un ancho igual o superior a 992 pixeles.</p>
 
 <p>Además de <code class="highlighter-rouge">min-width</code> también existe <code class="highlighter-rouge">max-width</code> para definir el ancho máximo de la pantalla para el que aplica el <strong>media query</strong>.</p>
 
@@ -93,7 +93,7 @@
 </code></pre>
 </div>
 
-<p>Puedes ver y jugar con este ejemplo en Codepen ingresando a <a href="https://codepen.io/germanescobar/pen/qXEgJj?editors=0100" target="_blank">este enlace</a>. Cambia el ancho del área donde se muestra el resultado para ver en qué punto cambia el color de fondo.</p>
+<p>Ingresa a <a href="https://codepen.io/germanescobar/pen/qXEgJj?editors=0100" target="_blank">este enlace</a> para ver y jugar con este ejemplo. Cambia el ancho del área donde se muestra el resultado para ver en qué punto cambia el color de fondo.</p>
 
 <h2 id="puntos-de-quiebre-breakpoints">Puntos de quiebre (breakpoints)</h2>
 
@@ -109,11 +109,15 @@
   <li><code class="highlighter-rouge">1200px</code> o más son pantallas grandes como televisores.</li>
 </ul>
 
+<p>Sin embargo, cuando hablamos de <strong>puntos de quiebre</strong> nos referimos a un ancho específico, por ejemplo <code class="highlighter-rouge">768px</code>, que es el momento en el que cambia la pantalla de teléfono móvil a tableta.</p>
+
 <p>Estos valores son sólo una referencia. El ancho de la mayoría de pantallas de escritorio hoy en día, por ejemplo, es de más de <code class="highlighter-rouge">1200px</code>.</p>
+
+<p>A continuación veremos cómo utilizar estos puntos de quiebre para crear aplicaciones que se adaptan a diferentes pantallas.</p>
 
 <h2 id="mobile-first">Mobile first</h2>
 
-<p>¿Dónde ubicamos y organizamos los <strong>media quieries</strong> en nuestros archivos CSS? Lo que se recomienda es utilizar una estrategia llamada <strong>mobile first</strong> en donde primero se definen las reglas dirigidas a teléfonos móviles y con <strong>media queries</strong> ajustamos el contenido para pantallas más anchas.</p>
+<p>¿Dónde ubicamos y cómo organizamos los <strong>media quieries</strong> en nuestros archivos CSS? Lo que se recomienda es utilizar una estrategia llamada <strong>mobile first</strong> en donde primero se definen las reglas dirigidas a teléfonos móviles y con <strong>media queries</strong> ajustamos el contenido para pantallas más anchas.</p>
 
 <p>Veamos un ejemplo. Imagina que queremos ir incrementando el tamaño de la letra de acuerdo al ancho de la pantalla:</p>
 
@@ -162,6 +166,8 @@
 <p>Ten mucho cuidado con el orden. Si por ejemplo, movieramos el valor por defecto al final, después de todos los otros <strong>media queries</strong>, la letra siempre quedaría de <code class="highlighter-rouge">14px</code>. ¿Puedes explicar por qué?</p>
 
 <hr />
+
+<p>Aunque existen otras formas en que se pueden describir las pantallas como el alto y la orientación de la pantalla, las opciones que vimos en este post (<code class="highlighter-rouge">min-width</code> y <code class="highlighter-rouge">max-width</code>) se utilizan el 99% de las veces.</p>
 
 <p>Si quieres ver ejemplos de responsive design te recomiendo estos dos sitios:</p>
 

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-07-26T10:00:23-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Responsive design: media queries</title><link href="http://blog.makeitreal.camp/responsive-design-media-queries/" rel="alternate" type="text/html" title="Responsive design: media queries" /><published>2017-07-26T06:00:00-05:00</published><updated>2017-07-26T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/responsive-design-media-queries</id><content type="html" xml:base="http://blog.makeitreal.camp/responsive-design-media-queries/">&lt;p&gt;En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-07-26T11:06:11-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Responsive design: media queries</title><link href="http://blog.makeitreal.camp/responsive-design-media-queries/" rel="alternate" type="text/html" title="Responsive design: media queries" /><published>2017-07-26T06:00:00-05:00</published><updated>2017-07-26T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/responsive-design-media-queries</id><content type="html" xml:base="http://blog.makeitreal.camp/responsive-design-media-queries/">&lt;p&gt;En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.&lt;!-- more --&gt;&lt;/p&gt;
 
-&lt;p&gt;A través de &lt;strong&gt;media queries&lt;/strong&gt; podemos definir reglas CSS que se activan cuando ciertas condiciones se cumplen, por ejemplo cuando el ancho de la pantalla sea mayor a cierto tamaño.&lt;/p&gt;
+&lt;p&gt;A través de &lt;strong&gt;media queries&lt;/strong&gt; podemos definir &lt;strong&gt;reglas CSS&lt;/strong&gt; (estilos) que se activan cuando ciertas condiciones se cumplen, por ejemplo cuando el ancho de la pantalla sea mayor a cierto tamaño.&lt;/p&gt;
 
-&lt;p&gt;Un &lt;strong&gt;media query&lt;/strong&gt; se define utilizando la palabra clave &lt;code class=&quot;highlighter-rouge&quot;&gt;@media&lt;/code&gt; como se muestra a continuación:&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;media query&lt;/strong&gt; se declara utilizando la palabra clave &lt;code class=&quot;highlighter-rouge&quot;&gt;@media&lt;/code&gt; seguido de una expresión entre paréntesis y un bloque de &lt;strong&gt;reglas CSS&lt;/strong&gt; como se muestra a continuación:&lt;/p&gt;
 
 &lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;992px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;c&quot;&gt;/* acá van las reglas CSS que aplican para este media query */&lt;/span&gt;
@@ -10,7 +10,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Los &lt;strong&gt;media queries&lt;/strong&gt; tienen reglas CSS que se activan cuando se cumple la expresión que está entre paréntesis. En este caso la expresión es &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 992px&lt;/code&gt;, es decir, las reglas CSS que se encuentran dentro de este &lt;strong&gt;media query&lt;/strong&gt; se activan sólo cuando la pantalla tiene un ancho igual o superior a 992 pixeles.&lt;/p&gt;
+&lt;p&gt;Las &lt;strong&gt;reglas CSS&lt;/strong&gt; se activan únicamente cuando se cumple la expresión que está entre paréntesis. En este caso la expresión es &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width: 992px&lt;/code&gt;, es decir, cuando la pantalla tiene un ancho igual o superior a 992 pixeles.&lt;/p&gt;
 
 &lt;p&gt;Además de &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width&lt;/code&gt; también existe &lt;code class=&quot;highlighter-rouge&quot;&gt;max-width&lt;/code&gt; para definir el ancho máximo de la pantalla para el que aplica el &lt;strong&gt;media query&lt;/strong&gt;.&lt;/p&gt;
 
@@ -22,7 +22,7 @@
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Puedes ver y jugar con este ejemplo en Codepen ingresando a &lt;a href=&quot;https://codepen.io/germanescobar/pen/qXEgJj?editors=0100&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;. Cambia el ancho del área donde se muestra el resultado para ver en qué punto cambia el color de fondo.&lt;/p&gt;
+&lt;p&gt;Ingresa a &lt;a href=&quot;https://codepen.io/germanescobar/pen/qXEgJj?editors=0100&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt; para ver y jugar con este ejemplo. Cambia el ancho del área donde se muestra el resultado para ver en qué punto cambia el color de fondo.&lt;/p&gt;
 
 &lt;h2 id=&quot;puntos-de-quiebre-breakpoints&quot;&gt;Puntos de quiebre (breakpoints)&lt;/h2&gt;
 
@@ -38,11 +38,15 @@
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;1200px&lt;/code&gt; o más son pantallas grandes como televisores.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Sin embargo, cuando hablamos de &lt;strong&gt;puntos de quiebre&lt;/strong&gt; nos referimos a un ancho específico, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;768px&lt;/code&gt;, que es el momento en el que cambia la pantalla de teléfono móvil a tableta.&lt;/p&gt;
+
 &lt;p&gt;Estos valores son sólo una referencia. El ancho de la mayoría de pantallas de escritorio hoy en día, por ejemplo, es de más de &lt;code class=&quot;highlighter-rouge&quot;&gt;1200px&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;A continuación veremos cómo utilizar estos puntos de quiebre para crear aplicaciones que se adaptan a diferentes pantallas.&lt;/p&gt;
 
 &lt;h2 id=&quot;mobile-first&quot;&gt;Mobile first&lt;/h2&gt;
 
-&lt;p&gt;¿Dónde ubicamos y organizamos los &lt;strong&gt;media quieries&lt;/strong&gt; en nuestros archivos CSS? Lo que se recomienda es utilizar una estrategia llamada &lt;strong&gt;mobile first&lt;/strong&gt; en donde primero se definen las reglas dirigidas a teléfonos móviles y con &lt;strong&gt;media queries&lt;/strong&gt; ajustamos el contenido para pantallas más anchas.&lt;/p&gt;
+&lt;p&gt;¿Dónde ubicamos y cómo organizamos los &lt;strong&gt;media quieries&lt;/strong&gt; en nuestros archivos CSS? Lo que se recomienda es utilizar una estrategia llamada &lt;strong&gt;mobile first&lt;/strong&gt; en donde primero se definen las reglas dirigidas a teléfonos móviles y con &lt;strong&gt;media queries&lt;/strong&gt; ajustamos el contenido para pantallas más anchas.&lt;/p&gt;
 
 &lt;p&gt;Veamos un ejemplo. Imagina que queremos ir incrementando el tamaño de la letra de acuerdo al ancho de la pantalla:&lt;/p&gt;
 
@@ -91,6 +95,8 @@
 &lt;p&gt;Ten mucho cuidado con el orden. Si por ejemplo, movieramos el valor por defecto al final, después de todos los otros &lt;strong&gt;media queries&lt;/strong&gt;, la letra siempre quedaría de &lt;code class=&quot;highlighter-rouge&quot;&gt;14px&lt;/code&gt;. ¿Puedes explicar por qué?&lt;/p&gt;
 
 &lt;hr /&gt;
+
+&lt;p&gt;Aunque existen otras formas en que se pueden describir las pantallas como el alto y la orientación de la pantalla, las opciones que vimos en este post (&lt;code class=&quot;highlighter-rouge&quot;&gt;min-width&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;max-width&lt;/code&gt;) se utilizan el 99% de las veces.&lt;/p&gt;
 
 &lt;p&gt;Si quieres ver ejemplos de responsive design te recomiendo estos dos sitios:&lt;/p&gt;
 
