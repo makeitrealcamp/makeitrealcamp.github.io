@@ -1,4 +1,148 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-08-02T16:11:11-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Arriesgarlo todo por cumplir nuestras metas y sueños</title><link href="http://blog.makeitreal.camp/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/" rel="alternate" type="text/html" title="Arriesgarlo todo por cumplir nuestras metas y sueños" /><published>2017-07-30T06:00:00-05:00</published><updated>2017-07-30T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos</id><content type="html" xml:base="http://blog.makeitreal.camp/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/">&lt;p&gt;Todo empezó por simple curiosidad. ¿Que significaba la programación? ¿Cómo era posible que las personas construyeran algo tan grande simplemente con palabras? ¿Cómo así que con palabras?&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-08-09T13:37:48-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">El protocolo HTTP</title><link href="http://blog.makeitreal.camp/el-protocolo-http/" rel="alternate" type="text/html" title="El protocolo HTTP" /><published>2017-08-09T06:00:00-05:00</published><updated>2017-08-09T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/el-protocolo-http</id><content type="html" xml:base="http://blog.makeitreal.camp/el-protocolo-http/">&lt;p&gt;El protocolo &lt;strong&gt;HTTP&lt;/strong&gt; (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Fue diseñado para transmitir &lt;strong&gt;HTML&lt;/strong&gt; (HyperText Markup Language) pero hoy en día se utiliza para transmitir todo tipo de documentos (imágenes, audio, video, PDF, etc.) y para crear aplicaciones Web.&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+&lt;p&gt;Un &lt;strong&gt;protocolo&lt;/strong&gt; es un documento que define las reglas y la estructura de los mensajes que se van a intercambiar entre máquinas.&lt;/p&gt;
+
+&lt;p&gt;Además de &lt;strong&gt;HTTP&lt;/strong&gt;, ejemplos de protocolos incluyen &lt;strong&gt;SMTP&lt;/strong&gt; (Simple Mail Transfer Protocol) para transmitir mensajes de correo electrónico y &lt;strong&gt;FTP&lt;/strong&gt; (File Transfer Protocolo) para transmitir archivos.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, cualquier persona puede crear un protocolo. &lt;a href=&quot;https://skype.com/&quot; target=&quot;_blank&quot;&gt;Skype&lt;/a&gt;, por ejemplo, desarrolló su &lt;a href=&quot;https://en.wikipedia.org/wiki/Skype_protocol&quot; target=&quot;_blank&quot;&gt;propio protocolo&lt;/a&gt; de comunicación peer-to-peer.&lt;/p&gt;
+
+&lt;p&gt;El documento completo del protocolo HTTP lo puedes encontrar en &lt;a href=&quot;https://www.ietf.org/rfc/rfc2068.txt&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;HTTP&lt;/strong&gt; es un protocolo &lt;strong&gt;cliente-servidor&lt;/strong&gt;, lo que significa que el cliente envía una petición al servidor y espera un mensaje de respuesta del servidor. Es un protocolo &lt;strong&gt;sin estado&lt;/strong&gt;, lo que significa que el servidor no guarda información del cliente, cada petición es independiente de las demás.&lt;/p&gt;
+
+&lt;h2 id=&quot;mensajes-http&quot;&gt;Mensajes HTTP&lt;/h2&gt;
+
+&lt;p&gt;Un mensaje &lt;strong&gt;HTTP&lt;/strong&gt; (no importa si es de petición o respuesta) se compone de 3 partes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La primera línea (que es diferente para la petición y la respuesta).&lt;/li&gt;
+  &lt;li&gt;Los encabezados.&lt;/li&gt;
+  &lt;li&gt;El cuerpo (opcional)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Veamos un ejemplo de un mensaje de petición (sin cuerpo):&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET /index.html HTTP/1.1
+Host: wikipedia.org
+Accept: text/html
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;En este ejemplo estamos solicitando el recurso &lt;code class=&quot;highlighter-rouge&quot;&gt;/index.html&lt;/code&gt; de &lt;a href=&quot;https://wikipedia.org&quot; target=&quot;_blank&quot;&gt;wikipedia.org&lt;/a&gt;. La primera línea del mensaje de petición se compone de:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El verbo (en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;El recurso (en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;/index&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;La versión de HTTP (en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP/1.1&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ahora veamos un ejemplo de un mensaje de respuesta:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP/1.1 200 OK
+Server: wikipedia.org
+Content-Type: text/html
+Content-Lenght: 2026
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  …
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La primera línea del mensaje de respuesta se compone de:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;La versión de HTTP (&lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP/1.1&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;El código de respuesta (&lt;code class=&quot;highlighter-rouge&quot;&gt;200 OK&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La siguiente imagen muestra mejor las partes de cada mensaje:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/http-messages.jpg&quot; alt=&quot;Concurrencia basada en eventos&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;el-verbo-http&quot;&gt;El verbo HTTP&lt;/h3&gt;
+
+&lt;p&gt;La primera línea de un mensaje de petición empieza con un &lt;strong&gt;verbo&lt;/strong&gt; (también se le conoce como &lt;strong&gt;método&lt;/strong&gt;). Los &lt;strong&gt;verbos&lt;/strong&gt; definen la acción que se quiere realizar sobre el recurso. Los verbos más comunes son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: se utiliza para solicitar un recurso.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;POST&lt;/strong&gt;: se utiliza para publicar un recurso.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;PUT&lt;/strong&gt;: se utiliza para reemplazar un recurso.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;DELETE&lt;/strong&gt;: se utiliza para eliminar un recurso.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Existen otros pero estos son los más comunes.&lt;/p&gt;
+
+&lt;p&gt;Cuando ingresas a una página desde un navegador, por debajo el navegador envía un mensaje &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;, lo mismo cuando oprimes un vínculo a otra página.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-código-de-respuesta&quot;&gt;El código de respuesta&lt;/h2&gt;
+
+&lt;p&gt;La primera línea de un mensaje de respuesta tiene un código de 3 dígitos que le indica al cliente cómo interpretar la respuesta.&lt;/p&gt;
+
+&lt;p&gt;Los códigos de respuesta se dividen en cinco categorías dependiendo del dígito con el que inician:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;1XX&lt;/strong&gt;: Información&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;2XX&lt;/strong&gt;: Éxito&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;3XX&lt;/strong&gt;: Redirección&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;4XX&lt;/strong&gt;: Error en el cliente&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;5XX&lt;/strong&gt;: Error en el servidor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Seguramente estás familiarizado(a) con el famoso error &lt;strong&gt;404&lt;/strong&gt; que retornan los servidores cuando el recurso no fue encontrado. O con el error &lt;strong&gt;500&lt;/strong&gt; cuando ocurre un error en el servidor. Pero existen muchos más.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-encabezados&quot;&gt;Los encabezados&lt;/h2&gt;
+
+&lt;p&gt;Los encabezados brindan información adicional sobre la petición o la respuesta. Los encabezados tienen la siguiente sintaxis:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;[nombre del encabezado]: [valor del encabezado]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Encabezados comunes incluyen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Content-Type&lt;/code&gt;: el tipo de contenido que se está enviando en el cuerpo de un mensaje de petición, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;text/html&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Accept&lt;/code&gt;: el tipo de contenido que el cliente está esperando.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;User-Agent&lt;/code&gt;: el tipo de navegador que está haciendo la petición&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;La siguiente imagen muestra, en las &lt;a href=&quot;/herramientas-de-desarrollador-o-developer-tools&quot; target=&quot;_blank&quot;&gt;herramientas de desarrollo de Chrome&lt;/a&gt;, el mensaje de petición y respuesta cuando hacemos una petición a &lt;code class=&quot;highlighter-rouge&quot;&gt;http://google.com.co/lsdifs&lt;/code&gt;. Fíjate que el código de respuesta es &lt;code class=&quot;highlighter-rouge&quot;&gt;404 Not Found&lt;/code&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/http-request.jpg&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;url&quot;&gt;URL&lt;/h2&gt;
+
+&lt;p&gt;Un &lt;strong&gt;URL&lt;/strong&gt; (Uniform Resource Locator) se utiliza para ubicar un recurso en Internet. Los &lt;strong&gt;URLs&lt;/strong&gt; no solo se pueden utilizar para el protocolo HTTP, se utilizan en muchos otros protocolos.&lt;/p&gt;
+
+&lt;p&gt;La siguiente imagen muestra las partes de un &lt;strong&gt;URL&lt;/strong&gt; utilizando dos ejemplos:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/makeitreal/images/full-stack-curriculum/url.jpg&quot; alt=&quot;URL&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Esquema:&lt;/strong&gt; El esquema define el protocolo a utilizar, para HTTP puede ser &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt; (el protocolo seguro de HTTP).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Host:&lt;/strong&gt; La IP o el nombre del servidor que se quiere acceder (p.e. 127.0.0.1, localhost, google.com, www.google.com.co, etc.)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Puerto:&lt;/strong&gt; El puerto en el que está escuchando el servidor HTTP. Si se omite se asume que es el 80.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Path:&lt;/strong&gt; La ruta al recurso que se quiere acceder.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Query String:&lt;/strong&gt; Contiene información adicional para el servidor en forma de propiedades (&lt;code class=&quot;highlighter-rouge&quot;&gt;atributo=valor&lt;/code&gt;). Las propiedades se separan por &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Fragmento:&lt;/strong&gt; La referencia a una ubicación interna del documento.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">El protocolo HTTP (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/lights.jpeg" /></entry><entry><title type="html">Arriesgarlo todo por cumplir nuestras metas y sueños</title><link href="http://blog.makeitreal.camp/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/" rel="alternate" type="text/html" title="Arriesgarlo todo por cumplir nuestras metas y sueños" /><published>2017-07-30T06:00:00-05:00</published><updated>2017-07-30T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos</id><content type="html" xml:base="http://blog.makeitreal.camp/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/">&lt;p&gt;Todo empezó por simple curiosidad. ¿Que significaba la programación? ¿Cómo era posible que las personas construyeran algo tan grande simplemente con palabras? ¿Cómo así que con palabras?&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Antes de saber cómo funcionaba más a fondo la programación no me explicaba lógicamente cómo estas palabras se podían transformar en un proyecto de vida que literalmente me cambio la vida y mi forma de pensar.&lt;/p&gt;
 
@@ -729,148 +873,4 @@ Bundler.require(:default, :development)
 
 &lt;p&gt;&lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; es quizá una de las herramientas más importantes del ecosistema de Ruby, y de la programación en general porque inspiró otros sistemas de manejo de dependencias como &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt; (en Node JS) y &lt;a href=&quot;https://pypi.python.org/pypi/pip&quot; target=&quot;_blank&quot;&gt;pip&lt;/a&gt; (en Python).&lt;/p&gt;
 
-&lt;p&gt;Espero que este post te haya ayudado a aclarar qué es &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; y su rol en Ruby on Rails; y que de esta forma puedas aprovechar todo su potencial!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Bundler es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, Bundler no es exclusivo de Rails, lo puedes usar para manejar las dependencias de cualquier proyecto de Ruby.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/bundler.jpg" /></entry><entry><title type="html">Manejadores de versiones para Ruby</title><link href="http://blog.makeitreal.camp/manejadores-de-versiones-en-ruby/" rel="alternate" type="text/html" title="Manejadores de versiones para Ruby" /><published>2016-10-16T12:00:00-05:00</published><updated>2016-10-16T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/manejadores-de-versiones-en-ruby</id><content type="html" xml:base="http://blog.makeitreal.camp/manejadores-de-versiones-en-ruby/">&lt;p&gt;Un manejador de versiones para Ruby te permite instalar varias versiones de Ruby en tu máquina y cambiar entre versiones fácilmente.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Pero ¿para qué quisiéramos tener instaladas varias versiones de Ruby?&lt;/p&gt;
-
-&lt;p&gt;Existen dos razones. La primera es que, si tienes proyectos en producción, es una buena práctica utilizar la misma versión de Ruby en tu ambiente local. Por ejemplo, si uno de tus proyectos utiliza la versión &lt;code&gt;2.2.1&lt;/code&gt; en producción y otro proyecto la &lt;code&gt;2.3.1&lt;/code&gt;, deberías poder cambiar entre esas dos versiones fácilmente en tu ambiente local dependiendo del proyecto en el que vayas a trabajar.&lt;/p&gt;
-
-&lt;p&gt;La segunda razón es poder probar diferentes versiones de Ruby sin necesidad de estar desinstalando y reinstalando versiones, por ejemplo para probar tus proyectos con otras versiones, o simplemente para jugar con las nuevas características de la última versión.&lt;/p&gt;
-
-&lt;p&gt;Existen dos manejadores de versiones que son muy populares y en los que nos vamos a enfocar en este post: &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; (Ruby Version Manager) y &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;rvm&quot;&gt;RVM&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; fue el primer manejador de versiones de Ruby y es el que personalmente uso. Para instalarlo en Linux y MacOS sigue &lt;a href=&quot;https://rvm.io/rvm/install&quot; target=&quot;_blank&quot;&gt;estas instrucciones&lt;/a&gt; (para Windows utiliza &lt;a href=&quot;http://blog.developwithpassion.com/2012/03/30/installing-rvm-with-cygwin-on-windows/&quot; target=&quot;_blank&quot;&gt;este otro enlace&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Los comandos principales de &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;rvm list&lt;/code&gt;: lista todas las versiones de Ruby instaladas en tu máquina.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rvm install [version_de_ruby]&lt;/code&gt;: instala una nueva versión de Ruby. Por ejemplo:
-    &lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ rvm install 2.3.1&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rvm use [version_de_ruby]&lt;/code&gt;: utiliza la versión que especifiques de Ruby. Por ejemplo:
-    &lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ rvm use 2.3.1&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Para definir la versión por defecto que se carga cuando abres la línea de comandos ejecuta &lt;code&gt;rvm use --default [version_de_ruby]&lt;/code&gt;. Por ejemplo, para usar y definir por defecto la versión &lt;code&gt;2.3.1&lt;/code&gt; utiliza el siguiente comando:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ rvm use --default 2.3.1&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Veamos algunos de estos comandos en acción. Empecemos por &lt;code&gt;rvm list&lt;/code&gt; que lista las versiones que están instaladas en nuestro sistema:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ rvm list
-
-   ruby-2.2.0 [ x86_64 ]
-   ruby-2.2.1 [ x86_64 ]
- * ruby-2.3.0 [ x86_64 ]
-=&amp;gt; ruby-2.3.1 [ x86_64 ]
-
-# =&amp;gt; - current
-# =* - current &amp;amp;&amp;amp; default
-#  * - default&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;En este caso tenemos 4 versiones de Ruby instaladas. La que estamos usando actualmente se identifica por el prefijo &lt;code&gt;=&amp;gt;&lt;/code&gt;, en este caso la &lt;code&gt;2.3.1&lt;/code&gt;, y la que se utiliza por defecto se identifica por el prefijo &lt;code&gt;*&lt;/code&gt;, en este caso la &lt;code&gt;2.3.0&lt;/code&gt;. Podemos verificar que la versión que estamos usando es efectivamente la &lt;code&gt;2.3.1&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ ruby -v
-ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Cambiemos ahora a la versión &lt;code&gt;2.2.1&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ rvm use 2.2.1
-Using /Users/germanescobar/.rvm/gems/ruby-2.2.1
-
-$ ruby -v
-ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;br /&gt;
-La ventaja de &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; es que trae todo incluido cuando lo instalas: el manejador de versiones, el instalador de nuevas versiones de Ruby y el administrador para grupos de gemas (un tema que veremos más adelante). Sin embargo, muchos argumentan que eso va en contra de la filosofía Unix, en donde cada programa debería hacer una sola cosa bien&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;rbenv&quot;&gt;rbenv&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; es otro manejador de versiones de Ruby y hoy es mucho más popular que &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; según &lt;a href=&quot;https://www.ruby-toolbox.com/categories/ruby_version_management&quot; target=&quot;_blank&quot;&gt;The Ruby Toolbox&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; es solo un manejador de versiones y utiliza una arquitectura basada en plugins para agregar más funcionalidad. Eso quiere decir que si quieres instalar una nueva versión de Ruby debes hacerlo manualmente o instalar primero un plugin de &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; llamado &lt;a href=&quot;https://github.com/rbenv/ruby-build&quot; target=&quot;_blank&quot;&gt;ruby-build&lt;/a&gt; (solo debes instalarlo una única vez).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; solo soporta Linux y MacOS y lo puedes instalar siguiendo las instrucciones en &lt;a href=&quot;https://github.com/rbenv/rbenv#installation&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;. Existe una &lt;a href=&quot;https://github.com/nak1114/rbenv-win&quot; target=&quot;_blank&quot;&gt;versión para Windows&lt;/a&gt; pero realmente no sé qué tan fácil sea de instalar.&lt;/p&gt;
-
-&lt;p&gt;Los comandos principales de &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;rbenv versions&lt;/code&gt;: lista las versiones de Ruby instaladas en tu máquina.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rbenv version&lt;/code&gt;: muestra la versión de Ruby activa (la que se está usando actualmente).&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rbenv shell [version]&lt;/code&gt;: utiliza la versión que especifiques de Ruby. Por ejemplo:
-    &lt;pre&gt;&lt;code&gt;$ rbenv shell 2.3.1&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rbenv global [version]&lt;/code&gt;: define la versión por defecto. Por ejemplo:
-    &lt;pre&gt;&lt;code&gt;$ rbenv global 2.3.1&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rbenv rehash&lt;/code&gt;: este comando se debe ejecutar cuando se instala una nueva versión de Ruby o alguna gema que incluya nuevos comandos para la consola.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Nota&lt;/strong&gt;: Puedes encontrar todos los comandos con ejemplos en &lt;a href=&quot;https://github.com/rbenv/rbenv#command-reference&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para instalar una nueva versión de Ruby -después de haber instalado el plugin &lt;code&gt;ruby-build&lt;/code&gt;- utiliza el comando &lt;code&gt;rbenv install [version_de_ruby]&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rbenv install 2.2.0&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;La ventaja de &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; es que es más liviano que &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; y que utiliza una forma diferente de manejar las versiones que, muchos argumentan, es mejor (aunque seguramente debatible).&lt;/p&gt;
-
-&lt;h2 id=&quot;definir-la-versión-de-ruby-por-proyecto&quot;&gt;Definir la versión de Ruby por proyecto&lt;/h2&gt;
-
-&lt;p&gt;Una buena práctica es crear un archivo llamado &lt;code&gt;.ruby-version&lt;/code&gt; en la raíz de cada uno de tus proyectos que defina la versión de Ruby que se debe usar para ese proyecto. De esa forma, cuando entres a esa carpeta, tanto &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; como &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; van a utilizar la versión correcta sin necesidad de que tengas que hacer el cambio explícito.&lt;/p&gt;
-
-&lt;p&gt;Aunque el archivo solo contiene la versión que se debe usar y podrías crearlo manualmente, tanto &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; como &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; tienen comandos que lo crean por ti:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rvm --ruby-version use 2.3.1&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;$ rbenv local 2.3.1&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Puedes agregar este archivo a Git y de esa forma todos los integrantes de tu equipo van a utilizar la misma versión en sus ambientes de desarrollo local (si están utilizando algún manejador de versiones).&lt;/p&gt;
-
-&lt;h2 id=&quot;grupos-de-gemas-gemsets&quot;&gt;Grupos de gemas (gemsets)&lt;/h2&gt;
-
-&lt;p&gt;Una funcionalidad que incluye &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt;, y que &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; argumenta que no se necesita (aunque se puede incluir &lt;a href=&quot;https://github.com/jf/rbenv-gemset&quot; target=&quot;_blank&quot;&gt;con un plugin&lt;/a&gt;), es el manejo de los grupos de gemas (gemsets).&lt;/p&gt;
-
-&lt;p&gt;Las gemas son las librerías de Ruby. Una gema se instala con el comando &lt;code&gt;gem install [nombre_de_la_gema]&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gem install rails&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Ese comando instalaría la versión más reciente de Rails, si queremos otra versión lo podemos hacer con la opción &lt;code&gt;-v&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gem install rails -v 4.2.7&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Una buena práctica es aislar las gemas de tu proyecto para que no se generen conflictos con otras versiones de las mismas gemas. Para eso &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; nos permite crear &lt;strong&gt;gemsets&lt;/strong&gt;. Los comandos que necesitas conocer son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;rvm gemset list&lt;/code&gt;: lista los gemsets para cada una de las versiones de Ruby que tengamos instaladas.&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rvm gemset create [nombre_del_gemset]&lt;/code&gt;: crea un gemset con el nombre que definamos. Por ejemplo, el siguiente comando crea un gemset llamado &lt;code&gt;rails4&lt;/code&gt;:
-    &lt;pre&gt;&lt;code&gt;$ rvm gemset create rails4&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rvm gemset use [nombre_del_gemset]&lt;/code&gt;: utiliza un gemset. Por ejemplo:
-    &lt;pre&gt;&lt;code&gt;$ rvm gemset use rails4&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;rvm gemset delete [nombre_del_gemset]&lt;/code&gt;: elimina un gemset. Por ejemplo:
-    &lt;pre&gt;&lt;code&gt;$ rvm gemset delete rails4&lt;/code&gt;&lt;/pre&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Muchos argumentan, y estoy de acuerdo, en que &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; es una mejor forma de aislar (y manejar) las gemas de nuestros proyectos y que ya no son necesarios los gemsets. De hecho Rails viene con &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; incluido. Sin embargo, es bueno que sepas que los &lt;strong&gt;gemsets&lt;/strong&gt; existen.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Tanto &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; como &lt;a href=&quot;https://github.com/rbenv/rbenv&quot; target=&quot;_blank&quot;&gt;rbenv&lt;/a&gt; intentan solucionar el mismo problema y los dos ofrecen una funcionalidad muy similar. Sin embargo, si tuviera que elegir alguno de los dos continuaría con &lt;a href=&quot;https://rvm.io/&quot; target=&quot;_blank&quot;&gt;RVM&lt;/a&gt; aunque &lt;a href=&quot;http://www.rubyinside.com/rbenv-a-simple-new-ruby-version-management-tool-5302.html&quot; target=&quot;_blank&quot;&gt;la Internets argumente lo contrario&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;No importa cuál escojas, lo importante es que instales y comiences a utilizar alguno porque más adelante lo agradecerás.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Existen otros argumentos en contra de RVM pero no son relevantes para efectos prácticos de este post.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Un manejador de versiones para Ruby te permite instalar varias versiones de Ruby en tu máquina y cambiar entre versiones fácilmente.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/ruby-version-management.jpg" /></entry></feed>
+&lt;p&gt;Espero que este post te haya ayudado a aclarar qué es &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; y su rol en Ruby on Rails; y que de esta forma puedas aprovechar todo su potencial!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Bundler es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, Bundler no es exclusivo de Rails, lo puedes usar para manejar las dependencias de cualquier proyecto de Ruby.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/bundler.jpg" /></entry></feed>
