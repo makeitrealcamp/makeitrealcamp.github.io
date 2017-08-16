@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-08-15T00:38:02-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">El protocolo HTTP</title><link href="http://blog.makeitreal.camp/el-protocolo-http/" rel="alternate" type="text/html" title="El protocolo HTTP" /><published>2017-08-09T06:00:00-05:00</published><updated>2017-08-09T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/el-protocolo-http</id><content type="html" xml:base="http://blog.makeitreal.camp/el-protocolo-http/">&lt;p&gt;El protocolo &lt;strong&gt;HTTP&lt;/strong&gt; (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-08-15T23:22:51-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Por qué no es tarde para cambiar de carrera?</title><link href="http://blog.makeitreal.camp/por-que-no-es-tarde-para-cambiar-de-carrera/" rel="alternate" type="text/html" title="¿Por qué no es tarde para cambiar de carrera?" /><published>2017-08-15T06:00:00-05:00</published><updated>2017-08-15T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/por-que-no-es-tarde-para-cambiar-de-carrera</id><content type="html" xml:base="http://blog.makeitreal.camp/por-que-no-es-tarde-para-cambiar-de-carrera/">&lt;p&gt;Siempre me ha gustado considerarme un emprendedor, Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Al buscar emprendimiento en Google el primer resultado que obtuve fue la definición de esta palabra, que fue la siguiente: “Inicio de una actividad que exige esfuerzo o trabajo, o tiene cierta importancia o envergadura.”&lt;/p&gt;
+
+&lt;p&gt;Ahora teniendo claro que el emprendimiento no es solo crear un negocio sino tomar riesgos para tomar acción sobre cualquier situación, decidí que era momento de compartir mi experiencia, mi historia y las razones de porque hoy en día, aún siendo empleado por primera vez en mi vida, me considero más emprendedor que en muchas otras situaciones de mi vida.&lt;/p&gt;
+
+&lt;p&gt;Hace ya unos 6 meses que decidí hacer un cambio en mi vida profesional. Los resultados que estaba obteniendo en los negocios que estaba “emprendiendo” en aquellos días no eran los que yo esperaba, lo que hacía me gustaba pero no me sentía particularmente apasionado por muchos de los aspectos de mis actividades diarias. Fue en este momento en el que tomé una decisión un poco radical. Dejar todo atrás y empezar de cero un nuevo proyecto, un nuevo camino, asumir un nuevo reto. Y fue en este momento en que llegó a mi vida la programación (anteriormente había leído algo pero nunca había tenido la oportunidad de ir más a fondo). Por muchos aspectos como la comunidad, los recursos y, no lo puedo negar, también el aspecto financiero, me atrajo. Decidí que aprender a programar sería mi nuevo camino, mi nuevo reto.&lt;/p&gt;
+
+&lt;p&gt;Para ponerlos un poco más en contexto: tengo 26 años, pase 5 años de mi vida en la universidad donde me gradué de Administración de Empresas Agropecuarias, luego pase 2 años en una startup de operaciones turísticas, vivo con mi novia, tengo tantos problemas como una persona común, tengo tantas obligaciones como una persona común. Tomar esta decisión significaría más problemas personales, más problemas económicos, incertidumbre por no saber hacía donde iba, ni cuando iba a llegar. Aún así la decisión estaba clara para mi, mi felicidad sopesaba todas las desventajas e inconvenientes.&lt;/p&gt;
+
+&lt;p&gt;No fue algo fácil pero llegó el momento de buscar trabajo donde podría poner a prueba todo lo que había aprendido, y donde finalmente sabría si había o no tomado la decisión correcta. Al igual que siendo Administrador de Empresas Agropecuarias, Operador turístico no demoraron en llegar los “no” y los rechazos, empresas tras empresas me rechazaban por mi falta de experiencia y conocimiento, pero algo era totalmente diferente, era feliz, me gustaba lo que hacía y no estaba dispuesto a aceptar el fracaso. Continue buscando hasta que finalmente la oportunidad se dio. Hoy en día trabajo como programador, y definitivamente no cambiaría el trabajo que tengo por ninguno de los que he tenido anteriormente.&lt;/p&gt;
+
+&lt;p&gt;Si yo pude, ¿Tu por qué no?&lt;/p&gt;
+
+&lt;p&gt;¡Atrévete a soñar!&lt;/p&gt;
+
+&lt;p&gt;Finalmente me gustaría resaltar que durante todo este proceso tuve la fortuna de contar con el apoyo incondicional de algunas personas (especialmente por parte de mi novia Daniela Olaya), y de encontrarme con un gran programa como lo es Make it Real con grandes mentores y excelentes compañeros que hicieron del recorrido algo más ameno.&lt;/p&gt;
+
+&lt;p&gt;P.S Mi novia también renunció a su trabajo donde era infeliz y ahora empezó su propio negocio de adiestramiento canino.&lt;/p&gt;</content><author><name>Simón Hoyos</name></author><summary type="html">Siempre me ha gustado considerarme un emprendedor, Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/never-too-late.jpg" /></entry><entry><title type="html">El protocolo HTTP</title><link href="http://blog.makeitreal.camp/el-protocolo-http/" rel="alternate" type="text/html" title="El protocolo HTTP" /><published>2017-08-09T06:00:00-05:00</published><updated>2017-08-09T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/el-protocolo-http</id><content type="html" xml:base="http://blog.makeitreal.camp/el-protocolo-http/">&lt;p&gt;El protocolo &lt;strong&gt;HTTP&lt;/strong&gt; (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Fue diseñado para transmitir &lt;strong&gt;HTML&lt;/strong&gt; (HyperText Markup Language) pero hoy en día se utiliza para transmitir todo tipo de documentos (imágenes, audio, video, PDF, etc.) y para crear aplicaciones Web.&lt;/p&gt;
 
@@ -749,128 +767,4 @@ M  a  k   e      i   t      R  e   a  l&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Sabemos que nuestros programas tienen los elementos necesarios para que te conviertas en desarrollador Web y cada día trabajamos para mejorarlos. Muchos ya lo han logrado.&lt;/p&gt;
 
-&lt;p&gt;Nuestro objetivo es guiarte en esas ~1000 primeras horas de práctica deliberada para que puedas encontrar un empleo y sigas aprendiendo. &lt;a href=&quot;http://www.makeitreal.camp/#programs&quot;&gt;Conoce nuestros programas online y presenciales, y aprende con los mejores&lt;/a&gt;!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Conoce cómo en Make it Real aplicamos los últimos hallazgos científicos para acelerar el proceso de aprendizaje y que tengas éxito en cualquiera de nuestros programas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/deliberate-practice.jpeg" /></entry><entry><title type="html">Manejo de dependencias en Ruby con Bundler</title><link href="http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/" rel="alternate" type="text/html" title="Manejo de dependencias en Ruby con Bundler" /><published>2016-10-17T12:00:00-05:00</published><updated>2016-10-17T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler</id><content type="html" xml:base="http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/">&lt;p&gt;&lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; no es exclusivo de Rails, lo puedes usar para manejar las dependencias de cualquier proyecto de Ruby.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;La mayoría de los proyectos en los que vas a trabajar van a utilizar una o más librerías. Una librería no es más que código empaquetado que alguien publica y que puedes utilizar en tus proyectos. Todos los lenguajes de programación tienen alguna forma de crear, distribur y usar librerías. En Ruby, a las librerías se les conoce con el nombre de &lt;strong&gt;gemas&lt;/strong&gt;. Cualquier persona puede crear y publicar una gema.&lt;/p&gt;
-
-&lt;p&gt;Instalar una gema en tu máquina es muy fácil, solo debes ejectuar el comando &lt;code&gt;gem install&lt;/code&gt; seguido del nombre de la gema. Por ejemplo, para instalar Ruby on Rails puedes ejecutar:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ gem install rails&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Este comando instalaría la versión más reciente de Rails, pero si deseas instalar otra versión lo puedes hacer con la opción &lt;code&gt;-v&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ gem install rails -v 4.2.7&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;bundler&quot;&gt;Bundler&lt;/h2&gt;
-
-&lt;p&gt;Instalar individualmente cada una de las gemas de las que depende un proyecto puede ser muy engorroso, además de que sería necesario mantener una documentación actualizada con la lista de gemas y la versión de cada una por si cambiamos de máquina o entra un nuevo integrante a nuestro equipo.&lt;/p&gt;
-
-&lt;p&gt;El segundo problema es que puedes tener varias versiones de la misma gema instalada. Por defecto Ruby utiliza la última versión de la gema, pero es posible que esa no sea la que tu proyecto necesite.&lt;/p&gt;
-
-&lt;p&gt;Veamos cómo &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; nos ayuda a solucionar estos problemas.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; es una gema, así que el primero paso es instalarlo con el siguiente comando:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ gem install bundler&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Para definir las dependencias de nuestro proyecto creamos un archivo de texto llamado &lt;code&gt;Gemfile&lt;/code&gt; (sin extensión) en el que vamos a listar las gemas de las que depende nuestro proyecto:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;source 'https://rubygems.org'
-
-gem 'nokogiri'
-gem 'rack', '~&amp;gt;1.1'
-gem 'sinatra', '1.4.7'&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;La primera línea le dice a Bundler la URL del servidor desde donde se deben instalar las gemas. &lt;a href=&quot;https://rubygems.org/&quot; target=&quot;_blank&quot;&gt;RubyGems&lt;/a&gt; es el servicio de Ruby en donde están almacenadas todas gemas públicas.&lt;/p&gt;
-
-&lt;p&gt;Las demás líneas definen las gemas de las que depende nuestro proyecto. Si omites la versión -como en el caso de nokogiri arriba- &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; asume que deseas utilizar la última versión disponible. Existen varias formas de especificar la versión, veamos algunos ejemplos:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'rails', '4.2.7' # la versión 4.2.7 exactamente&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'rails', '&amp;gt;=4.2.7' # cualquier versión igual o mayor que 4.2.7&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'rails', '&amp;gt;=4.2.7', '&amp;lt;5.0.0' # igual o mayor que 4.2.7, pero menor que 5.0.0&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Los siguientes dos son casos especiales pero muy comunes, de hecho es una muy buena práctica defnir las versiones de esta forma:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'rails', '~&amp;gt;4.2.7' # igual o mayor que 4.2.7, pero menor que 4.3.0&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'rails', '~&amp;gt;4.2' # igual o mayor que 4.2.0, pero menor que 5.0.0&lt;/code&gt;&lt;/pre&gt;
-
-&lt;div class=&quot;well&quot;&gt;
-  &lt;p&gt;La mayoría de gemas utilizan el siguiente esquema de versionamiento: dada una version &lt;code&gt;X.Y.Z&lt;/code&gt;, &lt;code&gt;X&lt;/code&gt; se incrementa cuando hay &lt;strong&gt;cambios mayores&lt;/strong&gt; que son incompatibles con versiones anteriores, &lt;code&gt;Y&lt;/code&gt; se incrementa cuando hay &lt;strong&gt;nuevas funcionalidades&lt;/strong&gt; que son compatibles con versiones anteriores, &lt;code&gt;Z&lt;/code&gt; se incrementa cuando se &lt;strong&gt;solucionan bugs&lt;/strong&gt; y sigue siendo compatible con versiones anteriores. &lt;/p&gt;
-
-  &lt;p&gt;A esto se le conoce como &lt;a href=&quot;http://semver.org/&quot; target=&quot;_blank&quot;&gt;versionamiento semántico&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;cargar-gemas-de-github-directamente&quot;&gt;Cargar gemas de Github directamente&lt;/h2&gt;
-
-&lt;p&gt;También es posible cargar una gema de su repositorio de Github directamente:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'papertrail', github: 'germanescobar/papertrail'&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;En este caso se asumiría que quieres cargar el último commit de la rama &lt;code&gt;master&lt;/code&gt;, pero puedes especificar cualquier rama:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;gem 'papertrail', github: 'germanescobar/papertrail' branch: 'my-branch'&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Esto es muy útil cuando necesitas funcionalidad que aún no está en la última versión de la gema, o cuando necesitas hacer cambios propios a la gema (p.e. para solucionar algún bug).&lt;/p&gt;
-
-&lt;h2 id=&quot;instalar-las-gemas&quot;&gt;Instalar las gemas&lt;/h2&gt;
-
-&lt;p&gt;Una vez que tienes las gemas definidas en el &lt;code&gt;Gemfile&lt;/code&gt;, puedes instalarlas en tu máquina local con el siguiente comando:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;$ bundle install&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Este comando crea un archivo &lt;code&gt;Gemfile.lock&lt;/code&gt; con las versiones de las gemas que se van a utilizar en el proyecto. Es buena práctica agregar este archivo al sistema de control de versiones. Recuerda volver a ejecutar este comando cada vez que hagas cambios al archivo &lt;code&gt;Gemfile&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;configurar-la-aplicación&quot;&gt;Configurar la aplicación&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Esto solo es necesario cuando &lt;strong&gt;no&lt;/strong&gt; estás utilizando Ruby on Rails.&lt;/p&gt;
-
-&lt;p&gt;El último paso es agregar la siguiente línea al punto de entrada de tu aplicación para asegurar que todas las gemas sean encontradas:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;require 'bundler/setup'
-# requiere las gemas que necesites normalmente
-
-# el resto de tu aplicación ...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Si tu aplicación necesita muchos &lt;code&gt;require&lt;/code&gt; puedes utilizar la siguiente línea para que &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; lo haga por ti:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;require 'bundler/setup'
-Bundler.require(:default)
-
-# el resto de tu aplicación ...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;usando-grupos&quot;&gt;Usando grupos&lt;/h2&gt;
-
-&lt;p&gt;Con &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; puedes agrupar tus dependencias y de esa forma realizar operaciones sobre un grupo entero. Veamos el siguiente &lt;code&gt;Gemfile&lt;/code&gt; de ejemplo:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;# Estas gemas están en el grupo :default
-gem 'nokogiri'
-gem 'sinatra'
-
-gem 'wirble', :group =&amp;gt; :development
-
-group :test do
-  gem 'faker'
-  gem 'rspec'
-end
-
-group :test, :development do
-  gem 'capybara'
-  gem 'rspec-rails'
-end
-
-gem 'cucumber', :group =&amp;gt; [:cucumber, :test]&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Ruby on Rails utiliza la agrupación de dependencias de &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; para definir diferentes ambientes de la aplicación (desarrollo, producción y pruebas). Puedes hacer lo mismo en otros proyectos que no sean de Rails.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, para requerir todas las gemas que están en el grupo &lt;code&gt;:default&lt;/code&gt; y &lt;code&gt;:development&lt;/code&gt; puedes hacer lo siguiente:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;require 'bundler/setup'
-Bundler.require(:default, :development)
-
-# el resto de tu aplicación ...&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; es quizá una de las herramientas más importantes del ecosistema de Ruby, y de la programación en general porque inspiró otros sistemas de manejo de dependencias como &lt;a href=&quot;https://www.npmjs.com/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt; (en Node JS) y &lt;a href=&quot;https://pypi.python.org/pypi/pip&quot; target=&quot;_blank&quot;&gt;pip&lt;/a&gt; (en Python).&lt;/p&gt;
-
-&lt;p&gt;Espero que este post te haya ayudado a aclarar qué es &lt;a href=&quot;http://bundler.io/&quot; target=&quot;_blank&quot;&gt;Bundler&lt;/a&gt; y su rol en Ruby on Rails; y que de esta forma puedas aprovechar todo su potencial!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Bundler es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, Bundler no es exclusivo de Rails, lo puedes usar para manejar las dependencias de cualquier proyecto de Ruby.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/bundler.jpg" /></entry></feed>
+&lt;p&gt;Nuestro objetivo es guiarte en esas ~1000 primeras horas de práctica deliberada para que puedas encontrar un empleo y sigas aprendiendo. &lt;a href=&quot;http://www.makeitreal.camp/#programs&quot;&gt;Conoce nuestros programas online y presenciales, y aprende con los mejores&lt;/a&gt;!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Conoce cómo en Make it Real aplicamos los últimos hallazgos científicos para acelerar el proceso de aprendizaje y que tengas éxito en cualquiera de nuestros programas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/deliberate-practice.jpeg" /></entry></feed>
