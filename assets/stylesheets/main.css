@@ -6646,7 +6646,8 @@ a:focus, a:hover {
 
 nav.main {
   background: #333;
-  height: 60px; }
+  height: 60px;
+  padding: 12px; }
   nav.main .main-content {
     display: flex;
     justify-content: space-between;
@@ -6655,7 +6656,7 @@ nav.main {
       width: 140px; }
       @media (min-width: 768px) {
         nav.main .main-content img {
-          width: 160px; } }
+          width: 150px; } }
 
 .btn-cta {
   background: #F04500;
