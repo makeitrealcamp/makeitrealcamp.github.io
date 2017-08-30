@@ -6647,7 +6647,7 @@ a:focus, a:hover {
 nav.main {
   background: #333;
   height: 60px;
-  padding: 12px; }
+  padding: 12px 0; }
   nav.main .main-content {
     display: flex;
     justify-content: space-between;
