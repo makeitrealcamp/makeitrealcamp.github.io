@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-09-22T15:23:06-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Cómo aprovechar al máximo los mentores de Make it Real?</title><link href="http://blog.makeitreal.camp/como-aprovechar-al-maximo-los-mentores/" rel="alternate" type="text/html" title="¿Cómo aprovechar al máximo los mentores de Make it Real?" /><published>2017-09-18T02:00:00-05:00</published><updated>2017-09-18T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/como-aprovechar-al-maximo-los-mentores</id><content type="html" xml:base="http://blog.makeitreal.camp/como-aprovechar-al-maximo-los-mentores/">&lt;p&gt;Quizá la principal ventaja de nuestros programas es la guía y retroalimentación de los mentores. En este post aprenderás cómo aprovecharlos al máximo para acelerar tu aprendizaje.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-10-02T17:52:01-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">La fortuna de ser programador</title><link href="http://blog.makeitreal.camp/la-fortuna-de-ser-programador/" rel="alternate" type="text/html" title="La fortuna de ser programador" /><published>2017-10-02T02:00:00-05:00</published><updated>2017-10-02T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-fortuna-de-ser-programador</id><content type="html" xml:base="http://blog.makeitreal.camp/la-fortuna-de-ser-programador/">&lt;p&gt;La programación es uno de los trabajos con mejores salarios de la actualidad y una de las carreras más importantes del futuro. Y sin embargo, esto &lt;strong&gt;no&lt;/strong&gt; es lo que me hace sentir más afortunado de ser un programador.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;La programación es mucho más que escribir código. La programación es un proceso creativo, mentalmente desafiante, que genera gran satisfacción personal.&lt;/p&gt;
+
+&lt;p&gt;Empezar con una pantalla en blanco y en algunas horas poder construir algo que antes no existía, algo que puede funcionar sin nuestra intervención, es simplemente fascinante, y la sensación cuando otros empiezan a utilizar eso que hemos construído es simplemente indescriptible.&lt;/p&gt;
+
+&lt;p&gt;Los programadores tenemos la fortuna de aprender nuevas cosas todos los días. Y no sólo de programación, sino de otras industrias. Si estamos haciendo una aplicación financiera, por ejemplo, aprendemos también de finanzas. Si es una aplicación para músicos, aprendemos también de música (a menos de que sea una aplicación que les ayuda a los músicos a llevar sus finanzas 😂).&lt;/p&gt;
+
+&lt;p&gt;Gracias a la programación, y la tecnología en general, hoy varios países ya podrían pagar un salario básico a cada uno de sus habitantes para que ninguna persona tenga que depender de un trabajo monótono y repetitivo para subsistir. Necesitamos más programadores que nos ayuden a acelerar ese proceso.&lt;/p&gt;
+
+&lt;p&gt;Por todo esto me siento muy afortunado de ser un programador.&lt;/p&gt;
+
+&lt;p&gt;Pero lo que me hace sentir más afotrunado es poder hacer lo que me apasiona todos los días, a cualquier hora y desde cualquier lugar. Y eso es algo que no cambiaría por nada del mundo.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">La programación es uno de los trabajos con mejores salarios de la actualidad y una de las carreras más importantes del futuro. Y sin embargo, esto no es lo que me hace sentir más afortunado de ser un programador.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/sunset-tree.jpg" /></entry><entry><title type="html">¿Cómo aprovechar al máximo los mentores de Make it Real?</title><link href="http://blog.makeitreal.camp/como-aprovechar-al-maximo-los-mentores/" rel="alternate" type="text/html" title="¿Cómo aprovechar al máximo los mentores de Make it Real?" /><published>2017-09-18T02:00:00-05:00</published><updated>2017-09-18T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/como-aprovechar-al-maximo-los-mentores</id><content type="html" xml:base="http://blog.makeitreal.camp/como-aprovechar-al-maximo-los-mentores/">&lt;p&gt;Quizá la principal ventaja de nuestros programas es la guía y retroalimentación de los mentores. En este post aprenderás cómo aprovecharlos al máximo para acelerar tu aprendizaje.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Toda la información para aprender a programar está en Internet. El problema no es falta de información, al contrario, uno de los problemas que tienen hoy las personas que quieren aprender a programar es el exceso de información.&lt;/p&gt;
 
@@ -646,44 +658,4 @@ M  a  k   e      i   t      R  e   a  l&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;0   0   1   0   0   1   1   0
 128 64  32  16  8   4   2   1&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Los dígitos sobre el 2, 4 y 32 son 1, así que sumamos esos números: 2 + 4 + 32 = &lt;strong&gt;38&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/the-matrix.jpg" /></entry><entry><title type="html">¿Qué hace diferente a Make it Real?</title><link href="http://blog.makeitreal.camp/que-hace-diferente-a-make-it-real/" rel="alternate" type="text/html" title="¿Qué hace diferente a Make it Real?" /><published>2017-05-20T12:00:00-05:00</published><updated>2017-05-20T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/que-hace-diferente-a-make-it-real</id><content type="html" xml:base="http://blog.makeitreal.camp/que-hace-diferente-a-make-it-real/">&lt;p&gt;Cualquier persona puede aprender a programar por su cuenta. ¿Por qué pagar por un programa como el de &lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; y qué lo hace diferente de cualquier otro programa?&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Hace unos días hicimos un Hangout con varios estudiantes que se han graduado de &lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; y que hoy en día tienen un empleo como desarrolladores Web. El video completo lo puedes encontrar en &lt;a href=&quot;https://www.youtube.com/watch?v=9egJqvsPBAo&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ese Hangout no sólo me hizo sentir muy orgulloso de nuestros alumnos, también me hizo reflexionar sobre el verdadero valor de nuestro programa y qué lo hace diferente a cualquier otro programa, no sólo en Latinoamérica, sino en cualquier otra parte del mundo.&lt;/p&gt;
-
-&lt;h2 id=&quot;nuestro-programa&quot;&gt;Nuestro programa&lt;/h2&gt;
-
-&lt;p&gt;En &lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; hemos desarrollado un currículo apoyado de una plataforma de aprendizaje que cada persona puede hacer a su propio ritmo (con un límite de un año).&lt;/p&gt;
-
-&lt;p&gt;Nuestro programa &lt;a href=&quot;https://makeitreal.camp/full-stack-online&quot; target=&quot;_blank&quot;&gt;Full Stack&lt;/a&gt;, por ejemplo, toma entre 600 y 1,100 horas de dedicación, dependiendo de los conocimientos previos de la persona.&lt;/p&gt;
-
-&lt;p&gt;Pero quizá lo más valioso de nuestros programas y lo que lo hace diferente de cualquier otro programa son &lt;strong&gt;los mentores&lt;/strong&gt; y &lt;strong&gt;el acompañamiento&lt;/strong&gt; que reciben cada uno de nuestros estudiantes.&lt;/p&gt;
-
-&lt;blockquote&gt;No se trata sólo de aprender a programar, se trata de sentirse apoyado en cada parte del proceso, ya sea para encontrar un empleo o convertirse en emprendedor tecnológico.&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;los-mentores&quot;&gt;Los mentores&lt;/h2&gt;
-
-&lt;p&gt;Nuestro objetivo no es sólo que los estudiantes aprendan a escribir código, es que aprendan a escribir código legible y mantenible en el tiempo aplicando las mejores prácticas de desarrollo.&lt;/p&gt;
-
-&lt;p&gt;Eso es algo que es muy difícil de aprender por cuenta propia. La retroalimentación que les brindamos a los estudiantes durante y después del programa es fundamental para acelerar su aprendizaje y que estén siempre mejorando.&lt;/p&gt;
-
-&lt;p&gt;En los programas online de &lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; cualquier estudiante puede solicitar asesoría de un mentor para recibir retroalimentación de su código, ayuda en un reto o simplemente para solucionar alguna duda o problema.&lt;/p&gt;
-
-&lt;p&gt;Las asesorías no deben ser de temas relacionados con el programa, también ayudamos a los estudiantes en sus proyectos personales y en sus trabajos. De hecho creemos que esa es la mejor forma de aprender!&lt;/p&gt;
-
-&lt;h2 id=&quot;el-acompañamiento&quot;&gt;El acompañamiento&lt;/h2&gt;
-
-&lt;p&gt;No es sólo aprender a programar. Hemos desarrollado una metodología de acompañamiento con el objetivo de ayudar a cada estudiante a lograr su meta, ya sea encontrar un empleo o emprender en tecnología.&lt;/p&gt;
-
-&lt;p&gt;La mayoría de programas abandonan a los estudiantes en el momento más difícil, cuando han terminado el programa y se van a enfrentar a su primer empleo o van a empezar a emprender.&lt;/p&gt;
-
-&lt;p&gt;En &lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; seguimos ayudando y guiando a nuestros egresados aún cuando han terminado el programa, especialmente durante su primer empleo. Eso no sólo es bueno para ellos, también es bueno para las empresas que los contratan porque no tienen que gastar tanto tiempo en capacitación y acompañamiento.&lt;/p&gt;
-
-&lt;h2 id=&quot;no-es-para-todo-el-mundo&quot;&gt;No es para todo el mundo&lt;/h2&gt;
-
-&lt;p&gt;En &lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; estamos transformando la educación. Pero eso requiere también un cambio de mentalidad en cada persona.&lt;/p&gt;
-
-&lt;p&gt;Desafortunadamente nuestro sistema educativo nos ha acostumbrado a ir a clase a que nos enseñen (ahora a ver videos) y nos digan exactamente qué hacer.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://makeitreal.camp&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; está diseñado para personas que están dispuestas a apropiarse de su aprendizaje con la guía de mentores experimentados que los ayuden a acelerar su aprendizaje y lograr sus metas.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Cualquier persona puede aprender a programar por su cuenta. ¿Por qué pagar por un programa como el de Make it Real y qué lo hace diferente de cualquier otro programa?</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/the-path.jpg" /></entry></feed>
+&lt;p&gt;Los dígitos sobre el 2, 4 y 32 son 1, así que sumamos esos números: 2 + 4 + 32 = &lt;strong&gt;38&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/the-matrix.jpg" /></entry></feed>
