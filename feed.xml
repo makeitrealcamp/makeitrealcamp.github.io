@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-10-15T02:28:08-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">La fortuna de ser programador</title><link href="http://blog.makeitreal.camp/la-fortuna-de-ser-programador/" rel="alternate" type="text/html" title="La fortuna de ser programador" /><published>2017-10-02T02:00:00-05:00</published><updated>2017-10-02T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-fortuna-de-ser-programador</id><content type="html" xml:base="http://blog.makeitreal.camp/la-fortuna-de-ser-programador/">&lt;p&gt;La programación es uno de los trabajos con mejores salarios de la actualidad y una de las carreras más importantes del futuro. Y sin embargo, esto &lt;strong&gt;no&lt;/strong&gt; es lo que me hace sentir más afortunado de ser un programador.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-10-29T12:44:34-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">La era de la información digital</title><link href="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/" rel="alternate" type="text/html" title="La era de la información digital" /><published>2017-10-28T02:00:00-05:00</published><updated>2017-10-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-era-de-la-informacion-digital</id><content type="html" xml:base="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/">&lt;p&gt;¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Alrededor del año 3000 AEC, en Mesopotamia, los sumerios implementaron la primera forma de escritura, llamada escritura cuneiforme. Antes de la escritura, la única forma de almacenar y replicar información era utilizando nuestros cerebros, que &lt;strong&gt;no&lt;/strong&gt; son particularmente buenos para esa tarea.&lt;/p&gt;
+
+&lt;p&gt;La escritura nos permitió almacenar texto, pero más adelante también fue posible almacenar música, imágenes y video en diferentes medios análogos como vinilos, fotografías y cintas magnéticas.&lt;/p&gt;
+
+&lt;p&gt;Hoy podemos almacenar toda esa información en nuestros computadores de forma digital. Pero ¿cómo es eso posible?&lt;/p&gt;
+
+&lt;p&gt;La respuesta es que en 1948 un personaje llamado &lt;a href=&quot;https://es.wikipedia.org/wiki/Claude_Elwood_Shannon&quot; target=&quot;_blank&quot;&gt;Claude Shannon&lt;/a&gt;, en su publicación &lt;a href=&quot;https://es.wikipedia.org/wiki/Una_teor%C3%ADa_matem%C3%A1tica_de_la_comunicaci%C3%B3n&quot; target=&quot;_blank&quot;&gt;Una Teoría Matemática de la Comunicación&lt;/a&gt; demostró cómo toda la información puede ser representada en números, sin importar qué tipo de información sea (texto, audio, video, etc.). Su principal objetivo era demostrar que cualquier mensaje se puede transmitir utilizando números, pero su teoría también fue aplicada al almacenamiento de información.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, una forma en que podemos representar texto con números es asignándole a cada letra del alfabeto un número único: 1 para representar la A, 2 para la B, 26 para la Z, 0 para el espacio, etc.&lt;/p&gt;
+
+&lt;p&gt;También es posible representar audio, imágenes y video con técnicas similares, aunque un poco más sofisticadas: audio no son más que cambios de frecuencias en el tiempo, que también pueden ser representados con números. Una imagen puede ser separada en pixeles (cuadrados) y utilizar números para expresar el color de cada pixel.&lt;/p&gt;
+
+&lt;p&gt;Al proceso de convertir la información en números se le conoce como digitalización, y por eso se habla de información digital (está almacenada en dígitos).&lt;/p&gt;
+
+&lt;p&gt;La información digital tiene la ventaja de que es fácilmente replicable (y las réplicas son exactas), pero la desventaja es que es posible que se pierda información en el proceso de digitalización, como cuando la música en vinilo pierde fidelidad al ser digitalizada o cuando una fotografía se ve pixelada por baja resolución.&lt;/p&gt;
+
+&lt;h2 id=&quot;dígitos-binarios&quot;&gt;Dígitos binarios&lt;/h2&gt;
+
+&lt;p&gt;El sistema numérico al que estamos acostumbrados es el decimal, que utiliza diez dígitos en cada posición: 0 a 9.&lt;/p&gt;
+
+&lt;p&gt;Pero existen otros sistemas numéricos como el binario, compuesto de dos dígitos en cada posición (0 y 1), o el octal, compuesto por 8 dígitos en cada posición (0 a 7), o el hexadecimal, compuesto de 16 dígitos en cada posición (se utilizan las letras A, B, C, D, E y F para representar los números del 10 al 15).&lt;/p&gt;
+
+&lt;p&gt;Cualquier número se puede convertir de un sistema a otro. La diferencia es que un sistema puede necesitar más o menos posiciones que otro para representar el mismo número. Por ejemplo, para representar el número doce necesitamos dos posiciones en el sistema decimal (12). En el sistema hexadecimal sólo necesitamos una posición (C) y en el sistema binario necesitamos cuatro posiciones (1100).&lt;/p&gt;
+
+&lt;p&gt;Aunque es posible crear un computador utilizando el sistema decimal (de hecho los primeros computadores utilizaban este sistema), es mucho mejor utilizar el sistema binario. La razón es que los computadores utilizan diferentes voltajes eléctricos para representar cada dígito. Entre más voltajes necesitemos, mayor el consumo de energía y mayor la probabilidad de error.&lt;/p&gt;
+
+&lt;p&gt;Es por eso que hoy en día almacenamos y transmitimos toda la información utilizando únicamente dos dígitos (0 y 1), más conocidos como &lt;strong&gt;bits&lt;/strong&gt;, que es una contracción de las palabras &lt;strong&gt;binary digits&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;medir-la-información&quot;&gt;Medir la información&lt;/h2&gt;
+
+&lt;p&gt;Una consecuencia interesante de representar la información en dígitos es que es posible medirla, sin importar si es texto, imágenes, audio o video.  Por ejemplo,  podemos decir que nuestro disco duro tiene 500 gigabytes ocupados, independiente si es texto, música, o cualquier otro tipo de información.&lt;/p&gt;
+
+&lt;p&gt;Por cierto, 8 bits forman un byte, 1000 bytes forman un kilobyte, 1000 kilobytes forman un megabyte, 1000 megabytes forman un gigabyte, y así siguen los terabytes, petabytes, exabytes, etc.  Un petabyte, por ejemplo, son 8000000000000000 bits (esos son 15 ceros).&lt;/p&gt;
+
+&lt;p&gt;También podemos medir la cantidad de información que estamos produciendo por alguna medida de tiempo, por ejemplo día, hora, segundo, etc. Según &lt;a href=&quot;http://www.new.vcloudnews.com/wp-content/uploads/2015/04/big-data-infographic1.png&quot; target=&quot;_blank&quot;&gt;esta infografía&lt;/a&gt;, en 1992 estábamos generando 100GB de información digital al día, se calcula que para el 2018 estaremos generando 50 terabytes por segundo!&lt;/p&gt;
+
+&lt;p&gt;Sí, esta es definitivamente la era de la información digital.&lt;/p&gt;
+
+&lt;p&gt;Otros posts recomendados:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/que-es-codigo&quot;&gt;¿Qué es código?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/aprende-a-leer-en-codigo-binario&quot;&gt;Aprende a leer en código binario&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/digital-analog.jpeg" /></entry><entry><title type="html">La fortuna de ser programador</title><link href="http://blog.makeitreal.camp/la-fortuna-de-ser-programador/" rel="alternate" type="text/html" title="La fortuna de ser programador" /><published>2017-10-02T02:00:00-05:00</published><updated>2017-10-02T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-fortuna-de-ser-programador</id><content type="html" xml:base="http://blog.makeitreal.camp/la-fortuna-de-ser-programador/">&lt;p&gt;La programación es uno de los trabajos con mejores salarios de la actualidad y una de las carreras más importantes del futuro. Y sin embargo, esto &lt;strong&gt;no&lt;/strong&gt; es lo que me hace sentir más afortunado de ser un programador.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;La programación es mucho más que escribir código. La programación es un proceso creativo, mentalmente desafiante, que genera gran satisfacción personal.&lt;/p&gt;
 
@@ -545,117 +590,4 @@ window.EntriesView = EntriesView
 
 &lt;p&gt;¿En qué casos &lt;strong&gt;no&lt;/strong&gt; recomendaría &lt;strong&gt;Turbolinks&lt;/strong&gt;? Si tu aplicación requiere mucha interacción en el navegador mi recomendación sería utilizar un framework de JavaScript como React para el front.&lt;/p&gt;
 
-&lt;p&gt;Si quieres más información de &lt;strong&gt;Turbolinks&lt;/strong&gt; mi recomendación es leer &lt;a href=&quot;https://github.com/turbolinks/turbolinks&quot; target=&quot;_blank&quot;&gt;la documentación de la gema&lt;/a&gt;, se aprende bastante!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos a ver qué es Turbolinks y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/turbolinks.jpeg" /></entry><entry><title type="html">Aprende a leer en código binario</title><link href="http://blog.makeitreal.camp/aprende-a-leer-en-codigo-binario/" rel="alternate" type="text/html" title="Aprende a leer en código binario" /><published>2017-05-30T12:00:00-05:00</published><updated>2017-05-30T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/aprende-a-leer-en-codigo-binario</id><content type="html" xml:base="http://blog.makeitreal.camp/aprende-a-leer-en-codigo-binario/">&lt;p&gt;En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;En la escena final, el protagonista, Neo, aprende a “ver” el código, lo que le permite derrotar con facilidad a los &lt;strong&gt;agentes&lt;/strong&gt;, programas del mundo digital cuidadosamente disfrazados de humanos.&lt;/p&gt;
-
-&lt;p&gt;En este post no aprenderás a “ver” en código pero sí a “&lt;strong&gt;leer&lt;/strong&gt;” en código, en &lt;strong&gt;código binario&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, lo más probable es que en este momento la siguiente cadena de unos y ceros no tenga el más mínimo significado para ti.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;010011010110000101101011011001010010000001101001011101000010000001010010011001010110000101101100&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;No te preocupes! Al final de este post habrás aprendido que ahí dice muy claro:&lt;/p&gt;
-
-&lt;p style=&quot;text-align: center&quot;&gt;&lt;strong&gt;Make it Real&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;A cada uno de esos ceros y unos se les conoce como un &lt;strong&gt;bit&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;El primer paso para aprender a leer en &lt;strong&gt;código binario&lt;/strong&gt; es separar esos &lt;strong&gt;bits&lt;/strong&gt; en grupos de &lt;strong&gt;ocho&lt;/strong&gt;. A cada grupo de ocho &lt;strong&gt;bits&lt;/strong&gt; se le conoce como un &lt;strong&gt;byte&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;pre style=&quot;word-break: break-word;&quot;&gt;&lt;code style=&quot;word-break: break-word;&quot; class=&quot;language-none&quot;&gt;01001101 01100001 01101011 01100101 00100000 01101001 01110100 00100000 01010010 01100101 01100001 01101100&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Si cuentas los &lt;strong&gt;bytes&lt;/strong&gt; te darás cuenta hay doce. Doce! El mismo número de letras y espacios que hay en la cadena &lt;strong&gt;Make it Real&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Cada uno de esos &lt;strong&gt;bytes&lt;/strong&gt; representa un número en nuestro sistema decimal entre 0 a 255.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, el primer &lt;strong&gt;byte&lt;/strong&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;01100001&lt;/code&gt;, es el número decimal &lt;strong&gt;77&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;La forma más rápida de convertir un &lt;strong&gt;número binario&lt;/strong&gt; a un número decimal es con un &lt;a href=&quot;http://www.binaryhexconverter.com/binary-to-decimal-converter&quot; target=&quot;_blank&quot;&gt;convertidor online&lt;/a&gt;. Sin embargo, si quieres saber cómo se hace manualmente espera al final del post, no es difícil.&lt;/p&gt;
-
-&lt;p&gt;Si convertimos todos los &lt;strong&gt;bytes&lt;/strong&gt; a decimal terminamos con los siguientes números:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;77 97 107 101 32 105 116 32 82 101 97 108&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;¿Qué hacemos ahora con esos números? Para eso tenemos que aprender sobre el que yo considero el estándar más importante en toda la historia de la computación.&lt;/p&gt;
-
-&lt;h2 id=&quot;ascii&quot;&gt;ASCII&lt;/h2&gt;
-
-&lt;p&gt;ASCII (American Standard Code for Information Interchange) es un estándar desarrollado en los años 60’s para representar texto utilizando números.&lt;/p&gt;
-
-&lt;p&gt;Algunos caracteres del estándar ASCII son los siguientes:&lt;/p&gt;
-
-&lt;table class=&quot;table&quot;&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th class=&quot;text-center&quot;&gt;Carácter ASCII&lt;/th&gt;
-      &lt;th class=&quot;text-center&quot;&gt;Decimal&lt;/th&gt;
-      &lt;th class=&quot;text-center&quot;&gt;Binario&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-  	&lt;tr&gt;
-      &lt;td class=&quot;text-center&quot;&gt;Espacio&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;32&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;00100000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class=&quot;text-center&quot;&gt;1&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;49&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;00110001&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class=&quot;text-center&quot;&gt;A&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;65&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;01000001&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class=&quot;text-center&quot;&gt;a&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;97&lt;/td&gt;
-      &lt;td class=&quot;text-center&quot;&gt;01100001&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;En &lt;a href=&quot;http://www.ascii-code.com/&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt; puedes encontrar la tabla completa.&lt;/p&gt;
-
-&lt;p&gt;Si reemplazamos cada uno de los números en decimal por su respectivo caracter en ASCII, encontraremos el significado del código:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;77 97 107 101 32 105 116 32 82 101 97 108
-M  a  k   e      i   t      R  e   a  l&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;¡Eso es todo! Si quieres practicar intenta descifrar qué dice el siguiente código binario:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;01001000011011110110110001100001001000000100110101110101011011100110010001101111&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Recuerda:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Partir en grupos de ocho (&lt;strong&gt;bytes&lt;/strong&gt;).&lt;/li&gt;
-  &lt;li&gt;Convertir cada &lt;strong&gt;byte&lt;/strong&gt; en decimal.&lt;/li&gt;
-  &lt;li&gt;Utilizar la &lt;a href=&quot;http://www.ascii-code.com/&quot; target=&quot;_blank&quot;&gt;tabla ASCII&lt;/a&gt; para convertir cada número a su respectivo caracter ASCII.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;¿Qué tal esta otra?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;010101100110010101101110001000000111100100100000011000010111000001110010011001010110111001100100011001010010000001100011011011110110111000100000011011100110111101110011011011110111010001110010011011110111001100100000011001010110111000100000010011010110000101101011011001010010000001101001011101000010000001010010011001010110000101101100001000000011101000101001&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;convertir-binario-a-decimal&quot;&gt;Convertir binario a decimal&lt;/h2&gt;
-
-&lt;p&gt;Para convertir un número binario de ocho digitos (un &lt;strong&gt;byte&lt;/strong&gt;) a decimal sólo tienes que seguir estos pasos.&lt;/p&gt;
-
-&lt;p&gt;Toma el número en binario, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;00100000&lt;/code&gt;, y escribe los siguientes números debajo de cada dígito:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;0   0   1   0   0   0   0   0
-128 64  32  16  8   4   2   1&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Empieza por el 1 a la derecha y vas duplicando siempre el último número.&lt;/p&gt;
-
-&lt;p&gt;Suma los números de &lt;strong&gt;la fila de abajo&lt;/strong&gt; cuyo dígito encima sea 1. En este caso el único 1 está sobre 32 así que la respuesta es &lt;strong&gt;32&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Veamos otro ejemplo.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;0   0   1   0   0   1   1   0
-128 64  32  16  8   4   2   1&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Los dígitos sobre el 2, 4 y 32 son 1, así que sumamos esos números: 2 + 4 + 32 = &lt;strong&gt;38&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/the-matrix.jpg" /></entry></feed>
+&lt;p&gt;Si quieres más información de &lt;strong&gt;Turbolinks&lt;/strong&gt; mi recomendación es leer &lt;a href=&quot;https://github.com/turbolinks/turbolinks&quot; target=&quot;_blank&quot;&gt;la documentación de la gema&lt;/a&gt;, se aprende bastante!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos a ver qué es Turbolinks y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/turbolinks.jpeg" /></entry></feed>
