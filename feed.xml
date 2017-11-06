@@ -1,4 +1,98 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-10-29T12:59:57-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">La era de la información digital</title><link href="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/" rel="alternate" type="text/html" title="La era de la información digital" /><published>2017-10-28T02:00:00-05:00</published><updated>2017-10-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-era-de-la-informacion-digital</id><content type="html" xml:base="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/">&lt;p&gt;¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2017-11-06T13:58:15-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Lenguajes compilados e interpretados</title><link href="http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/" rel="alternate" type="text/html" title="Lenguajes compilados e interpretados" /><published>2017-11-06T02:00:00-05:00</published><updated>2017-11-06T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados</id><content type="html" xml:base="http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/">&lt;p&gt;C, C++ y Go son lenguajes de programación &lt;strong&gt;compilados&lt;/strong&gt;. JavaScript, Python y Ruby son lenguajes &lt;strong&gt;interpretados&lt;/strong&gt;. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Tanto &lt;strong&gt;compiladores&lt;/strong&gt; como &lt;strong&gt;interpretadores&lt;/strong&gt; son programas que convierten el código que escribes a &lt;strong&gt;lenguaje de máquina&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lenguaje de máquina&lt;/strong&gt; son las instrucciones que entiende el computador (el procesador para ser más exactos) en código binario (unos y ceros).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/code-to-machine.png&quot; alt=&quot;Lenguaje de alto nivel a lenguaje de máquina&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La principal diferencia entre un lenguaje compilado y uno interpretado es que el &lt;strong&gt;lenguaje compilado&lt;/strong&gt; requiere un paso adicional antes de ser ejecutado, la compilación, que convierte el código que escribes a &lt;strong&gt;lenguaje de máquina&lt;/strong&gt;. Un &lt;strong&gt;lenguaje interpretado&lt;/strong&gt;, por otro lado, es convertido a &lt;strong&gt;lenguaje de máquina&lt;/strong&gt; a medida que es ejecutado.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos de &lt;strong&gt;lenguajes compilados&lt;/strong&gt; incluyen C, C++, Java, Go y Rust, entre muchos otros. Ejemplos de &lt;strong&gt;lenguajes interpretados&lt;/strong&gt; incluyen Ruby, Python y JavaScript, entre muchos otros. A todos estos lenguajes se les conoce como &lt;strong&gt;lenguajes de alto nivel&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Veamos un ejemplo de cada uno.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-ejemplo-de-lenguaje-interpretado&quot;&gt;Un ejemplo de lenguaje interpretado&lt;/h2&gt;
+
+&lt;p&gt;Ruby es un lenguaje interpretado, así que podemos crear un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;hola.rb&lt;/code&gt; con el siguiente código, o cualquier código válido en Ruby (a esto se le conoce como el &lt;strong&gt;código fuente&lt;/strong&gt;):&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Y ejecutarlo directamente ingresando el siguiente comando en la consola:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;ruby hello.rb
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Te debería aparecer debajo la cadena “Hola Mundo“.  Si quieres puedes cambiar el código fuente y volverlo a ejecutar.&lt;/p&gt;
+
+&lt;h2 id=&quot;un-ejemplo-de-lenguaje-compilado&quot;&gt;Un ejemplo de lenguaje compilado&lt;/h2&gt;
+
+&lt;p&gt;Un lenguaje compilado tiene un paso adicional. Si tienes un compilador de C como &lt;a href=&quot;https://gcc.gnu.org/&quot; target=&quot;_blank&quot;&gt;gcc&lt;/a&gt; puedes crear un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt;  con el siguiente contenido, o cualquier código válido en C:&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Antes de ejecutarlo debes compilarlo con el siguiente comando:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gcc hello.c -o hello
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Eso crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; (sin extensión) con el código de máquina (llamado el ejecutable) que puedes correr en la consola con el siguiente comando:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;./hello
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Te debería aparecer la cadena de texto “Hola Mundo” debajo. Si necesitas cambiar el código fuente debes volverlo a compilar y ejecutarlo nuevamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;ventajas-y-desventajas&quot;&gt;Ventajas y desventajas&lt;/h2&gt;
+
+&lt;p&gt;En general, &lt;strong&gt;el ciclo de desarrollo (el tiempo entre el momento en que escribes el código y lo pruebas) es más rápido en un lenguaje interpretado&lt;/strong&gt;. Eso se debe a que en lenguajes compilados es necesario realizar el proceso de compilación cada vez que cambias el código fuente, aunque con herramientas adicionales se puede automatizar.&lt;/p&gt;
+
+&lt;p&gt;Otra desventaja de un lenguaje compilado es que cuando compilas un programa debes crear ejecutables para cada uno de los sistemas operativos en los que lo vayas a utilizar. Un ejecutable creado para Linux no va a servir en Windows por ejemplo.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, &lt;strong&gt;un lenguaje compilado es mucho más rápido que uno interpretado&lt;/strong&gt;. Esto se debe a que cuando es ejecutado ya se encuentra en código de máquina y eso también le permite hacer algunas optimizaciones que no son posibles con un lenguaje interpretado.&lt;/p&gt;
+
+&lt;p&gt;Además de la velocidad, otra desventaja de un lenguaje interpretado es que, para ser ejecutado, debes tener instalado el interpretador. Esto no es necesario en un lenguaje compilado que es convertido a lenguaje de máquina&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;En general, &lt;strong&gt;un lenguaje compilado está optimizado para el momento de la ejecución&lt;/strong&gt;, aunque esto signifique una carga adicional para el programador. Por otro lado, &lt;strong&gt;un lenguaje interpretado está optimizado para hacerle la vida más fácil al programador&lt;/strong&gt;, aunque eso signifique una carga adicional para la máquina.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-caso-de-java&quot;&gt;El caso de Java&lt;/h2&gt;
+
+&lt;p&gt;Java es un lenguaje particular porque es compilado, pero es compilado a un lenguaje intermedio llamado &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_bytecode&quot; target=&quot;_blank&quot;&gt;bytecode&lt;/a&gt;, que después es interpretado. Los creadores de Java querían crear un lenguaje compilado, pero que se pudiera ejecutar en cualquier sistema operativo y procesador sin necesidad de crear varios ejecutables.&lt;/p&gt;
+
+&lt;p&gt;Es por eso que si quieres ejecutar código Java debes instalar el &lt;a href=&quot;https://java.com/es/download/&quot; target=&quot;_blank&quot;&gt;JRE (Java Runtime Environment)&lt;/a&gt;, que es el programa que se encarga de interpretar el &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_bytecode&quot; target=&quot;_blank&quot;&gt;bytecode&lt;/a&gt; al que son compilados los programas de Java.&lt;/p&gt;
+
+&lt;p&gt;Si deseas compilar código Java no es suficiente instalar el JRE, necesitas el &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/index.html&quot; target=&quot;_blank&quot;&gt;JDK (Java Development Kit)&lt;/a&gt; que incluye el compilador, entre otras herramientas de desarrollo.&lt;/p&gt;
+
+&lt;p&gt;Otros lenguajes que están siguiendo este mismo modelo incluyen Elixir y C#, entre otros.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Se puede decir que los lenguajes de alto nivel se pueden dividir en tres ramas: puramente compilados (C++, Go, etc.), parcialmente compilados  (Java, Elixir, etc.)  e interpretados (Ruby, JavaScript, etc.).&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, la brecha entre estas ramas cada vez es menor. Hoy existen lenguajes compilados a lenguaje de máquina como Go y Rust que se inclinan cada vez más en la productividad y felicidad del programador mientras que los lenguajes interpretados son cada vez más rápidos en ejecución.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Como vamos a ver adelante existen lenguajes compilados que no son convertidos directamente a lenguaje de máquina sino a un lenguaje intermedio.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">C, C++ y Go son lenguajes de programación compilados. JavaScript, Python y Ruby son lenguajes interpretados. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/lights-exposure.jpeg" /></entry><entry><title type="html">La era de la información digital</title><link href="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/" rel="alternate" type="text/html" title="La era de la información digital" /><published>2017-10-28T02:00:00-05:00</published><updated>2017-10-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-era-de-la-informacion-digital</id><content type="html" xml:base="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/">&lt;p&gt;¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Alrededor del año 3000 AEC, en Mesopotamia, los sumerios implementaron la primera forma de escritura, llamada escritura cuneiforme. Antes de la escritura, la única forma de almacenar y replicar información era utilizando nuestros cerebros, que &lt;strong&gt;no&lt;/strong&gt; son particularmente buenos para esa tarea.&lt;/p&gt;
 
@@ -503,91 +597,4 @@ t3.join&lt;/code&gt;&lt;/pre&gt;
       &lt;p&gt;La implementación de referencia de Ruby (MRI), por ejemplo, no soporta la ejecución de varios threads en paralelo, así el computador tenga varios procesadores.&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/concurrency.jpeg" /></entry><entry><title type="html">Turbolinks</title><link href="http://blog.makeitreal.camp/turbolinks/" rel="alternate" type="text/html" title="Turbolinks" /><published>2017-06-12T12:00:00-05:00</published><updated>2017-06-12T12:00:00-05:00</updated><id>http://blog.makeitreal.camp/turbolinks</id><content type="html" xml:base="http://blog.makeitreal.camp/turbolinks/">&lt;p&gt;En este post vamos a ver qué es &lt;strong&gt;Turbolinks&lt;/strong&gt; y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-es-turbolinks&quot;&gt;¿Qué es Turbolinks?&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Turbolinks&lt;/strong&gt; es una gema incluida en &lt;a href=&quot;http://rubyonrails.org/&quot;&gt;Ruby on Rails&lt;/a&gt; que evita tener que recargar los archivos CSS y JavaScript cada vez que oprimes un link en tu aplicación, haciendo que las aplicaciones se sientan más rápidas y ágiles en el navegador.&lt;/p&gt;
-
-&lt;p&gt;La forma en que funciona es la siguiente: en vez de recargar la página cuando se oprime un link, &lt;strong&gt;Turbolinks&lt;/strong&gt; intercepta el click, hace un llamado AJAX al servidor y reemplaza el cuerpo (body) de la página con la respuesta.&lt;/p&gt;
-
-&lt;p&gt;Ingenioso ¿no? Con &lt;strong&gt;Turbolinks&lt;/strong&gt; tus aplicaciones se van a sentir casi como si estuviesen hechas con un framework JavaScript como Angular o React, pero sin la complejidad que eso implica.&lt;/p&gt;
-
-&lt;p&gt;Además, &lt;strong&gt;Turbolinks&lt;/strong&gt; mantiene un caché de las últimas páginas visitadas y eso permite que esas páginas se puedan mostrar de forma inmediata sin hacer un llamado al servidor.&lt;/p&gt;
-
-&lt;h2 id=&quot;los-retos-de-turbolinks&quot;&gt;Los retos de Turbolinks&lt;/h2&gt;
-
-&lt;p&gt;Eso no significa que puedes ignorar &lt;strong&gt;Turbolinks&lt;/strong&gt; y todo va a funcionar correctamente. Al contrario, debido a que los archivos JavaScript no se recargan cuando navegas por la aplicación, existen varios retos que debes conocer y enfrentar.&lt;/p&gt;
-
-&lt;h3 id=&quot;el-evento-ready&quot;&gt;El evento ready&lt;/h3&gt;
-
-&lt;p&gt;El primero reto tiene que ver con el evento &lt;code class=&quot;highlighter-rouge&quot;&gt;$(document).ready&lt;/code&gt;, que normalmente se dispara cuando se ha terminado de cargar cada página.&lt;/p&gt;
-
-&lt;p&gt;El problema es que &lt;strong&gt;Turbolinks&lt;/strong&gt; no dispara ese evento &lt;code class=&quot;highlighter-rouge&quot;&gt;ready&lt;/code&gt; cuando navegas por las páginas de la aplicación.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, si estás usando &lt;strong&gt;Turbolinks&lt;/strong&gt;, la siguiente alerta se mostraría sólo la primera vez que se carga una página, pero no en los demás cambios de página:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ready&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Esta es quizá la principal queja de las personas que no conocen &lt;strong&gt;Turbolinks&lt;/strong&gt;: que su código JavaScript no se está ejecutando al pasar de una página a otra.&lt;/p&gt;
-
-&lt;p&gt;La solución es utilizar el evento &lt;code class=&quot;highlighter-rouge&quot;&gt;turbolinks:load&lt;/code&gt; que se dispara también en los cambios de página:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;turbolinks:load&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hola&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;De esta forma la alerta se mostraría la primera vez que se carga una página, pero también en los siguientes cambios de página.&lt;/p&gt;
-
-&lt;h3 id=&quot;el-contexto-global&quot;&gt;El contexto global&lt;/h3&gt;
-
-&lt;p&gt;El segundo reto al utilizar &lt;strong&gt;Turbolinks&lt;/strong&gt; es que todas las variables que almacenes en el contexto global de JavaScript van a permanecer entre páginas. Esto puede ser un problema o no dependiendo de la complejidad de tu código, pero es algo que debes tener en cuenta.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, si en una página definiste una variable llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;miVariable&lt;/code&gt; en el contexto global, en las siguientes páginas esa variable va a seguir existiendo.&lt;/p&gt;
-
-&lt;p&gt;La forma de evitar eso es con un poco de cuidado y organización, evitando al máximo contaminar el contexto global.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, un patrón que sigo en mis aplicaciones es el siguiente. En el archivo &lt;strong&gt;CoffeeScript&lt;/strong&gt; creo una clase con el código que necesito para la vista:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-coffeescript&quot;&gt;class EntriesView
-  constructor: (options) -&amp;gt;
-    # acá enlazo los eventos
-
-window.EntriesView = EntriesView
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Y en la vista, al final, creo el objeto y le paso la información necesaria por el argumento del constructor:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-html&quot;&gt;&amp;lt;script&amp;gt;
-  new EntriesView({});
-&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;De esa forma evito contaminar al máximo el contexto global y el código queda bien organizado.&lt;/p&gt;
-
-&lt;h3 id=&quot;entendiendo-el-caché&quot;&gt;Entendiendo el caché&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Turbolinks&lt;/strong&gt; mantiene un caché de las páginas visitadas recientemente.&lt;/p&gt;
-
-&lt;p&gt;Antes de navegar a una nueva página &lt;strong&gt;Turbolinks&lt;/strong&gt; guarda una copia de la página actual en caché. Esa copia no incluye los eventos o datos asociados a los elementos.&lt;/p&gt;
-
-&lt;p&gt;El reto acá es el siguiente:&lt;/p&gt;
-
-&lt;p&gt;Tu código JavaScript puede modificar la página cuando carga, y &lt;strong&gt;esa página modificada es la que se almacena en caché&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Luego, cuando se obtiene nuevamente del caché, el código JavaScript vuelve a correr y &lt;strong&gt;vuelve a modificar la página&lt;/strong&gt;. Eso puede ser lo que buscas o no, pero igual es algo que debes tener en cuenta.&lt;/p&gt;
-
-&lt;p&gt;Siempre que escribas &lt;strong&gt;JavaScript&lt;/strong&gt; (o &lt;strong&gt;CoffeeScript&lt;/strong&gt;) piensa que esa página pudo haber sido recuperada del caché.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Es sorprendente que &lt;strong&gt;Turbolinks&lt;/strong&gt; venga activado por defecto en las aplicaciones de Rails. Sería preferible que uno lo activara después de conocer cómo funciona y qué cosas tener en cuenta. Pero ahora ya lo sabes!&lt;/p&gt;
-
-&lt;p&gt;¿En qué casos &lt;strong&gt;no&lt;/strong&gt; recomendaría &lt;strong&gt;Turbolinks&lt;/strong&gt;? Si tu aplicación requiere mucha interacción en el navegador mi recomendación sería utilizar un framework de JavaScript como React para el front.&lt;/p&gt;
-
-&lt;p&gt;Si quieres más información de &lt;strong&gt;Turbolinks&lt;/strong&gt; mi recomendación es leer &lt;a href=&quot;https://github.com/turbolinks/turbolinks&quot; target=&quot;_blank&quot;&gt;la documentación de la gema&lt;/a&gt;, se aprende bastante!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos a ver qué es Turbolinks y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/turbolinks.jpeg" /></entry></feed>
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/concurrency.jpeg" /></entry></feed>

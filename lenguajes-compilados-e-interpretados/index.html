@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Lenguajes compilados e interpretados </title>
+  <meta name="description" content="C, C++ y Go son lenguajes de programación compilados. JavaScript, Python y Ruby son lenguajes interpretados. ¿Cuál es la diferencia y las ventajas/desventaja...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Lenguajes compilados e interpretados">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/lights-exposure.jpeg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2017-11-06T02:00:00-05:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/lights-exposure.jpeg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Nov 6, 2017</time>
+                </div>
+                <h1>Lenguajes compilados e interpretados</h1>
+                <div class="post-body"><p>C, C++ y Go son lenguajes de programación <strong>compilados</strong>. JavaScript, Python y Ruby son lenguajes <strong>interpretados</strong>. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.<!-- more --></p>
+
+<p>Tanto <strong>compiladores</strong> como <strong>interpretadores</strong> son programas que convierten el código que escribes a <strong>lenguaje de máquina</strong>.</p>
+
+<p><strong>Lenguaje de máquina</strong> son las instrucciones que entiende el computador (el procesador para ser más exactos) en código binario (unos y ceros).</p>
+
+<p><img src="/assets/images/code-to-machine.png" alt="Lenguaje de alto nivel a lenguaje de máquina" class="photo" /></p>
+
+<p>La principal diferencia entre un lenguaje compilado y uno interpretado es que el <strong>lenguaje compilado</strong> requiere un paso adicional antes de ser ejecutado, la compilación, que convierte el código que escribes a <strong>lenguaje de máquina</strong>. Un <strong>lenguaje interpretado</strong>, por otro lado, es convertido a <strong>lenguaje de máquina</strong> a medida que es ejecutado.</p>
+
+<p>Ejemplos de <strong>lenguajes compilados</strong> incluyen C, C++, Java, Go y Rust, entre muchos otros. Ejemplos de <strong>lenguajes interpretados</strong> incluyen Ruby, Python y JavaScript, entre muchos otros. A todos estos lenguajes se les conoce como <strong>lenguajes de alto nivel</strong>.</p>
+
+<p>Veamos un ejemplo de cada uno.</p>
+
+<h2 id="un-ejemplo-de-lenguaje-interpretado">Un ejemplo de lenguaje interpretado</h2>
+
+<p>Ruby es un lenguaje interpretado, así que podemos crear un archivo llamado <code class="highlighter-rouge">hola.rb</code> con el siguiente código, o cualquier código válido en Ruby (a esto se le conoce como el <strong>código fuente</strong>):</p>
+
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="nb">puts</span> <span class="s2">"Hola Mundo"</span>
+</code></pre>
+</div>
+
+<p>Y ejecutarlo directamente ingresando el siguiente comando en la consola:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>ruby hello.rb
+</code></pre>
+</div>
+
+<p>Te debería aparecer debajo la cadena “Hola Mundo“.  Si quieres puedes cambiar el código fuente y volverlo a ejecutar.</p>
+
+<h2 id="un-ejemplo-de-lenguaje-compilado">Un ejemplo de lenguaje compilado</h2>
+
+<p>Un lenguaje compilado tiene un paso adicional. Si tienes un compilador de C como <a href="https://gcc.gnu.org/" target="_blank">gcc</a> puedes crear un archivo llamado <code class="highlighter-rouge">hello.c</code>  con el siguiente contenido, o cualquier código válido en C:</p>
+
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="cp">#include &lt;stdio.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Hola Mundo"</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<p>Antes de ejecutarlo debes compilarlo con el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>gcc hello.c -o hello
+</code></pre>
+</div>
+
+<p>Eso crea un archivo llamado <code class="highlighter-rouge">hello</code> (sin extensión) con el código de máquina (llamado el ejecutable) que puedes correr en la consola con el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>./hello
+</code></pre>
+</div>
+
+<p>Te debería aparecer la cadena de texto “Hola Mundo” debajo. Si necesitas cambiar el código fuente debes volverlo a compilar y ejecutarlo nuevamente.</p>
+
+<h2 id="ventajas-y-desventajas">Ventajas y desventajas</h2>
+
+<p>En general, <strong>el ciclo de desarrollo (el tiempo entre el momento en que escribes el código y lo pruebas) es más rápido en un lenguaje interpretado</strong>. Eso se debe a que en lenguajes compilados es necesario realizar el proceso de compilación cada vez que cambias el código fuente, aunque con herramientas adicionales se puede automatizar.</p>
+
+<p>Otra desventaja de un lenguaje compilado es que cuando compilas un programa debes crear ejecutables para cada uno de los sistemas operativos en los que lo vayas a utilizar. Un ejecutable creado para Linux no va a servir en Windows por ejemplo.</p>
+
+<p>Sin embargo, <strong>un lenguaje compilado es mucho más rápido que uno interpretado</strong>. Esto se debe a que cuando es ejecutado ya se encuentra en código de máquina y eso también le permite hacer algunas optimizaciones que no son posibles con un lenguaje interpretado.</p>
+
+<p>Además de la velocidad, otra desventaja de un lenguaje interpretado es que, para ser ejecutado, debes tener instalado el interpretador. Esto no es necesario en un lenguaje compilado que es convertido a lenguaje de máquina<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>En general, <strong>un lenguaje compilado está optimizado para el momento de la ejecución</strong>, aunque esto signifique una carga adicional para el programador. Por otro lado, <strong>un lenguaje interpretado está optimizado para hacerle la vida más fácil al programador</strong>, aunque eso signifique una carga adicional para la máquina.</p>
+
+<h2 id="el-caso-de-java">El caso de Java</h2>
+
+<p>Java es un lenguaje particular porque es compilado, pero es compilado a un lenguaje intermedio llamado <a href="https://en.wikipedia.org/wiki/Java_bytecode" target="_blank">bytecode</a>, que después es interpretado. Los creadores de Java querían crear un lenguaje compilado, pero que se pudiera ejecutar en cualquier sistema operativo y procesador sin necesidad de crear varios ejecutables.</p>
+
+<p>Es por eso que si quieres ejecutar código Java debes instalar el <a href="https://java.com/es/download/" target="_blank">JRE (Java Runtime Environment)</a>, que es el programa que se encarga de interpretar el <a href="https://en.wikipedia.org/wiki/Java_bytecode" target="_blank">bytecode</a> al que son compilados los programas de Java.</p>
+
+<p>Si deseas compilar código Java no es suficiente instalar el JRE, necesitas el <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank">JDK (Java Development Kit)</a> que incluye el compilador, entre otras herramientas de desarrollo.</p>
+
+<p>Otros lenguajes que están siguiendo este mismo modelo incluyen Elixir y C#, entre otros.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Se puede decir que los lenguajes de alto nivel se pueden dividir en tres ramas: puramente compilados (C++, Go, etc.), parcialmente compilados  (Java, Elixir, etc.)  e interpretados (Ruby, JavaScript, etc.).</p>
+
+<p>Sin embargo, la brecha entre estas ramas cada vez es menor. Hoy existen lenguajes compilados a lenguaje de máquina como Go y Rust que se inclinan cada vez más en la productividad y felicidad del programador mientras que los lenguajes interpretados son cada vez más rápidos en ejecución.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Como vamos a ver adelante existen lenguajes compilados que no son convertidos directamente a lenguaje de máquina sino a un lenguaje intermedio.&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Lenguajes compilados e interpretados&url=http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/&p[title]=Lenguajes compilados e interpretados" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/&title=Lenguajes compilados e interpretados&summary=&source=http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+
+    </footer>
+  </body>
+</html>
