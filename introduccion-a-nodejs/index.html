@@ -83,11 +83,17 @@
                 <h1>Introducción a Node.js</h1>
                 <div class="post-body"><p><a href="https://nodejs.org/en/" target="_blank">Node.js</a> es una plataforma que nos permite ejecutar código JavaScript fuera del navegador. En este post explicaremos cómo empezar con <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, qué tipo de aplicaciones puedes construir y una introducción a su poderoso manejador de paquetes.<!-- more --></p>
 
-<p>En <a href="https://nodejs.org/en/" target="_blank">Node.js</a> conceptos como variables, condicionales, ciclos, arreglos, objetos, funciones, etc. de JavaScript funcionan igual que en el navegador.</p>
+<p>Muchas personas creen que <a href="https://nodejs.org/en/" target="_blank">Node.js</a> se utiliza sólo para crear aplicaciones Web, pero esto no es cierto. Con <a href="https://nodejs.org/en/" target="_blank">Node.js</a> puedes hacer mucho más que eso. <a href="https://nodejs.org/en/" target="_blank">Node.js</a> es equivalente a otros lenguajes de programación como Ruby, Python y Java, por nombrar algunos.</p>
 
-<p>Lo que cambia entre el navegador y <a href="https://nodejs.org/en/" target="_blank">Node.js</a> son los objetos a los que tenemos acceso. Por ejemplo, en el navegador podemos utilizar objetos como <code class="highlighter-rouge">window</code> y <code class="highlighter-rouge">document</code>,  que no están disponibles en <a href="https://nodejs.org/en/" target="_blank">Node.js</a>.</p>
+<p>Todo lo que sabes actualmente de JavaScript te va a servir para crear aplicaciones con <a href="https://nodejs.org/en/" target="_blank">Node.js</a> (variables, condicionales, ciclos, arreglos, etc.). Sin embargo, con Node.js puedes hacer cosas que no se pueden hacer dentro del navegador como:</p>
 
-<p>Por otro lado, en <a href="https://nodejs.org/en/" target="_blank">Node.js</a> podemos hacer cosas que no podemos hacer en el navegador como leer y escribir archivos, crear un servidor Web, crear aplicaciones de escritorio, o crear aplicaciones para la línea de comandos, entre otros.</p>
+<ul>
+  <li>Manipular archivos del sistema (crear, editar, eliminar, etc.).</li>
+  <li>Crear aplicaciones para la línea de comandos.</li>
+  <li>Crear aplicaciones móviles.</li>
+  <li>Crear aplicaciones de escritorio.</li>
+  <li>Y, claro, crear aplicaciones Web.</li>
+</ul>
 
 <h2 id="primeros-pasos">Primeros pasos</h2>
 
@@ -96,24 +102,29 @@
 <p>Asegúrate que haya sido correctamente instalado abriendo una línea de comandos y ejecutando <code class="highlighter-rouge">node -v</code>:</p>
 
 <div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>node -v
-v9.2.0
+v10.7.0
 </code></pre>
 </div>
 
 <p>Aunque la versión puede ser diferente, asegúrate que sea una reciente, preferiblemente mayor a 9.0.0.</p>
 
-<p><a href="https://nodejs.org/en/" target="_blank">Node.js</a> viene con una consola que te permite ejecutar código rápidamente. Para abrirla ejecuta <code class="highlighter-rouge">node</code> en la línea de comandos:</p>
+<p>Existen dos formas de ejecutar código en <a href="https://nodejs.org/en/" target="_blank">Node.js</a>. La primera es utilizando el interpretador. Abre una línea de comandos y ejecuta lo siguiente:</p>
 
 <div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>node
 &gt;
 </code></pre>
 </div>
 
-<p>Si escribes una expresión como <code class="highlighter-rouge">1 + 2</code> y oprimes <code class="highlighter-rouge">Enter</code> deberías ver el resultado debajo. Después puedes escribir otra expresión válida en JavaScript, oprimir Enter y ver el nuevo resultado, y así sucesivamente.</p>
+<p>Ahí puedes empezar a escribir expresiones de JavaScript, por ejemplo <code class="highlighter-rouge">1 + 1</code>:</p>
 
-<p>Para salir de la consola de <a href="https://nodejs.org/en/" target="_blank">Node.js</a> oprime <code class="highlighter-rouge">Ctrl + C</code> dos veces.</p>
+<div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>1 + 1
+2
+</code></pre>
+</div>
 
-<p>La otra forma de ejecutar código en <a href="https://nodejs.org/en/" target="_blank">Node.js</a> es creando un archivo y ejecutándolo. Por ejemplo, crea un archivo llamado <code class="highlighter-rouge">app.js</code> y escribe lo siguiente:</p>
+<p>Para salir de la consola de <a href="https://nodejs.org/en/" target="_blank">Node.js</a> oprime <code class="highlighter-rouge">Ctrl + D</code>.</p>
+
+<p>La segunda forma de ejecutar código en <a href="https://nodejs.org/en/" target="_blank">Node.js</a> es creando un archivo y ejecutándolo. Por ejemplo, crea un archivo llamado <code class="highlighter-rouge">app.js</code> y escribe lo siguiente:</p>
 
 <div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"Mi primer programa en Node.js"</span><span class="p">);</span>
 </code></pre>
@@ -134,7 +145,7 @@ Mi primer programa en Node.js
 
 <div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'fs'</span><span class="p">);</span>
 
-<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s2">"nuevo.txt"</span><span class="p">,</span> <span class="s2">"Primera línea\nSegunda línea"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+<span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s2">"hola.txt"</span><span class="p">,</span> <span class="s2">"Hola Mundo!"</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
   <span class="p">}</span>
@@ -144,7 +155,11 @@ Mi primer programa en Node.js
 </code></pre>
 </div>
 
-<p>Este ejemplo es interesante porque estamos usando el API de <a href="https://nodejs.org/en/" target="_blank">Node.js</a>, es decir, los objetos que nos ofrece <a href="https://nodejs.org/en/" target="_blank">Node.js</a> para realizar diferentes tareas. Fíjate en la primera línea en donde estamos requiriendo el módulo <code class="highlighter-rouge">fs</code> que nos permite manipular archivos. Puedes encontrar el API completo <a href="https://nodejs.org/api/" target="_blank">de Node.js en este enlace</a>.</p>
+<p>Este código lo copié de Internet, que es la forma más fácil de hacer cualquier cosa en programación ;) Pero si quieres saber qué está haciendo este código acá va.</p>
+
+<p>En la primera línea estamos requiriendo un módulo. Un módulo es como una librería, que nos va a permitir hacer algo específico.</p>
+
+<p>El módulo <code class="highlighter-rouge">fs</code> (file system) es el que nos va a permitir manipular archivos. Existen módulos que están incluidos con <a href="https://nodejs.org/en/" target="_blank">Node.js</a> (como <code class="highlighter-rouge">fs</code>) y otros que puedes utilizar por medio de librerías externas.</p>
 
 <p>Para ejecutar este programa ingresa el comando <code class="highlighter-rouge">node generarArchivo.js</code> en la consola, deberías ver el mensaje “El archivo fue creado correctamente”:</p>
 
