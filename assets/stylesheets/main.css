@@ -7037,3 +7037,34 @@ pre.line-numbers > code {
         background: #00aced; }
       .post-page .post .share-post .btn-share-linkedin {
         background: #007bb6; }
+    .post-page .post .post-magnet {
+      margin-top: 50px;
+      border: 1px solid #ddd;
+      box-shadow: 2px 2px 5px #eee;
+      border-radius: 5px; }
+      .post-page .post .post-magnet .img-wrapper {
+        padding: 30px 25px;
+        background: #4791D9;
+        color: white;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+        .post-page .post .post-magnet .img-wrapper h3 {
+          text-align: left;
+          font-size: 1.1rem;
+          line-height: 1.4;
+          font-weight: 600;
+          margin-bottom: 25px; }
+        .post-page .post .post-magnet .img-wrapper img {
+          width: 100%;
+          max-width: 180px; }
+      .post-page .post .post-magnet .content-wrapper {
+        padding: 35px 25px; }
+        @media (min-width: 768px) {
+          .post-page .post .post-magnet .content-wrapper {
+            padding: 35px 25px 25px 0; } }
+        .post-page .post .post-magnet .content-wrapper .form-control {
+          font-size: 0.9rem; }
+        .post-page .post .post-magnet .content-wrapper .btn {
+          background: #F04500;
+          border: 0;
+          font-size: 0.9rem; }
