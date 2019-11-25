@@ -87,21 +87,21 @@
 
 <p>Imagina que recibes un archivo de texto muy largo y te piden escribir un programa que encuentre todos los números telefónicos que existan en el archivo con el formato <code class="highlighter-rouge">(XXX) XXX-XXXX</code>. ¿Cómo lo harías?</p>
 
-<p>Una <strong>expresión regular</strong> (en inglés regular expression, regex o regexp) es una secuencia de caracteres que define un patrón de búsqueda. Por ejemplo, con la siguiente expresión regular podríamos encontrar los números telefónicos:</p>
+<p>Una <strong>expresión regular</strong> (en inglés regular expression, regex o regexp) es una secuencia de caracteres que define un patrón de búsqueda. Por ejemplo, con la siguiente expresión regular podríamos encontrar los números telefónicos con el formato que pedían:</p>
 
 <div class="language-shell highlighter-rouge"><pre class="highlight"><code><span class="se">\(\d</span><span class="o">{</span>3<span class="o">}</span><span class="se">\)</span> <span class="se">\d</span><span class="o">{</span>3<span class="o">}</span>-<span class="se">\d</span><span class="o">{</span>4<span class="o">}</span>
 </code></pre>
 </div>
 
-<p>La principal crítica a las expresiones regulares es que son difíciles de leer y entender. Es una crítica válida. Sin embargo, una expresión regular nos puede ahorrar muchas líneas de código y la gran mayoría de expresiones útiles son relativamente simple de construir o se encuentran fácilmente haciendo una <strong>búsqueda en Internet</strong>.</p>
+<p>La principal crítica a las expresiones regulares es que son difíciles de leer y entender. Es una crítica válida. Sin embargo, las expresiones regulares también nos ofrecen muchas ventajas: pueden ahorrarnos muchas líneas de código, la gran mayoría son relativamente simples de construir o se encuentran fácilmente haciendo una <strong>búsqueda en Internet</strong>, y se pueden utilizar en diferentes contextos como veremos a continuación.</p>
 
 <h2 id="utilizando-expresiones-regulares">Utilizando expresiones regulares</h2>
 
-<p>La principal ventaja de las expresiones regulares es que es posible utilizarlas en varios contextos: en la mayoría de lenguajes de programación como JavaScript, Ruby, Python, Java, etc., en algunas aplicaciones para la línea de comandos como <code class="highlighter-rouge">grep</code>  y <code class="highlighter-rouge">find</code>, en algunos editores de texto como <a href="https://atom.io/">Atom</a> o <a href="https://code.visualstudio.com/">VSCode</a> para realizar búsquedas avanzadas, entre muchos otros. Más adelante veremos cómo utilizarlas en JavaScript.</p>
+<p>Las expresiones regulares se pueden utilizar en la mayoría de lenguajes de programación como JavaScript, Ruby, Python, Java, etc., en algunas aplicaciones para la línea de comandos como <code class="highlighter-rouge">grep</code>  y <code class="highlighter-rouge">find</code> y en algunos editores de texto como <a href="https://atom.io/">Atom</a> o <a href="https://code.visualstudio.com/">VSCode</a> para realizar búsquedas avanzadas, entre muchos otros. Más adelante veremos cómo utilizarlas en JavaScript.</p>
 
 <p>Sin embargo, la forma más fácil de probar y depurar nuestras expresiones regulares es en algún sitio online como <a href="https://regexr.com/">regexr.com</a>.</p>
 
-<p>En muchos de estos contextos las expresiones regulares se encierran entre dos barras inclinadas (<code class="highlighter-rouge">/.../</code>) como lo haremos de ahora en adelante en este post.</p>
+<p>Generalmente las expresiones regulares se encierran entre dos barras inclinadas (<code class="highlighter-rouge">/.../</code>) como lo haremos de ahora en adelante en este post.</p>
 
 <h2 id="entendiendo-expresiones-regulares">Entendiendo expresiones regulares</h2>
 
@@ -132,11 +132,11 @@
 <ul>
   <li><code class="highlighter-rouge">*</code>: 0 o más ocurrencias del caracter anterior.</li>
   <li><code class="highlighter-rouge">+</code>: 1 o más ocurrencias del caracter anterior.</li>
-  <li><code class="highlighter-rouge">?</code>: 0 o una ocurrencia del caracter anterior.</li>
+  <li><code class="highlighter-rouge">?</code>: 0 o 1 ocurrencia del caracter anterior.</li>
   <li><code class="highlighter-rouge"><span class="p">{}</span></code>: determinadas ocurrencias (exacto <code class="highlighter-rouge"><span class="p">{</span><span class="err">3</span><span class="p">}</span></code> o un rango <code class="highlighter-rouge"><span class="p">{</span><span class="err">3,6</span><span class="p">}</span></code>).</li>
 </ul>
 
-<p>Veamos un ejemplo para cada uno de estas opciones:</p>
+<p>Veamos un ejemplo de cada una de estas opciones:</p>
 
 <ul>
   <li><code class="highlighter-rouge">/ab*c/</code>: una <code class="highlighter-rouge">"a"</code> seguida de cero o más <code class="highlighter-rouge">"b"</code>s, seguido de una <code class="highlighter-rouge">"c"</code> (p.e. <code class="highlighter-rouge">"ac"</code> o <code class="highlighter-rouge">"abbbbbbbbc"</code>).</li>
@@ -223,10 +223,9 @@
 
 <p>Las banderas (flags) nos permiten darle más información a la expresión regular, por ejemplo si no queremos distinguir entre mayúsculas y minúsculas (la bandera <code class="highlighter-rouge">i</code>), o si queremos encontrar todas las coincidencias en vez de la primera únicamente (la bandera <code class="highlighter-rouge">g</code>).</p>
 
-<p>Las banderas se ubican al final de la expresión regular, después de la última barra inclinada o como segundo parámetro del constructor <code class="highlighter-rouge">RexExp</code>:</p>
+<p>Las banderas se ubican al final de la expresión regular, después de la última barra inclinada:</p>
 
 <div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="o">/</span><span class="nx">abc</span><span class="o">/</span><span class="nx">ig</span>
-<span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s2">"abc"</span><span class="p">,</span> <span class="s2">"ig"</span><span class="p">)</span>
 </code></pre>
 </div>
 
@@ -245,15 +244,14 @@
 </code></pre>
 </div>
 
-<p>El primer caracter es <code class="highlighter-rouge">\</code>, que es el de escape. Lo necesitamos porque el siguiente caracter es un paréntesis (<code class="highlighter-rouge">(</code>), que es otro metacaracter.</p>
+<ul>
+  <li><code class="highlighter-rouge">\(\d{3}\)</code>:  Con <code class="highlighter-rouge">\</code> estamos escapando los paréntesis, que también son metacaracteres. <code class="highlighter-rouge">\d</code> representa un dígito (0 a 9) y el cuantificador <code class="highlighter-rouge"><span class="p">{</span><span class="err">3</span><span class="p">}</span></code> indica que estamos buscando 3 ocurrencias (3 dígitos en este caso).</li>
+  <li><code class="highlighter-rouge"> \d{3}</code>: Seguimos con un espacio y otros tres dígitos.</li>
+  <li><code class="highlighter-rouge">-</code>: No tenemos que escapar el guión porque solo es un metacaracter si está dentro de una lista (entre <code class="highlighter-rouge">[</code> y <code class="highlighter-rouge">]</code>).</li>
+  <li><code class="highlighter-rouge">\d{4}</code>: los 4 dígitos finales.</li>
+</ul>
 
-<p>A continuación tenemos un atajo, <code class="highlighter-rouge">\d</code>, que representa un dígito (0 a 9), seguido del cuantificador <code class="highlighter-rouge"><span class="p">{</span><span class="err">3</span><span class="p">}</span></code> que indica que estamos buscando 3 dígitos.</p>
-
-<p>Después volvemos a tener el caracter de escape <code class="highlighter-rouge">\</code> seguido de un paréntesis <code class="highlighter-rouge">)</code> y un espacio en blanco.</p>
-
-<p>Para finalizar tenemos <code class="highlighter-rouge">\d{3}</code>, que busca tres dígitos, seguido de un guión (<code class="highlighter-rouge">-</code>) y cuátro dígitos <code class="highlighter-rouge">\d{4}</code>.</p>
-
-<p>Adicionalmente tenemos la bandera <code class="highlighter-rouge">g</code> para que busque todas las coincidencias, no solo la primera.</p>
+<p>Por último tenemos la bandera <code class="highlighter-rouge">g</code> para que busque todas las coincidencias, no solo la primera.</p>
 
 <h2 id="expresiones-regulares-en-javascript">Expresiones regulares en JavaScript</h2>
 
