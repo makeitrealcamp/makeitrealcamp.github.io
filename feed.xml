@@ -1,4 +1,251 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2019-11-20T15:42:15-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Es valioso un certificado en desarrollo Web?</title><link href="http://blog.makeitreal.camp/es-valioso-un-certificado-en-desarrollo-web/" rel="alternate" type="text/html" title="¿Es valioso un certificado en desarrollo Web?" /><published>2018-01-15T02:00:00-05:00</published><updated>2018-01-15T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/es-valioso-un-certificado-en-desarrollo-web</id><content type="html" xml:base="http://blog.makeitreal.camp/es-valioso-un-certificado-en-desarrollo-web/">&lt;p&gt;Aunque existen industrias donde las certificaciones son importantes, en desarrollo Web una certificación no te va a ayudar a encontrar un empleo. En este post te explicaremos por qué y cuál es la alternativa.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2019-11-25T08:07:12-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Expresiones regulares</title><link href="http://blog.makeitreal.camp/expresiones-regulares/" rel="alternate" type="text/html" title="Expresiones regulares" /><published>2019-11-22T02:00:00-05:00</published><updated>2019-11-22T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/expresiones-regulares</id><content type="html" xml:base="http://blog.makeitreal.camp/expresiones-regulares/">&lt;p&gt;Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-son-las-expresiones-regulares&quot;&gt;¿Qué son las expresiones regulares?&lt;/h2&gt;
+
+&lt;p&gt;Imagina que recibes un archivo de texto muy largo y te piden escribir un programa que encuentre todos los números telefónicos que existan en el archivo con el formato &lt;code class=&quot;highlighter-rouge&quot;&gt;(XXX) XXX-XXXX&lt;/code&gt;. ¿Cómo lo harías?&lt;/p&gt;
+
+&lt;p&gt;Una &lt;strong&gt;expresión regular&lt;/strong&gt; (en inglés regular expression, regex o regexp) es una secuencia de caracteres que define un patrón de búsqueda. Por ejemplo, con la siguiente expresión regular podríamos encontrar los números telefónicos:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;se&quot;&gt;\(\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;-&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La principal crítica a las expresiones regulares es que son difíciles de leer y entender. Es una crítica válida. Sin embargo, una expresión regular nos puede ahorrar muchas líneas de código y la gran mayoría de expresiones útiles son relativamente simple de construir o se encuentran fácilmente haciendo una &lt;strong&gt;búsqueda en Internet&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;utilizando-expresiones-regulares&quot;&gt;Utilizando expresiones regulares&lt;/h2&gt;
+
+&lt;p&gt;La principal ventaja de las expresiones regulares es que es posible utilizarlas en varios contextos: en la mayoría de lenguajes de programación como JavaScript, Ruby, Python, Java, etc., en algunas aplicaciones para la línea de comandos como &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt;  y &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt;, en algunos editores de texto como &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; o &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; para realizar búsquedas avanzadas, entre muchos otros. Más adelante veremos cómo utilizarlas en JavaScript.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, la forma más fácil de probar y depurar nuestras expresiones regulares es en algún sitio online como &lt;a href=&quot;https://regexr.com/&quot;&gt;regexr.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En muchos de estos contextos las expresiones regulares se encierran entre dos barras inclinadas (&lt;code class=&quot;highlighter-rouge&quot;&gt;/.../&lt;/code&gt;) como lo haremos de ahora en adelante en este post.&lt;/p&gt;
+
+&lt;h2 id=&quot;entendiendo-expresiones-regulares&quot;&gt;Entendiendo expresiones regulares&lt;/h2&gt;
+
+&lt;p&gt;Empecemos con una expresión regular muy simple:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/abc/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Esta expresión busca una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt; seguida de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt;, todas minúsculas, así que coincidiría con textos que incluyeran &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt; únicamente.&lt;/p&gt;
+
+&lt;p&gt;¿Qué pasaría si quisiéramos buscar algo un poco más complejo como una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt;, seguido de &lt;em&gt;cualquier caracter&lt;/em&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;anc&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a7c&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ahc&quot;&lt;/code&gt;? La respuesta es que necesitamos unos caracteres especiales llamados &lt;strong&gt;metacaracteres&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Los metacaráteres nos permiten escribir expresiones más genéricas, y por lo tanto más útiles.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El primer metacaráceter que vamos a ver es el punto (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;), que indica que en esa posición puede ir cualquier caracter. Por ejemplo, para la pregunta previa utilizaríamos la siguiente expresión regular:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/a.c/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Esta expresión encontraría coincidencias para cadenas como &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ajc&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a8c&quot;&lt;/code&gt; pero no  &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbc&quot;&lt;/code&gt; (tiene un caracter de más), &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;cba&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ac&quot;&lt;/code&gt; (falta un caracter en la mitad).&lt;/p&gt;
+
+&lt;h3 id=&quot;cuantificadores&quot;&gt;Cuantificadores&lt;/h3&gt;
+
+&lt;p&gt;Los siguientes metacaracteres nos permiten especificar cuántas ocurrencias del caracter anterior estamos esperando:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;: 0 o más ocurrencias del caracter anterior.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;: 1 o más ocurrencias del caracter anterior.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt;: 0 o una ocurrencia del caracter anterior.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt;: determinadas ocurrencias (exacto &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; o un rango &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;3,6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Veamos un ejemplo para cada uno de estas opciones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab*c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de cero o más &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;s, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (p.e. &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ac&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbbbbbbbc&quot;&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab+c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de una o más &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (p.e. &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbbbbc&quot;&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab?c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de cero o una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ac&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab{3}c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de tres &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbbc&quot;&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Algunos metacaracteres se pueden mezclar, así que podemos utilizar el &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; con alguno de los de cantidad que acabamos de ver, por ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La anterior podría ser la expresión regular más genérica del universo, busca cualquier caracter cero o más veces, y coincidiría con cualquier cadena de texto que le pasemos, incluso la cadena vacía!&lt;/p&gt;
+
+&lt;h3 id=&quot;listas&quot;&gt;Listas&lt;/h3&gt;
+
+&lt;p&gt;Los metacaracteres &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;]&lt;/code&gt; nos permiten crear una lista de posibles caracteres que pueden ir en una posición.  Por ejemplo, si queremos buscar una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt;, una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt; o una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (cualquiera de las tres) podríamos utilizar una lista:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[abc]/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Utilizando guión (&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;) podemos crear rangos en una lista. Por ejemplo, si queremos buscar cualquier letra minúscula de la &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; a la &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;z&quot;&lt;/code&gt; podríamos crear un rango:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[a-z]/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Podemos tener varios rangos en la misma lista, por ejemplo si queremos buscar cualquier letra mayúscula o minúscula, o cualquier número, podemos utilizar la siguiente expresión:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[a-zA-Z0-9]/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El metacaracter &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; tiene dos funciones. Si está dentro de una lista hace una negación, es decir, coincide con cualquier caracter que esté fuera del grupo. Por ejemplo, la siguiente expresión coincidiría con cualquier caracter excepto &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/^abc/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;inicio-o-fin-de-cadena&quot;&gt;Inicio o fin de cadena&lt;/h3&gt;
+
+&lt;p&gt;El metacaracter &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; también puede indicar el inicio de la cadena. Por ejemplo, la siguiente expresión coincidiría con cualquier cadena que empiece con &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/^abc/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;También existe un metacaracter para indicar el fin de la cadena, el signo pesos (&lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;). Por ejemplo, la expresión &lt;code class=&quot;highlighter-rouge&quot;&gt;/abc$/&lt;/code&gt; coincidiría con cualquier cadena que termine con &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;escape&quot;&gt;Escape&lt;/h3&gt;
+
+&lt;p&gt;Por último, tenemos el metacaracter &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; que nos permite escapar otros metacaracteres. Por ejemplo, la siguiente expresión regular coincidiría con una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de un punto, seguida de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/a&lt;span class=&quot;se&quot;&gt;\.&lt;/span&gt;c/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Si no escapáramos el punto con el &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; coincidiría cualquier caracter en esa posición.&lt;/p&gt;
+
+&lt;p&gt;Los paréntesis (&lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt;) también son metacaracteres que se utilizan para agrupar y extraer información pero no los vamos a cubrir en este post porque tienen su propia complejidad.&lt;/p&gt;
+
+&lt;h3 id=&quot;atajos&quot;&gt;Atajos&lt;/h3&gt;
+
+&lt;p&gt;Existen algunos atajos que nos permiten escribir expresiones regulares más compactas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\w&lt;/code&gt;: caracteres de palabras (&lt;code class=&quot;highlighter-rouge&quot;&gt;[a-zA-Z0-9_]&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\d&lt;/code&gt;: dígitos (&lt;code class=&quot;highlighter-rouge&quot;&gt;[0-9]&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\s&lt;/code&gt;: espacio en blanco (&lt;code class=&quot;highlighter-rouge&quot;&gt;[\t\r\n ]&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;También existen atajos de negación para los anteriores:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\W&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;[^\w]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\D&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[^\d]&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\S&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[^\s]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;banderas-flags&quot;&gt;Banderas (flags)&lt;/h3&gt;
+
+&lt;p&gt;Las banderas (flags) nos permiten darle más información a la expresión regular, por ejemplo si no queremos distinguir entre mayúsculas y minúsculas (la bandera &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;), o si queremos encontrar todas las coincidencias en vez de la primera únicamente (la bandera &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Las banderas se ubican al final de la expresión regular, después de la última barra inclinada o como segundo parámetro del constructor &lt;code class=&quot;highlighter-rouge&quot;&gt;RexExp&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;abc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ig&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;abc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;ig&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Las banderas más utilizadas son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;: no distingue entre mayúsculas y minúsculas.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;: busca todas las coincidencias, no sólo la primera.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;nuestra-expresión-inicial&quot;&gt;Nuestra expresión inicial&lt;/h2&gt;
+
+&lt;p&gt;Volvamos a nuestra expresión regular de los números telefónicos con el formato &lt;code class=&quot;highlighter-rouge&quot;&gt;(XXX) XXX-XXXX&lt;/code&gt; y la analizamos, pero primero agreguémosle las barras inclinadas a los lados y el flag &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/&lt;span class=&quot;se&quot;&gt;\(\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;-&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/g
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El primer caracter es &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt;, que es el de escape. Lo necesitamos porque el siguiente caracter es un paréntesis (&lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt;), que es otro metacaracter.&lt;/p&gt;
+
+&lt;p&gt;A continuación tenemos un atajo, &lt;code class=&quot;highlighter-rouge&quot;&gt;\d&lt;/code&gt;, que representa un dígito (0 a 9), seguido del cuantificador &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; que indica que estamos buscando 3 dígitos.&lt;/p&gt;
+
+&lt;p&gt;Después volvemos a tener el caracter de escape &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; seguido de un paréntesis &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt; y un espacio en blanco.&lt;/p&gt;
+
+&lt;p&gt;Para finalizar tenemos &lt;code class=&quot;highlighter-rouge&quot;&gt;\d{3}&lt;/code&gt;, que busca tres dígitos, seguido de un guión (&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;) y cuátro dígitos &lt;code class=&quot;highlighter-rouge&quot;&gt;\d{4}&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Adicionalmente tenemos la bandera &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt; para que busque todas las coincidencias, no solo la primera.&lt;/p&gt;
+
+&lt;h2 id=&quot;expresiones-regulares-en-javascript&quot;&gt;Expresiones regulares en JavaScript&lt;/h2&gt;
+
+&lt;p&gt;En JavaScript hay dos formas de definir una expresión regular: encerrando la expresión entre barras inclinadas (&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;) o utilizando la función constructora &lt;code class=&quot;highlighter-rouge&quot;&gt;RegExp&lt;/code&gt; que recibe la expresión regular como un string (sin las barras) y, opcionalmente, las banderas como segundo argumento:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(\d{3}\)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{3}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{4}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;\(\d{3}\) \d{3}-\d{4}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;g&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Como puedes ver en este ejemplo, las expresiones se pueden asignar a variables, pero también las puedes pasar como argumentos de funciones o pueden ser el valor de retorno de una función.&lt;/p&gt;
+
+&lt;p&gt;Para validar si una cadena de texto cumple con el patrón de una expresión regular podemos utilizar el método &lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(\d{3}\)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{3}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{4}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(123) 123-1234&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// true&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;123 123 1234&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Algunos métodos de los strings reciben expresiones regulares. Veamos algunos de ellos:&lt;/p&gt;
+
+&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;match&lt;/code&gt; recibe una expresión regular y retorna las coincidencias en un arreglo. Por ejemplo, si queremos encontrar todas las letras minúsculas de una cadena podríamos hacer lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a3b4c5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;a-z&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt; nos permite reemplazar parte de un string con otro string, muy útil, por ejemplo, cuando queremos ocultar información:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(123) 123-1234&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(\d{3}\)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{3}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;(XXX) XXX&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (XXX) XXX-1234&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;search&lt;/code&gt; realiza una búsqueda sobre un string y retorna la posición de la primera coincidencia o -1 si no se encuentra ninguna:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a3b4c5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;split&lt;/code&gt; nos permite dividir una cadena utilizando una expresión regular. Por ejemplo, si queremos separar la cadena por cualquier número:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a3b4c5d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;construyendo-una-expresión-regular-desde-cero&quot;&gt;Construyendo una expresión regular desde cero&lt;/h2&gt;
+
+&lt;p&gt;Como ejercicio vamos a intentar construir una expresión regular para encontrar emails válidos.&lt;/p&gt;
+
+&lt;p&gt;La característica más obvia de un email es el caracter &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;, así que podemos empezar con una expresión regular que busque cualquier secuencia de caracteres, seguido de &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;, seguido de otra secuencia de caracteres:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/.+@.+/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Utilizamos el cuantificador &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; en vez de &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; porque queremos que exista al menos un caracter a lado y lado de &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;. Pero esta expresión regular permitiría muchos emails inválidos. Para empezar acepta espacios en blanco y no está verificando la terminación del dominio (&lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.camp&lt;/code&gt;, etc.), así que arreglemos eso:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;.-]+@[&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;-]+&lt;span class=&quot;se&quot;&gt;\.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;a-z]&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;2,6&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Mucho mejor, pero esta expresión está lejos de ser perfecta, por ejemplo, un email no puede empezar con &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; y existen más caracteres válidos.&lt;/p&gt;
+
+&lt;p&gt;La verdad es que no hay una expresión regular perfecta en este caso. En &lt;a href=&quot;https://emailregex.com/&quot;&gt;esta página&lt;/a&gt; puedes encontrar varias alternativas, algunas increíblemente complejas aunque un poco más exactas. Sin embargo, personalmente prefiero sacrificar exactitud por simplicidad.&lt;/p&gt;
+
+&lt;h3 id=&quot;práctica&quot;&gt;Práctica&lt;/h3&gt;
+
+&lt;p&gt;Si quieres poner a prueba tus conocimientos en expresiones regulares, &lt;a href=&quot;http://play.inginf.units.it/#/&quot;&gt;esta página&lt;/a&gt; tiene varios ejercicios interesantes para practicar.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Las expresiones regulares pueden parecer indescifrables (¡algunas lo son!) pero son muy útiles cuando necesitamos encontrar patrones en un texto. Sin embargo, escribir una expresión regular desde cero no es trivial, así que una buena idea es buscar primero algunas opciones en Internet y seleccionar una que sea simple pero que funcione bien en la mayoría de casos.&lt;/p&gt;
+
+&lt;p&gt;En este post vimos una introducción a las expresiones regulares. Espero que te haya ayudado a entender qué son, cómo funcionan y cuándo utilizarlas.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://s3.amazonaws.com/makeitreal/blog/images/pillars.jpg" /></entry><entry><title type="html">¿Es valioso un certificado en desarrollo Web?</title><link href="http://blog.makeitreal.camp/es-valioso-un-certificado-en-desarrollo-web/" rel="alternate" type="text/html" title="¿Es valioso un certificado en desarrollo Web?" /><published>2018-01-15T02:00:00-05:00</published><updated>2018-01-15T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/es-valioso-un-certificado-en-desarrollo-web</id><content type="html" xml:base="http://blog.makeitreal.camp/es-valioso-un-certificado-en-desarrollo-web/">&lt;p&gt;Aunque existen industrias donde las certificaciones son importantes, en desarrollo Web una certificación no te va a ayudar a encontrar un empleo. En este post te explicaremos por qué y cuál es la alternativa.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;A comparación de otras industrias, el desarrollo Web es un campo muy reciente que sigue evolucionando rápidamente. Uno de nuestros mayores desafíos es que las tecnologías de hace 5 años (incluso menos) hoy ya son obsoletas.&lt;/p&gt;
 
@@ -587,148 +834,4 @@ Server running at http://localhost:3000/
 
 &lt;p&gt;Finalmente me gustaría resaltar que durante todo este proceso tuve la fortuna de contar con el apoyo incondicional de algunas personas (especialmente por parte de mi novia Daniela Olaya), y de encontrarme con un gran programa como lo es Make it Real con grandes mentores y excelentes compañeros que hicieron del recorrido algo más ameno.&lt;/p&gt;
 
-&lt;p&gt;P.S Mi novia también renunció a su trabajo donde era infeliz y ahora empezó su propio negocio de adiestramiento canino.&lt;/p&gt;</content><author><name>Simón Hoyos</name></author><summary type="html">Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/never-too-late.jpg" /></entry><entry><title type="html">El protocolo HTTP</title><link href="http://blog.makeitreal.camp/el-protocolo-http/" rel="alternate" type="text/html" title="El protocolo HTTP" /><published>2017-08-09T06:00:00-05:00</published><updated>2017-08-09T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/el-protocolo-http</id><content type="html" xml:base="http://blog.makeitreal.camp/el-protocolo-http/">&lt;p&gt;El protocolo &lt;strong&gt;HTTP&lt;/strong&gt; (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Fue diseñado para transmitir &lt;strong&gt;HTML&lt;/strong&gt; (HyperText Markup Language) pero hoy en día se utiliza para transmitir todo tipo de documentos (imágenes, audio, video, PDF, etc.) y para crear aplicaciones Web.&lt;/p&gt;
-
-&lt;div class=&quot;well&quot;&gt;
-&lt;p&gt;Un &lt;strong&gt;protocolo&lt;/strong&gt; es un documento que define las reglas y la estructura de los mensajes que se van a intercambiar entre máquinas.&lt;/p&gt;
-
-&lt;p&gt;Además de &lt;strong&gt;HTTP&lt;/strong&gt;, ejemplos de protocolos incluyen &lt;strong&gt;SMTP&lt;/strong&gt; (Simple Mail Transfer Protocol) para transmitir mensajes de correo electrónico y &lt;strong&gt;FTP&lt;/strong&gt; (File Transfer Protocolo) para transmitir archivos.&lt;/p&gt;
-
-&lt;p&gt;Sin embargo, cualquier persona puede crear un protocolo. &lt;a href=&quot;https://skype.com/&quot; target=&quot;_blank&quot;&gt;Skype&lt;/a&gt;, por ejemplo, desarrolló su &lt;a href=&quot;https://en.wikipedia.org/wiki/Skype_protocol&quot; target=&quot;_blank&quot;&gt;propio protocolo&lt;/a&gt; de comunicación peer-to-peer.&lt;/p&gt;
-
-&lt;p&gt;El documento completo del protocolo HTTP lo puedes encontrar en &lt;a href=&quot;https://www.ietf.org/rfc/rfc2068.txt&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;HTTP&lt;/strong&gt; es un protocolo &lt;strong&gt;cliente-servidor&lt;/strong&gt;, lo que significa que el cliente envía una petición al servidor y espera un mensaje de respuesta del servidor. Es un protocolo &lt;strong&gt;sin estado&lt;/strong&gt;, lo que significa que el servidor no guarda información del cliente, cada petición es independiente de las demás.&lt;/p&gt;
-
-&lt;h2 id=&quot;mensajes-http&quot;&gt;Mensajes HTTP&lt;/h2&gt;
-
-&lt;p&gt;Un mensaje &lt;strong&gt;HTTP&lt;/strong&gt; (no importa si es de petición o respuesta) se compone de 3 partes:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La primera línea (que es diferente para la petición y la respuesta).&lt;/li&gt;
-  &lt;li&gt;Los encabezados.&lt;/li&gt;
-  &lt;li&gt;El cuerpo (opcional)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Veamos un ejemplo de un mensaje de petición (sin cuerpo):&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;GET /index.html HTTP/1.1
-Host: wikipedia.org
-Accept: text/html
-
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;En este ejemplo estamos solicitando el recurso &lt;code class=&quot;highlighter-rouge&quot;&gt;/index.html&lt;/code&gt; de &lt;a href=&quot;https://wikipedia.org&quot; target=&quot;_blank&quot;&gt;wikipedia.org&lt;/a&gt;. La primera línea del mensaje de petición se compone de:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;El verbo (en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;El recurso (en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;/index&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;La versión de HTTP (en este caso &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP/1.1&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Ahora veamos un ejemplo de un mensaje de respuesta:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HTTP/1.1 200 OK
-Server: wikipedia.org
-Content-Type: text/html
-Content-Lenght: 2026
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-  …
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;La primera línea del mensaje de respuesta se compone de:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;La versión de HTTP (&lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP/1.1&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;El código de respuesta (&lt;code class=&quot;highlighter-rouge&quot;&gt;200 OK&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La siguiente imagen muestra mejor las partes de cada mensaje:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/http-messages.jpg&quot; alt=&quot;Concurrencia basada en eventos&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;el-verbo-http&quot;&gt;El verbo HTTP&lt;/h3&gt;
-
-&lt;p&gt;La primera línea de un mensaje de petición empieza con un &lt;strong&gt;verbo&lt;/strong&gt; (también se le conoce como &lt;strong&gt;método&lt;/strong&gt;). Los &lt;strong&gt;verbos&lt;/strong&gt; definen la acción que se quiere realizar sobre el recurso. Los verbos más comunes son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;GET&lt;/strong&gt;: se utiliza para solicitar un recurso.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;POST&lt;/strong&gt;: se utiliza para publicar un recurso.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;PUT&lt;/strong&gt;: se utiliza para reemplazar un recurso.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;DELETE&lt;/strong&gt;: se utiliza para eliminar un recurso.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Existen otros pero estos son los más comunes.&lt;/p&gt;
-
-&lt;p&gt;Cuando ingresas a una página desde un navegador, por debajo el navegador envía un mensaje &lt;code class=&quot;highlighter-rouge&quot;&gt;GET&lt;/code&gt;, lo mismo cuando oprimes un vínculo a otra página.&lt;/p&gt;
-
-&lt;h2 id=&quot;el-código-de-respuesta&quot;&gt;El código de respuesta&lt;/h2&gt;
-
-&lt;p&gt;La primera línea de un mensaje de respuesta tiene un código de 3 dígitos que le indica al cliente cómo interpretar la respuesta.&lt;/p&gt;
-
-&lt;p&gt;Los códigos de respuesta se dividen en cinco categorías dependiendo del dígito con el que inician:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;1XX&lt;/strong&gt;: Información&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;2XX&lt;/strong&gt;: Éxito&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;3XX&lt;/strong&gt;: Redirección&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;4XX&lt;/strong&gt;: Error en el cliente&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;5XX&lt;/strong&gt;: Error en el servidor&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Seguramente estás familiarizado(a) con el famoso error &lt;strong&gt;404&lt;/strong&gt; que retornan los servidores cuando el recurso no fue encontrado. O con el error &lt;strong&gt;500&lt;/strong&gt; cuando ocurre un error en el servidor. Pero existen muchos más.&lt;/p&gt;
-
-&lt;h2 id=&quot;los-encabezados&quot;&gt;Los encabezados&lt;/h2&gt;
-
-&lt;p&gt;Los encabezados brindan información adicional sobre la petición o la respuesta. Los encabezados tienen la siguiente sintaxis:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-none&quot;&gt;[nombre del encabezado]: [valor del encabezado]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Encabezados comunes incluyen:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Content-Type&lt;/code&gt;: el tipo de contenido que se está enviando en el cuerpo de un mensaje de petición, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;text/html&lt;/code&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Accept&lt;/code&gt;: el tipo de contenido que el cliente está esperando.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;User-Agent&lt;/code&gt;: el tipo de navegador que está haciendo la petición&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;La siguiente imagen muestra, en las &lt;a href=&quot;/herramientas-de-desarrollador-o-developer-tools&quot; target=&quot;_blank&quot;&gt;herramientas de desarrollo de Chrome&lt;/a&gt;, el mensaje de petición y respuesta cuando hacemos una petición a &lt;code class=&quot;highlighter-rouge&quot;&gt;http://google.com.co/lsdifs&lt;/code&gt;. Fíjate que el código de respuesta es &lt;code class=&quot;highlighter-rouge&quot;&gt;404 Not Found&lt;/code&gt;:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/http-request.jpg&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;url&quot;&gt;URL&lt;/h2&gt;
-
-&lt;p&gt;Un &lt;strong&gt;URL&lt;/strong&gt; (Uniform Resource Locator) se utiliza para ubicar un recurso en Internet. Los &lt;strong&gt;URLs&lt;/strong&gt; no solo se pueden utilizar para el protocolo HTTP, se utilizan en muchos otros protocolos.&lt;/p&gt;
-
-&lt;p&gt;La siguiente imagen muestra las partes de un &lt;strong&gt;URL&lt;/strong&gt; utilizando dos ejemplos:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://s3.amazonaws.com/makeitreal/images/full-stack-curriculum/url.jpg&quot; alt=&quot;URL&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Esquema:&lt;/strong&gt; El esquema define el protocolo a utilizar, para HTTP puede ser &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;https&lt;/code&gt; (el protocolo seguro de HTTP).&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Host:&lt;/strong&gt; La IP o el nombre del servidor que se quiere acceder (p.e. 127.0.0.1, localhost, google.com, www.google.com.co, etc.)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Puerto:&lt;/strong&gt; El puerto en el que está escuchando el servidor HTTP. Si se omite se asume que es el 80.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Path:&lt;/strong&gt; La ruta al recurso que se quiere acceder.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Query String:&lt;/strong&gt; Contiene información adicional para el servidor en forma de propiedades (&lt;code class=&quot;highlighter-rouge&quot;&gt;atributo=valor&lt;/code&gt;). Las propiedades se separan por &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;amp;&lt;/code&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Fragmento:&lt;/strong&gt; La referencia a una ubicación interna del documento.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">El protocolo HTTP (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/lights.jpeg" /></entry></feed>
+&lt;p&gt;P.S Mi novia también renunció a su trabajo donde era infeliz y ahora empezó su propio negocio de adiestramiento canino.&lt;/p&gt;</content><author><name>Simón Hoyos</name></author><summary type="html">Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/never-too-late.jpg" /></entry></feed>
