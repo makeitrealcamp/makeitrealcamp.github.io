@@ -1,10 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2019-11-25T09:21:08-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Expresiones regulares</title><link href="http://blog.makeitreal.camp/expresiones-regulares/" rel="alternate" type="text/html" title="Expresiones regulares" /><published>2019-11-22T02:00:00-05:00</published><updated>2019-11-22T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/expresiones-regulares</id><content type="html" xml:base="http://blog.makeitreal.camp/expresiones-regulares/">&lt;p&gt;Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-01-17T09:36:13-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Qué aprender en 2020?</title><link href="http://blog.makeitreal.camp/que-aprender-en-2020/" rel="alternate" type="text/html" title="¿Qué aprender en 2020?" /><published>2020-01-17T02:00:00-05:00</published><updated>2020-01-17T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/que-aprender-en-2020</id><content type="html" xml:base="http://blog.makeitreal.camp/que-aprender-en-2020/">&lt;p&gt;Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;un-framework-web&quot;&gt;Un framework Web&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://reactjs.org/&quot;&gt;React&lt;/a&gt; sería la opción obvia, pero si ya sabes React puedes aprender uno nuevo como &lt;a href=&quot;https://vuejs.org/&quot;&gt;Vue&lt;/a&gt; o &lt;a href=&quot;https://svelte.dev/&quot;&gt;Svelte&lt;/a&gt;. Sigue algunos tutoriales y mira si te inspiran a hacer algo propio. Intenta publicar lo que hagas en algún servicio de alojamiento de sitios estáticas como &lt;a href=&quot;https://www.netlify.com/&quot;&gt;Netlify&lt;/a&gt;, &lt;a href=&quot;https://surge.sh/&quot;&gt;Surge&lt;/a&gt; o &lt;a href=&quot;https://zeit.co/home&quot;&gt;Now&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;un-framework-móvil&quot;&gt;Un framework móvil&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://facebook.github.io/react-native/&quot;&gt;React Native&lt;/a&gt; te permite crear aplicaciones móviles para iOS y Android utilizando lo que ya sabes de React. &lt;a href=&quot;https://flutter.dev/&quot;&gt;Flutter&lt;/a&gt; es otra opción interesante (necesitas aprender un nuevo lenguaje de programación llamado &lt;a href=&quot;https://dart.dev/&quot;&gt;Dart&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Puedes seguir algunos tutoriales e intentar hacer algún proyecto propio, idealmente si incluye algo con la cámara, el acelerómetro o con geolocalización.&lt;/p&gt;
+
+&lt;h3 id=&quot;un-lenguaje-de-programación&quot;&gt;Un lenguaje de programación&lt;/h3&gt;
+
+&lt;p&gt;Si no has trabajado mucho con JavaScript, esa sería mi primera recomendación: es el momento de aprenderlo bien (ES6, programación asincrónica, etc.). Por otro lado, &lt;a href=&quot;https://www.typescriptlang.org/&quot;&gt;TypeScript&lt;/a&gt; es muy interesante porque te va a introducir al mundo de los lenguajes tipados (como Java o C++).&lt;/p&gt;
+
+&lt;p&gt;Otras opciones incluyen Java, &lt;a href=&quot;https://golang.org/&quot;&gt;Go&lt;/a&gt;, &lt;a href=&quot;https://www.rust-lang.org/&quot;&gt;Rust&lt;/a&gt;, &lt;a href=&quot;https://elixir-lang.org/&quot;&gt;Elixir&lt;/a&gt; o &lt;a href=&quot;https://elm-lang.org/&quot;&gt;Elm&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Una forma en que puedes aprender un nuevo lenguaje de programación (asumiendo que ya sabes al menos uno) es la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Estudia la sintaxis básica: tipos, variables, condicionales, ciclos, concatenación de strings, arreglos, funciones.&lt;/li&gt;
+  &lt;li&gt;Crea el Hola Mundo que imprima algo en la consola. Después intenta pedirle información al usuario por la consola.&lt;/li&gt;
+  &lt;li&gt;Investiga qué hace particular a este lenguaje, ¿cuál es su filosofía? ¿qué paradigmas utiliza (funcional, objetos, etc.)? ¿cómo se organiza el código y se utilizan librerías?&lt;/li&gt;
+  &lt;li&gt;Aprende a leer y escribir archivos (p.e. lee un archivo con algún texto y escribe un nuevo archivo con cada palabra capitalizada).&lt;/li&gt;
+  &lt;li&gt;Aprende a hacer una petición por HTTP (p.e. lista todos tus repositorios utilizando el API de Github).&lt;/li&gt;
+  &lt;li&gt;Aprende a leer y escribir en una base de datos como PostgreSQL o MongoDB (acá seguramente vas a aprender cómo utilizar librerías).&lt;/li&gt;
+  &lt;li&gt;Crea una aplicación Web con una ruta que retorne algo básico (investigar un poco qué librerías existen para esto).&lt;/li&gt;
+  &lt;li&gt;Opcional. Aprende a escribir pruebas automatizadas.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Por último, si quieres profundizar en el lenguaje puedes inventarte algún proyecto pequeño para hacer.&lt;/p&gt;
+
+&lt;h3 id=&quot;graphql&quot;&gt;GraphQL&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQL&lt;/a&gt; es un estándar para Web API’s que promete ser más eficiente, poderoso y flexible que la arquitectura REST. Fue inicialmente desarrollado en Facebook y ahora es de código abierto. Cada vez toma más fuerza y su comunidad está creciendo rápidamente.&lt;/p&gt;
+
+&lt;p&gt;Hay un recurso muy interesante llamado &lt;a href=&quot;https://www.howtographql.com/&quot;&gt;How To GraphQL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;machine-learning&quot;&gt;Machine Learning&lt;/h3&gt;
+
+&lt;p&gt;Con la cantidad de información que estamos generando cada segundo en Internet, no es extraño que Machine Learning sea un área que está adquiriendo más importancia cada día.&lt;/p&gt;
+
+&lt;p&gt;Recuerda que en Make it Real tenemos un &lt;a href=&quot;https://makeitreal.camp/data-science-online?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=post&quot;&gt;curso de 9 semanas en Data Science&lt;/a&gt; que, además de Machine Learning, incluye extracción y visualización de datos ;)&lt;/p&gt;
+
+&lt;h3 id=&quot;blockchain&quot;&gt;Blockchain&lt;/h3&gt;
+
+&lt;p&gt;Lo interesante de esta tecnología son los conceptos que reúne: algoritmos de hashing, criptografía, árboles de Merkle, protocolos de comunicación y sistemas distribuidos, entre otros.&lt;/p&gt;
+
+&lt;p&gt;Un libro interesante sería &lt;a href=&quot;https://github.com/bitcoinbook/bitcoinbook/&quot;&gt;Mastering Bitcoin - Programming the Open Blockchain&lt;/a&gt;, que está publicado gratis en Github.&lt;/p&gt;
+
+&lt;h3 id=&quot;kung-fu&quot;&gt;Kung Fu&lt;/h3&gt;
+
+&lt;p&gt;Vamos, no todo tiene que ser programación: un nuevo idioma, un instrumento, un deporte, las opciones son infinitas, lo importante es que nunca dejes de aprender!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;¿Qué te gustaría aprender de programación y por fuera de la programación? Cuéntanos en los comentarios!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://makeitreal.s3.amazonaws.com/blog/images/neo-morpheus-kungfu.jpg" /></entry><entry><title type="html">Expresiones regulares</title><link href="http://blog.makeitreal.camp/expresiones-regulares/" rel="alternate" type="text/html" title="Expresiones regulares" /><published>2019-11-22T02:00:00-05:00</published><updated>2019-11-22T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/expresiones-regulares</id><content type="html" xml:base="http://blog.makeitreal.camp/expresiones-regulares/">&lt;p&gt;Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;qué-son-las-expresiones-regulares&quot;&gt;¿Qué son las expresiones regulares?&lt;/h2&gt;
 
 &lt;p&gt;Imagina que recibes un archivo de texto muy largo y te piden escribir un programa que encuentre todos los números telefónicos que existan en el archivo con el formato &lt;code class=&quot;highlighter-rouge&quot;&gt;(XXX) XXX-XXXX&lt;/code&gt;. ¿Cómo lo harías?&lt;/p&gt;
 
-&lt;p&gt;Una &lt;strong&gt;expresión regular&lt;/strong&gt; (en inglés regular expression, regex o regexp) es una secuencia de caracteres que define un patrón de búsqueda. Por ejemplo, con la siguiente expresión regular podríamos encontrar los números telefónicos con el formato que pedían:&lt;/p&gt;
+&lt;p&gt;Una &lt;strong&gt;expresión regular&lt;/strong&gt; (en inglés regular expression, regex ó regexp) es una secuencia de caracteres que define un patrón de búsqueda. Por ejemplo, con la siguiente expresión regular podríamos encontrar los números telefónicos con el formato que pedían:&lt;/p&gt;
 
 &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;se&quot;&gt;\(\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;-&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
@@ -814,22 +871,4 @@ Server running at http://localhost:3000/
 
 &lt;p&gt;Pero &lt;strong&gt;Make it Real&lt;/strong&gt; era precisamente el mensaje que quería expresar. Pensamos dejarlo en español (&lt;strong&gt;hazlo realidad&lt;/strong&gt;) pero, por un lado, no sonaba bien y, por otro, saber qué significa &lt;strong&gt;Make it Real&lt;/strong&gt; es el mínimo nivel de Inglés que esperamos de una persona que desee ingresar a cualquiera de nuestros programas.&lt;/p&gt;
 
-&lt;p&gt;Fue una gran apuesta. Pero hoy, después de más de tres años, seguimos firmes con él. Puede que no seamos el primer resultado en Google, pero &lt;strong&gt;Make it Real&lt;/strong&gt; es parte fundamental de nuestra filosofía: &lt;strong&gt;ayudar a cada uno de nuestros alumnos a hacer su sueño realidad&lt;/strong&gt;, ya sea encontrar un (mejor) empleo o crear sus propios productos digitales. Y eso significa concentrarse en la calidad por encima de la cantidad.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida .camp no iba a colaborar 😂</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/bg-makeitreal.jpeg" /></entry><entry><title type="html">¿Por qué no es tarde para cambiar de carrera?</title><link href="http://blog.makeitreal.camp/por-que-no-es-tarde-para-cambiar-de-carrera/" rel="alternate" type="text/html" title="¿Por qué no es tarde para cambiar de carrera?" /><published>2017-08-15T06:00:00-05:00</published><updated>2017-08-15T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/por-que-no-es-tarde-para-cambiar-de-carrera</id><content type="html" xml:base="http://blog.makeitreal.camp/por-que-no-es-tarde-para-cambiar-de-carrera/">&lt;p&gt;Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Al buscar emprendimiento en Google el primer resultado que obtuve fue la definición de esta palabra, que fue la siguiente: “Inicio de una actividad que exige esfuerzo o trabajo, o tiene cierta importancia o envergadura.”&lt;/p&gt;
-
-&lt;p&gt;Ahora teniendo claro que el emprendimiento no es solo crear un negocio sino tomar riesgos para tomar acción sobre cualquier situación, decidí que era momento de compartir mi experiencia, mi historia y las razones de porque hoy en día, aún siendo empleado por primera vez en mi vida, me considero más emprendedor que en muchas otras situaciones de mi vida.&lt;/p&gt;
-
-&lt;p&gt;Hace ya unos 6 meses que decidí hacer un cambio en mi vida profesional. Los resultados que estaba obteniendo en los negocios que estaba “emprendiendo” en aquellos días no eran los que yo esperaba, lo que hacía me gustaba pero no me sentía particularmente apasionado por muchos de los aspectos de mis actividades diarias. Fue en este momento en el que tomé una decisión un poco radical. Dejar todo atrás y empezar de cero un nuevo proyecto, un nuevo camino, asumir un nuevo reto. Y fue en este momento en que llegó a mi vida la programación (anteriormente había leído algo pero nunca había tenido la oportunidad de ir más a fondo). Por muchos aspectos como la comunidad, los recursos y, no lo puedo negar, también el aspecto financiero, me atrajo. Decidí que aprender a programar sería mi nuevo camino, mi nuevo reto.&lt;/p&gt;
-
-&lt;p&gt;Para ponerlos un poco más en contexto: tengo 26 años, pase 5 años de mi vida en la universidad donde me gradué de Administración de Empresas Agropecuarias, luego pase 2 años en una startup de operaciones turísticas, vivo con mi novia, tengo tantos problemas como una persona común, tengo tantas obligaciones como una persona común. Tomar esta decisión significaría más problemas personales, más problemas económicos, incertidumbre por no saber hacía donde iba, ni cuando iba a llegar. Aún así la decisión estaba clara para mi, mi felicidad sopesaba todas las desventajas e inconvenientes.&lt;/p&gt;
-
-&lt;p&gt;No fue algo fácil pero llegó el momento de buscar trabajo donde podría poner a prueba todo lo que había aprendido, y donde finalmente sabría si había o no tomado la decisión correcta. Al igual que siendo Administrador de Empresas Agropecuarias, Operador turístico no demoraron en llegar los “no” y los rechazos, empresas tras empresas me rechazaban por mi falta de experiencia y conocimiento, pero algo era totalmente diferente, era feliz, me gustaba lo que hacía y no estaba dispuesto a aceptar el fracaso. Continue buscando hasta que finalmente la oportunidad se dio. Hoy en día trabajo como programador, y definitivamente no cambiaría el trabajo que tengo por ninguno de los que he tenido anteriormente.&lt;/p&gt;
-
-&lt;p&gt;Si yo pude, ¿Tu por qué no?&lt;/p&gt;
-
-&lt;p&gt;¡Atrévete a soñar!&lt;/p&gt;
-
-&lt;p&gt;Finalmente me gustaría resaltar que durante todo este proceso tuve la fortuna de contar con el apoyo incondicional de algunas personas (especialmente por parte de mi novia Daniela Olaya), y de encontrarme con un gran programa como lo es Make it Real con grandes mentores y excelentes compañeros que hicieron del recorrido algo más ameno.&lt;/p&gt;
-
-&lt;p&gt;P.S Mi novia también renunció a su trabajo donde era infeliz y ahora empezó su propio negocio de adiestramiento canino.&lt;/p&gt;</content><author><name>Simón Hoyos</name></author><summary type="html">Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/never-too-late.jpg" /></entry></feed>
+&lt;p&gt;Fue una gran apuesta. Pero hoy, después de más de tres años, seguimos firmes con él. Puede que no seamos el primer resultado en Google, pero &lt;strong&gt;Make it Real&lt;/strong&gt; es parte fundamental de nuestra filosofía: &lt;strong&gt;ayudar a cada uno de nuestros alumnos a hacer su sueño realidad&lt;/strong&gt;, ya sea encontrar un (mejor) empleo o crear sus propios productos digitales. Y eso significa concentrarse en la calidad por encima de la cantidad.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida .camp no iba a colaborar 😂</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/bg-makeitreal.jpeg" /></entry></feed>
