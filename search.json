@@ -1,0 +1,547 @@
+[
+  
+    {
+      "title"    : "¿Qué aprender en 2020?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-aprender-en-2020/",
+      "date"     : "2020-01-17 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Expresiones regulares",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/expresiones-regulares/",
+      "date"     : "2019-11-22 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Es valioso un certificado en desarrollo Web?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/es-valioso-un-certificado-en-desarrollo-web/",
+      "date"     : "2018-01-15 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Manejadores de paquetes en Node.js",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/manejadores-de-paquetes-en-nodejs/",
+      "date"     : "2017-12-28 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Introducción a Node.js",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/introduccion-a-nodejs/",
+      "date"     : "2017-12-25 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Lenguajes compilados e interpretados",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/lenguajes-compilados-e-interpretados/",
+      "date"     : "2017-11-06 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "La era de la información digital",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-era-de-la-informacion-digital/",
+      "date"     : "2017-10-28 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "La fortuna de ser programador",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-fortuna-de-ser-programador/",
+      "date"     : "2017-10-02 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Cómo aprovechar al máximo los mentores de Make it Real?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/como-aprovechar-al-maximo-los-mentores/",
+      "date"     : "2017-09-18 02:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "El nombre Make it Real",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/el-nombre-make-it-real/",
+      "date"     : "2017-08-31 06:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Por qué no es tarde para cambiar de carrera?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-no-es-tarde-para-cambiar-de-carrera/",
+      "date"     : "2017-08-15 06:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "El protocolo HTTP",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/el-protocolo-http/",
+      "date"     : "2017-08-09 06:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Arriesgarlo todo por cumplir nuestras metas y sueños",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/",
+      "date"     : "2017-07-30 06:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Responsive design: media queries",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/responsive-design-media-queries/",
+      "date"     : "2017-07-26 06:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué es concurrencia?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/concurrencia/",
+      "date"     : "2017-07-12 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Turbolinks",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/turbolinks/",
+      "date"     : "2017-06-12 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Aprende a leer en código binario",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aprende-a-leer-en-codigo-binario/",
+      "date"     : "2017-05-30 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué hace diferente a Make it Real?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-hace-diferente-a-make-it-real/",
+      "date"     : "2017-05-20 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Por qué es tan difícil aprender a programar?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-es-tan-dificil-aprender-a-programar/",
+      "date"     : "2017-04-02 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "La nueva ciencia del aprendizaje",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-nueva-ciencia-del-aprendizaje/",
+      "date"     : "2017-01-01 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Manejo de dependencias en Ruby con Bundler",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/manejo-de-dependencias-en-ruby-con-bundler/",
+      "date"     : "2016-10-17 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Manejadores de versiones para Ruby",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/manejadores-de-versiones-en-ruby/",
+      "date"     : "2016-10-16 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "2 años después de Make It Real",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/dos-anios-despues/",
+      "date"     : "2016-09-04 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Guía para trabajar como freelance en desarrollo Web",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/guia-freelance-desarrollo-web/",
+      "date"     : "2016-09-01 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 16 ¡Lo logré!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-11-a-15/",
+      "date"     : "2016-07-25 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 7 a 10",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-7-a-10/",
+      "date"     : "2016-07-18 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 6",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-6/",
+      "date"     : "2016-07-13 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 5",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-5/",
+      "date"     : "2016-07-11 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 4",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-4/",
+      "date"     : "2016-07-10 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 3",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-3/",
+      "date"     : "2016-07-09 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 2",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-2/",
+      "date"     : "2016-07-08 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 1",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-1/",
+      "date"     : "2016-07-07 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Análisis encuesta desarrolladores en Colombia 2016",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/analisis-encuesta-desarrolladores-colombia-2016/",
+      "date"     : "2016-02-21 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Descubre si Make it Real es para ti",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/descubre-si-make-it-real-es-para-ti/",
+      "date"     : "2016-02-09 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Lanzamiento de nuestro programa Front End",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/lanzamiento-programa-front-end/",
+      "date"     : "2016-01-20 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué es código?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-codigo/",
+      "date"     : "2016-01-11 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Por qué el desarrollo front-end es tan difícil ahora?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-el-desarrollo-front-end-es-tan-dificil/",
+      "date"     : "2015-12-29 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Aprende Desarrollo Web gratis",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aprende-desarrollo-web-gratis/",
+      "date"     : "2015-12-14 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Desarrollo ágil con Scrum",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/desarrollo-agil-con-scrum/",
+      "date"     : "2015-10-08 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Módulos en Ruby",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/modulos-en-ruby/",
+      "date"     : "2015-10-04 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué es un stack overflow (no el sitio)?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-un-stack-overflow-desbordamiento-de-pila/",
+      "date"     : "2015-09-21 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué es un API?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-un-api/",
+      "date"     : "2015-09-17 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué es recursión?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-la-recursion/",
+      "date"     : "2015-09-15 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Los niveles en Make it Real",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/niveles-make-it-real/",
+      "date"     : "2015-09-15 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Modales de Bootstrap en Ruby on Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/modales-bootstrap-ruby-on-rails/",
+      "date"     : "2015-09-13 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Una nueva mentalidad",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/una-nueva-mentalidad/",
+      "date"     : "2015-07-27 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Tiempo y dedicación",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/tiempo-y-dedicacion/",
+      "date"     : "2015-07-27 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Optimismo y mentalidad de crecimiento",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/optimismo-mentalidad-de-crecimiento/",
+      "date"     : "2015-07-27 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Motivación, entusiasmo y disciplina",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/motivacion-entusiasmo-disciplina/",
+      "date"     : "2015-07-27 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "3 consejos para aprender a programar",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/consejos-para-aprender-a-programar/",
+      "date"     : "2015-07-27 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Por qué un programa virtual?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-programa-virtual/",
+      "date"     : "2015-06-12 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¿Qué significa saber programar y cómo aprender?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/saber-programar-y-como-aprender/",
+      "date"     : "2015-06-03 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Herramientas de desarrollador o developer tools",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/herramientas-de-desarrollador-o-developer-tools/",
+      "date"     : "2015-05-29 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "La línea de comandos",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-linea-de-comandos/",
+      "date"     : "2015-04-07 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Introducción a Ruby on Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/introduccion-ruby-on-rails/",
+      "date"     : "2015-03-22 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HTML y CSS",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/html-css/",
+      "date"     : "2015-03-10 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Programación Orientada por Objetos en Ruby",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/programacion-orientada-por-objetos-ruby/",
+      "date"     : "2015-02-23 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Una muy breve historia de Internet",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/una-breve-historia-de-internet/",
+      "date"     : "2015-02-17 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "¡Felicitaciones, lo hicieron realidad!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/felicitaciones-lo-hicieron-realidad/",
+      "date"     : "2015-01-25 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Formularios de Búsqueda en Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/formularios-de-busqueda-en-rails/",
+      "date"     : "2014-12-27 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Git y Github",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/git-y-github/",
+      "date"     : "2014-10-18 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "JavaScript, jQuery y Ajax",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/javascript-jquery-y-ajax/",
+      "date"     : "2014-10-12 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "HTTP y HTML",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/http-y-html/",
+      "date"     : "2014-10-05 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Conceptos básicos de programación",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/conceptos-basicos-de-programacion/",
+      "date"     : "2014-10-02 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Aprendiendo a Programar",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aprendiendo-a-programar/",
+      "date"     : "2014-09-22 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Diseñando un Producto Mínimo Viable",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/disenando-un-producto-viable-minimo/",
+      "date"     : "2014-08-29 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Entrevista a Sebastián Sogamoso",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/entrevista-a-sebastian-sogamoso/",
+      "date"     : "2014-08-12 12:00:00 -0500"
+    } ,
+  
+    {
+      "title"    : "Transformando la educación",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/transformando-la-educacion/",
+      "date"     : "2014-07-27 12:00:00 -0500"
+    } 
+  
+]
