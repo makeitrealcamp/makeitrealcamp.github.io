@@ -1,4 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-01-18T00:31:24-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Qué aprender en 2020?</title><link href="http://blog.makeitreal.camp/que-aprender-en-2020/" rel="alternate" type="text/html" title="¿Qué aprender en 2020?" /><published>2020-01-17T02:00:00-05:00</published><updated>2020-01-17T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/que-aprender-en-2020</id><content type="html" xml:base="http://blog.makeitreal.camp/que-aprender-en-2020/">&lt;p&gt;Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-02-07T15:20:35-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">La magia de la criptografía asimétrica</title><link href="http://blog.makeitreal.camp/la-magia-de-la-criptografia-asimetrica/" rel="alternate" type="text/html" title="La magia de la criptografía asimétrica" /><published>2020-02-07T02:00:00-05:00</published><updated>2020-02-07T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-magia-de-la-criptografia-asimetrica</id><content type="html" xml:base="http://blog.makeitreal.camp/la-magia-de-la-criptografia-asimetrica/">&lt;p&gt;En este post vamos a ver cómo funciona el cifrado de mensajes usando llaves públicas y privadas, y cómo puedes intercambiar mensaje cifrados con otras personas escribiendo un poco de código JavaScript.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Cuando se cifra un mensaje se utiliza una llave (o clave) para sustituir cada letra por una letra diferente (o un símbolo) con el fin de ocultar el contenido.&lt;/p&gt;
+
+&lt;p&gt;Imagina que &lt;strong&gt;Pedro&lt;/strong&gt; le quiere enviar a &lt;strong&gt;María&lt;/strong&gt; un mensaje cifrado. Una forma de hacerlo con llaves públicas y privadas sería la siguiente:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;María&lt;/strong&gt; crea una llave pública y una privada (si no tiene unas ya creadas).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;María&lt;/strong&gt; envía su llave pública a &lt;strong&gt;Pedro&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pedro&lt;/strong&gt; cifra el mensaje utilizando la llave pública de &lt;strong&gt;María&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Pedro&lt;/strong&gt; le envía el mensaje cifrado a &lt;strong&gt;María&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;María&lt;/strong&gt; utiliza su llave privada para descifrar el mensaje.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A esta técnica se le conoce como &lt;strong&gt;criptografía asimétrica&lt;/strong&gt; porque la llave para cifrar la información (la llave pública) es diferente a la llave para descifrarla (llave privada).&lt;/p&gt;
+
+&lt;p&gt;Antes del desarrollo de la criptografía asimétrica, la única forma de cifrar información era utilizando la misma llave para cifrar y descifrar la información (criptografía simétrica).&lt;/p&gt;
+
+&lt;p&gt;El problema de la &lt;strong&gt;criptografía simétrica&lt;/strong&gt; (que utiliza la misma llave para cifrar y descifrar) es la distribución de la llave a todos los interesados. La &lt;strong&gt;criptografía asimétrica&lt;/strong&gt; soluciona este problema porque cada persona puede compartir su llave pública para que otros le envién mensajes cifrados, y utilizar su llave privada para descifrar esos mensajes.&lt;/p&gt;
+
+&lt;p&gt;Una llave (pública o privada) no es más que una cadena de caracteres. Por ejemplo, la siguiente es una llave pública que tengo configurada en &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3ftr8QCuN1AIcdPOYXjYfKl2gABIv7zspBaSUySy83i9Se9a11mybifFOtVXR6DESaHu8GYC1ThNLSkC8LAOVTCrh/TBfjKXpTr4C22jvSwPUMdFF7QbpqWNrjLlfIzBfWZqTh+xOAhuGtWZZqIq3lx9BKQeSFWY7kDSDKluTp5GezSZKq64L8YL0gROXd+8dFWY2CbGLQKoadzTJd69VB5P+QgN/Q1NpSvZPNE6aEJD4bHBOgyUqr9yh/zBQakT7RNzc4ga3b/tAo630CE5ZsHuz5IIvLDTi9jSV/ICO182cZWHYn5aGYSkBxSnZZOjzYwO6jEXyzOuf/Dxrsawt
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Puedes consultar las llaves públicas de cualquier usuario en &lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt; ingresando a la URL &lt;code class=&quot;highlighter-rouge&quot;&gt;https://github.com/&amp;lt;nombre-de-usuario&amp;gt;.keys&lt;/code&gt; (reemplaza &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;nombre-de-usuario&amp;gt;&lt;/code&gt; por el usuario correspondiente). Por eso se llaman &lt;strong&gt;llaves públicas&lt;/strong&gt;, porque pueden ser compartidas públicamente.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, puedes ver mis llaves públicas si ingresas a &lt;a href=&quot;https://github.com/germanescobar.keys&quot;&gt;https://github.com/germanescobar.keys&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Si no te aparecen llaves públicas bajo tu usuario es porque aún no has creado ninguna. Sigue las instrucciones en &lt;a href=&quot;https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent&quot;&gt;este link de Github&lt;/a&gt; para crearlas.&lt;/p&gt;
+
+&lt;p&gt;Cualquier persona podría enviarme un mensaje cifrado utilizando mi llave pública y sólo yo voy a poder descifrar el mensaje porque tengo la llave privada almacenada en un archivo de mi computador.&lt;/p&gt;
+
+&lt;p&gt;Lo importante es mantener la llave privada en un sitio seguro y bajo contraseña (al crear la llave privada es posible asegurarla con un &lt;code class=&quot;highlighter-rouge&quot;&gt;passphrase&lt;/code&gt;, que no es más que una contraseña).&lt;/p&gt;
+
+&lt;h2 id=&quot;cifrando-y-descifrando-mensajes&quot;&gt;Cifrando y descifrando mensajes&lt;/h2&gt;
+
+&lt;p&gt;Veamos entonces cómo cifrar mensajes con una llave pública y descifrarlos con una llave privada utilizando &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/&quot;&gt;Github&lt;/a&gt; almacena las llaves públicas utilizando un formato que no es compatible con lo que vamos a hacer así que el primer paso es transformar la llave a un formato compatible.&lt;/p&gt;
+
+&lt;p&gt;Crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;public.key&lt;/code&gt;con el contenido de la llave pública y ejecuta el siguiente comando desde una consola:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ssh-keygen -f public.key -e -m PKCS8 &amp;gt; public.key.pem
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ahora crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;encrypt.js&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;crypto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'crypto'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encrypt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pkPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;absPkPath&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pkPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;absPkPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;buffer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;encrypted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;crypto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;publicEncrypt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;encrypted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'base64'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+&lt;span class=&quot;nx&quot;&gt;encrypt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;public.key.pem&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Cambia el texto &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;Hola Mundo&quot;&lt;/code&gt; por el texto que quieras cifrar. Ejecuta el archivo con el siguiente comando:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node encrypt.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Deberías ver el texto cifrado que puedes enviar a la persona que tenga la llave privada correspondiente a esa llave pública.&lt;/p&gt;
+
+&lt;p&gt;Para descifrar un mensaje crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;decrypt.js&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;crypto&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'crypto'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'path'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;decrypt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;privateKeyPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;passphrase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Promise&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;privateKeyPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+      &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;buffer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'base64'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;decrypted&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;crypto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;privateDecrypt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;passphrase&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+      &lt;span class=&quot;nx&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;decrypted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'utf8'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;decrypt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;texto cifrado&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/ruta/llave/privada&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;passphrase&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Debes cambiar los primeros tres argumentos por el texto cifrado, la ruta de la llave privada y el &lt;code class=&quot;highlighter-rouge&quot;&gt;passphrase&lt;/code&gt; respectivamente.&lt;/p&gt;
+
+&lt;p&gt;Ejecuta el programa con el siguiente comando:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node decrypt.js
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Deberías ver el mensaje original.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-clase-de-brujería-es-esta&quot;&gt;¿Qué clase de brujería es esta?&lt;/h2&gt;
+
+&lt;p&gt;Lo que me parece increíble de la &lt;strong&gt;criptografía asímétrica&lt;/strong&gt; es, primero, que no sea necesario ponerse de acuerdo en una llave secreta con otras personas y, segundo, que la llave pública se pueda compartir con cualquiera sin peligro, incluso con nuestros peores enemigos.&lt;/p&gt;
+
+&lt;p&gt;La llave pública se crea a partir de la llave privada, así que las dos están estrechamente relacionadas. Sin embargo, si de alguna forma pudieramos obtener la llave privada a partir de una llave pública el sistema dejaría de funcionar. Entonces ¿cómo evitan que esto suceda?&lt;/p&gt;
+
+&lt;p&gt;No vamos a ahondar mucho en los detalles matemáticos pero la idea principal está basada en el uso de números primos, es decir, números que sólo son divisibles por 1 y ellos mismos. Ejemplos de números primos son 5, 7, 11, 13, etc.&lt;/p&gt;
+
+&lt;p&gt;Multiplicar dos números primos es trivial, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;13 x 17 = 221&lt;/code&gt;, pero hacer el ejercicio contrario, encontrar dos números primos (los factores) cuya multiplicación de un determinado resultado es muy difícil cuando los números son muy grandes, cuando el número tiene cientos de cifras.&lt;/p&gt;
+
+&lt;p&gt;Para crear una llave privada se seleccionan dos números primos (muy grandes) y el resultado de la multiplicación se va a convertir en la llave pública.&lt;/p&gt;
+
+&lt;p&gt;Ahora, hay más matemática involucrada, pero si alguien encuentra una forma fácil y rápida de factorizar los números primos de cualquier número (sin importar su tamaño), todo el sistema de criptografía sobre el que depende nuestra civilización se derrumbaría por completo.&lt;/p&gt;
+
+&lt;p&gt;Afortunadamente hoy están surgiendo otras alternativas a la multiplicación de números primos como la &lt;a href=&quot;https://es.wikipedia.org/wiki/Criptograf%C3%ADa_de_curva_el%C3%ADptica&quot;&gt;criptografía de curva elíptica&lt;/a&gt;, pero la idea es la misma, generar la llave pública a partir de la privada es muy fácil, pero lo contrario es muy difícil.&lt;/p&gt;
+
+&lt;h2 id=&quot;otras-aplicaciones&quot;&gt;Otras aplicaciones&lt;/h2&gt;
+
+&lt;p&gt;Hasta ahora hemos hablado de cifrar un mensaje con la llave pública y descifrarlo con la llave privada. Pero ¿será útil cifrar un mensaje con la llave privada sabiendo que cualquier persona lo va a poder descifrar con la llave pública?&lt;/p&gt;
+
+&lt;p&gt;¡Claro que es útil! No tanto para cifrar información sino para garantizar la autenticidad de un mensaje, es decir, saber que viene de la persona o la organización indicada.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos de aplicaciones que utilizan esta técnica incluyen las &lt;a href=&quot;https://es.wikipedia.org/wiki/Firma_digital&quot;&gt;firmas digitales&lt;/a&gt; (que permiten determinar la autenticidad de un mensaje), &lt;a href=&quot;https://es.wikipedia.org/wiki/Certificado_digital&quot;&gt;certificados digitales&lt;/a&gt; (p.e. los que utilizan los sitios seguros con HTTPS) y las &lt;a href=&quot;https://es.wikipedia.org/wiki/Criptomoneda&quot;&gt;criptomonedas&lt;/a&gt; (p.e. Bitcoin, Ethereum, etc.), entre muchas otras.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Este post fue inspirado en un libro llamado &lt;a href=&quot;https://www.amazon.com/Code-Book-Science-Secrecy-Cryptography-ebook/dp/B004IK8PLE/ref=sr_1_2?crid=2VSNWLV86EPND&amp;amp;keywords=the+code+book&amp;amp;qid=1581102348&amp;amp;s=digital-text&amp;amp;sprefix=the+code+book%2Caps%2C206&amp;amp;sr=1-2&quot;&gt;The Code Book, de Simon Singh&lt;/a&gt; que estoy terminando de leer. En él aprendí también cómo funcionaba la &lt;a href=&quot;https://es.wikipedia.org/wiki/Enigma_(m%C3%A1quina)&quot;&gt;máquina Enigma&lt;/a&gt; utilizada por los alemanes en la segunda guerra mundial para cifrar sus comunicaciones, pero que los ingleses lograron “quebrar” como lo dramatizan en la película &lt;a href=&quot;https://es.wikipedia.org/wiki/The_Imitation_Game&quot;&gt;The Imitation Game (El Código Enigma)&lt;/a&gt; basada en la vida de &lt;a href=&quot;https://en.wikipedia.org/wiki/Alan_Turing&quot;&gt;Alan Turing&lt;/a&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos a ver cómo funciona el cifrado de mensajes usando llaves públicas y privadas, y cómo puedes intercambiar mensaje cifrados con otras personas escribiendo un poco de código JavaScript.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/gold-padlock.jpg" /></entry><entry><title type="html">¿Qué aprender en 2020?</title><link href="http://blog.makeitreal.camp/que-aprender-en-2020/" rel="alternate" type="text/html" title="¿Qué aprender en 2020?" /><published>2020-01-17T02:00:00-05:00</published><updated>2020-01-17T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/que-aprender-en-2020</id><content type="html" xml:base="http://blog.makeitreal.camp/que-aprender-en-2020/">&lt;p&gt;Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;un-framework-web&quot;&gt;Un framework Web&lt;/h3&gt;
 
@@ -867,8 +1018,4 @@ Server running at http://localhost:3000/
   &lt;li&gt;&lt;a href=&quot;/saber-programar-y-como-aprender/&quot;&gt;¿Qué significa saber programar y cómo aprender?&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/consejos-para-aprender-a-programar/&quot;&gt;3 consejos para aprender a programar&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;/que-hace-diferente-a-make-it-real/&quot;&gt;¿Qué hace diferente a Make it Real?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Quizá la principal ventaja de nuestros programas es la guía y retroalimentación de los mentores. En este post aprenderás cómo aprovecharlos al máximo para acelerar tu aprendizaje.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/traffic-light.jpeg" /></entry><entry><title type="html">El nombre Make it Real</title><link href="http://blog.makeitreal.camp/el-nombre-make-it-real/" rel="alternate" type="text/html" title="El nombre Make it Real" /><published>2017-08-31T06:00:00-05:00</published><updated>2017-08-31T06:00:00-05:00</updated><id>http://blog.makeitreal.camp/el-nombre-make-it-real</id><content type="html" xml:base="http://blog.makeitreal.camp/el-nombre-make-it-real/">&lt;p&gt;La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida &lt;code class=&quot;highlighter-rouge&quot;&gt;.camp&lt;/code&gt; no iba a colaborar 😂&lt;!-- more --&gt; (por cierto, el &lt;code class=&quot;highlighter-rouge&quot;&gt;.camp&lt;/code&gt; es de Boot&lt;strong&gt;camp&lt;/strong&gt;).&lt;/p&gt;
-
-&lt;p&gt;Pero &lt;strong&gt;Make it Real&lt;/strong&gt; era precisamente el mensaje que quería expresar. Pensamos dejarlo en español (&lt;strong&gt;hazlo realidad&lt;/strong&gt;) pero, por un lado, no sonaba bien y, por otro, saber qué significa &lt;strong&gt;Make it Real&lt;/strong&gt; es el mínimo nivel de Inglés que esperamos de una persona que desee ingresar a cualquiera de nuestros programas.&lt;/p&gt;
-
-&lt;p&gt;Fue una gran apuesta. Pero hoy, después de más de tres años, seguimos firmes con él. Puede que no seamos el primer resultado en Google, pero &lt;strong&gt;Make it Real&lt;/strong&gt; es parte fundamental de nuestra filosofía: &lt;strong&gt;ayudar a cada uno de nuestros alumnos a hacer su sueño realidad&lt;/strong&gt;, ya sea encontrar un (mejor) empleo o crear sus propios productos digitales. Y eso significa concentrarse en la calidad por encima de la cantidad.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida .camp no iba a colaborar 😂</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/bg-makeitreal.jpeg" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Quizá la principal ventaja de nuestros programas es la guía y retroalimentación de los mentores. En este post aprenderás cómo aprovecharlos al máximo para acelerar tu aprendizaje.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/traffic-light.jpeg" /></entry></feed>
