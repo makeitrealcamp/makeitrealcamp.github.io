@@ -6657,6 +6657,39 @@ nav.main {
       @media (min-width: 768px) {
         nav.main .main-content img {
           width: 150px; } }
+    nav.main .main-content .search {
+      display: inline-block;
+      padding: 5px; }
+      @media (min-width: 576px) {
+        nav.main .main-content .search {
+          margin-right: 15px; } }
+      nav.main .main-content .search .search-box {
+        background: transparent;
+        color: #999;
+        border: none;
+        box-shadow: none;
+        width: 0;
+        transition: width 1s; }
+        nav.main .main-content .search .search-box:focus {
+          outline: none; }
+      nav.main .main-content .search.open {
+        border-bottom: 2px solid #78716e; }
+        nav.main .main-content .search.open .search-box {
+          width: 150px; }
+          @media (min-width: 576px) {
+            nav.main .main-content .search.open .search-box {
+              width: 210px; } }
+      nav.main .main-content .search .search-button {
+        cursor: pointer; }
+        nav.main .main-content .search .search-button i {
+          color: #78716e;
+          font-size: 1.2rem;
+          vertical-align: middle; }
+    nav.main .main-content .btn-cta {
+      display: none; }
+      @media (min-width: 768px) {
+        nav.main .main-content .btn-cta {
+          display: inline; } }
 
 .btn-cta {
   background: #F04500;
@@ -6682,7 +6715,21 @@ nav.main {
   .fade:hover {
     opacity: 0.8; }
 
-/* http://prismjs.com/download.html?themes=prism&languages=markup+css+clike+javascript+bash+ruby+json+scss+sql+yaml&plugins=line-numbers */
+.search-results .no-results {
+  font-size: 1.3rem; }
+
+footer.main {
+  position: fixed;
+  bottom: 0;
+  background: #333;
+  padding: 12px 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    footer.main {
+      display: none; } }
+
+/* PrismJS 1.19.0
+https://prismjs.com/download.html?#themes=prism&languages=markup+css+clike+javascript+bash+json+ruby+scss+sql+yaml&plugins=line-numbers */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
@@ -6694,6 +6741,7 @@ pre[class*="language-"] {
   background: none;
   text-shadow: 0 1px white;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.95rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -6747,7 +6795,7 @@ pre[class*="language-"] {
 .token.punctuation {
   color: #999; }
 
-.namespace {
+.token.namespace {
   opacity: .7; }
 
 .token.property,
@@ -6772,7 +6820,7 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #a67f59;
+  color: #9a6e3a;
   background: rgba(255, 255, 255, 0.5); }
 
 .token.atrule,
@@ -6780,7 +6828,8 @@ pre[class*="language-"] {
 .token.keyword {
   color: #07a; }
 
-.token.function {
+.token.function,
+.token.class-name {
   color: #DD4A68; }
 
 .token.regex,
@@ -6798,13 +6847,14 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help; }
 
-pre.line-numbers {
+pre[class*="language-"].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber; }
 
-pre.line-numbers > code {
-  position: relative; }
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit; }
 
 .line-numbers .line-numbers-rows {
   position: absolute;
@@ -6835,6 +6885,9 @@ pre.line-numbers > code {
 
 .home-page {
   margin-top: 60px; }
+  @media (min-width: 576px) {
+    .home-page .posts {
+      margin-bottom: 40px; } }
   .home-page .post {
     border: solid 1px #ddd;
     background: white;

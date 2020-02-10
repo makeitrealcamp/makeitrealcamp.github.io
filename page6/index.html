@@ -31,6 +31,9 @@
   <link rel="stylesheet" href="/assets/stylesheets/main.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
   <script src="/assets/javascripts/main.js" charset="utf-8"></script>
   <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
 
@@ -53,7 +56,17 @@
   <div class="container">
     <div class="main-content">
       <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
-      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      <div>
+        
+        <div class="search">
+          <input type="search" id="search-input" class="search-box" placeholder="Buscar ..." />
+          <span class="search-button">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
       <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
     </div>
   </div>
@@ -61,271 +74,307 @@
 
     <div class="content"><div class="home-page">
   <div class="container">
-    
-      <div class="post main-post">
-        <div class="post-image" style="background-image: url(/assets/images/bg-images/start-wars.jpg);"></div>
-        <div class="main-post-wrapper">
-          <div class="post-content">
-            <header class="post-title">
-              <a href="/consejos-para-aprender-a-programar/">3 consejos para aprender a programar</a>
-            </header>
-            <div class="post-body"><p>Si quieres aprender, o estás aprendiendo a programar, estos tres consejos te ayudarán:</p>
+    <div class="search-results"></div>
+    <div class="posts">
+      
+        <div class="post main-post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/start-wars.jpg);"></div>
+          <div class="main-post-wrapper">
+            <div class="post-content">
+              <header class="post-title">
+                <a href="/consejos-para-aprender-a-programar/">3 consejos para aprender a programar</a>
+              </header>
+              <div class="post-body"><p>Si quieres aprender, o estás aprendiendo a programar, estos tres consejos te ayudarán:</p>
 
 </div>
-          </div>
-          
-          <footer class="post-footer">
-            <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-            <div>
-              <span class="author">Germán Escobar</span>
-              <time>Jul 27, 2015</time>
             </div>
-          </footer>
+            
+            <footer class="post-footer">
+              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+              <div>
+                <span class="author">Germán Escobar</span>
+                <time>Jul 27, 2015</time>
+              </div>
+            </footer>
+            
+          </div>
+        </div>
+      
+
+      <div class="row">
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/virtual.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/por-que-programa-virtual/">¿Por qué un programa virtual?</a>
+                </header>
+                <div class="post-body"><p><strong>Make it Real</strong> empezó en el 2014 con Bootcamps presenciales, de 12 semanas tiempo completo. El modelo estuvo fuertemente inspirado en iniciativas similares en Estados Unidos como <a href="http://devbootcamp.com/">Dev Bootcamp</a> y <a href="http://www.hackreactor.com/">Hack Reactor</a> que cuestan entre $10,000 y $20,000 dólares.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Jun 12, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/photo-ruby@2x.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/saber-programar-y-como-aprender/">¿Qué significa saber programar y cómo aprender?</a>
+                </header>
+                <div class="post-body"><p>Estamos acostumbrados a dividir el mundo en dos: los buenos de los malos, los ricos de los pobres, los que saben programar de los que no. Pero la realidad es que esos conceptos son muy relativos.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Jun 3, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/developer-tools.png)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/herramientas-de-desarrollador-o-developer-tools/">Herramientas de desarrollador o developer tools</a>
+                </header>
+                <div class="post-body"><p>Las herramientas de desarrollador, o en inglés <em>developer tools</em>, son un conjunto de herramientas integradas en el navegador, diseñadas para facilitar el desarrollo de aplicaciones web.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/0a5c5ad25ae54bd2be9c5091cf5eb1d1.jpg?s=80"/>
+                <div>
+                  <span class="author">Simón Soriano</span>
+                  <time>May 29, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/matrix.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/la-linea-de-comandos/">La línea de comandos</a>
+                </header>
+                <div class="post-body"><p>También llamada “consola” o “terminal”, <strong>la línea de comandos</strong> es una de las herramientas más importantes de todo programador. ¿Qué es? ¿Para qué sirve? ¿Por qué los programadores la usamos tanto? Esas son las preguntas que vamos a intentar responder en este post.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Apr 7, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/ruby-on-rails.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/introduccion-ruby-on-rails/">Introducción a Ruby on Rails</a>
+                </header>
+                <div class="post-body"><p><strong>Ruby on Rails</strong> es un framework para crear aplicaciones Web, escrito en el lenguaje de programación <strong>Ruby</strong>, y diseñado para que el desarrollo de aplicaciones Web sea fácil y divertido.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Mar 22, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/html5-css3.png)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/html-css/">HTML y CSS</a>
+                </header>
+                <div class="post-body"><p>Para hacer páginas Web necesitas aprender dos lenguajes: <strong>HTML</strong> y <strong>CSS</strong>. Estos son los lenguajes que los navegadores (Firefox, Chrome, Internet Explorer) entienden e interpretan para mostrarte lo que ves cuando abres alguna página.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Mar 10, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/object-oriented-programming.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/programacion-orientada-por-objetos-ruby/">Programación Orientada por Objetos en Ruby</a>
+                </header>
+                <div class="post-body"><p>La Programación Orientada por Objetos, también conocida por las siglas <strong>OOP (Object Oriented Programming)</strong>, surgió a principios de los años 80’s como respuesta a la dificultad que estaban experimentando los programadores manteniendo aplicaciones de tamaño y complejidad considerables.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Feb 23, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/mainframe3.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/una-breve-historia-de-internet/">Una muy breve historia de Internet</a>
+                </header>
+                <div class="post-body"><p>A principios de los años 60’s, en Estados Unidos, varias universidades tenían computadores de tiempo compartido: enormes máquinas, con una fracción de la capacidad de tu teléfono móvil actual, que se accedían a través de terminales sin pantalla, permitiendo a varios compartir los recursos del computador de forma simultánea.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Feb 17, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/screenshots.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/felicitaciones-lo-hicieron-realidad/">¡Felicitaciones, lo hicieron realidad!</a>
+                </header>
+                <div class="post-body"><p>Es indescriptible la alegría y el orgullo que sentía mientras presentaban sus proyectos personales el pasado viernes 23 de Enero durante el Demo Day.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Jan 25, 2015</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+      </div>
+
+      
+      <div class="row">
+        <div class="col-6">
+          
+          <a href="/page5/">&larr; Posteriores</a>
+          
+        </div>
+
+        <div class="col-6 text-right pb-5">
+          
+          <a href="/page7/">Anteriores &rarr;</a>
           
         </div>
       </div>
-    
-
-    <div class="row">
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/virtual.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/por-que-programa-virtual/">¿Por qué un programa virtual?</a>
-              </header>
-              <div class="post-body"><p><strong>Make it Real</strong> empezó en el 2014 con Bootcamps presenciales, de 12 semanas tiempo completo. El modelo estuvo fuertemente inspirado en iniciativas similares en Estados Unidos como <a href="http://devbootcamp.com/">Dev Bootcamp</a> y <a href="http://www.hackreactor.com/">Hack Reactor</a> que cuestan entre $10,000 y $20,000 dólares.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Jun 12, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/photo-ruby@2x.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/saber-programar-y-como-aprender/">¿Qué significa saber programar y cómo aprender?</a>
-              </header>
-              <div class="post-body"><p>Estamos acostumbrados a dividir el mundo en dos: los buenos de los malos, los ricos de los pobres, los que saben programar de los que no. Pero la realidad es que esos conceptos son muy relativos.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Jun 3, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/developer-tools.png)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/herramientas-de-desarrollador-o-developer-tools/">Herramientas de desarrollador o developer tools</a>
-              </header>
-              <div class="post-body"><p>Las herramientas de desarrollador, o en inglés <em>developer tools</em>, son un conjunto de herramientas integradas en el navegador, diseñadas para facilitar el desarrollo de aplicaciones web.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/0a5c5ad25ae54bd2be9c5091cf5eb1d1.jpg?s=80"/>
-              <div>
-                <span class="author">Simón Soriano</span>
-                <time>May 29, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/matrix.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/la-linea-de-comandos/">La línea de comandos</a>
-              </header>
-              <div class="post-body"><p>También llamada “consola” o “terminal”, <strong>la línea de comandos</strong> es una de las herramientas más importantes de todo programador. ¿Qué es? ¿Para qué sirve? ¿Por qué los programadores la usamos tanto? Esas son las preguntas que vamos a intentar responder en este post.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Apr 7, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/ruby-on-rails.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/introduccion-ruby-on-rails/">Introducción a Ruby on Rails</a>
-              </header>
-              <div class="post-body"><p><strong>Ruby on Rails</strong> es un framework para crear aplicaciones Web, escrito en el lenguaje de programación <strong>Ruby</strong>, y diseñado para que el desarrollo de aplicaciones Web sea fácil y divertido.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Mar 22, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/html5-css3.png)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/html-css/">HTML y CSS</a>
-              </header>
-              <div class="post-body"><p>Para hacer páginas Web necesitas aprender dos lenguajes: <strong>HTML</strong> y <strong>CSS</strong>. Estos son los lenguajes que los navegadores (Firefox, Chrome, Internet Explorer) entienden e interpretan para mostrarte lo que ves cuando abres alguna página.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Mar 10, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/object-oriented-programming.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/programacion-orientada-por-objetos-ruby/">Programación Orientada por Objetos en Ruby</a>
-              </header>
-              <div class="post-body"><p>La Programación Orientada por Objetos, también conocida por las siglas <strong>OOP (Object Oriented Programming)</strong>, surgió a principios de los años 80’s como respuesta a la dificultad que estaban experimentando los programadores manteniendo aplicaciones de tamaño y complejidad considerables.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Feb 23, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/mainframe3.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/una-breve-historia-de-internet/">Una muy breve historia de Internet</a>
-              </header>
-              <div class="post-body"><p>A principios de los años 60’s, en Estados Unidos, varias universidades tenían computadores de tiempo compartido: enormes máquinas, con una fracción de la capacidad de tu teléfono móvil actual, que se accedían a través de terminales sin pantalla, permitiendo a varios compartir los recursos del computador de forma simultánea.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Feb 17, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/screenshots.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/felicitaciones-lo-hicieron-realidad/">¡Felicitaciones, lo hicieron realidad!</a>
-              </header>
-              <div class="post-body"><p>Es indescriptible la alegría y el orgullo que sentía mientras presentaban sus proyectos personales el pasado viernes 23 de Enero durante el Demo Day.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Jan 25, 2015</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
       
     </div>
-
-    
-    <div class="row">
-      <div class="col-6">
-        
-        <a href="/page5/">&larr; Posteriores</a>
-        
-      </div>
-
-      <div class="col-6 text-right pb-5">
-        
-        <a href="/page7/">Anteriores &rarr;</a>
-        
-      </div>
-    </div>
-    
   </div>
 </div>
+
+<script id="posts-template" type="text/x-handlebars">
+  
+  <div class="row">
+    {{#each posts }}
+      <div class="col-md-6 col-lg-4 align-items-stretch">
+        <div class="post">
+          <div class="post-image" style="background-image: url({{#if image }}{{ image }}{{ else }}/assets/images/no-image.png{{/if}})"></div>
+          <div class="post-content">
+            <header class="post-title">
+              <a href="{{ url }}" target="_blank">{{ this.title }}</a>
+            </header>
+            <div class="post-body">{{ this.excerpt }}</div>
+            <div class="diffuse"></div>
+          </div>
+          <footer class="post-footer">
+            {{#if author }}
+            <img class="img-responsive" src="{{#if gravatar }}{{ gravatar }}{{ else }}/images/no-gravatar.png{{/if}}"/>
+            <div>
+              <span class="author">{{ author }}</span>
+              <time>{{ date }}</time>
+            </div>
+            {{/if}}
+          </footer>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  
+</script>
 </div>
     <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
 
-    </footer>
   </body>
 </html>

@@ -31,6 +31,9 @@
   <link rel="stylesheet" href="/assets/stylesheets/main.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
   <script src="/assets/javascripts/main.js" charset="utf-8"></script>
   <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
 
@@ -53,7 +56,17 @@
   <div class="container">
     <div class="main-content">
       <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
-      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      <div>
+        
+        <div class="search">
+          <input type="search" id="search-input" class="search-box" placeholder="Buscar ..." />
+          <span class="search-button">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
       <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
     </div>
   </div>
@@ -61,271 +74,307 @@
 
     <div class="content"><div class="home-page">
   <div class="container">
-    
-      <div class="post main-post">
-        <div class="post-image" style="background-image: url(/assets/images/bg-images/bg-makeitreal.jpeg);"></div>
-        <div class="main-post-wrapper">
-          <div class="post-content">
-            <header class="post-title">
-              <a href="/el-nombre-make-it-real/">El nombre Make it Real</a>
-            </header>
-            <div class="post-body"><p>La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida <code class="highlighter-rouge">.camp</code> no iba a colaborar 😂</p>
+    <div class="search-results"></div>
+    <div class="posts">
+      
+        <div class="post main-post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/bg-makeitreal.jpeg);"></div>
+          <div class="main-post-wrapper">
+            <div class="post-content">
+              <header class="post-title">
+                <a href="/el-nombre-make-it-real/">El nombre Make it Real</a>
+              </header>
+              <div class="post-body"><p>La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida <code class="highlighter-rouge">.camp</code> no iba a colaborar 😂</p>
 
 </div>
-          </div>
-          
-          <footer class="post-footer">
-            <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-            <div>
-              <span class="author">Germán Escobar</span>
-              <time>Aug 31, 2017</time>
             </div>
-          </footer>
+            
+            <footer class="post-footer">
+              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+              <div>
+                <span class="author">Germán Escobar</span>
+                <time>Aug 31, 2017</time>
+              </div>
+            </footer>
+            
+          </div>
+        </div>
+      
+
+      <div class="row">
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/never-too-late.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/por-que-no-es-tarde-para-cambiar-de-carrera/">¿Por qué no es tarde para cambiar de carrera?</a>
+                </header>
+                <div class="post-body"><p>Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="/assets/images/people/simon-hoyos.jpeg"/>
+                <div>
+                  <span class="author">Simón Hoyos</span>
+                  <time>Aug 15, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/lights.jpeg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/el-protocolo-http/">El protocolo HTTP</a>
+                </header>
+                <div class="post-body"><p>El protocolo <strong>HTTP</strong> (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Aug 9, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/metas-y-suenos.jpeg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/">Arriesgarlo todo por cumplir nuestras metas y sueños</a>
+                </header>
+                <div class="post-body"><p>Todo empezó por simple curiosidad. ¿Que significaba la programación? ¿Cómo era posible que las personas construyeran algo tan grande simplemente con palabras? ¿Cómo así que con palabras?</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="/assets/images/people/alejandro-estrada.jpeg"/>
+                <div>
+                  <span class="author">Alejandro Estrada</span>
+                  <time>Jul 30, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/responsive-design.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/responsive-design-media-queries/">Responsive design: media queries</a>
+                </header>
+                <div class="post-body"><p>En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Jul 26, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/concurrency.jpeg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/concurrencia/">¿Qué es concurrencia?</a>
+                </header>
+                <div class="post-body"><p>En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Jul 12, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/turbolinks.jpeg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/turbolinks/">Turbolinks</a>
+                </header>
+                <div class="post-body"><p>En este post vamos a ver qué es <strong>Turbolinks</strong> y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Jun 12, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/the-matrix.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/aprende-a-leer-en-codigo-binario/">Aprende a leer en código binario</a>
+                </header>
+                <div class="post-body"><p>En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>May 30, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/the-path.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/que-hace-diferente-a-make-it-real/">¿Qué hace diferente a Make it Real?</a>
+                </header>
+                <div class="post-body"><p>Cualquier persona puede aprender a programar por su cuenta. ¿Por qué pagar por un programa como el de <a href="https://makeitreal.camp" target="_blank">Make it Real</a> y qué lo hace diferente de cualquier otro programa?</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>May 20, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+          <div class="col-md-6 col-lg-4 align-items-stretch">
+            <div class="post">
+              <div class="post-image" style="background-image: url(/assets/images/bg-images/hot-air-balloon-valley-sky-99551.jpg)"></div>
+              <div class="post-content">
+                <header class="post-title">
+                  <a href="/por-que-es-tan-dificil-aprender-a-programar/">¿Por qué es tan difícil aprender a programar?</a>
+                </header>
+                <div class="post-body"><p>Muchos dirían que aprender a programar es relativamente fácil. Sin embargo, después de ver a cientos de personas intentarlo, es claro que es un proceso muy frustrante para la mayoría.</p>
+
+</div>
+                <div class="diffuse"></div>
+              </div>
+              <footer class="post-footer">
+                
+                <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                <div>
+                  <span class="author">Germán Escobar</span>
+                  <time>Apr 2, 2017</time>
+                </div>
+                
+              </footer>
+            </div>
+          </div>
+        
+      </div>
+
+      
+      <div class="row">
+        <div class="col-6">
+          
+          <a href="/">&larr; Posteriores</a>
+          
+        </div>
+
+        <div class="col-6 text-right pb-5">
+          
+          <a href="/page3/">Anteriores &rarr;</a>
           
         </div>
       </div>
-    
-
-    <div class="row">
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/never-too-late.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/por-que-no-es-tarde-para-cambiar-de-carrera/">¿Por qué no es tarde para cambiar de carrera?</a>
-              </header>
-              <div class="post-body"><p>Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="/assets/images/people/simon-hoyos.jpeg"/>
-              <div>
-                <span class="author">Simón Hoyos</span>
-                <time>Aug 15, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/lights.jpeg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/el-protocolo-http/">El protocolo HTTP</a>
-              </header>
-              <div class="post-body"><p>El protocolo <strong>HTTP</strong> (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Aug 9, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/metas-y-suenos.jpeg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/">Arriesgarlo todo por cumplir nuestras metas y sueños</a>
-              </header>
-              <div class="post-body"><p>Todo empezó por simple curiosidad. ¿Que significaba la programación? ¿Cómo era posible que las personas construyeran algo tan grande simplemente con palabras? ¿Cómo así que con palabras?</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="/assets/images/people/alejandro-estrada.jpeg"/>
-              <div>
-                <span class="author">Alejandro Estrada</span>
-                <time>Jul 30, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/responsive-design.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/responsive-design-media-queries/">Responsive design: media queries</a>
-              </header>
-              <div class="post-body"><p>En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Jul 26, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/concurrency.jpeg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/concurrencia/">¿Qué es concurrencia?</a>
-              </header>
-              <div class="post-body"><p>En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Jul 12, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/turbolinks.jpeg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/turbolinks/">Turbolinks</a>
-              </header>
-              <div class="post-body"><p>En este post vamos a ver qué es <strong>Turbolinks</strong> y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Jun 12, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/the-matrix.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/aprende-a-leer-en-codigo-binario/">Aprende a leer en código binario</a>
-              </header>
-              <div class="post-body"><p>En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>May 30, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/the-path.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/que-hace-diferente-a-make-it-real/">¿Qué hace diferente a Make it Real?</a>
-              </header>
-              <div class="post-body"><p>Cualquier persona puede aprender a programar por su cuenta. ¿Por qué pagar por un programa como el de <a href="https://makeitreal.camp" target="_blank">Make it Real</a> y qué lo hace diferente de cualquier otro programa?</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>May 20, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
-      
-        <div class="col-md-6 col-lg-4 align-items-stretch">
-          <div class="post">
-            <div class="post-image" style="background-image: url(/assets/images/bg-images/hot-air-balloon-valley-sky-99551.jpg)"></div>
-            <div class="post-content">
-              <header class="post-title">
-                <a href="/por-que-es-tan-dificil-aprender-a-programar/">¿Por qué es tan difícil aprender a programar?</a>
-              </header>
-              <div class="post-body"><p>Muchos dirían que aprender a programar es relativamente fácil. Sin embargo, después de ver a cientos de personas intentarlo, es claro que es un proceso muy frustrante para la mayoría.</p>
-
-</div>
-              <div class="diffuse"></div>
-            </div>
-            <footer class="post-footer">
-              
-              <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
-              <div>
-                <span class="author">Germán Escobar</span>
-                <time>Apr 2, 2017</time>
-              </div>
-              
-            </footer>
-          </div>
-        </div>
       
     </div>
-
-    
-    <div class="row">
-      <div class="col-6">
-        
-        <a href="/">&larr; Posteriores</a>
-        
-      </div>
-
-      <div class="col-6 text-right pb-5">
-        
-        <a href="/page3/">Anteriores &rarr;</a>
-        
-      </div>
-    </div>
-    
   </div>
 </div>
+
+<script id="posts-template" type="text/x-handlebars">
+  
+  <div class="row">
+    {{#each posts }}
+      <div class="col-md-6 col-lg-4 align-items-stretch">
+        <div class="post">
+          <div class="post-image" style="background-image: url({{#if image }}{{ image }}{{ else }}/assets/images/no-image.png{{/if}})"></div>
+          <div class="post-content">
+            <header class="post-title">
+              <a href="{{ url }}" target="_blank">{{ this.title }}</a>
+            </header>
+            <div class="post-body">{{ this.excerpt }}</div>
+            <div class="diffuse"></div>
+          </div>
+          <footer class="post-footer">
+            {{#if author }}
+            <img class="img-responsive" src="{{#if gravatar }}{{ gravatar }}{{ else }}/images/no-gravatar.png{{/if}}"/>
+            <div>
+              <span class="author">{{ author }}</span>
+              <time>{{ date }}</time>
+            </div>
+            {{/if}}
+          </footer>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+  
+</script>
 </div>
     <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
 
-    </footer>
   </body>
 </html>
