@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Sobre el aprendizaje",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/sobre-el-aprendizaje/",
+      "date"     : "Feb 17, 2020",
+      "excerpt"  : "Dicen que hay dos tipos de aprendices de idiomas: los que quieren hacerse entender y los que no se quieren equivocar. Los primeros avanzan increíblemente rápido, los segundos se quedan atascados, a veces sin lograr mantener una conversación básica. ¿Por qué ocurre esto?",
+      "image"    : "/assets/images/bg-images/seaport-during-daytime.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
       "title"    : "La magia de la criptografía asimétrica",
       "category" : "",
       "tags"     : "",
