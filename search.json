@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Por qué aprender Data Science?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-aprender-data-science/",
+      "date"     : "Apr 15, 2020",
+      "excerpt"  : "Data Science es una de las áreas de mayor crecimiento en la actualidad y una gran oportunidad para las personas que quieren dar el siguiente paso en sus carreras como programadores.",
+      "image"    : "/assets/images/bg-images/data-science-2.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
       "title"    : "Sobre el aprendizaje",
       "category" : "",
       "tags"     : "",
