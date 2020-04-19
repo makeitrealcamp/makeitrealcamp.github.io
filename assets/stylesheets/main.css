@@ -7091,33 +7091,45 @@ pre[class*="language-"].line-numbers > code {
       .post-page .post .share-post .btn-share-linkedin {
         background: #007bb6; }
     .post-page .post .post-magnet {
+      background: #4791D9;
       margin-top: 50px;
       border: 1px solid #ddd;
       box-shadow: 2px 2px 5px #eee;
       border-radius: 5px; }
       .post-page .post .post-magnet .img-wrapper {
-        padding: 30px 25px;
-        background: #4791D9;
-        color: white;
+        padding: 30px 10px 0;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px; }
-        .post-page .post .post-magnet .img-wrapper h3 {
-          text-align: left;
-          font-size: 1.1rem;
-          line-height: 1.4;
-          font-weight: 600;
-          margin-bottom: 25px; }
+        @media (min-width: 768px) {
+          .post-page .post .post-magnet .img-wrapper {
+            padding: 20px 0px; } }
         .post-page .post .post-magnet .img-wrapper img {
           width: 100%;
-          max-width: 180px; }
+          max-width: 200px; }
       .post-page .post .post-magnet .content-wrapper {
-        padding: 35px 25px; }
+        padding: 30px;
+        background: #4791D9;
+        color: white;
+        text-align: center; }
         @media (min-width: 768px) {
           .post-page .post .post-magnet .content-wrapper {
-            padding: 35px 25px 25px 0; } }
-        .post-page .post .post-magnet .content-wrapper .form-control {
-          font-size: 0.9rem; }
-        .post-page .post .post-magnet .content-wrapper .btn {
+            text-align: left;
+            padding: 35px 0 35px 35px; } }
+        .post-page .post .post-magnet .content-wrapper h3 {
+          text-align: left;
+          font-size: 1.2rem;
+          line-height: 1.4;
+          font-weight: 600;
+          margin-bottom: 1.2rem; }
+        .post-page .post .post-magnet .content-wrapper p {
+          margin-bottom: 20px;
+          text-align: left; }
+        .post-page .post .post-magnet .content-wrapper a {
+          display: inline-block;
           background: #F04500;
+          color: white;
           border: 0;
-          font-size: 0.9rem; }
+          font-size: 0.9rem;
+          font-weight: 600;
+          padding: 0.5rem 1rem;
+          border-radius: 0.25rem; }
