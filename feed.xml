@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-04-24T10:07:51-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Por qué aprender Data Science?</title><link href="http://blog.makeitreal.camp/por-que-aprender-data-science/" rel="alternate" type="text/html" title="Por qué aprender Data Science?" /><published>2020-04-15T02:00:00-05:00</published><updated>2020-04-15T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/por-que-aprender-data-science</id><content type="html" xml:base="http://blog.makeitreal.camp/por-que-aprender-data-science/">&lt;p&gt;Data Science es una de las áreas de mayor crecimiento en la actualidad y una gran oportunidad para las personas que quieren dar el siguiente paso en sus carreras como programadores.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-04-27T12:35:00-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Cómo piensa un programador?</title><link href="http://blog.makeitreal.camp/como-piensa-un-programador/" rel="alternate" type="text/html" title="Cómo piensa un  programador?" /><published>2020-04-27T02:00:00-05:00</published><updated>2020-04-27T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/como-piensa-un-programador</id><content type="html" xml:base="http://blog.makeitreal.camp/como-piensa-un-programador/">&lt;p&gt;Ser un programador no significa sólo tener unos conocimientos, significa desarrollar la mentalidad adecuada.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Ningún programador se las sabe todas, no importa cuanto tiempo lleve programando. De hecho, la cantidad de información que pueda tener el programador más sabio del planeta no va a ser más que una mínima fracción de todo el conocimiento en programación actual, que crece cada día.&lt;/p&gt;
+
+&lt;p&gt;Pero entonces cómo hace un programador para hacer su trabajo si no sabe prácticamente nada?&lt;/p&gt;
+
+&lt;p&gt;La respuesta es que los programadores son increíblemente recursivos.&lt;/p&gt;
+
+&lt;p&gt;Supongamos que necesitamos crear un componente que permita al usuario seleccionar una fecha, algo así:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/datepicker.jpg&quot; alt=&quot;Selector de Fecha&quot; class=&quot;photo&quot; style=&quot;max-width: 200px; border: 1px solid #ccc;&quot; /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;photo-description&quot;&gt;Un selector de fecha, una solicitud muy común en el desarrollo Web.&lt;/p&gt;
+
+&lt;p&gt;Quizá la primera pregunta que se hace un programador es: ¿ya he hecho esto antes? Si la respuesta es afirmativa el siguiente paso es buscar el proyecto y hacer copy-paste, hecho!&lt;/p&gt;
+
+&lt;p&gt;Si no lo ha hecho antes, la siguiente pregunta es ¿será que alguien ya lo ha hecho antes? El 98% de los problemas que existen en programación ya han sido solucionados y documentados. Sólo debes buscar en Internet (que es &lt;strong&gt;la habilidad&lt;/strong&gt; más importante que desarrollamos los programadores).&lt;/p&gt;
+
+&lt;p&gt;La mayoría de veces el trabajo del programador es así de fácil, pero no siempre (si no nos pagarían esos ridículos salarios). Sí, algunas veces nos toca pensar, adaptar, arreglar, frustrarnos por errores simples, etc. Una buena práctica en estos casos es documentar nuestra solución en un post, quizá le pueda servir a otros desarrolladores más adelante.&lt;/p&gt;
+
+&lt;p&gt;En pocas palabras el trabajo de un programador es lograr que las cosas funcionen. Idealmente siempre deberíamos hacer un paso adicional y es organizar el código para que sea fácil de leer y entender. Desafortunadamente este no es siempre el caso y la mayoría de proyectos de software se convierten en retazos de código copiados de Internet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;El programador es una persona muy práctica enfocada en solucionar un reto a la vez&lt;/strong&gt;. Por esta razón es bueno tener amigos programadores o un mentor a quién preguntar, un guía.&lt;/p&gt;
+
+&lt;p&gt;Eso no significa que los programadores no aprendamos de forma más estructurada, de hecho &lt;strong&gt;a muchos programadores nos encanta aprender constantemente, pero es un proceso paralelo a nuestro trabajo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por poner un ejemplo, una persona normal pensaría que para hacer un componente como el selector de fecha que vimos antes, debe aprender HTML, CSS y JavaScript, o es posible que ni siquiera sepa qué debe aprender. Pero igual, esa persona está pensando hacerlo desde cero, es decir, no está pensando como programador.&lt;/p&gt;
+
+&lt;p&gt;Aprender HTML, CSS y JavaScript (o cualquier otra tecnología) está perfectamente bien, pero es muy probable que después de hacer varios cursos encontremos que en ninguno expliquen lo que queremos hacer. En cambio, es posible que con una simple búsqueda en Internet encontremos exactamente lo que necesitamos. Así es la vida y me ha pasado innumerables veces.&lt;/p&gt;
+
+&lt;p&gt;En general, una recomendación para aprender una nueva tecnología (después de terminar Make it Real ;) es empezar con algunos turoriales para tener una idea de lo que es posible con esa tecnología, hacer algún proyecto, y después si profundizar en la documentación o hacer un curso más estructurado.&lt;/p&gt;
+
+&lt;p&gt;La pregunta para terminar es entonces: qué quieres construir hoy? Si logras hacerlo (sin importar cómo) entonces felicitaciones!, estás pensando como programador.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Ser un programador no significa sólo tener unos conocimientos, significa desarrollar la mentalidad adecuada.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/como-piensa-un-programador.jpg" /></entry><entry><title type="html">Por qué aprender Data Science?</title><link href="http://blog.makeitreal.camp/por-que-aprender-data-science/" rel="alternate" type="text/html" title="Por qué aprender Data Science?" /><published>2020-04-15T02:00:00-05:00</published><updated>2020-04-15T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/por-que-aprender-data-science</id><content type="html" xml:base="http://blog.makeitreal.camp/por-que-aprender-data-science/">&lt;p&gt;Data Science es una de las áreas de mayor crecimiento en la actualidad y una gran oportunidad para las personas que quieren dar el siguiente paso en sus carreras como programadores.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Con la cantidad de información que las empresas están generando cada día no es extraño que la demanda por científicos de datos esté aumentando rápidamente. Todo programador debería poder, como mínimo, crear un &lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter Notebook&lt;/a&gt;, cargar algunos datos, hacer algunas visualizaciones y utilizar los modelos que ya existen para clasificar y predecir información con Machine Learning.&lt;/p&gt;
 
@@ -999,49 +1031,4 @@ Server running at http://localhost:3000/
       &lt;p&gt;Como vamos a ver adelante existen lenguajes compilados que no son convertidos directamente a lenguaje de máquina sino a un lenguaje intermedio.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">C, C++ y Go son lenguajes de programación compilados. JavaScript, Python y Ruby son lenguajes interpretados. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/lights-exposure.jpeg" /></entry><entry><title type="html">La era de la información digital</title><link href="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/" rel="alternate" type="text/html" title="La era de la información digital" /><published>2017-10-28T02:00:00-05:00</published><updated>2017-10-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/la-era-de-la-informacion-digital</id><content type="html" xml:base="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/">&lt;p&gt;¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Alrededor del año 3000 AEC, en Mesopotamia, los sumerios implementaron la primera forma de escritura, llamada escritura cuneiforme. Antes de la escritura, la única forma de almacenar y replicar información era utilizando nuestros cerebros, que &lt;strong&gt;no&lt;/strong&gt; son particularmente buenos para esa tarea.&lt;/p&gt;
-
-&lt;p&gt;La escritura nos permitió almacenar texto, pero más adelante también fue posible almacenar música, imágenes y video en diferentes medios análogos como vinilos, fotografías y cintas magnéticas.&lt;/p&gt;
-
-&lt;p&gt;Hoy podemos almacenar toda esa información en nuestros computadores de forma digital. Pero ¿cómo es eso posible?&lt;/p&gt;
-
-&lt;p&gt;La respuesta es que en 1948 un personaje llamado &lt;a href=&quot;https://es.wikipedia.org/wiki/Claude_Elwood_Shannon&quot; target=&quot;_blank&quot;&gt;Claude Shannon&lt;/a&gt;, en su publicación &lt;a href=&quot;https://es.wikipedia.org/wiki/Una_teor%C3%ADa_matem%C3%A1tica_de_la_comunicaci%C3%B3n&quot; target=&quot;_blank&quot;&gt;Una Teoría Matemática de la Comunicación&lt;/a&gt; demostró cómo toda la información puede ser representada en números, sin importar de qué tipo sea (texto, audio, video, etc.). Su principal objetivo era demostrar que cualquier mensaje se puede transmitir utilizando números, pero su teoría también fue aplicada al almacenamiento de información.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, una forma en que podemos representar texto con números (la palabra correcta es &lt;strong&gt;codificar&lt;/strong&gt;) es asignándole a cada letra del alfabeto un número único: 1 para representar la A, 2 para la B, 26 para la Z, 0 para el espacio, etc.&lt;/p&gt;
-
-&lt;p&gt;También es posible representar audio, imágenes y video con técnicas similares, aunque un poco más sofisticadas: audio no son más que cambios de frecuencias en el tiempo, que también pueden ser representados con números. Una imagen puede ser separada en pixeles (cuadrados) y utilizar números para expresar el color de cada pixel.&lt;/p&gt;
-
-&lt;p&gt;Al proceso de convertir la información en números se le conoce como digitalización, y por eso se habla de información digital (está almacenada en dígitos).&lt;/p&gt;
-
-&lt;p&gt;La información digital tiene la ventaja de que es fácilmente replicable (y las réplicas son exactas), pero la desventaja es que se puede perder información en el proceso de digitalización, como cuando la música en vinilo pierde fidelidad al ser digitalizada o cuando una fotografía se ve pixelada por baja resolución.&lt;/p&gt;
-
-&lt;h2 id=&quot;dígitos-binarios&quot;&gt;Dígitos binarios&lt;/h2&gt;
-
-&lt;p&gt;El sistema numérico al que estamos acostumbrados es el decimal, que utiliza diez dígitos en cada posición: 0 a 9.&lt;/p&gt;
-
-&lt;p&gt;Pero existen otros sistemas numéricos como el binario, compuesto de dos dígitos en cada posición (0 y 1), o el octal, compuesto por 8 dígitos en cada posición (0 a 7), o el hexadecimal, compuesto de 16 dígitos en cada posición (se utilizan las letras A, B, C, D, E y F para representar los números del 10 al 15).&lt;/p&gt;
-
-&lt;p&gt;Cualquier número se puede convertir de un sistema a otro. La diferencia es que un sistema puede necesitar más o menos posiciones que otro para representar el mismo número. Por ejemplo, para representar el número doce necesitamos dos posiciones en el sistema decimal (12). En el sistema hexadecimal sólo necesitamos una posición (C) y en el sistema binario necesitamos cuatro posiciones (1100).&lt;/p&gt;
-
-&lt;p&gt;Aunque es posible crear un computador utilizando el sistema decimal (de hecho los primeros computadores utilizaban este sistema), es mucho mejor utilizar el sistema binario. La razón es que los computadores utilizan diferentes voltajes eléctricos para representar cada dígito. Entre más voltajes necesitemos, mayor el consumo de energía y mayor la probabilidad de error.&lt;/p&gt;
-
-&lt;p&gt;Es por eso que hoy en día almacenamos y transmitimos toda la información utilizando únicamente dos dígitos (0 y 1), más conocidos como &lt;strong&gt;bits&lt;/strong&gt;, que es una contracción de las palabras &lt;strong&gt;binary digits&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;medir-la-información&quot;&gt;Medir la información&lt;/h2&gt;
-
-&lt;p&gt;Una consecuencia interesante de representar la información en dígitos es que es posible medirla, sin importar si es texto, imágenes, audio o video.  Por ejemplo,  podemos decir que nuestro disco duro tiene 500 gigabytes ocupados, independiente si es texto, música, o cualquier otro tipo de información.&lt;/p&gt;
-
-&lt;p&gt;Por cierto, 8 bits forman un byte, 1000 bytes forman un kilobyte, 1000 kilobytes forman un megabyte, 1000 megabytes forman un gigabyte, y así sucesivamente. Siguen los terabytes, petabytes, exabytes, etc.  Un petabyte, por ejemplo, son 8000000000000000 bits (esos son 15 ceros).&lt;/p&gt;
-
-&lt;p&gt;También podemos medir la cantidad de información que estamos produciendo por alguna medida de tiempo, por ejemplo por día, hora, segundo, etc. Según &lt;a href=&quot;http://www.new.vcloudnews.com/wp-content/uploads/2015/04/big-data-infographic1.png&quot; target=&quot;_blank&quot;&gt;esta infografía&lt;/a&gt;, en 1992 estábamos generando 100GB de información digital al día, se calcula que para el 2018 estaremos generando 50 terabytes por segundo!&lt;/p&gt;
-
-&lt;p&gt;Nuestros descendientes no van a tener el problema que tenemos nosotros encontrando información de nuestros antepasados, al contrario, su problema es que van a tener demasiada información por analizar. Y esa es la razón por la que a esta era la llamamos &lt;strong&gt;la era de la información digital&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Otros posts relacionados:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;/que-es-codigo&quot;&gt;¿Qué es código?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/aprende-a-leer-en-codigo-binario&quot;&gt;Aprende a leer en código binario&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/digital-analog.jpeg" /></entry></feed>
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">C, C++ y Go son lenguajes de programación compilados. JavaScript, Python y Ruby son lenguajes interpretados. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/lights-exposure.jpeg" /></entry></feed>
