@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Recursos de diseño para programadores",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/recursos-de-diseno-para-programadores/",
+      "date"     : "Jul 28, 2020",
+      "excerpt"  : "¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.",
+      "image"    : "/assets/images/bg-images/decor-design.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
       "title"    : "Cómo piensa un programador?",
       "category" : "",
       "tags"     : "",

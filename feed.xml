@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-04-27T17:50:48-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Cómo piensa un programador?</title><link href="http://blog.makeitreal.camp/como-piensa-un-programador/" rel="alternate" type="text/html" title="Cómo piensa un programador?" /><published>2020-04-27T02:00:00-05:00</published><updated>2020-04-27T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/como-piensa-un-programador</id><content type="html" xml:base="http://blog.makeitreal.camp/como-piensa-un-programador/">&lt;p&gt;Ser programador no es sólo obtener los conocimientos, es desarrollar la mentalidad correcta. En este post veremos cuál es esa mentalidad y una técnica para adquirirla.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-07-28T17:46:56-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Recursos de diseño para programadores</title><link href="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/" rel="alternate" type="text/html" title="Recursos de diseño para programadores" /><published>2020-07-28T02:00:00-05:00</published><updated>2020-07-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/recursos-de-diseno-para-programadores</id><content type="html" xml:base="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/">&lt;p&gt;¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;La siguiente no es una lista exhaustiva de recursos, sólo los que nos parecen importantes que conozcas. Además, en algunos vas a encontrar alternativas similares. Si crees que nos falta alguno no dudes en compartirlo en los comentarios!&lt;/p&gt;
+
+&lt;h3 id=&quot;1-tailwind-css&quot;&gt;1. &lt;a href=&quot;https://tailwindcss.com/&quot; target=&quot;_blank&quot;&gt;Tailwind CSS&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/tailwind.jpg&quot; alt=&quot;Tailwind CSS&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Tailwind es un framework HTML, CSS y JavaScript como Bootstrap, pero más personalizable ya que no trae un tema por defecto. Lo que más interesante nos pareció de Tailwind es que existe &lt;a href=&quot;https://tailwindcomponents.com/&quot; target=&quot;_blank&quot;&gt;un repositorio gratis de componentes&lt;/a&gt; con dashboards, formularios de login, clones de aplicaciones, etc. que puedes utilizar en tus proyectos.&lt;/p&gt;
+
+&lt;p&gt;Alternativas que puedes utilizar incluyen &lt;a href=&quot;https://bulma.io/&quot; target=&quot;_blank&quot;&gt;Bulma&lt;/a&gt;, &lt;a href=&quot;https://purecss.io/&quot; target=&quot;_blank&quot;&gt;PureCSS&lt;/a&gt; y &lt;a href=&quot;https://getbootstrap.com/&quot; target=&quot;_blank&quot;&gt;Bootstrap&lt;/a&gt;, entre otros.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-pexels&quot;&gt;2. &lt;a href=&quot;https://www.pexels.com/&quot; target=&quot;_blank&quot;&gt;Pexels&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/pexels.jpg&quot; alt=&quot;Pexels&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;La mayoría de imágenes de los encabezados de este blog los obtenemos de esta página en donde encontrarás excelentes fotos y videos de archivo gratis para tus proyectos.&lt;/p&gt;
+
+&lt;p&gt;Alternativas que puedes usar incluyen &lt;a href=&quot;https://unsplash.com/&quot; target=&quot;_blank&quot;&gt;Unsplash&lt;/a&gt; y &lt;a href=&quot;https://pixabay.com/&quot; target=&quot;_blank&quot;&gt;Pixabay&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-undraw&quot;&gt;4. &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot;&gt;Undraw&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/undraw.jpg&quot; alt=&quot;unDraw&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En este sitio encontrarás ilustraciones gratis que guardan un mismo estilo y que puedes personalizar con el color que uses en tu aplicación.&lt;/p&gt;
+
+&lt;p&gt;Una alternativa interesantes es &lt;a href=&quot;https://www.humaaans.com/&quot; target=&quot;_blank&quot;&gt;Humaaans&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-orion-icon-library&quot;&gt;6. &lt;a href=&quot;https://orioniconlibrary.com/&quot; target=&quot;_blank&quot;&gt;Orion Icon Library&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/orion.jpg&quot; alt=&quot;Orion&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esta aplicación te permite crear colecciones de íconos para tus aplicaciones.&lt;/p&gt;
+
+&lt;p&gt;Alternativas que puedes usar incluyen &lt;a href=&quot;https://fontawesome.com/&quot; target=&quot;_blank&quot;&gt;Font Awesome&lt;/a&gt; y &lt;a href=&quot;https://icomoon.io/&quot; target=&quot;_blank&quot;&gt;Icomoon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-google-fonts&quot;&gt;7. &lt;a href=&quot;https://fonts.google.com/&quot; target=&quot;_blank&quot;&gt;Google Fonts&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/google-fonts.jpg&quot; alt=&quot;Google Fonts&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;No estaba seguro de incluir esta librería de fuentes tan popular pero creo que sigue siendo la líder en este campo con casi 1000 fuentes que son fáciles de buscar, filtrar, seleccionar e incluir.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-freepik&quot;&gt;8. &lt;a href=&quot;https://www.freepik.com/&quot; target=&quot;_blank&quot;&gt;Freepik&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/freepick.jpg&quot; alt=&quot;Freepik&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En esta página encontrarás diferentes recursos gráficos como fotos de archivos, ilustraciones, videos, etc. gratis y pagos. Lo molesto es la publicidad pero la variedad lo hace un buen recurso. Personalmente lo utilizo para buscar ilustraciones únicamente.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-dribble&quot;&gt;9. &lt;a href=&quot;https://dribbble.com/&quot; target=&quot;_target&quot;&gt;Dribble&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/dribbble.jpg&quot; alt=&quot;Dribbble&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Este sitio está más enfocado en diseñadores pero lo uso principalmente para inspiración. Cuando necesito hacer algo en particular (como un dashboard o un formulario) lo busco en Dribbble para ver qué ideas interesantes encuentro.&lt;/p&gt;
+
+&lt;h3 id=&quot;10-paaatterns&quot;&gt;10. &lt;a href=&quot;https://products.ls.graphics/paaatterns/&quot; target=&quot;_blank&quot;&gt;Paaatterns&lt;/a&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/paaatterns.jpg&quot; alt=&quot;Paaatterns&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En este sitio encontrarás una colección de patrones que puedes utilizar para darle más vida a tus aplicaciones. El único detalle es que para descargarlos deberás dejar tu correo y no es claro con qué fin lo utilizarán.&lt;/p&gt;
+
+&lt;p&gt;Alternativas incluyen &lt;a href=&quot;http://thepatternlibrary.com/&quot; target=&quot;_blank&quot;&gt;The Pattern Library&lt;/a&gt; y &lt;a href=&quot;http://www.heropatterns.com/&quot; target=&quot;_blank&quot;&gt;Hero Patterns&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Espero que estos recursos te sirvan para tu próximo proyecto. Si falta alguno no dudes en compartirlo en los comentarios.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/decor-design.jpg" /></entry><entry><title type="html">Cómo piensa un programador?</title><link href="http://blog.makeitreal.camp/como-piensa-un-programador/" rel="alternate" type="text/html" title="Cómo piensa un programador?" /><published>2020-04-27T02:00:00-05:00</published><updated>2020-04-27T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/como-piensa-un-programador</id><content type="html" xml:base="http://blog.makeitreal.camp/como-piensa-un-programador/">&lt;p&gt;Ser programador no es sólo obtener los conocimientos, es desarrollar la mentalidad correcta. En este post veremos cuál es esa mentalidad y una técnica para adquirirla.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Ningún programador se las sabe todas, no importa cuánto tiempo lleve programando. De hecho, la cantidad de información que pueda tener el programador más sabio del planeta no va a ser más que una mínima fracción de todo el conocimiento en programación actual, que crece cada día.&lt;/p&gt;
 
@@ -937,98 +1001,4 @@ Server running at http://localhost:3000/
   &lt;li&gt;
     &lt;p&gt;El gran poder de &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; se encuentra en las librerías (llamadas &lt;strong&gt;paquetes&lt;/strong&gt;) y en la comunidad de programadores que las escriben y las publican sin costo alguno!&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Node.js es una plataforma que nos permite ejecutar código JavaScript fuera del navegador. En este post explicaremos cómo empezar con Node.js, qué tipo de aplicaciones puedes construir y una introducción a su poderoso manejador de paquetes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/nodejs.jpg" /></entry><entry><title type="html">Lenguajes compilados e interpretados</title><link href="http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/" rel="alternate" type="text/html" title="Lenguajes compilados e interpretados" /><published>2017-11-06T02:00:00-05:00</published><updated>2017-11-06T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados</id><content type="html" xml:base="http://blog.makeitreal.camp/lenguajes-compilados-e-interpretados/">&lt;p&gt;C, C++ y Go son lenguajes de programación &lt;strong&gt;compilados&lt;/strong&gt;. JavaScript, Python y Ruby son lenguajes &lt;strong&gt;interpretados&lt;/strong&gt;. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Tanto &lt;strong&gt;compiladores&lt;/strong&gt; como &lt;strong&gt;interpretadores&lt;/strong&gt; son programas que convierten el código que escribes a &lt;strong&gt;lenguaje de máquina&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Lenguaje de máquina&lt;/strong&gt; son las instrucciones que entiende el computador (el procesador para ser más exactos) en código binario (unos y ceros).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/code-to-machine.png&quot; alt=&quot;Lenguaje de alto nivel a lenguaje de máquina&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;La principal diferencia entre un lenguaje compilado y uno interpretado es que el &lt;strong&gt;lenguaje compilado&lt;/strong&gt; requiere un paso adicional antes de ser ejecutado, la compilación, que convierte el código que escribes a &lt;strong&gt;lenguaje de máquina&lt;/strong&gt;. Un &lt;strong&gt;lenguaje interpretado&lt;/strong&gt;, por otro lado, es convertido a &lt;strong&gt;lenguaje de máquina&lt;/strong&gt; a medida que es ejecutado.&lt;/p&gt;
-
-&lt;p&gt;Ejemplos de &lt;strong&gt;lenguajes compilados&lt;/strong&gt; incluyen C, C++, Java, Go y Rust, entre muchos otros. Ejemplos de &lt;strong&gt;lenguajes interpretados&lt;/strong&gt; incluyen Ruby, Python y JavaScript, entre muchos otros. A todos estos lenguajes se les conoce como &lt;strong&gt;lenguajes de alto nivel&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Veamos un ejemplo de cada uno.&lt;/p&gt;
-
-&lt;h2 id=&quot;un-ejemplo-de-lenguaje-interpretado&quot;&gt;Un ejemplo de lenguaje interpretado&lt;/h2&gt;
-
-&lt;p&gt;Ruby es un lenguaje interpretado, así que podemos crear un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;hola.rb&lt;/code&gt; con el siguiente código, o cualquier código válido en Ruby (a esto se le conoce como el &lt;strong&gt;código fuente&lt;/strong&gt;):&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Y ejecutarlo directamente ingresando el siguiente comando en la consola:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;ruby hello.rb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Te debería aparecer debajo la cadena “Hola Mundo“.  Si quieres puedes cambiar el código fuente y volverlo a ejecutar.&lt;/p&gt;
-
-&lt;h2 id=&quot;un-ejemplo-de-lenguaje-compilado&quot;&gt;Un ejemplo de lenguaje compilado&lt;/h2&gt;
-
-&lt;p&gt;Un lenguaje compilado tiene un paso adicional. Si tienes un compilador de C como &lt;a href=&quot;https://gcc.gnu.org/&quot; target=&quot;_blank&quot;&gt;gcc&lt;/a&gt; puedes crear un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.c&lt;/code&gt;  con el siguiente contenido, o cualquier código válido en C:&lt;/p&gt;
-
-&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
-&lt;/span&gt;
-&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Antes de ejecutarlo debes compilarlo con el siguiente comando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;gcc hello.c -o hello
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Eso crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; (sin extensión) con el código de máquina (llamado el ejecutable) que puedes correr en la consola con el siguiente comando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;./hello
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Te debería aparecer la cadena de texto “Hola Mundo” debajo. Si necesitas cambiar el código fuente debes volverlo a compilar y ejecutarlo nuevamente.&lt;/p&gt;
-
-&lt;h2 id=&quot;ventajas-y-desventajas&quot;&gt;Ventajas y desventajas&lt;/h2&gt;
-
-&lt;p&gt;En general, &lt;strong&gt;el ciclo de desarrollo (el tiempo entre el momento en que escribes el código y lo pruebas) es más rápido en un lenguaje interpretado&lt;/strong&gt;. Eso se debe a que en lenguajes compilados es necesario realizar el proceso de compilación cada vez que cambias el código fuente, aunque con herramientas adicionales se puede automatizar.&lt;/p&gt;
-
-&lt;p&gt;Otra desventaja de un lenguaje compilado es que cuando compilas un programa debes crear ejecutables para cada uno de los sistemas operativos en los que lo vayas a utilizar. Un ejecutable creado para Linux no va a servir en Windows por ejemplo.&lt;/p&gt;
-
-&lt;p&gt;Sin embargo, &lt;strong&gt;un lenguaje compilado es mucho más rápido que uno interpretado&lt;/strong&gt;. Esto se debe a que cuando es ejecutado ya se encuentra en código de máquina y eso también le permite hacer algunas optimizaciones que no son posibles con un lenguaje interpretado.&lt;/p&gt;
-
-&lt;p&gt;Además de la velocidad, otra desventaja de un lenguaje interpretado es que, para ser ejecutado, debes tener instalado el interpretador. Esto no es necesario en un lenguaje compilado que es convertido a lenguaje de máquina&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;p&gt;En general, &lt;strong&gt;un lenguaje compilado está optimizado para el momento de la ejecución&lt;/strong&gt;, aunque esto signifique una carga adicional para el programador. Por otro lado, &lt;strong&gt;un lenguaje interpretado está optimizado para hacerle la vida más fácil al programador&lt;/strong&gt;, aunque eso signifique una carga adicional para la máquina.&lt;/p&gt;
-
-&lt;h2 id=&quot;el-caso-de-java&quot;&gt;El caso de Java&lt;/h2&gt;
-
-&lt;p&gt;Java es un lenguaje particular porque es compilado, pero es compilado a un lenguaje intermedio llamado &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_bytecode&quot; target=&quot;_blank&quot;&gt;bytecode&lt;/a&gt;, que después es interpretado. Los creadores de Java querían crear un lenguaje compilado, pero que se pudiera ejecutar en cualquier sistema operativo y procesador sin necesidad de crear varios ejecutables.&lt;/p&gt;
-
-&lt;p&gt;Es por eso que si quieres ejecutar código Java debes instalar el &lt;a href=&quot;https://java.com/es/download/&quot; target=&quot;_blank&quot;&gt;JRE (Java Runtime Environment)&lt;/a&gt;, que es el programa que se encarga de interpretar el &lt;a href=&quot;https://en.wikipedia.org/wiki/Java_bytecode&quot; target=&quot;_blank&quot;&gt;bytecode&lt;/a&gt; al que son compilados los programas de Java.&lt;/p&gt;
-
-&lt;p&gt;Si deseas compilar código Java no es suficiente instalar el JRE, necesitas el &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads/index.html&quot; target=&quot;_blank&quot;&gt;JDK (Java Development Kit)&lt;/a&gt; que incluye el compilador, entre otras herramientas de desarrollo.&lt;/p&gt;
-
-&lt;p&gt;Otros lenguajes que están siguiendo este mismo modelo incluyen Elixir y C#, entre otros.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Se puede decir que los lenguajes de alto nivel se pueden dividir en tres ramas: puramente compilados (C++, Go, etc.), parcialmente compilados  (Java, Elixir, etc.)  e interpretados (Ruby, JavaScript, etc.).&lt;/p&gt;
-
-&lt;p&gt;Sin embargo, la brecha entre estas ramas cada vez es menor. Hoy existen lenguajes compilados a lenguaje de máquina como Go y Rust que se inclinan cada vez más en la productividad y felicidad del programador mientras que los lenguajes interpretados son cada vez más rápidos en ejecución.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot;&gt;
-      &lt;p&gt;Como vamos a ver adelante existen lenguajes compilados que no son convertidos directamente a lenguaje de máquina sino a un lenguaje intermedio.&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">C, C++ y Go son lenguajes de programación compilados. JavaScript, Python y Ruby son lenguajes interpretados. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/lights-exposure.jpeg" /></entry></feed>
+&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Node.js es una plataforma que nos permite ejecutar código JavaScript fuera del navegador. En este post explicaremos cómo empezar con Node.js, qué tipo de aplicaciones puedes construir y una introducción a su poderoso manejador de paquetes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/nodejs.jpg" /></entry></feed>
