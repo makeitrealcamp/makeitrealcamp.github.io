@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-07-28T17:46:56-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Recursos de diseño para programadores</title><link href="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/" rel="alternate" type="text/html" title="Recursos de diseño para programadores" /><published>2020-07-28T02:00:00-05:00</published><updated>2020-07-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/recursos-de-diseno-para-programadores</id><content type="html" xml:base="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/">&lt;p&gt;¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-07-28T17:57:38-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Recursos de diseño para programadores</title><link href="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/" rel="alternate" type="text/html" title="Recursos de diseño para programadores" /><published>2020-07-28T02:00:00-05:00</published><updated>2020-07-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/recursos-de-diseno-para-programadores</id><content type="html" xml:base="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/">&lt;p&gt;¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;La siguiente no es una lista exhaustiva de recursos, sólo los que nos parecen importantes que conozcas. Además, en algunos vas a encontrar alternativas similares. Si crees que nos falta alguno no dudes en compartirlo en los comentarios!&lt;/p&gt;
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;Alternativas que puedes usar incluyen &lt;a href=&quot;https://unsplash.com/&quot; target=&quot;_blank&quot;&gt;Unsplash&lt;/a&gt; y &lt;a href=&quot;https://pixabay.com/&quot; target=&quot;_blank&quot;&gt;Pixabay&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;4-undraw&quot;&gt;4. &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot;&gt;Undraw&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;3-undraw&quot;&gt;3. &lt;a href=&quot;https://undraw.co/&quot; target=&quot;_blank&quot;&gt;Undraw&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/undraw.jpg&quot; alt=&quot;unDraw&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
 
@@ -26,7 +26,7 @@
 
 &lt;p&gt;Una alternativa interesantes es &lt;a href=&quot;https://www.humaaans.com/&quot; target=&quot;_blank&quot;&gt;Humaaans&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;6-orion-icon-library&quot;&gt;6. &lt;a href=&quot;https://orioniconlibrary.com/&quot; target=&quot;_blank&quot;&gt;Orion Icon Library&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;4-orion-icon-library&quot;&gt;4. &lt;a href=&quot;https://orioniconlibrary.com/&quot; target=&quot;_blank&quot;&gt;Orion Icon Library&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/orion.jpg&quot; alt=&quot;Orion&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
 
@@ -34,25 +34,25 @@
 
 &lt;p&gt;Alternativas que puedes usar incluyen &lt;a href=&quot;https://fontawesome.com/&quot; target=&quot;_blank&quot;&gt;Font Awesome&lt;/a&gt; y &lt;a href=&quot;https://icomoon.io/&quot; target=&quot;_blank&quot;&gt;Icomoon&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;7-google-fonts&quot;&gt;7. &lt;a href=&quot;https://fonts.google.com/&quot; target=&quot;_blank&quot;&gt;Google Fonts&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;5-google-fonts&quot;&gt;5. &lt;a href=&quot;https://fonts.google.com/&quot; target=&quot;_blank&quot;&gt;Google Fonts&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/google-fonts.jpg&quot; alt=&quot;Google Fonts&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;No estaba seguro de incluir esta librería de fuentes tan popular pero creo que sigue siendo la líder en este campo con casi 1000 fuentes que son fáciles de buscar, filtrar, seleccionar e incluir.&lt;/p&gt;
 
-&lt;h3 id=&quot;8-freepik&quot;&gt;8. &lt;a href=&quot;https://www.freepik.com/&quot; target=&quot;_blank&quot;&gt;Freepik&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;6-freepik&quot;&gt;6. &lt;a href=&quot;https://www.freepik.com/&quot; target=&quot;_blank&quot;&gt;Freepik&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/freepick.jpg&quot; alt=&quot;Freepik&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;En esta página encontrarás diferentes recursos gráficos como fotos de archivos, ilustraciones, videos, etc. gratis y pagos. Lo molesto es la publicidad pero la variedad lo hace un buen recurso. Personalmente lo utilizo para buscar ilustraciones únicamente.&lt;/p&gt;
 
-&lt;h3 id=&quot;9-dribble&quot;&gt;9. &lt;a href=&quot;https://dribbble.com/&quot; target=&quot;_target&quot;&gt;Dribble&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;7-dribble&quot;&gt;7. &lt;a href=&quot;https://dribbble.com/&quot; target=&quot;_target&quot;&gt;Dribble&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/dribbble.jpg&quot; alt=&quot;Dribbble&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Este sitio está más enfocado en diseñadores pero lo uso principalmente para inspiración. Cuando necesito hacer algo en particular (como un dashboard o un formulario) lo busco en Dribbble para ver qué ideas interesantes encuentro.&lt;/p&gt;
 
-&lt;h3 id=&quot;10-paaatterns&quot;&gt;10. &lt;a href=&quot;https://products.ls.graphics/paaatterns/&quot; target=&quot;_blank&quot;&gt;Paaatterns&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;8-paaatterns&quot;&gt;8. &lt;a href=&quot;https://products.ls.graphics/paaatterns/&quot; target=&quot;_blank&quot;&gt;Paaatterns&lt;/a&gt;&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/paaatterns.jpg&quot; alt=&quot;Paaatterns&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
 
