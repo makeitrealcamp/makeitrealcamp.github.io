@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Módulos de JavaScript",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/modulos-de-javascript/",
+      "date"     : "Aug 4, 2020",
+      "excerpt"  : "En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como CommonJS.",
+      "image"    : "/assets/images/bg-images/javascript-modules.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
       "title"    : "Recursos de diseño para programadores",
       "category" : "",
       "tags"     : "",

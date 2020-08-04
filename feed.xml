@@ -1,4 +1,164 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-07-28T17:57:38-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Recursos de diseño para programadores</title><link href="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/" rel="alternate" type="text/html" title="Recursos de diseño para programadores" /><published>2020-07-28T02:00:00-05:00</published><updated>2020-07-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/recursos-de-diseno-para-programadores</id><content type="html" xml:base="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/">&lt;p&gt;¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-08-04T18:15:30-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Módulos de JavaScript</title><link href="http://blog.makeitreal.camp/modulos-de-javascript/" rel="alternate" type="text/html" title="Módulos de JavaScript" /><published>2020-08-04T02:00:00-05:00</published><updated>2020-08-04T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/modulos-de-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/modulos-de-javascript/">&lt;p&gt;En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como &lt;strong&gt;CommonJS&lt;/strong&gt;.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Aunque la mayoría de lenguajes ofrecen alguna forma de importar código de otros archivos y librerías, JavaScript se pensó para scripts muy cortos en el navegador y al principio no se creía que fuera necesario algo similar.&lt;/p&gt;
+
+&lt;p&gt;Con la transición a SPA’a (Single Page Applications) y con la llegada de &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt;, se hizo necesario una solución. Surgieron algunas propuestas como CommonJS (lo que utiliza &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; por defecto) y &lt;a href=&quot;https://requirejs.org/&quot; target=&quot;\_blank&quot;&gt;RequireJS&lt;/a&gt;, pero ninguna de estas soluciones hacen parte del lenguaje.&lt;/p&gt;
+
+&lt;p&gt;Finalmente &lt;strong&gt;ECMAScript 2015 (ES6)&lt;/strong&gt; introdujo una solución integrada al lenguaje: los módulos de ECMAScript (también conocidos como ESM, módulos de JavaScript, o simplemente módulos). Su adopción ha sido lenta pero gracias a herramientas como &lt;a href=&quot;https://babeljs.io/&quot; target=&quot;\_blank&quot;&gt;Babel&lt;/a&gt; o &lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;\_blank&quot;&gt;Webpack&lt;/a&gt; hoy podemos hacer uso de ellos.&lt;/p&gt;
+
+&lt;p&gt;Antes de entrar a ver la sintaxis de los módulos, veamos qué problema solucionan.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-problema&quot;&gt;El problema&lt;/h2&gt;
+
+&lt;p&gt;Supongamos que tenemos dos archivos: &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;print.js&lt;/code&gt;, cada uno con una línea de código:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// hello.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;En JavaScript todas las variables por fuera de una función son globales, así que podemos importar los dos archivos desde nuestro archivo HTML:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;hello.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;print.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Esto funcionaría y veríamos “Hola Mundo” en la consola del navegador. Lo único que debemos tener en cuenta es el orden: no podemos importar &lt;code class=&quot;highlighter-rouge&quot;&gt;print.js&lt;/code&gt; antes de &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esta solución presenta dos problemas, sin embargo. El primero son las variables globales: la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; ahora es una variable global que se puede utilizar o reescribir por error en otro archivo.&lt;/p&gt;
+
+&lt;p&gt;El segundo problema es que el navegador tiene que hacer una petición al servidor por cada archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt;, aunque esto se puede solucionar concatenando todos los archivos en uno sólo.&lt;/p&gt;
+
+&lt;h2 id=&quot;commonjs&quot;&gt;CommonJS&lt;/h2&gt;
+
+&lt;p&gt;Aunque han surgido varias propuestas para solucionar este problema, la más importante es CommonJS, que es la que utiliza &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;CommonJS utiliza la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt; para importar código y &lt;code class=&quot;highlighter-rouge&quot;&gt;module.exports&lt;/code&gt; para exportarlo.&lt;/p&gt;
+
+&lt;p&gt;Reescribamos el ejemplo anterior utilizando CommonJS:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// hello.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;./hello&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Nota el uso de &lt;code class=&quot;highlighter-rouge&quot;&gt;module.exports&lt;/code&gt; para exportar la variable en &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; y de &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt; para importarla en &lt;code class=&quot;highlighter-rouge&quot;&gt;print.js&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esto soluciona el problema de las variables globales compartidas por todos los archivos. Ahora podemos decidir explícitamente qué variables exportar e importar en cada archivo.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, recuerda que CommonJS (y las demás alternativas) no son parte del estándar de ECMAScript.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; para utilizar CommonJS en el navegador necesitas alguna herramienta como &lt;a href=&quot;http://browserify.org/&quot; target=&quot;\_blank&quot;&gt;Browserify&lt;/a&gt; o &lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;\_blank&quot;&gt;Webpack&lt;/a&gt; que convierta tu código.&lt;/p&gt;
+
+&lt;h2 id=&quot;ecmascript-modules&quot;&gt;ECMAScript Modules&lt;/h2&gt;
+
+&lt;p&gt;ECMAScript 2015 (ES6) introdujo los módulos como parte del estándar.&lt;/p&gt;
+
+&lt;p&gt;A diferencia de CommonJS, que utiliza &lt;code class=&quot;highlighter-rouge&quot;&gt;module.exports&lt;/code&gt; para exportar variables, con módulos se utiliza sólo la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;export&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// hello.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Para importar código en CommonJS utilizamos &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt;, pero con los módulos de ES utilizamos &lt;code class=&quot;highlighter-rouge&quot;&gt;import ... from&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./hello'&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;También podemos exportar una variable por defecto, que nos permite importarla directamente, sin los corchetes.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// hello.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hello World&quot;&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// utilizamos default&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./hello'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// no necesitamos los corchetes&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Ahora que ya conoces la sintaxis, veamos cómo utilizar los módulos en el navegador y en &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;módulos-en-el-navegador&quot;&gt;Módulos en el navegador&lt;/h3&gt;
+
+&lt;p&gt;La mayoría de navegadores ya soporta módulos directamente (exceptuando Internet Explorer, claro). Para usarlos debes agregarle &lt;code class=&quot;highlighter-rouge&quot;&gt;type=&quot;module&quot;&lt;/code&gt; a la etiqueta &lt;code class=&quot;highlighter-rouge&quot;&gt;script&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;module&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;print.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Fíjate que no es necesario agregar la referencia a &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; porque &lt;code class=&quot;highlighter-rouge&quot;&gt;print.js&lt;/code&gt; lo importa:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./hello.js'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// es necesario la extensión .js&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Si vas a probar este código localmente, asegúrate de estar utilizando un servidor Web, de lo contrario vas a ver un error de CORS en la consola. Una solución es utilizar el paquete &lt;a href=&quot;https://www.npmjs.com/package/http-server&quot; target=&quot;\_blank&quot;&gt;http-server&lt;/a&gt;. Desde la raíz de la carpeta puedes ejecutar los siguientes comandos:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install http-server -g
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;http-server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La pregunta ahora es ls siguiente: si ya es posible utilizar módulos directamente en el navegador ¿para qué usar herramientas como &lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;\_blank&quot;&gt;Webpack&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;La respuesta es que, por un lado, seguramente necesitas &lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;\_blank&quot;&gt;Webpack&lt;/a&gt; (o alguna herramienta similar) para otras tareas como minimizar tu código, convertirlo a ES5, etc. Por otro lado, puede ser mejor empaquetar todo tu código JavaScript en un archivo, en vez de tener que cargar módulos independientes desde el navegador.&lt;/p&gt;
+
+&lt;p&gt;La verdad no conozco ningún proyecto grande que utilice los módulos directamente como explicamos en esta sección, pero es posible que eso empiece a cambiar en un futuro cercano.&lt;/p&gt;
+
+&lt;h3 id=&quot;módulos-en-nodejs&quot;&gt;Módulos en Node.js&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; soporta los módulos de forma experimental. Hay dos formas de activarlos.&lt;/p&gt;
+
+&lt;p&gt;La primera forma es renombrar tus archivos de &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt; a &lt;code class=&quot;highlighter-rouge&quot;&gt;.mjs&lt;/code&gt;. Lo único que debes tener en cuenta es que al importar el archivo debes incluir la extensión &lt;code class=&quot;highlighter-rouge&quot;&gt;.mjs&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./hello.mjs'&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// es necesario la extensión .mjs&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La segunda forma es agregar la propiedad &lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt; con valor &lt;code class=&quot;highlighter-rouge&quot;&gt;module&lt;/code&gt; en el &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;package.json&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;module&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Con esta forma ya no es necesario renombrar los archivos a &lt;code class=&quot;highlighter-rouge&quot;&gt;.mjs&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Los módulos cumplen una función muy natural en el desarrollo de software: escribir código modular. La mayoría de lenguajes tienen alguna forma de manejar las dependencias entre archivos, pero eso no existía en el estándar de ECMAScript (y por lo tanto en JavaScript).&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, eso no impidió que surgieran soluciones. En este post explicamos CommonJS, que es lo que utiliza por defecto &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; para ese manejo de dependencias, pero eso no significa que no existieran otras.&lt;/p&gt;
+
+&lt;p&gt;La llegada de los módulos es importante porque agrega esta funcionalidad directamente al lenguaje, pero seguramente ha causado mucha confusión: ¿cuándo uso &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt; y cuándo uso &lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Espero que este post te haya aclarado esa confusión. Recuerda, en &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; usas &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt; (CommonJS) a menos de que hayas activado los módulos. Con &lt;a href=&quot;https://webpack.js.org/&quot; target=&quot;\_blank&quot;&gt;Webpack&lt;/a&gt; puedes usar siempre &lt;code class=&quot;highlighter-rouge&quot;&gt;import&lt;/code&gt; (módulos).&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como CommonJS.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/javascript-modules.jpg" /></entry><entry><title type="html">Recursos de diseño para programadores</title><link href="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/" rel="alternate" type="text/html" title="Recursos de diseño para programadores" /><published>2020-07-28T02:00:00-05:00</published><updated>2020-07-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/recursos-de-diseno-para-programadores</id><content type="html" xml:base="http://blog.makeitreal.camp/recursos-de-diseno-para-programadores/">&lt;p&gt;¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;La siguiente no es una lista exhaustiva de recursos, sólo los que nos parecen importantes que conozcas. Además, en algunos vas a encontrar alternativas similares. Si crees que nos falta alguno no dudes en compartirlo en los comentarios!&lt;/p&gt;
 
@@ -834,171 +994,4 @@ package name: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mi-proyecto&lt;span 
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;La documentación completa de &lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; se encuentra en el siguiente enlace: &lt;a href=&quot;https://yarnpkg.com/en/docs&quot;&gt;https://yarnpkg.com/en/docs&lt;/a&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Las librerías son una parte fundamental de cualquier lenguaje de programación y nos permiten reutilizar código que otros desarrolladores han escrito y publicado. En este post vamos a hablar de npm y Yarn, los dos manejadores de paquetes más populares de Node.js.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/boxes.jpeg" /></entry><entry><title type="html">Introducción a Node.js</title><link href="http://blog.makeitreal.camp/introduccion-a-nodejs/" rel="alternate" type="text/html" title="Introducción a Node.js" /><published>2017-12-25T02:00:00-05:00</published><updated>2017-12-25T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/introduccion-a-nodejs</id><content type="html" xml:base="http://blog.makeitreal.camp/introduccion-a-nodejs/">&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; es una plataforma que nos permite ejecutar código JavaScript fuera del navegador. En este post explicaremos cómo empezar con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;, qué tipo de aplicaciones puedes construir y una introducción a su poderoso manejador de paquetes.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Muchas personas creen que &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; se utiliza sólo para crear aplicaciones Web, pero esto no es cierto. Con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; puedes hacer mucho más que eso. &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; es equivalente a otros lenguajes de programación como Ruby, Python y Java, por nombrar algunos.&lt;/p&gt;
-
-&lt;p&gt;Todo lo que sabes actualmente de JavaScript te va a servir para crear aplicaciones con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; (variables, condicionales, ciclos, arreglos, etc.). Sin embargo, con Node.js puedes hacer cosas que no se pueden hacer dentro del navegador como:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Manipular archivos del sistema (crear, editar, eliminar, etc.).&lt;/li&gt;
-  &lt;li&gt;Crear aplicaciones para la línea de comandos.&lt;/li&gt;
-  &lt;li&gt;Crear aplicaciones móviles.&lt;/li&gt;
-  &lt;li&gt;Crear aplicaciones de escritorio.&lt;/li&gt;
-  &lt;li&gt;Y, claro, crear aplicaciones Web.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;primeros-pasos&quot;&gt;Primeros pasos&lt;/h2&gt;
-
-&lt;p&gt;Para empezar con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; debes primero descargarlo e instalarlo en tu maquina. Abre &lt;a href=&quot;https://github.com/makeitrealcamp/node-installation&quot; target=&quot;_blank&quot;&gt;este enlace&lt;/a&gt; y sigue las instrucciones para tu sistema operativo.&lt;/p&gt;
-
-&lt;p&gt;Asegúrate que haya sido correctamente instalado abriendo una línea de comandos y ejecutando &lt;code class=&quot;highlighter-rouge&quot;&gt;node -v&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;node -v
-v10.7.0
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Aunque la versión puede ser diferente, asegúrate que sea una reciente, preferiblemente mayor a 9.0.0.&lt;/p&gt;
-
-&lt;p&gt;Existen dos formas de ejecutar código en &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;. La primera es utilizando el interpretador. Abre una línea de comandos y ejecuta lo siguiente:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;node
-&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ahí puedes empezar a escribir expresiones de JavaScript, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;1 + 1&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;1 + 1
-2
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para salir de la consola de &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; oprime &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + D&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;La segunda forma de ejecutar código en &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; es creando un archivo y ejecutándolo. Por ejemplo, crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;app.js&lt;/code&gt; y escribe lo siguiente:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Mi primer programa en Node.js&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Guárdalo y ejecutalo con el siguiente comando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;node app.js
-Mi primer programa en Node.js
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Felicitaciones, has escrito tu primer programa en &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;!&lt;/p&gt;
-
-&lt;h2 id=&quot;algo-más-interesante&quot;&gt;Algo más interesante&lt;/h2&gt;
-
-&lt;p&gt;Veamos el siguiente ejemplo que va a crear un archivo en nuestra máquina. Empieza transcribiendo el siguiente programa en un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;generarArchivo.js&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'fs'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;fs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;writeFile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;hola.txt&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;El archivo fue creado correctamente&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Este código lo copié de Internet, que es la forma más fácil de hacer cualquier cosa en programación ;) Pero si quieres saber qué está haciendo este código acá va.&lt;/p&gt;
-
-&lt;p&gt;En la primera línea estamos requiriendo un módulo. Un módulo es como una librería, que nos va a permitir hacer algo específico.&lt;/p&gt;
-
-&lt;p&gt;El módulo &lt;code class=&quot;highlighter-rouge&quot;&gt;fs&lt;/code&gt; (file system) es el que nos va a permitir manipular archivos. Existen módulos que están incluidos con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; (como &lt;code class=&quot;highlighter-rouge&quot;&gt;fs&lt;/code&gt;) y otros que puedes utilizar por medio de librerías externas.&lt;/p&gt;
-
-&lt;p&gt;Para ejecutar este programa ingresa el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;node generarArchivo.js&lt;/code&gt; en la consola, deberías ver el mensaje “El archivo fue creado correctamente”:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;node generarArchivo.js
-El archivo fue creado correctamente
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Asegúrate de que se haya creado un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;nuevo.txt&lt;/code&gt; en la misma carpeta donde está el programa y que tenga el siguiente contenido:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;Primera línea
-Segunda línea
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&quot;un-servidor-web&quot;&gt;Un servidor Web&lt;/h2&gt;
-
-&lt;p&gt;Uno de los primeros programas de ejemplo que se muestran cuando se habla de &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; es un servidor Web. Quizá esa sea la razón por la que muchos que creen que &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; se usa exclusivamente para crear aplicaciones Web.&lt;/p&gt;
-
-&lt;p&gt;Para crear un servidor Web necesitamos el módulo &lt;code class=&quot;highlighter-rouge&quot;&gt;http&lt;/code&gt;. Crea un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;server.js&lt;/code&gt; y transcribe el siguiente código:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'http'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'&amp;lt;h1&amp;gt;Hello World&amp;lt;h1&amp;gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-
-&lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;running&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//localhost:3000/`);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para ejecutar esta aplicación utiliza el siguiente comando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;node server.js
-Server running at http://localhost:3000/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ahora ingresa desde un navegador a http://localhost:3000/. Debes ver el texto “Hola Mundo”.&lt;/p&gt;
-
-&lt;p&gt;Para detener el servidor oprime &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + C&lt;/code&gt; en la consola.&lt;/p&gt;
-
-&lt;h2 id=&quot;librerías-con-npm&quot;&gt;Librerías con npm&lt;/h2&gt;
-
-&lt;p&gt;Hasta ahora hemos usado módulos que vienen incluidos con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; como &lt;a href=&quot;[&quot;&gt;fs&lt;/a&gt; y &lt;a href=&quot;https://nodejs.org/api/http.html&quot;&gt;http&lt;/a&gt;. Sin embargo, el gran poder de &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; viene de las &lt;strong&gt;librerías externas&lt;/strong&gt;: código que escriben y publican otros desarrolladores y que podemos utilizar en nuestros proyectos.&lt;/p&gt;
-
-&lt;p&gt;Las librerías en &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; se conocen con el nombre de &lt;strong&gt;paquetes&lt;/strong&gt;. Existen &lt;strong&gt;paquetes&lt;/strong&gt; casi para todo lo que te puedas imaginar. Algunos ejemplos incluyen:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;[https://www.npmjs.com/package/currency-converter&quot;&gt;currency-converter&lt;/a&gt; permite realizar conversiones entre monedas.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;[minifier]https://www.npmjs.com/package/minifier&quot;&gt;minifier&lt;/a&gt; permite minificar archivos de JS y CSS.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;[lorem-ipsum]https://www.npmjs.com/package/lorem-ipsum&quot;&gt;lorem-ipsum&lt;/a&gt; permite generar textos de ejemplo.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;[express]https://www.npmjs.com/package/express&quot;&gt;express&lt;/a&gt; permite crear aplicaciones Web.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/fb&quot;&gt;fb&lt;/a&gt; permite interactuar con el API de Facebook&lt;/li&gt;
-  &lt;li&gt;Entre cientos de miles más!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; viene con un manejador de paquetes llamado &lt;a href=&quot;https://www.npmjs.org/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;, que es realmente una aplicación de consola que te va a permitir instalar y manejar los paquetes que se encuentran en el repositorio central de &lt;a href=&quot;https://www.npmjs.org/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, para instalar &lt;a href=&quot;https://github.com/workshopper/learnyounode&quot; target=&quot;_blank&quot;&gt;learnyounode&lt;/a&gt;, un paquete que te enseña &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;, ejecuta el siguiente comando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install -g learnyounode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ahora verifica que haya quedado bien instalado ejecutando el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;learnyounode&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;learnyounode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Y sigue aprendiendo &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;En la siguiente post vamos a hablar en más detalle de &lt;a href=&quot;https://www.npmjs.org/&quot; target=&quot;_blank&quot;&gt;npm&lt;/a&gt; y otro manejador de paquetes llamado &lt;a href=&quot;https://yarnpkg.com/en/&quot; target=&quot;_blank&quot;&gt;Yarn&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; &lt;strong&gt;no&lt;/strong&gt; es un nuevo lenguaje de programación, es una plataforma que te va a permitir ejecutar código JavaScript por fuera del navegador.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Con &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; puedes crear cualquier programa o aplicación que podrías crear con otro lenguaje de uso general como Java, Ruby, C++ o Python.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;El gran poder de &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot;&gt;Node.js&lt;/a&gt; se encuentra en las librerías (llamadas &lt;strong&gt;paquetes&lt;/strong&gt;) y en la comunidad de programadores que las escriben y las publican sin costo alguno!&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Node.js es una plataforma que nos permite ejecutar código JavaScript fuera del navegador. En este post explicaremos cómo empezar con Node.js, qué tipo de aplicaciones puedes construir y una introducción a su poderoso manejador de paquetes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/nodejs.jpg" /></entry></feed>
+&lt;p&gt;La documentación completa de &lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; se encuentra en el siguiente enlace: &lt;a href=&quot;https://yarnpkg.com/en/docs&quot;&gt;https://yarnpkg.com/en/docs&lt;/a&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Las librerías son una parte fundamental de cualquier lenguaje de programación y nos permiten reutilizar código que otros desarrolladores han escrito y publicado. En este post vamos a hablar de npm y Yarn, los dos manejadores de paquetes más populares de Node.js.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/boxes.jpeg" /></entry></feed>
