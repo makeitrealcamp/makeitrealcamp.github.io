@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-08-04T18:15:30-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Módulos de JavaScript</title><link href="http://blog.makeitreal.camp/modulos-de-javascript/" rel="alternate" type="text/html" title="Módulos de JavaScript" /><published>2020-08-04T02:00:00-05:00</published><updated>2020-08-04T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/modulos-de-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/modulos-de-javascript/">&lt;p&gt;En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como &lt;strong&gt;CommonJS&lt;/strong&gt;.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-08-05T10:39:15-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Módulos de JavaScript</title><link href="http://blog.makeitreal.camp/modulos-de-javascript/" rel="alternate" type="text/html" title="Módulos de JavaScript" /><published>2020-08-04T02:00:00-05:00</published><updated>2020-08-04T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/modulos-de-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/modulos-de-javascript/">&lt;p&gt;En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como &lt;strong&gt;CommonJS&lt;/strong&gt;.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Aunque la mayoría de lenguajes ofrecen alguna forma de importar código de otros archivos y librerías, JavaScript se pensó para scripts muy cortos en el navegador y al principio no se creía que fuera necesario algo similar.&lt;/p&gt;
 
@@ -10,7 +10,7 @@
 
 &lt;h2 id=&quot;el-problema&quot;&gt;El problema&lt;/h2&gt;
 
-&lt;p&gt;Supongamos que tenemos dos archivos: &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;print.js&lt;/code&gt;, cada uno con una línea de código:&lt;/p&gt;
+&lt;p&gt;Supongamos que tenemos dos archivos, donde uno depende de una variable definida en el otro:&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// hello.js&lt;/span&gt;
 &lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hola Mundo&quot;&lt;/span&gt;
@@ -18,7 +18,7 @@
 &lt;/div&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// print.js&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hello&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// dependemos de la variable hello&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
@@ -31,13 +31,13 @@
 
 &lt;p&gt;Esto funcionaría y veríamos “Hola Mundo” en la consola del navegador. Lo único que debemos tener en cuenta es el orden: no podemos importar &lt;code class=&quot;highlighter-rouge&quot;&gt;print.js&lt;/code&gt; antes de &lt;code class=&quot;highlighter-rouge&quot;&gt;hello.js&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Esta solución presenta dos problemas, sin embargo. El primero son las variables globales: la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; ahora es una variable global que se puede utilizar o reescribir por error en otro archivo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;El principal problema de esta solución es que la variable &lt;code class=&quot;highlighter-rouge&quot;&gt;hello&lt;/code&gt; es una variable global que se puede utilizar o reescribir por error en otro archivo&lt;/strong&gt;.&lt;/p&gt;
 
-&lt;p&gt;El segundo problema es que el navegador tiene que hacer una petición al servidor por cada archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;.js&lt;/code&gt;, aunque esto se puede solucionar concatenando todos los archivos en uno sólo.&lt;/p&gt;
+&lt;p&gt;Necesitamos una mejor forma de compartir código entre archivos.&lt;/p&gt;
 
 &lt;h2 id=&quot;commonjs&quot;&gt;CommonJS&lt;/h2&gt;
 
-&lt;p&gt;Aunque han surgido varias propuestas para solucionar este problema, la más importante es CommonJS, que es la que utiliza &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Aunque han surgido varias propuestas para solucionar este problema, la más importante es CommonJS, que es la que utiliza &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt;  por defecto.&lt;/p&gt;
 
 &lt;p&gt;CommonJS utiliza la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt; para importar código y &lt;code class=&quot;highlighter-rouge&quot;&gt;module.exports&lt;/code&gt; para exportarlo.&lt;/p&gt;
 
