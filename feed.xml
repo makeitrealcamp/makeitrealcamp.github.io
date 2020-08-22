@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-08-05T10:39:15-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Módulos de JavaScript</title><link href="http://blog.makeitreal.camp/modulos-de-javascript/" rel="alternate" type="text/html" title="Módulos de JavaScript" /><published>2020-08-04T02:00:00-05:00</published><updated>2020-08-04T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/modulos-de-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/modulos-de-javascript/">&lt;p&gt;En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como &lt;strong&gt;CommonJS&lt;/strong&gt;.&lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-08-22T11:49:34-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Qué seré capaz de hacer después de Make it Real?</title><link href="http://blog.makeitreal.camp/que-sere-capaz-despues-de-make-it-real/" rel="alternate" type="text/html" title="¿Qué seré capaz de hacer después de Make it Real?" /><published>2020-08-20T18:00:00-05:00</published><updated>2020-08-20T18:00:00-05:00</updated><id>http://blog.makeitreal.camp/que-sere-capaz-despues-de-make-it-real</id><content type="html" xml:base="http://blog.makeitreal.camp/que-sere-capaz-despues-de-make-it-real/">&lt;p&gt;Aprender a programar es un reto, es todo un desafío en el cual no solo tendremos que entender cómo la tecnología y diferentes componentes interactúan entre sí para crear una aplicación, sino también la manera en que aprendemos, resolvemos problemas y nos enfrentamos al cambio, porque si de algo estamos seguros es que las tecnologías cambian cada día. &lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Es normal que nuestros aspirantes a cualquier programa analicen la decisión de embarcarse en este viaje tecnológico haciendo análisis profundos de lo que está en pro y en contra. Una de las preguntas más comunes que recibo cada día es:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sebas, ¿Qué puedo hacer después de terminar alguno de los programas de Make It Real?.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;La respuesta a esta pregunta nos ayudará a comprender más el universo de posibilidades, así que he decidido escribir este post para hablar del potencial de cada programa. Empecemos!&lt;/p&gt;
+
+&lt;h2 id=&quot;programa-top&quot;&gt;Programa TOP&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/top-program.jpg&quot; alt=&quot;Programa Top Make It Real&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El Programa TOP de Make It Real está dirigido a personas que tienen la plena intención de construir una carrera como desarrolladores en la industria del software, el objetivo principal de este programa es que consigas un empleo como desarrollador en la industria. Es ideal tener una sólida base de conocimientos previos en lógica, matemática y/o programación, acompañado de algo de experiencia.&lt;/p&gt;
+
+&lt;p&gt;Cada una de las tecnologías que aprendemos en el programa TOP(como &lt;a href=&quot;https://expressjs.com/&quot;&gt;Express&lt;/a&gt;, &lt;a href=&quot;https://www.mongodb.com/&quot;&gt;MongoDB&lt;/a&gt;, &lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQL&lt;/a&gt;, &lt;a href=&quot;https://reactjs.org/&quot;&gt;React.js&lt;/a&gt;, &lt;a href=&quot;https://reactnative.dev/&quot;&gt;React Native&lt;/a&gt;, etc.) son &lt;a href=&quot;https://insights.stackoverflow.com/survey/2020&quot;&gt;tendencias actuales de la industria&lt;/a&gt; por lo que pasar por este programa abre la posibilidad de acceder a la oferta de trabajo más apetecida y mejor remunerada del mercado. Existe una gran oferta de empresas en el mercado local que buscan expandir sus equipos de tecnología con desarrolladores en estas áreas de trabajo. Además de eso, si se cuenta con un buen nivel de inglés las posibilidades aumentan al considerar empresas en Suramérica, Norteamérica y Europa.&lt;/p&gt;
+
+&lt;p&gt;Los estudiantes del programa TOP podrían hacer parte de cualquier equipo de desarrollo que trabaje utilizando metodologías ágiles, que desarrolle y mantenga aplicaciones WEB y/o móviles en su pipeline, al mismo tiempo podrían participar en cualquier fase del ciclo de desarrollo desde la investigación y diseño hasta su implementación, despliegue en producción y posterior mantenimiento.&lt;/p&gt;
+
+&lt;h2 id=&quot;programa-full-stack&quot;&gt;Programa Full-Stack&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/full-stack-program.jpg&quot; alt=&quot;Programa Full Stack= Make It Real&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El programa Full-Stack está dirigido a un público más diverso, aquí la experiencia y el conocimiento no son un factor determinante, además que su duración e intensidad es diferente a la del programa TOP. Este programa está dirigido a personas que vengan de cualquier profesión y quieran incursionar en el mundo del software y la tecnología. Yo recomiendo este programa para quienes buscan dar sus primeros pasos, para los que sienten que la motivación es suficiente pero no tienen una pizca de conocimiento al respecto.&lt;/p&gt;
+
+&lt;p&gt;Lo interesante de nuestro programa Full-Stack es que incluso personas que no se vean en un futuro como desarrolladores de software tienen un gran beneficio, imagina que eres un emprendedor en tecnología y buscas entender mucho mejor todo lo relacionado a este mundo para conocer donde están las fortalezas de crear negocios digitales, para comunicarse de manera eficiente con los ingenieros de tu equipo asegurandote que todos estén en la misma página o porque no?, para tu mismo poder construir prototipos que validen tus ideas de negocio con usuarios potenciales y te ayuden a conseguir inversión.&lt;/p&gt;
+
+&lt;p&gt;Si bien el programa Full Stack tiene más duración y su intensidad semanal es menor que la del programa TOP, al completar el programa de la misma manera que podrías validar y prototipar tus propias ideas también está la opción de hacer una carrera como desarrollador en el mercado y &lt;a href=&quot;https://www.youtube.com/watch?v=l30w0k57ZtY&amp;amp;t=1953s&quot;&gt;buscar oportunidades de trabajo&lt;/a&gt; similar a como lo describí en el programa TOP.&lt;/p&gt;
+
+&lt;h2 id=&quot;programa-data-science&quot;&gt;Programa Data Science&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/data-science-program.jpg&quot; alt=&quot;Programa Data Science Make It Real&quot; class=&quot;photo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para nadie es un secreto que la ciencia de los datos y el &lt;a href=&quot;https://en.wikipedia.org/wiki/Machine_learning&quot;&gt;Machine Learning&lt;/a&gt; cada día ocupan más espacio en nuestras vidas. Una nueva rama tecnológica que hace tiempo atrás viene construyendo cosas que en el pasado pensamos &lt;a href=&quot;https://www.youtube.com/watch?v=RyiWFbSdk78&amp;amp;feature=emb_title&quot;&gt;imposibles o eran inimaginables&lt;/a&gt;. Algoritmos de clasificación o predicción nos sorprenden a diario con sus alcances(&lt;a href=&quot;https://www.youtube.com/watch?v=5PYCDV4KMYY&amp;amp;t=3s&quot;&gt;si no estás familiarizado con este tema hace poco ofrecimos una charla en Make It Real sobre los diferentes casos de uso&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Por otra parte, la ciencia de los datos ha venido ofreciendo a las empresas la posibilidad de analizar con mayor precisión las variables que afectan su negocio, lo que ha permitido que puedan tomar mejores decisiones basadas en los datos y en los mismos modelos de predicción o clasificación que podemos construir a partir de estos.&lt;/p&gt;
+
+&lt;p&gt;Imaginemos que hemos recogido un set de datos de alguna de nuestras aplicaciones. Al pasar por nuestro programa de Data Science, sabremos cómo extraer valores estadísticos de nuestros datos, identificar tendencias, promedios, valores atípicos y correlaciones. Podemos crear gráficos que nos permitan visualizar la información para tener claridad en nuestro dominio de trabajo.&lt;/p&gt;
+
+&lt;p&gt;Estaremos en capacidad de utilizar nuestros datos para construir y entrenar diferentes modelos de Machine Learning, que nos permitan hacer predicciones, calificaciones o todo tipo de escenarios futuros basados en nuestra propia información, además de que podremos entrenarlos de nuevo conforme recogemos más datos haciendo que nuestros modelos sean cada vez más inteligentes. Todo esto utilizando &lt;a href=&quot;https://www.python.org/&quot;&gt;Python&lt;/a&gt; como lenguaje de programación y diferentes librerías como &lt;a href=&quot;https://numpy.org/&quot;&gt;NumPy&lt;/a&gt;, &lt;a href=&quot;https://pandas.pydata.org/&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;https://matplotlib.org/&quot;&gt;MatPloLib&lt;/a&gt;, &lt;a href=&quot;https://scikit-learn.org/&quot;&gt;Scikit-learn&lt;/a&gt;, etc.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Como pueden ver tenemos diferentes opciones de acuerdo de los intereses, la disponibilidad y la curiosidad de cada persona. Sin embargo, no se necesita mucho más que un computador y motivación para empezar. Make It Real no es solo aprender un conjunto de tecnologías y abrir la puerta de la creatividad tecnológica en medio de toda una revolución global.&lt;/p&gt;
+
+&lt;p&gt;En Make It Real buscamos transformar la educación y para lograrlo debemos aprender a aprender. Requiere esfuerzo, dedicación y disciplina pero una vez lo logras en un mundo que cambia a una velocidad abrumadora, aprender algo nuevo no será un problema, sin darnos cuenta resultará siendo un hábito.&lt;/p&gt;</content><author><name>Sebastian Zapata Mardini</name></author><summary type="html">Aprender a programar es un reto, es todo un desafío en el cual no solo tendremos que entender cómo la tecnología y diferentes componentes interactúan entre sí para crear una aplicación, sino también la manera en que aprendemos, resolvemos problemas y nos enfrentamos al cambio, porque si de algo estamos seguros es que las tecnologías cambian cada día.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/roadway.jpg" /></entry><entry><title type="html">Módulos de JavaScript</title><link href="http://blog.makeitreal.camp/modulos-de-javascript/" rel="alternate" type="text/html" title="Módulos de JavaScript" /><published>2020-08-04T02:00:00-05:00</published><updated>2020-08-04T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/modulos-de-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/modulos-de-javascript/">&lt;p&gt;En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como &lt;strong&gt;CommonJS&lt;/strong&gt;.&lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Aunque la mayoría de lenguajes ofrecen alguna forma de importar código de otros archivos y librerías, JavaScript se pensó para scripts muy cortos en el navegador y al principio no se creía que fuera necesario algo similar.&lt;/p&gt;
 
@@ -795,203 +841,4 @@
 
 &lt;p&gt;Existen muchas formas de demostrar credibilidad en desarrollo Web, pero un certificado definitivamente no es una de ellas.&lt;/p&gt;
 
-&lt;p&gt;En &lt;a href=&quot;https://makeitreal.camp/&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; te ofrecemos programas prácticos para que aceleres tu aprendizaje en desarrollo Web. Nuestro programa &lt;a href=&quot;https://makeitreal.camp/full-stack-online&quot; target=&quot;_blank&quot;&gt;Full Stack Web Development&lt;/a&gt; incluso tiene una garantía de empleo, que es algo mucho más valioso y tangible que un certificado.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Aunque existen industrias donde las certificaciones son importantes, en desarrollo Web una certificación no te va a ayudar a encontrar un empleo. En este post te explicaremos por qué y cuál es la alternativa.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/chess.jpeg" /></entry><entry><title type="html">Manejadores de paquetes en Node.js</title><link href="http://blog.makeitreal.camp/manejadores-de-paquetes-en-nodejs/" rel="alternate" type="text/html" title="Manejadores de paquetes en Node.js" /><published>2017-12-28T02:00:00-05:00</published><updated>2017-12-28T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/manejadores-de-paquetes-en-nodejs</id><content type="html" xml:base="http://blog.makeitreal.camp/manejadores-de-paquetes-en-nodejs/">&lt;p&gt;Las librerías son una parte fundamental de cualquier lenguaje de programación y nos permiten reutilizar código que otros desarrolladores han escrito y publicado. En este post vamos a hablar de &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt; y &lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt;, los dos manejadores de paquetes más populares de &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;A las librerías se les llama &lt;strong&gt;paquetes&lt;/strong&gt; en &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Un &lt;strong&gt;manejador de paquetes&lt;/strong&gt; nos permite descargar los &lt;strong&gt;paquetes&lt;/strong&gt; que han publicado otros desarrolladores y utilizarlos en nuestros proyectos. También nos permite crear y publicar nuestros propios &lt;strong&gt;paquetes&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt; viene con un manejador de paquetes llamado &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt;.  Sin embargo, hace un par de años surgió un nuevo manejador de paquetes llamado &lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; que cada día toma más fuerza. Veamos cada uno en detalle.&lt;/p&gt;
-
-&lt;h2 id=&quot;npm&quot;&gt;npm&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt; es una aplicación para la línea de comandos que viene incluída en &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;, así que no es necesario instalar nada adicional.&lt;/p&gt;
-
-&lt;h3 id=&quot;instalando-paquetes&quot;&gt;Instalando paquetes&lt;/h3&gt;
-
-&lt;p&gt;Con &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt; puedes instalar un paquete en tu máquina de forma &lt;strong&gt;local&lt;/strong&gt; (en una carpeta) o &lt;strong&gt;global&lt;/strong&gt;, dependiendo de cómo lo vayas a utilizar.&lt;/p&gt;
-
-&lt;p&gt;Si vas a utilizar el paquete en un proyecto debes instalarlo de forma &lt;strong&gt;local&lt;/strong&gt;, en la carpeta donde se encuentren los archivos del proyecto.&lt;/p&gt;
-
-&lt;p&gt;Si el paquete es una aplicación para la línea de comandos es mejor instalarlo de forma &lt;strong&gt;global&lt;/strong&gt;, para que esté disponible desde cualquier ubicación en nuestro sistema.&lt;/p&gt;
-
-&lt;h3 id=&quot;instalación-local&quot;&gt;Instalación local&lt;/h3&gt;
-
-&lt;p&gt;Para instalar un paquete de forma &lt;strong&gt;local&lt;/strong&gt; utiliza el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; seguido del nombre del paquete. &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt; crea una carpeta llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; en la carpeta donde estés ubicado(a), y ahí instala el paquete.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, crea una carpeta llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;npm-test&lt;/code&gt; e instala el paquete &lt;a href=&quot;https://github.com/marak/Faker.js/&quot;&gt;faker.js&lt;/a&gt;, que es una librería para generar datos ficticios ejecutando los siguientes comandos:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;mkdir npm-test
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;npm-test
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install faker
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Revisa que exista la carpeta &lt;code class=&quot;highlighter-rouge&quot;&gt;node_modules&lt;/code&gt; y que dentro de esa carpeta exista una carpeta llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;faker&lt;/code&gt;. En un momento vamos a ver cómo utilizar este paquete desde tu código.&lt;/p&gt;
-
-&lt;h3 id=&quot;instalación-global&quot;&gt;Instalación global&lt;/h3&gt;
-
-&lt;p&gt;Instalar un paquete de forma &lt;strong&gt;global&lt;/strong&gt; es similar a instalar uno &lt;strong&gt;local&lt;/strong&gt;, la única diferencia es que se debe agregar la opción &lt;code class=&quot;highlighter-rouge&quot;&gt;-g&lt;/code&gt; al comando &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Por ejemplo, para instalar &lt;a href=&quot;https://github.com/workshopper/learnyounode&quot;&gt;learnyounode&lt;/a&gt;, un paquete que te enseña Node.js, ejecuta el siguiente comando desde cualquier ubicación:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install -g learnyounode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ahora verifica que haya quedado bien instalado ejecutando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;learnyounode
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ese comando lo puedes ejecutar desde cualquier ubicación en tu sistema.&lt;/p&gt;
-
-&lt;h3 id=&quot;usando-un-paquete-en-tu-código&quot;&gt;Usando un paquete en tu código&lt;/h3&gt;
-
-&lt;p&gt;Para usar un paquete debes requerirlo con la función &lt;code class=&quot;highlighter-rouge&quot;&gt;require&lt;/code&gt;. Por ejemplo, en la misma carpeta donde instalaste &lt;a href=&quot;https://github.com/marak/Faker.js/&quot;&gt;faker.js&lt;/a&gt;, crea un archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;index.js&lt;/code&gt; con el siguiente código:&lt;/p&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;faker&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'faker'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-
-&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;faker&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;findName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Ahora ejecútalo con el siguiente comando:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;node index.js
-&lt;span class=&quot;s1&quot;&gt;'Dane Effertz'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;El resultado seguramente será diferente en tu caso.&lt;/p&gt;
-
-&lt;p&gt;Nuestra recomendación es que siempre consultes la documentación del paquete para ver cómo requerirlo y usarlo.&lt;/p&gt;
-
-&lt;h3 id=&quot;packagejson&quot;&gt;package.json&lt;/h3&gt;
-
-&lt;p&gt;La mejor forma de de manejar paquetes en un proyecto es crear un archivo llamado &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; es un archivo con formato JSON dónde se definen los paquetes de los que depende nuestro proyecto (con sus respectivas versiones). De esa forma centralizas todas las dependencias y le facilitas la vida a otros colaboradores de tu proyecto.&lt;/p&gt;
-
-&lt;p&gt;El archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; debe estar en la raíz de tu proyecto y debe tener, como mínimo, un nombre y una versión como se muestra a continuación:&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mi-super-paquete&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;El &lt;strong&gt;nombre&lt;/strong&gt; debe ser una palabra en minúscula sin espacios, puedes utilizar guión (&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;) y raya al piso (&lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;La &lt;strong&gt;versión&lt;/strong&gt; debe ser de la forma &lt;strong&gt;x.x.x&lt;/strong&gt; y debería seguir el &lt;strong&gt;&lt;a href=&quot;https://docs.npmjs.com/getting-started/semantic-versioning&quot;&gt;versionamiento semántico&lt;/a&gt;&lt;/strong&gt;, que define cuando incrementar cada uno de los números:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;El último número se incrementa cuando se corrigen bugs y se realizan cambios menores que no afectan funcionalidades existentes.&lt;/li&gt;
-  &lt;li&gt;El segundo número se incrementa cuando se introducen funcionalidades y cambios que no afectan las funcionalidades existentes.&lt;/li&gt;
-  &lt;li&gt;El primer número se incrementa cuando se introducen cambios que afectan funcionalidades existentes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Sin embargo, la forma más fácil de generar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; es con el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;npm init&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;mi-proyecto
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm init
-This utility will walk you through creating a package.json file.
-It only covers the most common items, and tries to guess sensible defaults.
-
-See &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;npm &lt;span class=&quot;nb&quot;&gt;help &lt;/span&gt;json&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;definitive documentation on these fields
-and exactly what they &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;.
-
-Use &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;npm install &amp;lt;pkg&amp;gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt; afterwards to install a package and
-save it as a dependency &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the package.json file.
-
-Press ^C at any &lt;span class=&quot;nb&quot;&gt;time &lt;/span&gt;to quit.
-package name: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;mi-proyecto&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Oprime &lt;code class=&quot;highlighter-rouge&quot;&gt;Enter&lt;/code&gt; para aceptar los valores sugeridos entre paréntesis o ingresa tus propios valores. Al final se va a generar el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; con la información que ingresaste.&lt;/p&gt;
-
-&lt;h3 id=&quot;agregando-dependencias&quot;&gt;Agregando dependencias&lt;/h3&gt;
-
-&lt;p&gt;Existen dos tipos de dependencias que puedes agregar al &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt;:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;dependencies&lt;/strong&gt;: paquetes que son requeridos durante la ejecución del programa.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;devDependencies&lt;/strong&gt;: paquetes que se utilizan para desarrollo y pruebas.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Una forma de agregar dependencias a tu proyecto es agregándolas al archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; directamente. Por ejemplo, si queremos agregar una dependencia de ejecución llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;react&lt;/code&gt; y otra de desarrollo llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;faker&lt;/code&gt; podemos hacerlo de la siguiente forma:&lt;/p&gt;
-
-&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;mi-super-paquete&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;dependencies&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;react&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1.0.0&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;devDependencies&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-    &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&quot;faker&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;3.1.0&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-  &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Cada vez que modifiques manualmente el archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; asegúrate de ejecutar el siguiente comando para que se instalen los paquetes que agregaste o cambiaste:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Sin embargo, la forma más fácil de agregar una dependencia es utilizando &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; con la opción &lt;code class=&quot;highlighter-rouge&quot;&gt;--save&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;--save-dev&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install react --save
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;npm install faker --save-dev
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Cuando descargues un proyecto que contenga un archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; no olvides ejecutar &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; para descargar todas las dependencias.&lt;/p&gt;
-
-&lt;p&gt;La documentación completa de &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt; se encuentra en el siguiente enlace &lt;a href=&quot;https://docs.npmjs.com/&quot;&gt;https://docs.npmjs.com/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;yarn&quot;&gt;Yarn&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; fue el producto de la colaboración entre Facebook y Google para crear un mejor manejador de paquetes que &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;El primer paso para utilizar &lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; es instalarlo en tu máquina. Ingresa a &lt;a href=&quot;https://yarnpkg.com/en/docs/install&quot;&gt;este enlace&lt;/a&gt; donde encontrarás las instrucciones para tu sistema operativo.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; es compatible con &lt;a href=&quot;https://www.npmjs.com/&quot;&gt;npm&lt;/a&gt;, así que puedes utilizar el mismo archivo &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt;. Los comandos también son muy similares, la diferencia más importante es que en vez de &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install&lt;/code&gt; se utiliza &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn add&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Para inicializar un nuevo proyecto utiliza:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;yarn init
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para agregar una dependencia de ejecución de forma &lt;strong&gt;local&lt;/strong&gt; utiliza:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;yarn add &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;paquete]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para agregar una dependencia de desarrollo o pruebas de forma &lt;strong&gt;local&lt;/strong&gt; utiliza:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;yarn add &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;paquete] --dev
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para instalar las dependencias de un proyecto (cuando has hecho cambios al &lt;code class=&quot;highlighter-rouge&quot;&gt;package.json&lt;/code&gt; o has descargado un nuevo proyecto):&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;yarn install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Para instalar un paquete de forma &lt;strong&gt;global&lt;/strong&gt; utiliza:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;yarn global add &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;paquete]
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;La documentación completa de &lt;a href=&quot;https://yarnpkg.com/en/&quot;&gt;Yarn&lt;/a&gt; se encuentra en el siguiente enlace: &lt;a href=&quot;https://yarnpkg.com/en/docs&quot;&gt;https://yarnpkg.com/en/docs&lt;/a&gt;.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Las librerías son una parte fundamental de cualquier lenguaje de programación y nos permiten reutilizar código que otros desarrolladores han escrito y publicado. En este post vamos a hablar de npm y Yarn, los dos manejadores de paquetes más populares de Node.js.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/boxes.jpeg" /></entry></feed>
+&lt;p&gt;En &lt;a href=&quot;https://makeitreal.camp/&quot; target=&quot;_blank&quot;&gt;Make it Real&lt;/a&gt; te ofrecemos programas prácticos para que aceleres tu aprendizaje en desarrollo Web. Nuestro programa &lt;a href=&quot;https://makeitreal.camp/full-stack-online&quot; target=&quot;_blank&quot;&gt;Full Stack Web Development&lt;/a&gt; incluso tiene una garantía de empleo, que es algo mucho más valioso y tangible que un certificado.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Aunque existen industrias donde las certificaciones son importantes, en desarrollo Web una certificación no te va a ayudar a encontrar un empleo. En este post te explicaremos por qué y cuál es la alternativa.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/chess.jpeg" /></entry></feed>

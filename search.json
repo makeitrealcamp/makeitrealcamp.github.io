@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "¿Qué seré capaz de hacer después de Make it Real?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-sere-capaz-despues-de-make-it-real/",
+      "date"     : "Aug 20, 2020",
+      "excerpt"  : "Aprender a programar es un reto, es todo un desafío en el cual no solo tendremos que entender cómo la tecnología y diferentes componentes interactúan entre sí para crear una aplicación, sino también la manera en que aprendemos, resolvemos problemas y nos enfrentamos al cambio, porque si de algo estamos seguros es que las tecnologías cambian cada día.",
+      "image"    : "/assets/images/bg-images/roadway.jpg",
+      "author"   : "Sebastian Zapata Mardini",
+      "gravatar" : "https://s.gravatar.com/avatar/cf822fcc399ecdc04f3f3155bc264563?s=80"
+    } ,
+  
+    {
       "title"    : "Módulos de JavaScript",
       "category" : "",
       "tags"     : "",
