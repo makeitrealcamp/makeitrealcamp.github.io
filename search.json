@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Creando una Web API con Node.js y Express",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/creando-un-api-nodejs-express/",
+      "date"     : "Sep 30, 2020",
+      "excerpt"  : "Una Web API nos permite exponer funcionalidad de una aplicación a través del protocolo HTTP. En este tutorial vamos a crear una Web API utilizando Node.js y una librería llamada Express.",
+      "image"    : "/assets/images/bg-images/nodejs.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
       "title"    : "¿Qué seré capaz de hacer después de Make it Real?",
       "category" : "",
       "tags"     : "",
