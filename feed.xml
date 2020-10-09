@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-10-01T12:02:46-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Creando una Web API con Node.js y Express</title><link href="http://blog.makeitreal.camp/creando-un-api-nodejs-express/" rel="alternate" type="text/html" title="Creando una Web API con Node.js y Express" /><published>2020-09-30T02:00:00-05:00</published><updated>2020-09-30T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/creando-un-api-nodejs-express</id><content type="html" xml:base="http://blog.makeitreal.camp/creando-un-api-nodejs-express/">&lt;p&gt;Una Web API nos permite exponer funcionalidad de una aplicación a través del protocolo HTTP. En este tutorial vamos a crear una Web API utilizando &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; y una librería llamada &lt;a href=&quot;https://expressjs.com/&quot; target=&quot;\_blank&quot;&gt;Express&lt;/a&gt;. &lt;!-- more --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.5.1">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2020-10-09T11:50:18-05:00</updated><id>http://blog.makeitreal.camp/</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">Introducción al Aprendizaje Automático (Machine Learning)</title><link href="http://blog.makeitreal.camp/introduccion-al-aprendizaje-automatico-machine-learning/" rel="alternate" type="text/html" title="Introducción al Aprendizaje Automático (Machine Learning)" /><published>2020-10-09T02:00:00-05:00</published><updated>2020-10-09T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/introduccion-al-aprendizaje-automatico-machine-learning</id><content type="html" xml:base="http://blog.makeitreal.camp/introduccion-al-aprendizaje-automatico-machine-learning/">&lt;p&gt;El &lt;strong&gt;Aprendizaje Automático&lt;/strong&gt; está en todas partes: filtra correos en tu bandeja de entrada, te sugiere artículos en Amazon y películas en Netflix, etiqueta tus fotos de Facebook, identifica tu voz en Siri, identifica frases en la búsqueda de Google y detecta fraudes financieros, por nombrar algunas aplicaciones.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Y este es sólo el comienzo. Eventualmente el Aprendizaje Automático conducirá nuestros autos, identificará y prevendrá enfermedades, será nuestro asistente personal en las tareas del hogar, entre otras aplicaciones que aún no nos imaginamos.&lt;/p&gt;
+
+&lt;p&gt;Pero no nos adelantemos. Veamos qué es el Aprendizaje Automático y cómo funciona.&lt;/p&gt;
+
+&lt;p&gt;El Aprendizaje Automático es una técnica que nos permite predecir, identificar o realizar sugerencias con la ayuda de computadoras.&lt;/p&gt;
+
+&lt;p&gt;La forma en que funciona el Aprendizaje Automático es la siguiente: &lt;strong&gt;a partir de información existente se utiliza un algoritmo para entrenar un programa que va a aprender a predecir, identificar o sugerir algo nuevo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Generalmente, los proyectos de Aprendizaje Automático se componen de los siguientes pasos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Preparar la información.&lt;/li&gt;
+  &lt;li&gt;Seleccionar el algoritmo de entrenamiento.&lt;/li&gt;
+  &lt;li&gt;Evaluar los resultados.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1-preparar-de-la-información&quot;&gt;1. Preparar de la información&lt;/h3&gt;
+
+&lt;p&gt;Todo proyecto de Aprendizaje Automático requiere información preexistente. Esa información puede salir de los datos de una empresa, organización o datos históricos, entre otros.&lt;/p&gt;
+
+&lt;p&gt;El siguiente paso es cargar, visualizar y limpiar la información. Puede que la información no esté en el formato que queremos o que la información no esté completa.  Además tenemos que seleccionar los datos que son relevantes para nuestro modelo y muchas veces vamos a necesitar manipular esos datos para que sean consistentes (p.e. pasar todo el texto a minúsculas o normalizar las opciones).&lt;/p&gt;
+
+&lt;h3 id=&quot;2-seleccionar-el-algoritmo-de-entrenamiento&quot;&gt;2. Seleccionar el algoritmo de entrenamiento&lt;/h3&gt;
+
+&lt;p&gt;Los algoritmos de entrenamiento se pueden clasificar en dos grandes categorías: aprendizaje supervisado y no supervisado.&lt;/p&gt;
+
+&lt;p&gt;En el &lt;strong&gt;aprendizaje supervisado&lt;/strong&gt; utilizamos la información preexistente para hacer predicciones de nueva información. Por ejemplo, podemos predecir la necesidad de personal de un restaurante basados en información histórica.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos de algoritmos en esta categoría incluyen: Regression Analysis, Support Vector Machine, Decision Tree, Random Forest y Neural Networks, entre otros.&lt;/p&gt;
+
+&lt;p&gt;En el &lt;strong&gt;aprendizaje no supervisado&lt;/strong&gt; queremos encontrar patrones ocultos que se encuentren en la información preexistente. Por ejemplo, entender cuáles son los productos de una tienda que los clientes compran al tiempo o encontrar segmentos de clientes.&lt;/p&gt;
+
+&lt;p&gt;Ejemplos de algoritmos en esta categoría incluyen: k-Means Clustering, Association Rules y Principal Component Analysis, entre otros.&lt;/p&gt;
+
+&lt;p&gt;Cada algoritmo tiene parámetros que se pueden ajustar para buscar mejores resultados.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-evaluar-los-resultados&quot;&gt;3. Evaluar los resultados&lt;/h3&gt;
+
+&lt;p&gt;Después de construir el modelo, es importante evaluarlo. Existen varias métricas que nos pueden ayudar dependiendo de lo que estemos midiendo.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, si estamos intentando predecir si una persona se va a registrar en una página, podemos calcular la precisión como la proporción de predicciones que fueron correctas.&lt;/p&gt;
+
+&lt;p&gt;Por otro lado, si estamos intentado predecir el precio de un apartamento una mejor métrica es la raíz del error cuadrátrico medio., que no es más que una forma de medir qué tan cerca nuestro modelo estuvo en las predicciones.&lt;/p&gt;
+
+&lt;h2 id=&quot;por-dónde-empezar&quot;&gt;¿Por dónde empezar?&lt;/h2&gt;
+
+&lt;p&gt;Aunque es posible implementar &lt;strong&gt;Aprendizaje Automático&lt;/strong&gt; en cualquier lenguaje de programación, Python es el lenguaje más usado debido a que es relativamente fácil de aprender y tiene excelentes librerías como &lt;a href=&quot;https://numpy.org/&quot; target=&quot;\_blank&quot;&gt;Numpy&lt;/a&gt;, &lt;a href=&quot;https://pandas.pydata.org/&quot; target=&quot;\_blank&quot;&gt;Pandas&lt;/a&gt;, &lt;a href=&quot;https://scikit-learn.org/stable/&quot; target=&quot;\_blank&quot;&gt;scikit-learn&lt;/a&gt; y &lt;a href=&quot;https://matplotlib.org/&quot; target=&quot;\_blank&quot;&gt;Matplotlib&lt;/a&gt;, entre otras.&lt;/p&gt;
+
+&lt;p&gt;Adicionalmente, existe un ambiente de ejecución llamado &lt;a href=&quot;https://jupyter.org/&quot; target=&quot;\_blank&quot;&gt;Jupyter Notebook&lt;/a&gt; que permite crear documentos con código, texto y visualizaciones. Es una forma fácil y rápida de empezar de experimentar con Python y el Aprendizaje Automático en general.&lt;/p&gt;
+
+&lt;p&gt;En Make It Real tenemos un &lt;a href=&quot;https://makeitreal.camp/data-science-online?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&quot;&gt;programa de Data Science&lt;/a&gt; en donde aprenderás los conceptos, técnicas y librerías que te ayudarán a ver los datos de una forma diferente de la mano de mentores experimentados. Te invitamos a conocerlo!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">El Aprendizaje Automático está en todas partes: filtra correos en tu bandeja de entrada, te sugiere artículos en Amazon y películas en Netflix, etiqueta tus fotos de Facebook, identifica tu voz en Siri, identifica frases en la búsqueda de Google y detecta fraudes financieros, por nombrar algunas aplicaciones.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/data-points.jpg" /></entry><entry><title type="html">Creando una Web API con Node.js y Express</title><link href="http://blog.makeitreal.camp/creando-un-api-nodejs-express/" rel="alternate" type="text/html" title="Creando una Web API con Node.js y Express" /><published>2020-09-30T02:00:00-05:00</published><updated>2020-09-30T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/creando-un-api-nodejs-express</id><content type="html" xml:base="http://blog.makeitreal.camp/creando-un-api-nodejs-express/">&lt;p&gt;Una Web API nos permite exponer funcionalidad de una aplicación a través del protocolo HTTP. En este tutorial vamos a crear una Web API utilizando &lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; y una librería llamada &lt;a href=&quot;https://expressjs.com/&quot; target=&quot;\_blank&quot;&gt;Express&lt;/a&gt;. &lt;!-- more --&gt;&lt;/p&gt;
 
 &lt;p&gt;Para seguir este tutorial vas a necesitar lo siguiente:&lt;/p&gt;
 
@@ -602,7 +654,7 @@ curl -X DELETE http://localhost:3000/quotes/0
 
 &lt;p&gt;Los detalles del programa la encuentras en el siguiente enlace, ahí podrás solicitar información de precios y conocer el proceso de inscripción:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://makeitreal.camp/data-science-online?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=datascience-2020-1&quot;&gt;https://makeitreal.camp/data-science-online&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://makeitreal.camp/data-science-online?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&quot;&gt;https://makeitreal.camp/data-science-online&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Espero que te animes a dar este siguiente paso y recuerda, ¡nunca dejes de aprender!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Data Science es una de las áreas de mayor crecimiento en la actualidad y una gran oportunidad para las personas que quieren dar el siguiente paso en sus carreras como programadores.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/data-science-2.jpg" /></entry><entry><title type="html">Sobre el aprendizaje</title><link href="http://blog.makeitreal.camp/sobre-el-aprendizaje/" rel="alternate" type="text/html" title="Sobre el aprendizaje" /><published>2020-02-17T02:00:00-05:00</published><updated>2020-02-17T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/sobre-el-aprendizaje</id><content type="html" xml:base="http://blog.makeitreal.camp/sobre-el-aprendizaje/">&lt;p&gt;Dicen que hay dos tipos de aprendices de idiomas: los que quieren hacerse entender y los que no se quieren equivocar. Los primeros avanzan increíblemente rápido, los segundos se quedan atascados, a veces sin lograr mantener una conversación básica. ¿Por qué ocurre esto?&lt;!-- more --&gt;&lt;/p&gt;
 
@@ -866,249 +918,4 @@ curl -X DELETE http://localhost:3000/quotes/0
 
 &lt;hr /&gt;
 
-&lt;p&gt;¿Qué te gustaría aprender de programación y por fuera de la programación? Cuéntanos en los comentarios!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/neo-morpheus-kungfu.jpg" /></entry><entry><title type="html">Expresiones regulares</title><link href="http://blog.makeitreal.camp/expresiones-regulares/" rel="alternate" type="text/html" title="Expresiones regulares" /><published>2019-11-22T02:00:00-05:00</published><updated>2019-11-22T02:00:00-05:00</updated><id>http://blog.makeitreal.camp/expresiones-regulares</id><content type="html" xml:base="http://blog.makeitreal.camp/expresiones-regulares/">&lt;p&gt;Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;qué-son-las-expresiones-regulares&quot;&gt;¿Qué son las expresiones regulares?&lt;/h2&gt;
-
-&lt;p&gt;Imagina que recibes un archivo de texto muy largo y te piden escribir un programa que encuentre todos los números telefónicos que existan en el archivo con el formato &lt;code class=&quot;highlighter-rouge&quot;&gt;(XXX) XXX-XXXX&lt;/code&gt;. ¿Cómo lo harías?&lt;/p&gt;
-
-&lt;p&gt;Una &lt;strong&gt;expresión regular&lt;/strong&gt; (en inglés regular expression, regex ó regexp) es una secuencia de caracteres que define un patrón de búsqueda. Por ejemplo, con la siguiente expresión regular podríamos encontrar los números telefónicos con el formato que pedían:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;se&quot;&gt;\(\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;-&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;La principal crítica a las expresiones regulares es que son difíciles de leer y entender. Es una crítica válida. Sin embargo, las expresiones regulares también nos ofrecen muchas ventajas: pueden ahorrarnos muchas líneas de código, la gran mayoría son relativamente simples de construir o se encuentran fácilmente haciendo una &lt;strong&gt;búsqueda en Internet&lt;/strong&gt;, y se pueden utilizar en diferentes contextos como veremos a continuación.&lt;/p&gt;
-
-&lt;h2 id=&quot;utilizando-expresiones-regulares&quot;&gt;Utilizando expresiones regulares&lt;/h2&gt;
-
-&lt;p&gt;Las expresiones regulares se pueden utilizar en la mayoría de lenguajes de programación como JavaScript, Ruby, Python, Java, etc., en algunas aplicaciones para la línea de comandos como &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt;  y &lt;code class=&quot;highlighter-rouge&quot;&gt;find&lt;/code&gt; y en algunos editores de texto como &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; o &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VSCode&lt;/a&gt; para realizar búsquedas avanzadas, entre muchos otros. Más adelante veremos cómo utilizarlas en JavaScript.&lt;/p&gt;
-
-&lt;p&gt;Sin embargo, la forma más fácil de probar y depurar nuestras expresiones regulares es en algún sitio online como &lt;a href=&quot;https://regexr.com/&quot;&gt;regexr.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Generalmente las expresiones regulares se encierran entre dos barras inclinadas (&lt;code class=&quot;highlighter-rouge&quot;&gt;/.../&lt;/code&gt;) como lo haremos de ahora en adelante en este post.&lt;/p&gt;
-
-&lt;h2 id=&quot;entendiendo-expresiones-regulares&quot;&gt;Entendiendo expresiones regulares&lt;/h2&gt;
-
-&lt;p&gt;Empecemos con una expresión regular muy simple:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/abc/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Esta expresión busca una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt; seguida de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt;, todas minúsculas, así que coincidiría con textos que incluyeran &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt; únicamente.&lt;/p&gt;
-
-&lt;p&gt;¿Qué pasaría si quisiéramos buscar algo un poco más complejo como una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt;, seguido de &lt;em&gt;cualquier caracter&lt;/em&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, por ejemplo &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;anc&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a7c&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ahc&quot;&lt;/code&gt;? La respuesta es que necesitamos unos caracteres especiales llamados &lt;strong&gt;metacaracteres&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Los metacaráteres nos permiten escribir expresiones más genéricas, y por lo tanto más útiles.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;El primer metacaráceter que vamos a ver es el punto (&lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt;), que indica que en esa posición puede ir cualquier caracter. Por ejemplo, para la pregunta previa utilizaríamos la siguiente expresión regular:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/a.c/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Esta expresión encontraría coincidencias para cadenas como &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ajc&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a8c&quot;&lt;/code&gt; pero no  &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbc&quot;&lt;/code&gt; (tiene un caracter de más), &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;cba&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ac&quot;&lt;/code&gt; (falta un caracter en la mitad).&lt;/p&gt;
-
-&lt;h3 id=&quot;cuantificadores&quot;&gt;Cuantificadores&lt;/h3&gt;
-
-&lt;p&gt;Los siguientes metacaracteres nos permiten especificar cuántas ocurrencias del caracter anterior estamos esperando:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt;: 0 o más ocurrencias del caracter anterior.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt;: 1 o más ocurrencias del caracter anterior.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;?&lt;/code&gt;: 0 o 1 ocurrencia del caracter anterior.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;&lt;/code&gt;: determinadas ocurrencias (exacto &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; o un rango &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;3,6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Veamos un ejemplo de cada una de estas opciones:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab*c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de cero o más &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;s, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (p.e. &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ac&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbbbbbbbc&quot;&lt;/code&gt;).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab+c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de una o más &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (p.e. &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbbbbc&quot;&lt;/code&gt;).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab?c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de cero o una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;ac&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;/ab{3}c/&lt;/code&gt;: una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de tres &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;, seguido de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abbbc&quot;&lt;/code&gt;).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Algunos metacaracteres se pueden mezclar, así que podemos utilizar el &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; con alguno de los de cantidad que acabamos de ver, por ejemplo:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/.&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;La anterior podría ser la expresión regular más genérica del universo, busca cualquier caracter cero o más veces, y coincidiría con cualquier cadena de texto que le pasemos, incluso la cadena vacía!&lt;/p&gt;
-
-&lt;h3 id=&quot;listas&quot;&gt;Listas&lt;/h3&gt;
-
-&lt;p&gt;Los metacaracteres &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;]&lt;/code&gt; nos permiten crear una lista de posibles caracteres que pueden ir en una posición.  Por ejemplo, si queremos buscar una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt;, una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt; o una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt; (cualquiera de las tres) podríamos utilizar una lista:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[abc]/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Utilizando guión (&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;) podemos crear rangos en una lista. Por ejemplo, si queremos buscar cualquier letra minúscula de la &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; a la &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;z&quot;&lt;/code&gt; podríamos crear un rango:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[a-z]/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Podemos tener varios rangos en la misma lista, por ejemplo si queremos buscar cualquier letra mayúscula o minúscula, o cualquier número, podemos utilizar la siguiente expresión:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[a-zA-Z0-9]/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;El metacaracter &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; tiene dos funciones. Si está dentro de una lista hace una negación, es decir, coincide con cualquier caracter que esté fuera del grupo. Por ejemplo, la siguiente expresión coincidiría con cualquier caracter excepto &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;c&quot;&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/^abc/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&quot;inicio-o-fin-de-cadena&quot;&gt;Inicio o fin de cadena&lt;/h3&gt;
-
-&lt;p&gt;El metacaracter &lt;code class=&quot;highlighter-rouge&quot;&gt;^&lt;/code&gt; también puede indicar el inicio de la cadena. Por ejemplo, la siguiente expresión coincidiría con cualquier cadena que empiece con &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/^abc/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;También existe un metacaracter para indicar el fin de la cadena, el signo pesos (&lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;). Por ejemplo, la expresión &lt;code class=&quot;highlighter-rouge&quot;&gt;/abc$/&lt;/code&gt; coincidiría con cualquier cadena que termine con &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;abc&quot;&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;escape&quot;&gt;Escape&lt;/h3&gt;
-
-&lt;p&gt;Por último, tenemos el metacaracter &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; que nos permite escapar otros metacaracteres. Por ejemplo, la siguiente expresión regular coincidiría con una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;a&quot;&lt;/code&gt; seguida de un punto, seguida de una &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;b&quot;&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/a&lt;span class=&quot;se&quot;&gt;\.&lt;/span&gt;c/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Si no escapáramos el punto con el &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; coincidiría cualquier caracter en esa posición.&lt;/p&gt;
-
-&lt;p&gt;Los paréntesis (&lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;)&lt;/code&gt;) también son metacaracteres que se utilizan para agrupar y extraer información pero no los vamos a cubrir en este post porque tienen su propia complejidad.&lt;/p&gt;
-
-&lt;h3 id=&quot;atajos&quot;&gt;Atajos&lt;/h3&gt;
-
-&lt;p&gt;Existen algunos atajos que nos permiten escribir expresiones regulares más compactas:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\w&lt;/code&gt;: caracteres de palabras (&lt;code class=&quot;highlighter-rouge&quot;&gt;[a-zA-Z0-9_]&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\d&lt;/code&gt;: dígitos (&lt;code class=&quot;highlighter-rouge&quot;&gt;[0-9]&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\s&lt;/code&gt;: espacio en blanco (&lt;code class=&quot;highlighter-rouge&quot;&gt;[\t\r\n ]&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;También existen atajos de negación para los anteriores:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\W&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;[^\w]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\D&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[^\d]&lt;/code&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\S&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;[^\s]&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;banderas-flags&quot;&gt;Banderas (flags)&lt;/h3&gt;
-
-&lt;p&gt;Las banderas (flags) nos permiten darle más información a la expresión regular, por ejemplo si no queremos distinguir entre mayúsculas y minúsculas (la bandera &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;), o si queremos encontrar todas las coincidencias en vez de la primera únicamente (la bandera &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;).&lt;/p&gt;
-
-&lt;p&gt;Las banderas se ubican al final de la expresión regular, después de la última barra inclinada:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;abc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ig&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Las banderas más utilizadas son:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;: no distingue entre mayúsculas y minúsculas.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;: busca todas las coincidencias, no sólo la primera.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;nuestra-expresión-inicial&quot;&gt;Nuestra expresión inicial&lt;/h2&gt;
-
-&lt;p&gt;Volvamos a nuestra expresión regular de los números telefónicos con el formato &lt;code class=&quot;highlighter-rouge&quot;&gt;(XXX) XXX-XXXX&lt;/code&gt; y la analizamos, pero primero agreguémosle las barras inclinadas a los lados y el flag &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/&lt;span class=&quot;se&quot;&gt;\(\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\)&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;3&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;-&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;4&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/g
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\(\d{3}\)&lt;/code&gt;:  Con &lt;code class=&quot;highlighter-rouge&quot;&gt;\&lt;/code&gt; estamos escapando los paréntesis, que también son metacaracteres. &lt;code class=&quot;highlighter-rouge&quot;&gt;\d&lt;/code&gt; representa un dígito (0 a 9) y el cuantificador &lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt; indica que estamos buscando 3 ocurrencias (3 dígitos en este caso).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; \d{3}&lt;/code&gt;: Seguimos con un espacio y otros tres dígitos.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt;: No tenemos que escapar el guión porque solo es un metacaracter si está dentro de una lista (entre &lt;code class=&quot;highlighter-rouge&quot;&gt;[&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;]&lt;/code&gt;).&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;\d{4}&lt;/code&gt;: los 4 dígitos finales.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Por último tenemos la bandera &lt;code class=&quot;highlighter-rouge&quot;&gt;g&lt;/code&gt; para que busque todas las coincidencias, no solo la primera.&lt;/p&gt;
-
-&lt;h2 id=&quot;expresiones-regulares-en-javascript&quot;&gt;Expresiones regulares en JavaScript&lt;/h2&gt;
-
-&lt;p&gt;En JavaScript hay dos formas de definir una expresión regular: encerrando la expresión entre barras inclinadas (&lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt;) o utilizando la función constructora &lt;code class=&quot;highlighter-rouge&quot;&gt;RegExp&lt;/code&gt; que recibe la expresión regular como un string (sin las barras) y, opcionalmente, las banderas como segundo argumento:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(\d{3}\)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{3}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{4}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;RegExp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;\(\d{3}\) \d{3}-\d{4}&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;g&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Como puedes ver en este ejemplo, las expresiones se pueden asignar a variables, pero también las puedes pasar como argumentos de funciones o pueden ser el valor de retorno de una función.&lt;/p&gt;
-
-&lt;p&gt;Para validar si una cadena de texto cumple con el patrón de una expresión regular podemos utilizar el método &lt;code class=&quot;highlighter-rouge&quot;&gt;test&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(\d{3}\)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{3}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{4}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(123) 123-1234&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// true&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;regex1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;123 123 1234&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Algunos métodos de los strings reciben expresiones regulares. Veamos algunos de ellos:&lt;/p&gt;
-
-&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;match&lt;/code&gt; recibe una expresión regular y retorna las coincidencias en un arreglo. Por ejemplo, si queremos encontrar todas las letras minúsculas de una cadena podríamos hacer lo siguiente:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a3b4c5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;a-z&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;replace&lt;/code&gt; nos permite reemplazar parte de un string con otro string, muy útil, por ejemplo, cuando queremos ocultar información:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;(123) 123-1234&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\(\d{3}\)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d{3}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;(XXX) XXX&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// (XXX) XXX-1234&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;search&lt;/code&gt; realiza una búsqueda sobre un string y retorna la posición de la primera coincidencia o -1 si no se encuentra ninguna:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a3b4c5&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 1&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;El método &lt;code class=&quot;highlighter-rouge&quot;&gt;split&lt;/code&gt; nos permite dividir una cadena utilizando una expresión regular. Por ejemplo, si queremos separar la cadena por cualquier número:&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s2&quot;&gt;&quot;a3b4c5d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\d&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&quot;construyendo-una-expresión-regular-desde-cero&quot;&gt;Construyendo una expresión regular desde cero&lt;/h2&gt;
-
-&lt;p&gt;Como ejercicio vamos a intentar construir una expresión regular para encontrar emails válidos.&lt;/p&gt;
-
-&lt;p&gt;La característica más obvia de un email es el caracter &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;, así que podemos empezar con una expresión regular que busque cualquier secuencia de caracteres, seguido de &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;, seguido de otra secuencia de caracteres:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/.+@.+/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Utilizamos el cuantificador &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; en vez de &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; porque queremos que exista al menos un caracter a lado y lado de &lt;code class=&quot;highlighter-rouge&quot;&gt;@&lt;/code&gt;. Pero esta expresión regular permitiría muchos emails inválidos. Para empezar acepta espacios en blanco y no está verificando la terminación del dominio (&lt;code class=&quot;highlighter-rouge&quot;&gt;.com&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;.camp&lt;/code&gt;, etc.), así que arreglemos eso:&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/[&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;.-]+@[&lt;span class=&quot;se&quot;&gt;\w&lt;/span&gt;-]+&lt;span class=&quot;se&quot;&gt;\.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;a-z]&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;2,6&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;/
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Mucho mejor, pero esta expresión está lejos de ser perfecta, por ejemplo, un email no puede empezar con &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; y existen más caracteres válidos.&lt;/p&gt;
-
-&lt;p&gt;La verdad es que no hay una expresión regular perfecta en este caso. En &lt;a href=&quot;https://emailregex.com/&quot;&gt;esta página&lt;/a&gt; puedes encontrar varias alternativas, algunas increíblemente complejas aunque un poco más exactas. Sin embargo, personalmente prefiero sacrificar exactitud por simplicidad.&lt;/p&gt;
-
-&lt;h3 id=&quot;práctica&quot;&gt;Práctica&lt;/h3&gt;
-
-&lt;p&gt;Si quieres poner a prueba tus conocimientos en expresiones regulares, &lt;a href=&quot;http://play.inginf.units.it/#/&quot;&gt;esta página&lt;/a&gt; tiene varios ejercicios interesantes para practicar.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
-
-&lt;p&gt;Las expresiones regulares pueden parecer indescifrables (¡algunas lo son!) pero son muy útiles cuando necesitamos encontrar patrones en un texto. Sin embargo, escribir una expresión regular desde cero no es trivial, así que una buena idea es buscar primero algunas opciones en Internet y seleccionar una que sea simple pero que funcione bien en la mayoría de casos.&lt;/p&gt;
-
-&lt;p&gt;En este post vimos una introducción a las expresiones regulares. Espero que te haya ayudado a entender qué son, cómo funcionan y cuándo utilizarlas.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/pillars.jpg" /></entry></feed>
+&lt;p&gt;¿Qué te gustaría aprender de programación y por fuera de la programación? Cuéntanos en los comentarios!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/neo-morpheus-kungfu.jpg" /></entry></feed>
