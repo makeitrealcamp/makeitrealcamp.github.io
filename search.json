@@ -1,6 +1,30 @@
 [
   
     {
+      "title"    : "Mujeres programadoras: Ana María Sosa",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mujeres-programadoras-ana-maria-sosa/",
+      "date"     : "Nov 3, 2020",
+      "excerpt"  : "Tuvimos la oportunidad de entrevistar a Ana María Sosa para que nos contara sobre su experiencia como programadora y por qué es importante que las mujeres se involucren en este campo.",
+      "image"    : "/assets/images/ana-maria-sosa.jpg",
+      "author"   : "Diana Vanegas",
+      "gravatar" : "/assets/images/diana-vanegas.jpg"
+    } ,
+  
+    {
+      "title"    : "Mujeres programadoras: Leslie Restrepo",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mujeres-programadoras-leslie-restrepo/",
+      "date"     : "Nov 3, 2020",
+      "excerpt"  : "Le pedimos a Leslie que nos compartiera su historia como programadora y cómo Make it Real la ayudó a hacer ese sueño realidad.",
+      "image"    : "/assets/images/leslie-restrepo.jpg",
+      "author"   : "Diana Vanegas",
+      "gravatar" : "/assets/images/diana-vanegas.jpg"
+    } ,
+  
+    {
       "title"    : "Introducción al Aprendizaje Automático (Machine Learning)",
       "category" : "",
       "tags"     : "",
