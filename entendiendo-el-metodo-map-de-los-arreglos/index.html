@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Entendiendo el método .map de los arreglos </title>
+  <meta name="description" content="El método map se utiliza para transformar todos los elementos de un arreglo ejecutando una lógica u operación por cada uno de ellos. Map crea un nuevo arregl...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Entendiendo el método .map de los arreglos">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/entendiendo-el-metodo-map-de-los-arreglos/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/rock-pattern.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2020-11-11T02:00:00-05:00">
+  <meta property="article:author" content="Simón Hoyos">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/entendiendo-el-metodo-map-de-los-arreglos/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/rock-pattern.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/e37afad6dc0bf97b742c2a51e0446ab8.jpg?s=80"/>
+                    <span>Simón Hoyos</span>
+                  </div>
+                  <time class="post-date">Nov 11, 2020</time>
+                </div>
+                <h1>Entendiendo el método .map de los arreglos</h1>
+                <div class="post-body"><p>El método map se utiliza para transformar todos los elementos de un arreglo ejecutando una lógica u operación por cada uno de ellos. Map crea un nuevo arreglo y almacena el resultado de cada operación en este arreglo para no modificar o afectar el arreglo original.<!-- more --></p>
+
+<h2 id="recorreriendo-el-arreglo">Recorreriendo el Arreglo</h2>
+
+<p><strong>Ejemplo</strong> crearemos un nuevo arreglo donde tomemos cada uno de los elementos y le sumamos el valor de su índice. Para lograr esto podemos usar el siguiente código:</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="c1">// tenemos el arreglo original</span>
+<span class="kd">let</span> <span class="nx">origin</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="c1">// creamos un nuevo arreglo</span>
+<span class="kd">let</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1">// iteramos sobre el arreglo original</span>
+<span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">origin</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// tomamos el elemento actual y le sumamos el valor del índice</span>
+  <span class="kr">const</span> <span class="nx">op</span> <span class="o">=</span> <span class="nx">origin</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="nx">i</span>
+  <span class="c1">// agregamos el resultado al nuevo arreglo</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">op</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">// por último retornamos el nuevo arreglo (en este caso lo mostramos en</span>
+<span class="c1">// consola)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p>El problema con esta lógica es que por cada <strong>operación</strong> que queramos ejecutar tenemos que crear un nuevo ciclo <code class="highlighter-rouge">for</code>. Es decir, si queremos multiplicar cada número por 2 entonces tenemos que crear un nuevo <code class="highlighter-rouge">for</code> que itere por cada uno de los elementos, lo multiplique por 2, y lo agregue al nuevo arreglo.</p>
+
+<h2 id="creando-la-función-custommap">Creando la Función customMap</h2>
+
+<p>Para solucionar esto vamos a envolver la lógica del <code class="highlighter-rouge">for</code> en una <strong>función</strong>, que en este caso llamaremos <code class="highlighter-rouge">customMap</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">origin</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="c1">// creamos una nueva función</span>
+<span class="kd">function</span> <span class="nx">customMap</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">origin</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">op</span> <span class="o">=</span> <span class="nx">origin</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">+</span> <span class="nx">i</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">op</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="c1">// retornamos el nuevo arreglo</span>
+  <span class="k">return</span> <span class="nx">res</span>
+<span class="p">}</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customMap</span><span class="p">())</span>
+</code></pre>
+</div>
+
+<p>En este caso llegamos al mismo resultado. La función <code class="highlighter-rouge">customMap</code> solo nos serviría para sumar el elemento y el índice. Al tener la lógica dentro de una función nos va a dar más flexibilidad a la hora de reutilizar el código como veremos más adelante.</p>
+
+<h2 id="funciones-callback">Funciones Callback</h2>
+
+<p>Para el siguiente paso debemos entender que en JavaScript las funciones son <strong>ciudadanos de primera clase</strong>. Esto lo que quiere decir es que las funciones no solo se pueden ejecutar, sino que también se pueden almacenar en variables o, para nuestro beneficio, las podemos pasar como <strong>argumentos</strong> de otra función. Cuando pasamos una función como argumento de otra función a esta se le llama <strong>callback</strong>, por esto llamaremos el parámetro <code class="highlighter-rouge">cb</code>.</p>
+
+<p>Lo que vamos a hacer en el siguiente paso es crear una nueva función <code class="highlighter-rouge">operation</code>, que va a recibir tres argumentos:</p>
+<ol>
+  <li>Un valor que va a representar el elemento actual.</li>
+  <li>El índice actual.</li>
+  <li>El arreglo original</li>
+</ol>
+
+<p>Por último vamos a pasar la función <code class="highlighter-rouge">operation</code> como argumento de la función <code class="highlighter-rouge">customMap</code></p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">origin</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+
+<span class="kd">function</span> <span class="nx">operation</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">array</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">element</span> <span class="o">+</span> <span class="nx">index</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">customMap</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">[];</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">origin</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Invocamos la función a la que hace referencia cb, y almacenamos el valor</span>
+    <span class="c1">// que retorna en la variable op.</span>
+    <span class="c1">// Al invocar cb le pasamos tres argumentos:</span>
+    <span class="c1">// 1. origin[i]: el elemento actual.</span>
+    <span class="c1">// 2. i: el index</span>
+    <span class="c1">// 3. origin: el arreglo original</span>
+    <span class="kr">const</span> <span class="nx">op</span> <span class="o">=</span> <span class="nx">cb</span><span class="p">(</span><span class="nx">origin</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">origin</span><span class="p">)</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">op</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nx">res</span>
+<span class="p">}</span>
+
+<span class="c1">// al pasar operation solo utilizando el nombre de la función, estamos pasando</span>
+<span class="c1">// una referencia a la función y no su ejecución</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customMap</span><span class="p">(</span><span class="nx">operation</span><span class="p">))</span>
+</code></pre>
+</div>
+
+<p>En este ejemplo obtenemos el mismo resultado que en el ejemplo anterior.</p>
+
+<h2 id="ejecutando-custommap-sobre-cualquier-arreglo">Ejecutando customMap sobre Cualquier Arreglo</h2>
+
+<p>Ahora, el último paso es hacer que <code class="highlighter-rouge">customMap</code> se puede ejecutar sobre cualquier arreglo y no solo sobre el arreglo almacenado en la variable <code class="highlighter-rouge">origin</code>. Para lograr esto lo que vamos a hacer es agregar la función <code class="highlighter-rouge">customMap</code> como un método del <strong>prototipo Array</strong>.</p>
+
+<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">customMap</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">cb</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Al agregar customMap como método de este prototipo podemos usar "this" para</span>
+  <span class="c1">// hacer referencia al arreglo sobre el cual estamos corriendo el método</span>
+  <span class="kd">let</span> <span class="nx">res</span> <span class="o">=</span> <span class="p">[]</span>
+
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Pasamos como argumentos del callback el elemento actual, el índice actual</span>
+    <span class="c1">// y el arreglo sobre el cual se esta corriendo el método</span>
+    <span class="kd">let</span> <span class="nx">op</span> <span class="o">=</span> <span class="nx">cb</span><span class="p">(</span><span class="k">this</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">i</span><span class="p">,</span> <span class="k">this</span><span class="p">)</span>
+    <span class="nx">res</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">op</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nx">res</span>
+<span class="p">}</span>
+
+<span class="c1">// En este caso solo vamos a hacer uso del elemento, entonces podemos ignorar</span>
+<span class="c1">// los demás parámetros</span>
+<span class="kd">function</span> <span class="nx">multiplyByTwo</span><span class="p">(</span><span class="nx">element</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">element</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="p">}</span>
+
+<span class="c1">// En este caso solo vamos a hacer uso del elemento y el índice, entonces solo</span>
+<span class="c1">// definimos esos parámetros</span>
+<span class="kd">function</span> <span class="nx">sumWithIndex</span><span class="p">(</span><span class="nx">element</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">element</span> <span class="o">+</span> <span class="nx">index</span>
+<span class="p">}</span>
+
+<span class="kr">const</span> <span class="nx">multiplied</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">].</span><span class="nx">customMap</span><span class="p">(</span><span class="nx">multiplyByTwo</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">withIndex</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">6</span><span class="p">].</span><span class="nx">customMap</span><span class="p">(</span><span class="nx">sumWithIndex</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">multiplied</span><span class="p">)</span> <span class="c1">// [2,4,6]</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">withIndex</span><span class="p">)</span> <span class="c1">// [2,5,8]</span>
+</code></pre>
+</div>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Los métodos <code class="highlighter-rouge">map</code>, <code class="highlighter-rouge">filter</code>, <code class="highlighter-rouge">every</code>, <code class="highlighter-rouge">some</code> funcionan de forma similar. Cada uno recibe un <strong>callback</strong> como argumento, y retorna un nuevo arreglo o valor que depende de la ejecución de dicho <strong>callback</strong>. Si entendemos uno de estos métodos, aprender los demás será más fácil.</p>
+
+<p>Espero que les haya gustado este artículo, nos vemos en uno próximo.</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Entendiendo el método .map de los arreglos&url=http://blog.makeitreal.camp/entendiendo-el-metodo-map-de-los-arreglos/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/entendiendo-el-metodo-map-de-los-arreglos/&p[title]=Entendiendo el método .map de los arreglos" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/entendiendo-el-metodo-map-de-los-arreglos/&title=Entendiendo el método .map de los arreglos&summary=&source=http://blog.makeitreal.camp/entendiendo-el-metodo-map-de-los-arreglos/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=entendiendo-el-metodo-map-de-los-arreglos">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'makeitreal'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

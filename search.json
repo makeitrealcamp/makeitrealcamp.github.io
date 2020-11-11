@@ -1,6 +1,18 @@
 [
   
     {
+      "title"    : "Entendiendo el método .map de los arreglos",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/entendiendo-el-metodo-map-de-los-arreglos/",
+      "date"     : "Nov 11, 2020",
+      "excerpt"  : "El método map se utiliza para transformar todos los elementos de un arreglo ejecutando una lógica u operación por cada uno de ellos. Map crea un nuevo arreglo y almacena el resultado de cada operación en este arreglo para no modificar o afectar el arreglo original.",
+      "image"    : "/assets/images/bg-images/rock-pattern.jpg",
+      "author"   : "Simón Hoyos",
+      "gravatar" : "//www.gravatar.com/avatar/e37afad6dc0bf97b742c2a51e0446ab8.jpg?s=80"
+    } ,
+  
+    {
       "title"    : "Mujeres programadoras: Ana María Sosa",
       "category" : "",
       "tags"     : "",
