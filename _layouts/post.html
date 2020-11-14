@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url({% if page.image %}{{ page.image }}{% else %}/images/no-image.png{% endif %})"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="{% if page.gravatar %}{{ page.gravatar }}{% else %}/images/no-gravatar.png{% endif %}"/>
+                    <span>{{ page.author }}</span>
+                  </div>
+                  <time class="post-date">{{ page.date | date: "%b %-d, %Y" }}</time>
+                </div>
+                <h1>{{ page.title }}</h1>
+                <div class="post-body">{{ content }}</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text={{ page.title }}&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}&p[title]={{ page.title }}" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}&summary={{ post.excerpt }}&source={{ site.url }}{{ page.url }}" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                {% include magnet.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        {% include disqus.html %}
+      </div>
+    </div>
+  </div>
+</div>
