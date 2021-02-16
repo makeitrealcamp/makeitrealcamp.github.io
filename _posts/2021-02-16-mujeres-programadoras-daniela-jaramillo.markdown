@@ -9,9 +9,9 @@ gravatar: //www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80
 
 En esta ocasión queremos compartirles la increíble historia de Daniela, que realizó nuestro [programa TOP](http://makeitreal.camp/top?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=daniela-jaramillo){:target="\_blank"} y ahora trabaja como **Full Stack Developer** en [VILIV](https://viliv.com.co/){:target="\_blank"}.<!-- more -->
 
-El [programa TOP](http://makeitreal.camp/top?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=daniela-jaramillo){:target="\_blank"} es un programa tiempo completo de 12 semanas que requiere total concentración de los estudiantes. Esto de por sí ya es un gran reto. Sin embargo, Daniela tuvo un reto aún mayor: lo completó mientras se encontraba embarazada.
+El [programa TOP](http://makeitreal.camp/top?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=daniela-jaramillo){:target="\_blank"} es un programa tiempo completo de 12 semanas que requiere total concentración de los estudiantes, esto de por sí ya es un gran reto. Sin embargo, Daniela tuvo un reto aún mayor: lo completó mientras se encontraba embarazada.
 
-Es una historia realmente admirable de perseverancia y dedicación. Nosotros nos enteramos después así que Daniela tuvo el mismo trato que cualquier otro estudiante.
+Es una historia realmente admirable de perseverancia y dedicación. Nosotros nos enteramos después, así que Daniela tuvo el mismo trato que cualquier otro estudiante.
 
 **Lo más interesante de la historia es que Daniela dio a luz a un hermoso bebé unos días antes del Demo Day y presentó su proyecto desde la clínica!**
 
