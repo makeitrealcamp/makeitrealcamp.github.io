@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "De productor a desarrollador Web Frontend"
+title:  "De productor a desarrollador Web Frontend en Rappi"
 date:   2021-03-17 02:00:00 -0500
 author: Leonardo Omaña
 image: /assets/images/music.jpg
@@ -21,7 +21,7 @@ Un día la amiga de mi esposa nos invitó a un [Meetup de BogotáJS](https://www
 
 Después de ese evento fui a la oficina, pero ya no era lo mismo. El éxito que creía haber alcanzado en mi carrera ya no estaba. Pensaba mucho en lo cool de ese evento. Así que se me ocurrió llamar a mi esposa y decirle - Hermosa, acabo de tomar una decisión.- Ella me dijo - ¿Qué pasó? - Le dije - Voy a estudiar desarrollo de software ... He estado estudiando documentación sobre JavaScript pero no entiendo nada, necesito ir a algún lugar donde alguien me pueda enseñar y que yo pueda hacer todas las preguntas que quiera para poder avanzar lo más pronto posible porque ya no me siento satisfecho con mi vida profesional. - Me sentía estancado.
 
-La amiga de mi esposa la agregó a un chat de mujeres desarrolladoras, así que ella preguntó lugares para poder estudiar. Entre esos lugares recomendaron Make it Real, me puse a investigarlos y vi [este video con la experiencia de los estudiantes](https://www.youtube.com/watch?v=9egJqvsPBAo){:target="\_blank"}. ¡Lo vi todo! ¡No lo podía creer! ¡La gente cambió su vida! Cambió la vida de sus familias, salieron de la Matrix! O más bien, la controlaban.
+La amiga de mi esposa la agregó a un chat de mujeres desarrolladoras, así que ella preguntó lugares para poder estudiar. Entre esos lugares recomendaron [Make It Real](http://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=leo-omana), me puse a investigarlos y vi [este video con la experiencia de los estudiantes](https://www.youtube.com/watch?v=9egJqvsPBAo){:target="\_blank"}. ¡Lo vi todo! ¡No lo podía creer! ¡La gente cambió su vida! Cambió la vida de sus familias, salieron de la Matrix! O más bien, la controlaban.
 
 ## El día que tomé una alocada decisión:
 
@@ -40,6 +40,6 @@ Al principio me dio muy duro y le escribí a Germán, aunque no lo crean él me 
 
 Ya no me siento estancado. Esta industria es infinitamente grande, siempre estás aprendiendo algo nuevo y siempre tienes nuevos retos. Yo lo veo así: el camino del desarrollador es un reto constante, es como un nivel de un video juego, frustrante porque no logras pasar el nivel, pero cuando pasas ese nivel la satisfacción es enorme. Y quedas tan feliz por haber pasado ese nivel que quieres jugar el siguiente.
 
-Sigo siendo creativo, tomo muchas herramientas como productor y compositor para desarrollar. En Make it Real aprendí a aprender, ya que las tecnologías se actualizan constantemente y aveces cambian de la noche a la mañana. Lo mejor es que te sientes como en casa, con personas a las que les puedes contar tus problemas, tus metas, son personas que te mentorean constantemente en tu proceso de aprendizaje. Conocí muy buenos amigos con los que sigo hablando hoy en día. Y me encanta ver el progreso que ha tenido cada uno de ellos en sus carreras. Y sí, cuando nos podemos ayudar, nos ayudamos. A veces salimos a comer algo. Para eso son los amigos.
+Sigo siendo creativo, tomo muchas herramientas como productor y compositor para desarrollar. En [Make It Real](http://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=leo-omana) aprendí a aprender, ya que las tecnologías se actualizan constantemente y aveces cambian de la noche a la mañana. Lo mejor es que te sientes como en casa, con personas a las que les puedes contar tus problemas, tus metas, son personas que te mentorean constantemente en tu proceso de aprendizaje. Conocí muy buenos amigos con los que sigo hablando hoy en día. Y me encanta ver el progreso que ha tenido cada uno de ellos en sus carreras. Y sí, cuando nos podemos ayudar, nos ayudamos. A veces salimos a comer algo. Para eso son los amigos.
 
 P.S. Le doy gracias a Dios por haberme permitido conocer este mundo del desarrollo y a mi esposa por haber trabajado sola esos meses desde que renuncié en mi trabajo anterior hasta que conseguí mi primer trabajo como desarrollador de software. ¡La amo!
