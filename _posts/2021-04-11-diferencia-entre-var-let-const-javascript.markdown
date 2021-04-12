@@ -37,7 +37,7 @@ Sin embargo, esto se puede evitar utilizando la declaración `'use strict'` al p
 nombre = "Pedro" // error!
 ```
 
-Por otro lado, el problema de las variables declaradas con `var` es que se comportan diferente que en la mayoría de lenguajes de programación, que limitan el alcance **por bloque**, es decir, entre llaves (`{` y `}`). Por ejemplo:
+El problema de las variables declaradas con `var` es que se comportan diferente que en la mayoría de lenguajes de programación, que limitan el alcance **por bloque**, es decir, entre llaves (`{` y `}`). Esto no ocurre en JavaScript cuando utilizamos `var`. Por ejemplo:
 
 ```javascript
 if (true) {
@@ -56,6 +56,7 @@ console.log(color) // error
 ```
 
 ## let y const
+
 En ES6 (2015) se introdujeron dos nuevas formas de declarar una variable (además de muchas otras mejoras al lenguaje): `let` y `const`. A diferencia de `var`, `let` y `const` utilizan alcance por bloque:
 
 ```javascript
@@ -107,7 +108,7 @@ console.log(saludo) // undefined
 saludo = "hola"
 ```
 
-Fíjate que la variable saludo se movió al principio del archivo y se inicializó con `undefined`.
+Fíjate que la variable `saludo` se movió al principio del archivo y se inicializó con `undefined`.
 
 `let` y `const` funcionan de forma similar, pero no se inicializan con `undefined`. Por lo tanto, si modificamos el código anterior utilizando `let` o `const` nos saldría un error:
 
