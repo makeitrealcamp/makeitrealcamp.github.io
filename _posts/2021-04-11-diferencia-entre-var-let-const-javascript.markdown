@@ -3,7 +3,7 @@ layout: post
 title:  "var vs let vs const en JavaScript"
 date:   2021-04-11 02:00:00 -0500
 author: Germán Escobar
-image: /assets/images/birds.jpg
+image: /assets/images/bg-images/javascript-var-let-const.jpg
 gravatar: //www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80
 ---
 
