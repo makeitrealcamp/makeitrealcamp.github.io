@@ -3,7 +3,7 @@ layout: post
 title:  "JavaScript, jQuery y Ajax"
 date:   2014-10-12 12:00:00 -0500
 author: Germán Escobar
-image: /assets/images/bg-images/jquery.jpeg
+image: /assets/images/bg-images/jquery.jpg
 gravatar: //www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80
 redirect_from: "/2014/10/12/javascript-jquery-y-ajax/"
 ---
