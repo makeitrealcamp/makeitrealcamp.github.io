@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Github Actions (Video) </title>
+  <meta name="description" content="En este post (y video) vamos a ver cómo automatizar tareas del ciclo de desarrollo de software utilizando Github Actions.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Github Actions (Video)">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/github-actions/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/gears.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2020-11-15T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/github-actions/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/gears.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Nov 15, 2020</time>
+                </div>
+                <h1>Github Actions (Video)</h1>
+                <div class="post-body"><p>En este post (y video) vamos a ver cómo automatizar tareas del ciclo de desarrollo de software utilizando <a href="https://github.com/features/actions" target="\_blank">Github Actions</a>.<!-- more --></p>
+
+<div class="video-wrapper">
+  <iframe src="https://www.youtube.com/embed/IivR-beDCS0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<p>Con <a href="https://github.com/features/actions" target="\_blank">Github Actions</a> podemos automatizar tareas como empaquetamiento, ejecución de pruebas y despliegue de aplicaciones, entre muchas otras.</p>
+
+<p><a href="https://github.com/features/actions" target="\_blank">Github Actions</a> está disponible en todos los repositorios de Github y es similar a otras herramientas de integración continua y automatización como <a href="https://www.jenkins.io/" target="\_blank">Jenkins</a>, <a href="https://travis-ci.org/" target="\_blank">TravisCI</a>, <a href="https://circleci.com/" target="\_blank">CircleCI</a> o <a href="https://azure.microsoft.com/en-us/services/devops/pipelines/" target="\_blank">Azure Pipelines</a>.</p>
+
+<p>En mi opinión, la ventaja principal de <a href="https://github.com/features/actions" target="\_blank">Github Actions</a> es que está integrado directamente a Github y puedes ejecutar tareas automatizadas cuando ocurren eventos en tus repositorios (p.e. al hacer push, al dejar un comentario, al abrir un PR, eliminar un issue, etc.).</p>
+
+<p>El concepto principal de <a href="https://github.com/features/actions" target="\_blank">Github Actions</a> son los <strong>workflows (flujos de trabajo)</strong>. Un <strong>workflow</strong> está compuesto de unos <strong>triggers</strong> que determinan cuándo se va a ejecutar el workflow, y unos <strong>jobs</strong>, que definen qué va a hacer el workflow.</p>
+
+<p>Los <strong>workflows</strong> se ejecutan en máquinas virtuales. El plan gratuito de Github ofrece 2000 minutos de ejecución al mes, que es más que suficiente para proyectos y equipos pequeños. Si necesitas más tiempo deberás pagar por los minutos adicionales.</p>
+
+<p>Los <strong>workflows</strong> se definen en un archivo en formato YAML, que es similar a JSON pero con una sintaxis diferente: usa indentación en vez de corchetes (<code class="language-plaintext highlighter-rouge">{}</code>). Veamos un ejemplo:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Hello Workflow</span>
+
+<span class="na">on</span><span class="pi">:</span> <span class="s">workflow_dispatch</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">hello</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">echo "Hello World!"</span>
+</code></pre></div></div>
+
+<p>Las definiciones de los workflows se guardan en archivos con extensión <code class="language-plaintext highlighter-rouge">.yml</code> o <code class="language-plaintext highlighter-rouge">.yaml</code> en la carpeta <code class="language-plaintext highlighter-rouge">.github/workflows/</code> del repositorio. El archivo puede tener cualquier nombre.</p>
+
+<p>El anterior fue un ejemplo muy simple (y poco útil) de un <strong>workflow</strong> con un único <strong>job</strong> que imprime “Hello World” en la consola.</p>
+
+<p>La llave <code class="language-plaintext highlighter-rouge">name</code> define el nombre del <strong>workflow</strong>, que aparecerá en Github, en la pestaña Actions del repositorio.</p>
+
+<p>En la llave <code class="language-plaintext highlighter-rouge">on</code> van los <strong>triggers</strong> que dispararán el workflow, en este caso utilizamos <code class="language-plaintext highlighter-rouge">workflow_dispatch</code>, que agrega un botón en la interfaz de Github para ejecutarlo manualmente. Pero <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/events-that-trigger-workflows" target="\_blank">hay muchos eventos</a> que puedes utilizar para disparar tu <strong>workflow</strong>. Incluso puedes programarlos para que se ejecuten en una fecha o intervalo de tiempo.</p>
+
+<p>En la llave <code class="language-plaintext highlighter-rouge">jobs</code> va lo que queremos que pase cuando se dispare el workflow. En este caso tenemos un job llamado <code class="language-plaintext highlighter-rouge">hello</code> que utiliza una máquina virtual basada en Ubuntu y que imprime “Hello World!” en la consola.</p>
+
+<p>Este workflow lo debemos subir al repositorio en un commit y podemos ejecutarlo desde la interfaz Web de Github:</p>
+
+<p><img src="/assets/images/github-workflow-dispatch.jpg" alt="Running Github Workflow manually" class="photo border" /></p>
+
+<p>La ejecución se ve de la siguiente forma:</p>
+
+<p><img src="/assets/images/github-workflow-run.jpg" alt="Output of a Worflow run" class="photo border" /></p>
+
+<p>En este caso sólo tenemos un <strong>job</strong> llamado <code class="language-plaintext highlighter-rouge">hello</code>, pero si tuvieramos más de uno debes tener en cuenta que los <strong>jobs</strong> se corren en paralelo. En el video puedes ver un ejemplo de esto y cómo crear dependencias entre <strong>jobs</strong>.</p>
+
+<p>Si la ejecución falla verás un mensaje de error y recibirás un correo con los detalles, que es muy útil cuando tienes <strong>workflows</strong> que ejecutan pruebas o despliegan en producción.</p>
+
+<h2 id="actions">Actions</h2>
+
+<p>Pero lo interesante de Github Actions es que podemos reutilizar recetas para realizar tareas comunes como hacer checkout del repositorio, configurar el ambiente (Node.js, Ruby, etc.), verificar la calidad del código, desplegar en Heroku, etc. Existe un <a href="https://github.com/marketplace?type=actions" target="\_blank">marketplace completo de Actions</a> que puedes usar en tus <strong>workflows</strong>.</p>
+
+<p>Veamos un ejemplo que usa un <strong>action</strong> para descargar el código (<a href="https://github.com/actions/checkout" target="\_blank">actions/checkout</a>), otro action para configurar Node.js (<a href="https://github.com/actions/setup-node" target="\_blank">actions/setup-node</a>) y otro action para desplegar en Heroku (<a href="https://github.com/AkhileshNS/heroku-deploy" target="\_blank">akhileshns/heroku-deploy</a>):</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">Run tests and deploy</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span> <span class="s">master</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">deploy</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v2</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/setup-node@v1</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">node_version</span><span class="pi">:</span> <span class="s1">'</span><span class="s">14'</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm install</span>
+      <span class="pi">-</span> <span class="na">run</span><span class="pi">:</span> <span class="s">npm test</span>
+      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">akhileshns/heroku-deploy</span>
+        <span class="na">with</span><span class="pi">:</span>
+          <span class="na">heroku_api_key</span><span class="pi">:</span> <span class="s">${{ secrets.HEROKU_API_KEY }}</span>
+          <span class="na">heroku_app_name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">..."</span>
+          <span class="na">heroku_email</span><span class="pi">:</span> <span class="s2">"</span><span class="s">..."</span>
+</code></pre></div></div>
+
+<p>Si vas a utilizar información sensible en tus <strong>workflows</strong> (como en este caso la llave del API de Heroku) es mejor crear un <strong>secret</strong>, que puedes encontrar en la configuración del repositorio (settings) como se muestra en la siguiente imagen:</p>
+
+<p><img src="/assets/images/github-secrets.jpg" alt="Github Secrets" class="phot border" /></p>
+
+<p>Y una vez que hayas creado el <strong>secret</strong>, lo puedes utilizar en tus <strong>workflows</strong> de la siguiente forma reemplazando <code class="language-plaintext highlighter-rouge">HEROKU_API_KEY</code> con el nombre de tu <strong>secret</strong>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">${{ secrets.HEROKU_API_KEY }}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p><a href="https://github.com/features/actions" target="\_blank">Github Actions</a> es una poderosa y versátil herramienta que te va a permitir automatizar gran parte de tu ciclo de desarrollo de software. En Make It Real lo utilizamos en varios proyectos. De hecho, este blog se despliega automáticamente con un <strong>workflow</strong> cada vez que publicamos o hacemos cambios a un post.</p>
+
+<p>Espero que este post te haya dado una idea de lo que puedes hacer con <a href="https://github.com/features/actions" target="\_blank">Github Actions</a> y te invito a ver el video de acompañamiento en el que encontrarás más información de esta interesante herramienta.</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Github Actions (Video)&url=http://blog.makeitreal.camp/github-actions/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/github-actions/&p[title]=Github Actions (Video)" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/github-actions/&title=Github Actions (Video)&summary=&source=http://blog.makeitreal.camp/github-actions/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=github-actions">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

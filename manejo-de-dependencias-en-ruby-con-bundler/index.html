@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Manejo de dependencias en Ruby con Bundler </title>
+  <meta name="description" content="Bundler es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, Bundler no es exclusivo de Rails, lo puedes usar para manejar las depend...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Manejo de dependencias en Ruby con Bundler">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/bundler.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2016-10-17T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/bundler.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 17, 2016</time>
+                </div>
+                <h1>Manejo de dependencias en Ruby con Bundler</h1>
+                <div class="post-body"><p><a href="http://bundler.io/" target="_blank">Bundler</a> es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, <a href="http://bundler.io/" target="_blank">Bundler</a> no es exclusivo de Rails, lo puedes usar para manejar las dependencias de cualquier proyecto de Ruby.<!-- more --></p>
+
+<p>La mayoría de los proyectos en los que vas a trabajar van a utilizar una o más librerías. Una librería no es más que código empaquetado que alguien publica y que puedes utilizar en tus proyectos. Todos los lenguajes de programación tienen alguna forma de crear, distribur y usar librerías. En Ruby, a las librerías se les conoce con el nombre de <strong>gemas</strong>. Cualquier persona puede crear y publicar una gema.</p>
+
+<p>Instalar una gema en tu máquina es muy fácil, solo debes ejectuar el comando <code>gem install</code> seguido del nombre de la gema. Por ejemplo, para instalar Ruby on Rails puedes ejecutar:</p>
+
+<pre><code class="language-none">$ gem install rails</code></pre>
+
+<p>Este comando instalaría la versión más reciente de Rails, pero si deseas instalar otra versión lo puedes hacer con la opción <code>-v</code>. Por ejemplo:</p>
+
+<pre><code class="language-none">$ gem install rails -v 4.2.7</code></pre>
+
+<h2 id="bundler">Bundler</h2>
+
+<p>Instalar individualmente cada una de las gemas de las que depende un proyecto puede ser muy engorroso, además de que sería necesario mantener una documentación actualizada con la lista de gemas y la versión de cada una por si cambiamos de máquina o entra un nuevo integrante a nuestro equipo.</p>
+
+<p>El segundo problema es que puedes tener varias versiones de la misma gema instalada. Por defecto Ruby utiliza la última versión de la gema, pero es posible que esa no sea la que tu proyecto necesite.</p>
+
+<p>Veamos cómo <a href="http://bundler.io/" target="_blank">Bundler</a> nos ayuda a solucionar estos problemas.</p>
+
+<p><a href="http://bundler.io/" target="_blank">Bundler</a> es una gema, así que el primero paso es instalarlo con el siguiente comando:</p>
+
+<pre><code class="language-none">$ gem install bundler</code></pre>
+
+<p>Para definir las dependencias de nuestro proyecto creamos un archivo de texto llamado <code>Gemfile</code> (sin extensión) en el que vamos a listar las gemas de las que depende nuestro proyecto:</p>
+
+<pre><code class="language-ruby">source 'https://rubygems.org'
+
+gem 'nokogiri'
+gem 'rack', '~&gt;1.1'
+gem 'sinatra', '1.4.7'</code></pre>
+
+<p>La primera línea le dice a Bundler la URL del servidor desde donde se deben instalar las gemas. <a href="https://rubygems.org/" target="_blank">RubyGems</a> es el servicio de Ruby en donde están almacenadas todas gemas públicas.</p>
+
+<p>Las demás líneas definen las gemas de las que depende nuestro proyecto. Si omites la versión -como en el caso de nokogiri arriba- <a href="http://bundler.io/" target="_blank">Bundler</a> asume que deseas utilizar la última versión disponible. Existen varias formas de especificar la versión, veamos algunos ejemplos:</p>
+
+<pre><code class="language-ruby">gem 'rails', '4.2.7' # la versión 4.2.7 exactamente</code></pre>
+<pre><code class="language-ruby">gem 'rails', '&gt;=4.2.7' # cualquier versión igual o mayor que 4.2.7</code></pre>
+<pre><code class="language-ruby">gem 'rails', '&gt;=4.2.7', '&lt;5.0.0' # igual o mayor que 4.2.7, pero menor que 5.0.0</code></pre>
+
+<p>Los siguientes dos son casos especiales pero muy comunes, de hecho es una muy buena práctica defnir las versiones de esta forma:</p>
+
+<pre><code class="language-ruby">gem 'rails', '~&gt;4.2.7' # igual o mayor que 4.2.7, pero menor que 4.3.0</code></pre>
+<pre><code class="language-ruby">gem 'rails', '~&gt;4.2' # igual o mayor que 4.2.0, pero menor que 5.0.0</code></pre>
+
+<div class="well">
+  <p>La mayoría de gemas utilizan el siguiente esquema de versionamiento: dada una version <code>X.Y.Z</code>, <code>X</code> se incrementa cuando hay <strong>cambios mayores</strong> que son incompatibles con versiones anteriores, <code>Y</code> se incrementa cuando hay <strong>nuevas funcionalidades</strong> que son compatibles con versiones anteriores, <code>Z</code> se incrementa cuando se <strong>solucionan bugs</strong> y sigue siendo compatible con versiones anteriores. </p>
+
+  <p>A esto se le conoce como <a href="http://semver.org/" target="_blank">versionamiento semántico</a>.</p>
+</div>
+
+<h2 id="cargar-gemas-de-github-directamente">Cargar gemas de Github directamente</h2>
+
+<p>También es posible cargar una gema de su repositorio de Github directamente:</p>
+
+<pre><code class="language-ruby">gem 'papertrail', github: 'germanescobar/papertrail'</code></pre>
+
+<p>En este caso se asumiría que quieres cargar el último commit de la rama <code>master</code>, pero puedes especificar cualquier rama:</p>
+
+<pre><code class="language-ruby">gem 'papertrail', github: 'germanescobar/papertrail' branch: 'my-branch'</code></pre>
+
+<p>Esto es muy útil cuando necesitas funcionalidad que aún no está en la última versión de la gema, o cuando necesitas hacer cambios propios a la gema (p.e. para solucionar algún bug).</p>
+
+<h2 id="instalar-las-gemas">Instalar las gemas</h2>
+
+<p>Una vez que tienes las gemas definidas en el <code>Gemfile</code>, puedes instalarlas en tu máquina local con el siguiente comando:</p>
+
+<pre><code class="language-none">$ bundle install</code></pre>
+
+<p>Este comando crea un archivo <code>Gemfile.lock</code> con las versiones de las gemas que se van a utilizar en el proyecto. Es buena práctica agregar este archivo al sistema de control de versiones. Recuerda volver a ejecutar este comando cada vez que hagas cambios al archivo <code>Gemfile</code>.</p>
+
+<h2 id="configurar-la-aplicación">Configurar la aplicación</h2>
+
+<p><strong>Nota:</strong> Esto solo es necesario cuando <strong>no</strong> estás utilizando Ruby on Rails.</p>
+
+<p>El último paso es agregar la siguiente línea al punto de entrada de tu aplicación para asegurar que todas las gemas sean encontradas:</p>
+
+<pre><code class="language-ruby">require 'bundler/setup'
+# requiere las gemas que necesites normalmente
+
+# el resto de tu aplicación ...</code></pre>
+
+<p>Si tu aplicación necesita muchos <code>require</code> puedes utilizar la siguiente línea para que <a href="http://bundler.io/" target="_blank">Bundler</a> lo haga por ti:</p>
+
+<pre><code class="language-ruby">require 'bundler/setup'
+Bundler.require(:default)
+
+# el resto de tu aplicación ...</code></pre>
+
+<h2 id="usando-grupos">Usando grupos</h2>
+
+<p>Con <a href="http://bundler.io/" target="_blank">Bundler</a> puedes agrupar tus dependencias y de esa forma realizar operaciones sobre un grupo entero. Veamos el siguiente <code>Gemfile</code> de ejemplo:</p>
+
+<pre><code class="language-ruby"># Estas gemas están en el grupo :default
+gem 'nokogiri'
+gem 'sinatra'
+
+gem 'wirble', :group =&gt; :development
+
+group :test do
+  gem 'faker'
+  gem 'rspec'
+end
+
+group :test, :development do
+  gem 'capybara'
+  gem 'rspec-rails'
+end
+
+gem 'cucumber', :group =&gt; [:cucumber, :test]</code></pre>
+
+<p>Ruby on Rails utiliza la agrupación de dependencias de <a href="http://bundler.io/" target="_blank">Bundler</a> para definir diferentes ambientes de la aplicación (desarrollo, producción y pruebas). Puedes hacer lo mismo en otros proyectos que no sean de Rails.</p>
+
+<p>Por ejemplo, para requerir todas las gemas que están en el grupo <code>:default</code> y <code>:development</code> puedes hacer lo siguiente:</p>
+
+<pre><code class="language-ruby">require 'bundler/setup'
+Bundler.require(:default, :development)
+
+# el resto de tu aplicación ...</code></pre>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p><a href="http://bundler.io/" target="_blank">Bundler</a> es quizá una de las herramientas más importantes del ecosistema de Ruby, y de la programación en general porque inspiró otros sistemas de manejo de dependencias como <a href="https://www.npmjs.com/" target="_blank">npm</a> (en Node JS) y <a href="https://pypi.python.org/pypi/pip" target="_blank">pip</a> (en Python).</p>
+
+<p>Espero que este post te haya ayudado a aclarar qué es <a href="http://bundler.io/" target="_blank">Bundler</a> y su rol en Ruby on Rails; y que de esta forma puedas aprovechar todo su potencial!</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Manejo de dependencias en Ruby con Bundler&url=http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/&p[title]=Manejo de dependencias en Ruby con Bundler" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/&title=Manejo de dependencias en Ruby con Bundler&summary=&source=http://blog.makeitreal.camp/manejo-de-dependencias-en-ruby-con-bundler/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=manejo-de-dependencias-en-ruby-con-bundler">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

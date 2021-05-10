@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Practicando programación con p5.js </title>
+  <meta name="description" content="p5.js es una librería de código abierto escrita en JavaScript que nos permite crear dibujos y animaciones en el navegador utilizando código. En este post vas...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Practicando programación con p5.js">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/practicando-programacion-con-p5js/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/practicando-programacion-p5js.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2020-12-15T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/practicando-programacion-con-p5js/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/practicando-programacion-p5js.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Dec 15, 2020</time>
+                </div>
+                <h1>Practicando programación con p5.js</h1>
+                <div class="post-body"><p><a href="https://p5js.org/" target="\_blank">p5.js</a>  es una librería de código abierto escrita en JavaScript que nos permite crear dibujos y animaciones en el navegador utilizando código. En este post vas a aprender cómo empezar con esta interesante librería y algunas ideas para practicar.<!-- more --></p>
+
+<p><strong>Nota:</strong> Para aprovechar más esta librería deberías conocer los conceptos básicos de programación en JavaScript como variables, condicionales, ciclos, arreglos, funciones y objetos literales. Si no es así te recomendamos <a href="https://www.youtube.com/playlist?list=PLxyfMWnjW2kvlPTL3CXFtb40587w62wMs" target="\_blank">ver estos videos primero</a> y consultar <a href="https://guias.makeitreal.camp/javascript-i" target="\_blank">la sección de JavaScript en las guías de Make It Real</a>.</p>
+
+<p>Existe un editor de <a href="https://p5js.org/" target="\_blank">p5.js</a> que puedes abrir desde tu navegador en <a href="https://editor.p5js.org/" target="\_blank">https://editor.p5js.org/</a> y es la forma más fácil de empezar a crear con esta librería.</p>
+
+<p>Cuando abres el editor de <a href="https://p5js.org/" target="\_blank">p5.js</a> vas a encontrar código en el archivo <code class="language-plaintext highlighter-rouge">sketch.js</code>. Si oprimes el botón de ejecutar (el botón “play” rojo en la parte superior) vas a ver algo similar a lo siguiente:</p>
+
+<p><img src="/assets/images/p5js-editor.jpg" alt="Editor de p5.js" class="photo border" /></p>
+
+<p>En el código hay dos funciones: <code class="language-plaintext highlighter-rouge">setup</code> y <code class="language-plaintext highlighter-rouge">draw</code>. <code class="language-plaintext highlighter-rouge">setup</code> se invoca una única vez cuando oprimes ejecutar, mientras que <code class="language-plaintext highlighter-rouge">draw</code> se ejecuta dentro de un ciclo hasta que detienes el programa (con el botón de detener).</p>
+
+<p><a href="https://p5js.org/" target="\_blank">p5.js</a> incluye funciones para hacer todo tipo de cosas interesantes: dibujar figuras, trabjar con imágenes y video, escuchar eventos y hacer animaciones, entre muchas otras.</p>
+
+<p>La función <code class="language-plaintext highlighter-rouge">createCanvas</code> que está en <code class="language-plaintext highlighter-rouge">setup</code> crea el lienzo (canvas) sobre el que vamos a “dibujar”. Y en la función <code class="language-plaintext highlighter-rouge">draw</code> se invoca <code class="language-plaintext highlighter-rouge">background</code>, que cambia el color de fondo.</p>
+
+<p>Vamos ahora a pintar un cuadrado en nuestro lienzo utilizando la función <code class="language-plaintext highlighter-rouge">square</code>. Modifica la función <code class="language-plaintext highlighter-rouge">draw</code> para que quede de la siguiente forma.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">);</span>
+  <span class="nx">square</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Si oprimes ejecutar deberías ver un cuadrado de fondo blanco en el lienzo. La función <code class="language-plaintext highlighter-rouge">square</code> recibe 3 argumentos: los dos primeros son las coordenadas para ubicar el cuadrado y el tercero es la longitud de los lados.</p>
+
+<p>La mayoría de funciones que nos permiten dibujar reciben primero la ubicación. <a href="https://p5js.org/" target="\_blank">p5.js</a> utiliza un sistema de coordenadas que inicia en la esquina superior izquierda con la posición (0, 0), y termina en la esquina inferior con el ancho y el alto del lienzo, que es (400,400) por defecto.</p>
+
+<h2 id="creando-animaciones">Creando animaciones</h2>
+
+<p>Como el método <code class="language-plaintext highlighter-rouge">draw</code> se invoca constantemente por <a href="https://p5js.org/" target="\_blank">p5.js</a> podemos crear animaciones utilizando variables. Por ejemplo, en vez de que la coordenada <code class="language-plaintext highlighter-rouge">x</code> sea siempre 10, vamos a utilizar una variable que vamos a ir aumentando para crear la ilusión de movimiento horizontal:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">);</span>
+  <span class="nx">square</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+  <span class="nx">x</span><span class="o">++</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Si ejecutas el código vas a ver al cuadrado moviéndose por la pantalla hasta que desaparece. Mejoremos el código para que se devuelva cuando llegue a los límites:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="kd">let</span> <span class="nx">d</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">);</span>
+  <span class="nx">square</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+
+  <span class="nx">x</span> <span class="o">+=</span> <span class="nx">d</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">x</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">x</span> <span class="o">&gt;</span> <span class="mi">370</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">d</span> <span class="o">=</span> <span class="nx">d</span> <span class="o">*</span> <span class="o">-</span><span class="mi">1</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>En este código agregamos una variable <code class="language-plaintext highlighter-rouge">d</code> que va a ser 1 o -1, y que vamos a utilizar para cambiar la dirección de <code class="language-plaintext highlighter-rouge">x</code> (incrementa cuando es 1 y decrementa cuando es -1). Cuando llegamos a los límites invertimos <code class="language-plaintext highlighter-rouge">d</code>. El resultado es el siguiente:</p>
+
+<p><img src="/assets/images/p5js-animation.gif" alt="Animación de p5.js" class="photo border" /></p>
+
+<h2 id="escuchando-eventos">Escuchando eventos</h2>
+
+<p>Con <a href="https://p5js.org/" target="\_blank">p5.js</a> puedes escuchar eventos del teclado, del mouse y de aceleración (para móviles).</p>
+
+<p>Creemos un nuevo ejemplo en donde podamos mover el cuadrado con las flechas del teclado:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">background</span><span class="p">(</span><span class="mi">220</span><span class="p">);</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsDown</span><span class="p">(</span><span class="nx">LEFT_ARROW</span><span class="p">))</span> <span class="nx">x</span> <span class="o">-=</span> <span class="mi">2</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsDown</span><span class="p">(</span><span class="nx">RIGHT_ARROW</span><span class="p">))</span> <span class="nx">x</span> <span class="o">+=</span> <span class="mi">2</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsDown</span><span class="p">(</span><span class="nx">UP_ARROW</span><span class="p">))</span> <span class="nx">y</span> <span class="o">-=</span> <span class="mi">2</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">keyIsDown</span><span class="p">(</span><span class="nx">DOWN_ARROW</span><span class="p">))</span> <span class="nx">y</span> <span class="o">+=</span> <span class="mi">2</span>
+
+  <span class="nx">square</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="mi">30</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>En este ejemplo estamos usando la función <code class="language-plaintext highlighter-rouge">keyIsDown</code> que nos permite saber si una tecla está siendo oprimida. Para conocer todos los eventos que puedes <a href="https://p5js.org/reference/" target="\_blank">consultar la documentación</a>, en la sección de Eventos.</p>
+
+<p>Puedes ver el resultado de este ejemplo en <a href="https://editor.p5js.org/germanescobar/sketches/C4GEq4_ou" target="\_blank">este enlace</a>.</p>
+
+<h2 id="algunas-ideas">Algunas ideas</h2>
+
+<p>¿Qué tal si empezamos a agregar obstáculos en nuestro ejemplo anterior o si creamos un laberinto? Las posibilidades de lo que puedes hacer en <a href="https://p5js.org/" target="\_blank">p5.js</a> son infinitas.</p>
+
+<p>Una función que puede ser muy útil para tus creaciones es <code class="language-plaintext highlighter-rouge">random</code>, que permite generar valores aleatorios dentro de un rango de números. Por ejemplo, podemos generar círculos de forma aleatoria por toda la pantalla:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">random</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+    <span class="kd">const</span> <span class="nx">y</span> <span class="o">=</span> <span class="nx">random</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+    <span class="nx">circle</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Para más inspiración puedes ir al sitio de <a href="https://p5js.org/" target="\_blank">p5.js</a> donde vas a encontrar una <a href="https://p5js.org/examples/" target="\_blank">galería de ejemplos</a> y <a href="https://showcase.p5js.org/#/" target="\_blank">creaciones de otras personas</a>. También hay un canal en YouTube llamado <a href="https://www.youtube.com/user/shiffman" target="\_blank">The Coding Train</a> donde puedes aprender y seguir tutoriales de <a href="https://p5js.org/" target="\_blank">p5.js</a>.</p>
+
+<p>En una próxima entrada vamos a utilizar <a href="https://p5js.org/" target="\_blank">p5.js</a> y otra librería llamada <a href="https://ml5js.org/" target="\_blank">ml5.js</a> para hacer reconocimiento facial con Machine Learning en el navegador!</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Practicando programación con p5.js&url=http://blog.makeitreal.camp/practicando-programacion-con-p5js/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/practicando-programacion-con-p5js/&p[title]=Practicando programación con p5.js" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/practicando-programacion-con-p5js/&title=Practicando programación con p5.js&summary=&source=http://blog.makeitreal.camp/practicando-programacion-con-p5js/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=practicando-programacion-con-p5js">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Turbolinks </title>
+  <meta name="description" content="En este post vamos a ver qué es Turbolinks y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proc...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Turbolinks">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/turbolinks/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/turbolinks.jpeg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2017-06-12T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/turbolinks/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/turbolinks.jpeg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Jun 12, 2017</time>
+                </div>
+                <h1>Turbolinks</h1>
+                <div class="post-body"><p>En este post vamos a ver qué es <strong>Turbolinks</strong> y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.<!-- more --></p>
+
+<h2 id="qué-es-turbolinks">¿Qué es Turbolinks?</h2>
+
+<p><strong>Turbolinks</strong> es una gema incluida en <a href="http://rubyonrails.org/">Ruby on Rails</a> que evita tener que recargar los archivos CSS y JavaScript cada vez que oprimes un link en tu aplicación, haciendo que las aplicaciones se sientan más rápidas y ágiles en el navegador.</p>
+
+<p>La forma en que funciona es la siguiente: en vez de recargar la página cuando se oprime un link, <strong>Turbolinks</strong> intercepta el click, hace un llamado AJAX al servidor y reemplaza el cuerpo (body) de la página con la respuesta.</p>
+
+<p>Ingenioso ¿no? Con <strong>Turbolinks</strong> tus aplicaciones se van a sentir casi como si estuviesen hechas con un framework JavaScript como Angular o React, pero sin la complejidad que eso implica.</p>
+
+<p>Además, <strong>Turbolinks</strong> mantiene un caché de las últimas páginas visitadas y eso permite que esas páginas se puedan mostrar de forma inmediata sin hacer un llamado al servidor.</p>
+
+<h2 id="los-retos-de-turbolinks">Los retos de Turbolinks</h2>
+
+<p>Eso no significa que puedes ignorar <strong>Turbolinks</strong> y todo va a funcionar correctamente. Al contrario, debido a que los archivos JavaScript no se recargan cuando navegas por la aplicación, existen varios retos que debes conocer y enfrentar.</p>
+
+<h3 id="el-evento-ready">El evento ready</h3>
+
+<p>El primero reto tiene que ver con el evento <code class="language-plaintext highlighter-rouge">$(document).ready</code>, que normalmente se dispara cuando se ha terminado de cargar cada página.</p>
+
+<p>El problema es que <strong>Turbolinks</strong> no dispara ese evento <code class="language-plaintext highlighter-rouge">ready</code> cuando navegas por las páginas de la aplicación.</p>
+
+<p>Por ejemplo, si estás usando <strong>Turbolinks</strong>, la siguiente alerta se mostraría sólo la primera vez que se carga una página, pero no en los demás cambios de página:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hola Mundo</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>Esta es quizá la principal queja de las personas que no conocen <strong>Turbolinks</strong>: que su código JavaScript no se está ejecutando al pasar de una página a otra.</p>
+
+<p>La solución es utilizar el evento <code class="language-plaintext highlighter-rouge">turbolinks:load</code> que se dispara también en los cambios de página:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">turbolinks:load</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hola</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p>De esta forma la alerta se mostraría la primera vez que se carga una página, pero también en los siguientes cambios de página.</p>
+
+<h3 id="el-contexto-global">El contexto global</h3>
+
+<p>El segundo reto al utilizar <strong>Turbolinks</strong> es que todas las variables que almacenes en el contexto global de JavaScript van a permanecer entre páginas. Esto puede ser un problema o no dependiendo de la complejidad de tu código, pero es algo que debes tener en cuenta.</p>
+
+<p>Por ejemplo, si en una página definiste una variable llamada <code class="language-plaintext highlighter-rouge">miVariable</code> en el contexto global, en las siguientes páginas esa variable va a seguir existiendo.</p>
+
+<p>La forma de evitar eso es con un poco de cuidado y organización, evitando al máximo contaminar el contexto global.</p>
+
+<p>Por ejemplo, un patrón que sigo en mis aplicaciones es el siguiente. En el archivo <strong>CoffeeScript</strong> creo una clase con el código que necesito para la vista:</p>
+
+<pre><code class="language-coffeescript">class EntriesView
+  constructor: (options) -&gt;
+    # acá enlazo los eventos
+
+window.EntriesView = EntriesView
+</code></pre>
+
+<p>Y en la vista, al final, creo el objeto y le paso la información necesaria por el argumento del constructor:</p>
+
+<pre><code class="language-html">&lt;script&gt;
+  new EntriesView({});
+&lt;/script&gt;</code></pre>
+
+<p>De esa forma evito contaminar al máximo el contexto global y el código queda bien organizado.</p>
+
+<h3 id="entendiendo-el-caché">Entendiendo el caché</h3>
+
+<p><strong>Turbolinks</strong> mantiene un caché de las páginas visitadas recientemente.</p>
+
+<p>Antes de navegar a una nueva página <strong>Turbolinks</strong> guarda una copia de la página actual en caché. Esa copia no incluye los eventos o datos asociados a los elementos.</p>
+
+<p>El reto acá es el siguiente:</p>
+
+<p>Tu código JavaScript puede modificar la página cuando carga, y <strong>esa página modificada es la que se almacena en caché</strong>.</p>
+
+<p>Luego, cuando se obtiene nuevamente del caché, el código JavaScript vuelve a correr y <strong>vuelve a modificar la página</strong>. Eso puede ser lo que buscas o no, pero igual es algo que debes tener en cuenta.</p>
+
+<p>Siempre que escribas <strong>JavaScript</strong> (o <strong>CoffeeScript</strong>) piensa que esa página pudo haber sido recuperada del caché.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Es sorprendente que <strong>Turbolinks</strong> venga activado por defecto en las aplicaciones de Rails. Sería preferible que uno lo activara después de conocer cómo funciona y qué cosas tener en cuenta. Pero ahora ya lo sabes!</p>
+
+<p>¿En qué casos <strong>no</strong> recomendaría <strong>Turbolinks</strong>? Si tu aplicación requiere mucha interacción en el navegador mi recomendación sería utilizar un framework de JavaScript como React para el front.</p>
+
+<p>Si quieres más información de <strong>Turbolinks</strong> mi recomendación es leer <a href="https://github.com/turbolinks/turbolinks" target="_blank">la documentación de la gema</a>, se aprende bastante!</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Turbolinks&url=http://blog.makeitreal.camp/turbolinks/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/turbolinks/&p[title]=Turbolinks" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/turbolinks/&title=Turbolinks&summary=&source=http://blog.makeitreal.camp/turbolinks/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=turbolinks">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

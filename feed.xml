@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2021-05-10T15:53:53+00:00</updated><id>http://blog.makeitreal.camp/feed.xml</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿Cómo pedir ayuda en programación?</title><link href="http://blog.makeitreal.camp/como-pedir-ayuda-programacion/" rel="alternate" type="text/html" title="¿Cómo pedir ayuda en programación?" /><published>2021-05-09T07:00:00+00:00</published><updated>2021-05-09T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/como-pedir-ayuda-programacion</id><content type="html" xml:base="http://blog.makeitreal.camp/como-pedir-ayuda-programacion/">&lt;p&gt;Aprender a pedir ayuda es una de las habilidades más importantes que necesita un programador para acelerar su aprendizaje y avanzar su carrera. En este post vamos a ver cuándo y cómo pedir ayuda de forma efectiva.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Aunque Internet y técnicas como la del &lt;a href=&quot;https://es.wikipedia.org/wiki/M%C3%A9todo_de_depuraci%C3%B3n_del_patito_de_goma&quot;&gt;pato de goma&lt;/a&gt; son soluciones parciales para tratar de aclarar nuestras ideas y encontrar soluciones a los retos que tengamos en programación, nada supera la interacción humana y tener la perspectiva de otras personas.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, el tiempo de las personas es limitado y no es viable tener un experto disponible 100% del tiempo que conozca el contexto completo de nuestros problemas para ayudarnos a solucionarlos. Es por eso que aprender a pedir ayuda es una habilidad tan importante.&lt;/p&gt;
+
+&lt;p&gt;La mejor forma de pedir ayuda, independiente del medio por el que se haga, es dividir la pregunta en tres partes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;El contexto del problema.&lt;/li&gt;
+  &lt;li&gt;Lo que hemos intentado/investigado.&lt;/li&gt;
+  &lt;li&gt;La petición de ayuda, ¿qué necesito de la otra persona?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;el-contexto-del-problema&quot;&gt;El contexto del problema&lt;/h3&gt;
+
+&lt;p&gt;Una breve introducción al problema. ¿Qué estoy tratando de hacer? ¿Qué error me está apareciendo? Dependiendo de la complejidad puede que sea posible expresarlo en una frase o un párrafo por escrito o quizá sea necesario hacer una llamada para explicarlo.&lt;/p&gt;
+
+&lt;p&gt;Si es algo visual (p.e. algo de front end) es bueno crear un dibujo o agregarle anotaciones a una imagen para aclarar.&lt;/p&gt;
+
+&lt;h3 id=&quot;lo-que-se-ha-intentadoinvestigado&quot;&gt;Lo que se ha intentado/investigado&lt;/h3&gt;
+
+&lt;p&gt;Esto es muy importante, explicar cada solución que hemos intentado y por qué no nos ha funcionado. ¿Sale un error? ¿Cuál es el mensaje de ese error? ¿No es lo que buscamos? De esta forma evitamos que la otra persona nos sugiera soluciones que ya hemos intentado.&lt;/p&gt;
+
+&lt;h3 id=&quot;la-petición-de-ayuda&quot;&gt;La petición de ayuda&lt;/h3&gt;
+
+&lt;p&gt;¿Qué necesitamos de la otra persona? A veces es una opinión sobre un diseño o un código, a veces es ayudarnos a encontrar un problema en el código, o sugerirnos una forma de enfrentar el reto que estamos teniendo. Generalmente esta sí es una frase corta ya para darle la palabra a la otra persona.&lt;/p&gt;
+
+&lt;p&gt;Veamos un ejemplo. Imaginemos que estamos tratando de instalar MongoDB pero no nos está funcionando y queremos que Pedro (que es un experto en el tema) nos ayude a entender qué está pasando. Empecemos con la versión mala, como &lt;strong&gt;NO&lt;/strong&gt; pedir ayuda:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hola Pedro! Estoy tratando de instalar MongoDB pero no me funciona.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Acá le hacemos la vida más difícil a Pedro porque va a tener que hacernos más preguntas para entender qué está pasando. Veamos ahora cómo sería la forma correcta de pedir ayuda en este caso:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hola Pedro! Estoy tratando de instalar MongoDB en mi máquina (Ubuntu 20). Seguí los pasos que encontré en este tutorial (link al tutorial) pero en el paso 5, cuando ejecuto este comando: (comando completo) me aparece el siguiente error:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;(error completo)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lo busqué en Internet pero sólo he encontrado respuestas para Windows y Mac, sólo encontré esta respuesta (link a la respuesta) pero me sale este otro error: (error completo).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;¿Qué crees que pueda ser el problema?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esta versión tiene todo lo necesario para una ayuda efectiva, independientemente si se comunica por escrito (Slack o email) o en una llamada: el contexto, lo que se ha intentado y una pregunta concreta.&lt;/p&gt;
+
+&lt;h2 id=&quot;cuándo-y-cómo-preguntar&quot;&gt;¿Cuándo y cómo preguntar?&lt;/h2&gt;
+
+&lt;p&gt;En general es preferible preguntar lo antes posible y entender que es posible preguntar varias veces, no es como un cartucho que se gasta. Lo único es tener en cuenta el tiempo de la otra persona y que generalmente no los va a poder ayudar inmediatamente, así que darle un tiempo prudente para responder.&lt;/p&gt;
+
+&lt;p&gt;Si es un error o algo no está funcionando el rango ideal para preguntar es entre 20 y 60 minutos desde que empezaron a investigar e intentar soluciones.&lt;/p&gt;
+
+&lt;p&gt;Si tienen una nueva funcionalidad por hacer y no saben cómo enfrentarla deberían preguntar inmediatamente. Es mejor estar seguros que van a tomar el camino correcto.&lt;/p&gt;
+
+&lt;p&gt;El medio por el que pregunten no es importante, depende también de la preferencia de ustedes y la otra persona. Algunas veces que es más fácil explicar el problema en una llamada pero escribir ayuda a aclarar las ideas y ser más concisos, así que inténtenlo.&lt;/p&gt;
+
+&lt;p&gt;También pueden preguntar a varias personas a la vez para tener diferentes perspectivas. En general la programación es una disciplina donde la gente está muy dispuesta a ayudar y pueden utilizar sitios como &lt;a href=&quot;https://es.stackoverflow.com/&quot;&gt;StackOverflow en Español&lt;/a&gt;, grupos y comunidades de desarrollo, incluso &lt;a href=&quot;https://foro.makeitreal.camp/&quot;&gt;en Make It Real tenemos un foro&lt;/a&gt; donde cualquier persona puede preguntar.&lt;/p&gt;
+
+&lt;p&gt;Por último, no se preocupen si la solución termina siendo “obvia”. Siento que esto detiene a muchas personas a pedir ayuda y por eso caen en el error de enfrentarse solos contra el mundo.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Aprender a pedir ayuda es una de las habilidades más importantes del mundo actual, no sólo en programación, sino en cualquier disciplina. Requiere práctica, pero una buena fórmula es dividir nuestra pregunta en tres partes: el contexto, lo que hemos intentado y qué necesitamos de la otra persona.&lt;/p&gt;
+
+&lt;p&gt;Es importante entender que no siempre vamos a encontrar una solución, otras veces la solución va a ser “obvia”, pero siempre va a ser útil tener la perspectiva de otra persona. Eso hace el proceso de programación mucho más colaborativo de lo que parece, uno también aprende mucho de los retos de las otras personas.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Aprender a pedir ayuda es una de las habilidades más importantes que necesita un programador para acelerar su aprendizaje y avanzar su carrera. En este post vamos a ver cuándo y cómo pedir ayuda de forma efectiva.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/help.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/help.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">var vs let vs const en JavaScript</title><link href="http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/" rel="alternate" type="text/html" title="var vs let vs const en JavaScript" /><published>2021-04-11T07:00:00+00:00</published><updated>2021-04-11T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/">&lt;p&gt;En JavaScript existen 3 formas de declarar una variable: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt;. En este post veremos cuáles son sus diferencias y cuándo usar cada una.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;El resumen sería el siguiente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt;: se utiliza para declarar una constante que no se puede reasignar.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt;: se utiliza para declarar una variable que puede ser reasignada.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;: no se recomienda utilizarla, a menos de que tengamos que ejecutar el código en un ambiente que no soporte ES6 (la versión JavaScript que se lanzó en 2015&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Veamos ahora las razones por las cuáles no se recomienda usar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-problemas-con-var&quot;&gt;Los problemas con var&lt;/h2&gt;
+
+&lt;p&gt;JavaScript fue diseñado en &lt;strong&gt;10 días&lt;/strong&gt; en 1994 para hacer scripts simples en Netscape (el navegador más popular de ese momento que hoy conocemos como Firefox). Nunca se creyó que se convertiría en el lenguaje más popular 20 años después.&lt;/p&gt;
+
+&lt;p&gt;Por el afán de lanzar el lenguaje rápidamente se cometieron muchos errores de diseño. Uno de ellos fue la forma en que se declaran las variables.&lt;/p&gt;
+
+&lt;p&gt;Por un lado, es posible declarar una  variable sin utilizar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt;, lo que crea una variable global en la aplicación&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// mala práctica, crea una variable global&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Pedro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Sin embargo, esto se puede evitar utilizando la declaración &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'use strict'&lt;/code&gt; al principio del archivo:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;use strict&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;nombre&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Pedro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El problema de las variables declaradas con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt; es que se comportan diferente que en la mayoría de lenguajes de programación, que limitan el alcance &lt;strong&gt;por bloque&lt;/strong&gt;, es decir, entre llaves (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;}&lt;/code&gt;). Esto no ocurre en JavaScript cuando utilizamos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;negro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// &quot;negro&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;, la única forma de limitar el alcance es dentro de una función:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;miFuncion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;negro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;let-y-const&quot;&gt;let y const&lt;/h2&gt;
+
+&lt;p&gt;En ES6 (2015) se introdujeron dos nuevas formas de declarar una variable (además de muchas otras mejoras al lenguaje): &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt;. A diferencia de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; utilizan alcance por bloque:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;negro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El alcance por bloque se considera una mejor practica porque limita aún más el alcance de las variables, evitando colisiones con los nombres de otras variables y funciones.&lt;/p&gt;
+
+&lt;p&gt;La diferencia entre &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt;  es que, por un lado, una variable declarada con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; no se puede reasignar:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;negro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;verde&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mientras que con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; si:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;negro&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;color&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;verde&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// bien&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Por otro lado, una variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; se puede declarar sin un valor inicial, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; necesita obligatoriamente un valor inicial:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;var1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// undefined  &lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;var2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;hoisting&quot;&gt;Hoisting&lt;/h2&gt;
+
+&lt;p&gt;Otra diferencia de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt; en relación con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; es la forma en que funciona el &lt;strong&gt;hoisting&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hoisting&lt;/strong&gt; es un mecanismo por el cuál las declaraciones de variables y funciones se mueven al inicio de su alcance antes de que se ejecute el código. Por ejemplo, el siguiente codigo:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hola!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;se interpretaría de la siguiente forma cuando se ejecuta:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// undefined&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hola&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Fíjate que la variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;saludo&lt;/code&gt; se movió al principio del archivo y se inicializó con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; funcionan de forma similar, pero no se inicializan con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;undefined&lt;/code&gt;. Por lo tanto, si modificamos el código anterior utilizando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; nos saldría un error:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// error!&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;saludo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;hola!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// utilizando let&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;La diferencia entre estas tres formas de declarar variables es quizá una de las preguntas más frecuentes entre las personas que están empezando con JavaScript.&lt;/p&gt;
+
+&lt;p&gt;Si el lenguaje hubiese estado bien diseñado desde el principio nos hubiésemos evitado toda esta confusión. Sin embargo, la adición de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;let&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;const&lt;/code&gt; era necesaria para escribir código más predecible y mantenible.  Por esta razón se considera mala práctica utilizar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;var&lt;/code&gt;, aunque todavía se ve en proyectos antiguos.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Realmente es la versión de la especificación sobre la que se basa JavaScript, llamada ECMAScript. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Una variable global es una variable que es visible desde cualquier parte del programa. Las variables globales se consideran una mala práctica porque pueden ocasionar colisiones de nombres con otras variables o funciones. Estos problemas son difíciles de encontrar. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En JavaScript existen 3 formas de declarar una variable: var, let y const. En este post veremos cuáles son sus diferencias y cuándo usar cada una.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/javascript-var-let-const.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/javascript-var-let-const.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">De productor a desarrollador Web Frontend en Rappi</title><link href="http://blog.makeitreal.camp/de-productor-a-frontend-developer-en-rappi/" rel="alternate" type="text/html" title="De productor a desarrollador Web Frontend en Rappi" /><published>2021-03-17T07:00:00+00:00</published><updated>2021-03-17T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/de-productor-a-frontend-developer-en-rappi</id><content type="html" xml:base="http://blog.makeitreal.camp/de-productor-a-frontend-developer-en-rappi/">&lt;p&gt;&lt;em&gt;En este post Leonardo Omaña nos cuenta como pasó de ser director de producción a desarrollador Web, una historia realmente inspiradora. Actualmente Leonardo trabaja en &lt;a href=&quot;https://www.rappi.com/?ref=makeitreal&quot; target=&quot;\_blank&quot;&gt;Rappi&lt;/a&gt; como desarrollador Frontend&lt;/em&gt;.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;amor-a-primera-vista&quot;&gt;Amor a primera vista&lt;/h2&gt;
+
+&lt;p&gt;Estudié producción y composición musical, y tuve la oportunidad de trabajar como director de producción y locución, realizando comerciales para radio y TV. Aunque mis ingresos no eran los mejores creía haber alcanzado el éxito profesional.&lt;/p&gt;
+
+&lt;p&gt;Un día mi esposa me comentó que una amiga estaba buscando una mujer que desarrollara para la empresa donde ella trabajaba. Yo le pregunté con curiosidad - ¿Qué es desarrollar? - Me dijo - Son los que hacen las aplicaciones Web que usamos todos los días - Eso me causó mucha curiosidad, así que me puse a investigar, pero no entendía nada :(&lt;/p&gt;
+
+&lt;p&gt;Un día la amiga de mi esposa nos invitó a un &lt;a href=&quot;https://www.meetup.com/BogotaJS/&quot; target=&quot;\_blank&quot;&gt;Meetup de BogotáJS&lt;/a&gt;, era en un edificio gigante sobre la 72 con 7ma. En el lobby habían unos venados y, al entrar a las oficinas en un piso super alto, mi mente explotó. La cafetería tenía un bus donde preparaban el café! Era un lugar de ensueño, y todo el mundo se veía super feliz. Creo que fue amor a primera vista del ambiente, jajaja. ¡Nos dieron pizza gratis! Habían conferencistas que explicaban cosas que yo no entendía, y gente feliz respondiendo sobre lo que hablaban para ganar al final premios y stickers (fue la primera vez donde vi stickers pegados en los computadores de todos).&lt;/p&gt;
+
+&lt;h2 id=&quot;la-inconformidad&quot;&gt;La inconformidad&lt;/h2&gt;
+
+&lt;p&gt;Después de ese evento fui a la oficina, pero ya no era lo mismo. El éxito que creía haber alcanzado en mi carrera ya no estaba. Pensaba mucho en lo cool de ese evento. Así que se me ocurrió llamar a mi esposa y decirle - Hermosa, acabo de tomar una decisión.- Ella me dijo - ¿Qué pasó? - Le dije - Voy a estudiar desarrollo de software … He estado estudiando documentación sobre JavaScript pero no entiendo nada, necesito ir a algún lugar donde alguien me pueda enseñar y que yo pueda hacer todas las preguntas que quiera para poder avanzar lo más pronto posible porque ya no me siento satisfecho con mi vida profesional. - Me sentía estancado.&lt;/p&gt;
+
+&lt;p&gt;La amiga de mi esposa la agregó a un chat de mujeres desarrolladoras, así que ella preguntó lugares para poder estudiar. Entre esos lugares recomendaron &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=leo-omana&quot;&gt;Make It Real&lt;/a&gt;, me puse a investigarlos y vi &lt;a href=&quot;https://www.youtube.com/watch?v=9egJqvsPBAo&quot; target=&quot;\_blank&quot;&gt;este video con la experiencia de los estudiantes&lt;/a&gt;. ¡Lo vi todo! ¡No lo podía creer! ¡La gente cambió su vida! Cambió la vida de sus familias, salieron de la Matrix! O más bien, la controlaban.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-día-que-tomé-una-alocada-decisión&quot;&gt;El día que tomé una alocada decisión:&lt;/h2&gt;
+
+&lt;p&gt;Al día siguiente de haber visto ese video, en la oficina, llamé de nuevo a mi esposa y le dije - Voy a renunciar a mi trabajo y voy a ir a ese bootcamp de &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=leo-omana&quot;&gt;Make It Real&lt;/a&gt;, si no me va bien regreso a mi trabajo habitual - Y pasó algo inesperado, mi esposa me apoyó, me dijo - dale, renuncia.&lt;/p&gt;
+
+&lt;p&gt;Renuncié a mi trabajo, y el día de mi cumpleaños número 25 inicié el prework. Me sentía un poco temeroso, ¡ya tenía 25 años! Creía que no iba a lograrlo. Ya para Octubre del 2017 iniciaron las clases presenciales y estaba muy emocionado de iniciar. Fueron 3 meses super intensos, en los que realmente no entendí mucho al principio, pero a medida que pasaban los días, y conocía a mis compañeros, nos hicimos muy amigos.&lt;/p&gt;
+
+&lt;p&gt;Estudiamos entre semana en el bootcamp y los fines de semana seguíamos en la casa de uno de ellos. Era una maratón, inclusive los festivos los aprovechamos para poder avanzar. Varios de mis compañeros eran unos cracks programando, yo los llamaba “los tres magníficos”, así que me les pegué, les preguntaba de
+todo, y tuve la fortuna que me animaban y guiaban a aprender y a entender más, y así salí a flote, cada línea de código era un nuevo reto para mi, un novato que antes del bootcamp nunca había escrito una sola línea de código.&lt;/p&gt;
+
+&lt;p&gt;Cuando terminamos el bootcamp en diciembre la meta era llegar a los 20000 puntos de la plataforma y ser puño negro 👊. ¡Lo logré!. Germán me llamó y me ofreció hacer prácticas ¡en proyectos reales!. ¡Y me pagaban! Obviamente acepté 👨‍💻😁. Aproveché para iniciar mi búsqueda de trabajo oficialmente en febrero. Ese mes me rechazaron en todos los trabajos a los que aplique. Pero eso me hizo adquirir experiencia. Al salir de cada entrevista anotaba en lo que creía que me había ido mal y en lo que me había ido bien, y me puse a estudiar para mejorar esas falencias.&lt;/p&gt;
+
+&lt;p&gt;En marzo tuve otra entrevista, de hecho creo que la más fácil de todas, no tuve que ir a ninguna oficina, fue una entrevista por Internet, en la que valoraban los proyectos personales si no tenía experiencia laboral. Realmente con tantas entrevistas anteriores, esta fue muy fácil. Y en el momento menos esperado me contrataron. Una locura, estaba ya oficialmente en una fábrica de software, lo curioso es que de lo que me entrevistaron no usé casi nada. Me pusieron a estudiar nuevas tecnologías por una semana para iniciar con un proyecto nuevo.&lt;/p&gt;
+
+&lt;p&gt;Al principio me dio muy duro y le escribí a Germán, aunque no lo crean él me ayudó un día a resolver un problema que no entendía. Cada día ganaba más y más experiencia. A tal punto que pude resolver los problemas planteados y plasmarlos en código sin ayuda. Y cuando iba a otra empresa ya tenía más herramientas, la comunicación técnica era más familiar para mí. Los salarios entre las empresas fueron aumentando. Y no solo eso, he tenido la oportunidad de estar en los zapatos de los conferencistas, la comunidad es genial, dar conferencias es muy divertido. Siempre quise trabajar remoto para poder compartir más tiempo con mi familia, y lo logré, amo trabajar remoto.&lt;/p&gt;
+
+&lt;p&gt;Ya no me siento estancado. Esta industria es infinitamente grande, siempre estás aprendiendo algo nuevo y siempre tienes nuevos retos. Yo lo veo así: el camino del desarrollador es un reto constante, es como un nivel de un video juego, frustrante porque no logras pasar el nivel, pero cuando pasas ese nivel la satisfacción es enorme. Y quedas tan feliz por haber pasado ese nivel que quieres jugar el siguiente.&lt;/p&gt;
+
+&lt;p&gt;Sigo siendo creativo, tomo muchas herramientas como productor y compositor para desarrollar. En &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=leo-omana&quot;&gt;Make It Real&lt;/a&gt; aprendí a aprender, ya que las tecnologías se actualizan constantemente y aveces cambian de la noche a la mañana. Lo mejor es que te sientes como en casa, con personas a las que les puedes contar tus problemas, tus metas, son personas que te mentorean constantemente en tu proceso de aprendizaje. Conocí muy buenos amigos con los que sigo hablando hoy en día. Y me encanta ver el progreso que ha tenido cada uno de ellos en sus carreras. Y sí, cuando nos podemos ayudar, nos ayudamos. A veces salimos a comer algo. Para eso son los amigos.&lt;/p&gt;
+
+&lt;p&gt;P.S. Le doy gracias a Dios por haberme permitido conocer este mundo del desarrollo y a mi esposa por haber trabajado sola esos meses desde que renuncié en mi trabajo anterior hasta que conseguí mi primer trabajo como desarrollador de software. ¡La amo!&lt;/p&gt;</content><author><name>Leonardo Omaña</name></author><summary type="html">En este post Leonardo Omaña nos cuenta como pasó de ser director de producción a desarrollador Web, una historia realmente inspiradora. Actualmente Leonardo trabaja en Rappi como desarrollador Frontend.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/music.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/music.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mujeres programadoras: Carolina Salazar</title><link href="http://blog.makeitreal.camp/mujeres-programadoras-carolina-salazar/" rel="alternate" type="text/html" title="Mujeres programadoras: Carolina Salazar" /><published>2021-03-07T07:00:00+00:00</published><updated>2021-03-07T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/mujeres-programadoras-carolina-salazar</id><content type="html" xml:base="http://blog.makeitreal.camp/mujeres-programadoras-carolina-salazar/">&lt;p&gt;Le pedimos a Carolina que nos compartiera su historia como programadora y cómo &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-caro-salazar&quot;&gt;Make it Real&lt;/a&gt; la ayudó a hacer ese sueño realidad.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;cómo-cambió-tu-vida-make-it-real&quot;&gt;¿Cómo cambió tu vida Make It Real?&lt;/h3&gt;
+
+&lt;p&gt;Antes de &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-caro-salazar&quot; target=&quot;\_blank&quot;&gt;Make It Real&lt;/a&gt; era Ingeniera Civil y estaba buscando nuevas alternativas porque, por la pandemia, la industria de la construcción se había detenido por completo. Con &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-caro-salazar&quot; target=&quot;\_blank&quot;&gt;Make It Real&lt;/a&gt; empecé a tomar cursos de HTML, CSS y JavaScript y empecé a encontrar una nueva pasión y algo que me podría brindar una mejor estabilidad justo en los momentos de crisis que pasaba la humanidad.&lt;/p&gt;
+
+&lt;p&gt;Cuando vi &lt;a href=&quot;http://makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-caro-salazar&quot; target=&quot;\_blank&quot;&gt;el programa TOP que ofrecía Make It Real&lt;/a&gt; supe que esa sería mi meta a corto plazo para lograr el cambio y poder entrar a trabajar en la industria TIC.&lt;/p&gt;
+
+&lt;p&gt;Empecé a estudiar y cuando vi las convocatorias en agosto pensé “hagámosle que nada se pierde intentando a ver si paso” y efectivamente empecé el proceso y hasta tomé &lt;a href=&quot;https://www.youtube.com/playlist?list=PLxyfMWnjW2kvlPTL3CXFtb40587w62wMs&quot; target=&quot;\_blank&quot;&gt;el curso de JavaScript completo que dictó German&lt;/a&gt; y desarrollé todos los ejercicios para prepararme para la prueba técnica de algoritmia y finalmente cuando pasé fue una alegría inmensa.&lt;/p&gt;
+
+&lt;p&gt;Recuerdo que al iniciar el programa pensé “¿será que si voy a lograr aprender tantas cosas como las personas que salen de los cohortes anteriores y muestran sus proyectos?”, luego empecé a estudiar y desarrollar el proyecto final y luego el personal y la satisfacción de lograr unas demos tan completas y con proyectos emocionantes, interesantes y con un MVP bien desarrollado me hicieron entender que &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-caro-salazar&quot; target=&quot;\_blank&quot;&gt;Make It Real&lt;/a&gt; fue la mejor decisión que tomé, ya que logré desarrollar todas las capacidades que la industria requiere, aparte me ayudó a volverme más autónoma con respecto a mi aprendizaje y a saber como realizar una pregunta, punto muy importante para todos los desarrolladores.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-caro-salazar&quot; target=&quot;\_blank&quot;&gt;Make It Real&lt;/a&gt; ayudó a que mi confianza regresara, a que reconociera que soy capaz de lograr cualquier meta que me proponga y que cada cosa con esfuerzo y dedicación siempre será bien recompensada.&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-consejos-das-para-una-mujer-ó-persona-que-está-aprendiendo-a-programar&quot;&gt;¿Qué consejos das para una mujer ó persona que está aprendiendo a programar?&lt;/h3&gt;
+
+&lt;p&gt;A las personas que están aprendiendo a programar les diría que sean muy curiosos, que revisen siempre las aplicaciones que existen y vean con el inspector de elementos como están desarrolladas, que si ven una funcionalidad que les gusta nunca tengan miedo a desarrollarla igual, nunca se detengan si piensan que algo es muy complejo de desarrollar, mídansele a lo que sea que ya en el camino se irán cuestionando como desarrollarlo y podrán investigar e implementar las miles de soluciones que ya existen o podrán explorar y mezclar y sacar una nueva de acuerdo a la necesidad del producto, NUNCA TENGAN MIEDO A DESARROLLAR ALGO y NUNCA CREAN QUE NO SON CAPACES DE HACERLO, mentalmente todos tenemos las mismas capacidades y depende de nosotros desarrollarlas, siempre entreguen su 200% de dedicación y enamórense de lo que hacen.&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-estás-haciendo-ahora&quot;&gt;¿Qué estás haciendo ahora?&lt;/h3&gt;
+
+&lt;p&gt;En este momento estoy “living the dream”, encontré mi empleo con &lt;a href=&quot;https://www.nominapp.com/?ref=makeitreal&quot; target=&quot;\_blank&quot;&gt;Nominapp&lt;/a&gt;, estoy super feliz de trabajar con ellos, ya he estado charlando con su CTO y su cultura es lo que buscaba, su manera de trabajar tan libre y con tantas oportunidades de seguir aprendiendo y crecer, aparte logre venirme a vivir a Medellín para cambiar de ambiente y siento que mi calidad de vida mejoró por completo, la felicidad no se podrá expresar con palabras nunca; “GRACIAS MAKE IT REAL”. Cuando le conté a Nataliya me dijo es todo un sueño porque: “estás con el empleo soñado, con la empresa soñada y viviendo en la ciudad soñada”, (me siento como viviendo la vida de alguien más, todavía es de no creer todo lo que he logrado conseguir), si hace un año me contaran que iba a vivir todo esto jamás lo creería.&lt;/p&gt;
+
+&lt;h3 id=&quot;por-qué-crees-que-es-importante-que-las-mujeres-se-involucren-en-este-campo-desarrollo-web-programación&quot;&gt;¿Por qué crees que es importante que las mujeres se involucren en este campo (desarrollo web, programación)?&lt;/h3&gt;
+
+&lt;p&gt;Creo que las mujeres tenemos que seguir rompiendo la brecha de diferencia de género y debemos seguir luchando por la igualdad de género, debemos entender que ninguna profesión es para los hombres, todo está desarrollado para que el ser humano lo haga (hombres y mujeres). Aparte, como lesbiana, también quiero romper estereotipos y demostrar que cualquier persona LGBTQI puede estar donde quiera, hacer lo que quiera y vivir su vida en paz, tener experiencias bonitas y buenos recuerdos de su vida en la tierra, al final la vida es una y merecemos vivirla de la mejor manera.&lt;/p&gt;</content><author><name>Diana Vanegas</name></author><summary type="html">Le pedimos a Carolina que nos compartiera su historia como programadora y cómo Make it Real la ayudó a hacer ese sueño realidad.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/people/caro-salazar.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/people/caro-salazar.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Buscamos talento basado en conocimientos</title><link href="http://blog.makeitreal.camp/buscamos-talento-basado-en-conocimientos/" rel="alternate" type="text/html" title="Buscamos talento basado en conocimientos" /><published>2021-03-01T07:00:00+00:00</published><updated>2021-03-01T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/buscamos-talento-basado-en-conocimientos</id><content type="html" xml:base="http://blog.makeitreal.camp/buscamos-talento-basado-en-conocimientos/">&lt;p&gt;Ayer tuvimos el placer de tener con nosotros a &lt;a href=&quot;https://www.linkedin.com/in/santiagovelezr/&quot; target=&quot;\_blank&quot;&gt;Santiago Velez&lt;/a&gt;, CEO de &lt;a href=&quot;https://smartalentit.com/&quot; target=&quot;\_blank&quot;&gt;Smart Talent&lt;/a&gt; en nuestro ciclo de Webinars sobre el desarrollo profesional en &lt;a href=&quot;http://makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=smart-talent&quot; target=&quot;\_blank&quot;&gt;Make It Real&lt;/a&gt;&lt;!-- more --&gt;, un ciclo que hacemos en nuestro &lt;a href=&quot;https://www.youtube.com/channel/UCcHBDdSPzOaWMsLFyO_HJYw&quot; target=&quot;\_blank&quot;&gt;canal de YouTube&lt;/a&gt; con nuestros aliados para conversar sobre las posibilidades del mundo laboral, las búsquedas que hacen hoy las empresas de tecnologías y, por supuesto, cómo podemos mejorar nuestros perfiles para poder aplicar a los trabajos queramos!&lt;/p&gt;
+
+&lt;p&gt;Santiago es Ingeniero Electrónico, hace un año y ocho meses está al frente de esta compañía que busca los mejores talentos en la industria tecnológica y nos advierte: “no miramos sus hojas de vida, sí sus capacidades técnicas y habilidades blandas”.&lt;/p&gt;
+
+&lt;p&gt;Santiago nos habló desde el corazón, nos contó cómo su carrera fue migrando hasta llegar donde hoy está, ayudando a conectar gente para que encuentren el trabajo de sus sueños. También nos habló de las distintas habilidades que tenemos como personas y cómo identificarlas para poder potenciarlas.&lt;/p&gt;
+
+&lt;p&gt;Por último, Santiago recalcó la importancia de seguir nuestro mapa de vida y hacernos las siguientes preguntas: ¿Le damos tiempo a entender qué queremos lograr? ¿Cuál sería nuestro trabajo ideal? ¿Cuál es el impacto que queremos lograr en las empresas por las que vamos transitando? ¿Qué calidad de vida queremos tener? Y nos recomienda una herramienta para lograrlo: &lt;a href=&quot;https://es.wikipedia.org/wiki/Ikigai&quot; target=&quot;\_blank&quot;&gt;IKIAGI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://es.wikipedia.org/wiki/Ikigai&quot; target=&quot;\_blank&quot;&gt;IKIAGI&lt;/a&gt; es un concepto japonés que nos lleva a buscar esas razones de por qué hacemos lo que hacemos, a encontrar ese propósito que le de un significado a nuestras vidas.&lt;/p&gt;</content><author><name>Pía Giudice</name></author><summary type="html">Ayer tuvimos el placer de tener con nosotros a Santiago Velez, CEO de Smart Talent en nuestro ciclo de Webinars sobre el desarrollo profesional en Make It Real</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/conocimiento-datos.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/conocimiento-datos.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mujeres programadoras: Daniela Jaramillo</title><link href="http://blog.makeitreal.camp/mujeres-programadoras-daniela-jaramillo/" rel="alternate" type="text/html" title="Mujeres programadoras: Daniela Jaramillo" /><published>2021-02-16T07:00:00+00:00</published><updated>2021-02-16T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/mujeres-programadoras-daniela-jaramillo</id><content type="html" xml:base="http://blog.makeitreal.camp/mujeres-programadoras-daniela-jaramillo/">&lt;p&gt;En esta ocasión queremos compartirles la increíble historia de Daniela, que realizó nuestro &lt;a href=&quot;http://makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=daniela-jaramillo&quot; target=&quot;\_blank&quot;&gt;programa TOP&lt;/a&gt; y ahora trabaja como &lt;strong&gt;Full Stack Developer&lt;/strong&gt; en &lt;a href=&quot;https://viliv.com.co/&quot; target=&quot;\_blank&quot;&gt;VILIV&lt;/a&gt;.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;El &lt;a href=&quot;http://makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=daniela-jaramillo&quot; target=&quot;\_blank&quot;&gt;programa TOP&lt;/a&gt; es un programa tiempo completo de 12 semanas que requiere total concentración de los estudiantes, esto de por sí ya es un gran reto. Sin embargo, Daniela tuvo un reto aún mayor: lo completó mientras se encontraba embarazada.&lt;/p&gt;
+
+&lt;p&gt;Es una historia realmente admirable de perseverancia y dedicación. Nosotros nos enteramos después, así que Daniela tuvo el mismo trato que cualquier otro estudiante.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Lo más interesante de la historia es que Daniela dio a luz a un hermoso bebé unos días antes del Demo Day y presentó su proyecto desde la clínica!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/daniela-jaramillo-2.jpg&quot; alt=&quot;Daniela Jaramillo&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Presentando su proyecto en el Demo Day desde la clínica!.&lt;/p&gt;
+
+&lt;p&gt;En menos de tres meses encontró empleo como desarrolladora Full Stack en &lt;a href=&quot;https://viliv.com.co/&quot; target=&quot;\_blank&quot;&gt;VLIV&lt;/a&gt;, una iniciativa del Grupo SURA y Bancolombia para ofrecer servicios digitales a otras empresas. La ventaja de los empleos en programación es que son muy flexibles y Daniela puede balancear su trabajo con las necesidades de su bebé.&lt;/p&gt;
+
+&lt;p&gt;Por último, Daniela resalta la ayuda que recibió de su pareja que la apoyó en todo el proceso y estuvo ahí pendiente para que ella se pudiera concentrar en el programa y en los proyectos. Felicitaciones a los dos!&lt;/p&gt;
+
+&lt;p&gt;Es una historia asombrosa con un gran mensaje para todas las mujeres que están pensando ingresar en el mundo de la programación: no hay excusa para no hacerlo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/daniela-jaramillo.jpg&quot; alt=&quot;Daniela Jaramillo&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Daniela con su bebé trabajando en su proyecto final desde la clínica.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En esta ocasión queremos compartirles la increíble historia de Daniela, que realizó nuestro programa TOP y ahora trabaja como Full Stack Developer en VILIV.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/daniela-jaramillo.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/daniela-jaramillo.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">¿Cuál es la diferencia entre Java y JavaScript?</title><link href="http://blog.makeitreal.camp/cual-es-la-diferencia-entre-java-y-javascript/" rel="alternate" type="text/html" title="¿Cuál es la diferencia entre Java y JavaScript?" /><published>2021-01-30T07:00:00+00:00</published><updated>2021-01-30T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/cual-es-la-diferencia-entre-java-y-javascript</id><content type="html" xml:base="http://blog.makeitreal.camp/cual-es-la-diferencia-entre-java-y-javascript/">&lt;p&gt;Java y JavaScript son dos lenguajes de programación completamente diferentes. En este post explicaremos cuál es la diferencia y por qué JavaScript incluye la palabra Java en su nombre.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Java es un lenguaje de programación creado por &lt;a href=&quot;https://es.wikipedia.org/wiki/Sun_Microsystems&quot; target=&quot;\_blank&quot;&gt;Sun Microsystems (adquirido por Oracle)&lt;/a&gt; a principios de los noventas y lanzado en 1995 con una propuesta muy revolucionaria: permitía ejecutar el mismo código en diferentes sistemas operativos&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por esa misma época, la compañía detrás de &lt;a href=&quot;https://es.wikipedia.org/wiki/Netscape_Navigator&quot; target=&quot;\_blank&quot;&gt;Netscape&lt;/a&gt;, el navegador más popular en ese momento, necesitaba un lenguaje de programación simple para incluir en el navegador. Por eso contrataron a &lt;a href=&quot;https://es.wikipedia.org/wiki/Brendan_Eich&quot; target=&quot;\_blank&quot;&gt;Brendan Eich&lt;/a&gt;, quien creó un lenguaje en 10 días al que llamaron &lt;strong&gt;LiveScript&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;LiveScript&lt;/strong&gt; estaba basado en otro lenguaje de programación llamado &lt;a href=&quot;https://es.wikipedia.org/wiki/Scheme&quot; target=&quot;\_blank&quot;&gt;Scheme&lt;/a&gt;, nada que ver con Java. Pero Netscape decidió aprovechar la popularidad de Java: &lt;strong&gt;renombraron LiveScript a JavaScript y alteraron su sintaxis para que se pareciera más a la de Java&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se puede decir que el nombre JavaScript no fue más que una movida de mercadeo de &lt;a href=&quot;https://es.wikipedia.org/wiki/Netscape_Navigator&quot; target=&quot;\_blank&quot;&gt;Netscape&lt;/a&gt; que hoy genera mucha confusión y que obliga a los que enseñamos JavaScript a escribir posts que aclaren la situación 😉.&lt;/p&gt;
+
+&lt;p&gt;Paradójicamente, desde hace algunos años JavaScript superó a Java y se convirtió en el lenguaje más popular de la actualidad, así que Java puede que sea ahora el que se beneficie del nombre 🤷🏽‍♂️.&lt;/p&gt;
+
+&lt;p&gt;Desde el punto de vista técnico Java y JavaScript tienen las siguientes diferencias y similitudes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Java es un lenguaje compilado&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, JavaScript es un lenguaje interpretado. Ver post &lt;a href=&quot;/lenguajes-compilados-e-interpretados/&quot;&gt;Lenguajes compilados e interpretados&lt;/a&gt; para más información.&lt;/li&gt;
+  &lt;li&gt;Los dos son &lt;strong&gt;orientados a objetos&lt;/strong&gt;. Java utiliza &lt;strong&gt;clases&lt;/strong&gt;, JavaScript utiliza &lt;strong&gt;prototipos&lt;/strong&gt; (aunque ahora también soporta clases).&lt;/li&gt;
+  &lt;li&gt;Java es &lt;strong&gt;estático&lt;/strong&gt; (se debe definir el tipo de cada variable explícitamente), JavaScript es &lt;strong&gt;dinámico&lt;/strong&gt; (el tipo de las variables se infiere en tiempo de ejecución).&lt;/li&gt;
+  &lt;li&gt;Java es &lt;strong&gt;fuertemente tipado&lt;/strong&gt; (no hace conversión de tipos implícitamente), JavaScript es &lt;strong&gt;débilmente tipado&lt;/strong&gt; (hace conversión de tipos implícitamente)&lt;/li&gt;
+  &lt;li&gt;JavaScript es el único lenguaje que se puede ejecutar en todos los navegadores. Sin embargo, ahora también podemos ejecutarlo por fuera del navegador (como Java) utilizando &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pero la principal enseñanza de este post es la siguiente: &lt;strong&gt;nunca decir Java cuando nos refiramos a JavaScript&lt;/strong&gt;. Es más demorado decir JavaScript completo, pero nos exponemos menos. Muchos desarrolladores sufren un microinfarto cuando escuchan a alguien decir Java refiriéndose a JavaScript.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;En otros lenguajes como C y C++ era necesario adaptar y compilar el código para cada sistema operativo. Java introdujo la idea de la máquina virtual, que se encarga de solucionar las diferencias entre los sistemas operativos. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Realmente Java es un lenguaje compilado e interpretado a la vez, pero esto lo explicamos mejor en el post referenciado. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Java y JavaScript son dos lenguajes de programación completamente diferentes. En este post explicaremos cuál es la diferencia y por qué JavaScript incluye la palabra Java en su nombre.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/java-vs-javascript.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/java-vs-javascript.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">¿Qué son y cómo funcionan los protocolos de red?</title><link href="http://blog.makeitreal.camp/que-son-y-como-funcionan-los-protocolos-de-red/" rel="alternate" type="text/html" title="¿Qué son y cómo funcionan los protocolos de red?" /><published>2021-01-20T07:00:00+00:00</published><updated>2021-01-20T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/que-son-y-como-funcionan-los-protocolos-de-red</id><content type="html" xml:base="http://blog.makeitreal.camp/que-son-y-como-funcionan-los-protocolos-de-red/">&lt;p&gt;Así como los humanos utilizamos protocolos para facilitar la comunicación, los computadores necesitan reglas específicas para comunicarse entre ellos. En este post vamos a ver qué son, cómo funcionan y cómo crear nuestro propio protocolo!&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Un &lt;strong&gt;protocolo de red&lt;/strong&gt; no es más que un documento que define las reglas y la estructura de los mensajes que se van a intercambiar entre dos o más computadores. A estos documentos se les conoce como RFC (Request For Comments)&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Quizá hayas escuchado de protocolos como &lt;a href=&quot;/el-protocolo-http/&quot; target=&quot;\blank&quot;&gt;HTTP (HyperText Transfer Protocol)&lt;/a&gt;, que se utiliza cada vez que abres una página desde un navegador, o &lt;a href=&quot;https://es.wikipedia.org/wiki/Protocolo_para_transferencia_simple_de_correo&quot; target=&quot;\_blank&quot;&gt;SMTP (Simple Mail Transfer Protocol)&lt;/a&gt;, que se utiliza para enviar y recibir correos electrónicos. Estos protocolos son abiertos, así que puedes consultar los documentos (RFC) que los describen en &lt;a href=&quot;https://tools.ietf.org/html/rfc2616&quot; target=&quot;\_blank&quot;&gt;este&lt;/a&gt; y &lt;a href=&quot;https://tools.ietf.org/html/rfc5321&quot; target=&quot;\_blank&quot;&gt;este&lt;/a&gt; enlace respectivamente.&lt;/p&gt;
+
+&lt;p&gt;HTTP y SMTP son protocolos de alto nivel. Los mensajes de estos protocolos viajan sobre otros protocolos de más bajo nivel como &lt;a href=&quot;https://es.wikipedia.org/wiki/Protocolo_de_control_de_transmisi%C3%B3n&quot; target=&quot;\_blank&quot;&gt;TCP (Transfer Control Protocol)&lt;/a&gt; e &lt;a href=&quot;https://es.wikipedia.org/wiki/Protocolo_de_internet&quot; target=&quot;\_blank&quot;&gt;IP (Internet Protocol)&lt;/a&gt;, que a su vez viajan sobre otros protocolos como &lt;a href=&quot;https://es.wikipedia.org/wiki/Ethernet&quot; target=&quot;\_blank&quot;&gt;Ethernet&lt;/a&gt; (para redes cableadas) o &lt;a href=&quot;https://es.wikipedia.org/wiki/Wifi&quot; target=&quot;\_blank&quot;&gt;WiFi&lt;/a&gt; (redes inalámbricas)&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;La siguiente animación muestra un ejemplo de cómo se encapsulan los mensajes de un protocolo en mensajes de otro protocolo de más bajo nivel para enviar enviar información de un origen a un destino (en este caso se va a enviar un fragmento de código HTML):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/network-layers.gif&quot; alt=&quot;Capas de Red&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Los mensajes de un protocolo se transmiten dentro de los mensajes de protocolos de más bajo nivel.&lt;/p&gt;
+
+&lt;p&gt;El código HTML se encapsula en un mensaje HTTP, que es un protocolo de &lt;strong&gt;la capa de aplicación&lt;/strong&gt;. El mensaje HTTP se encapsula en un mensaje TCP, que es un protocolo de &lt;strong&gt;la capa de transporte&lt;/strong&gt;. El mensaje TCP se encapsula en un mensaje IP, que es un protocolo de &lt;strong&gt;la capa de Internet&lt;/strong&gt;. Por último, el mensaje IP se encapsula en el protocolo de red (p.e. alguno de los protocolos Wifi) y se envía al destino.&lt;/p&gt;
+
+&lt;p&gt;Cuando el mensaje llega al destino ocurre el proceso contrario: la capa de red recibe el mensaje y le pasa el cuerpo (el mensaje IP) a la capa de Internet, que a su vez le pasa el cuerpo (el mensaje TCP) a la capa de transporte, y así sucesivamente.&lt;/p&gt;
+
+&lt;p&gt;Si el mensaje del protocolo de alto nivel es muy largo, es posible que la capa de transporte (en este caso TCP) divida el mensaje y lo envíe por partes, para después ensamblarlo en el destino.&lt;/p&gt;
+
+&lt;p&gt;La mayoría de mensajes de un protocolo tienen un encabezado y (opcionalmente) un cuerpo. Por ejemplo, un mensaje de &lt;strong&gt;respuesta HTTP&lt;/strong&gt; incluye la versión del protocolo, el código de respuesta (p.e. 200 OK o 404 Not Found), información adicional como el tipo de contenido que va en el cuerpo, y la longitud del cuerpo, entre otros:&lt;/p&gt;
+
+&lt;div class=&quot;language-http highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;HTTP&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200&lt;/span&gt; &lt;span class=&quot;ne&quot;&gt;OK&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;wikipedia.org&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Content-Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;text/html&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;Content-Lenght&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2026&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&amp;gt;&lt;/span&gt;Hola Mundo&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; El protocolo HTTP es el protocolo más importante que debería conocer todo desarrollador Web. Si quieres aprender más de este protocolo te recomiendo &lt;a href=&quot;/el-protocolo-http/&quot; target=&quot;\_blank&quot;&gt;este post del blog de Make it Real&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Esta arquitectura en capas brinda mucha flexibilidad porque cada capa se encarga de una parte específica de la comunicación. Los protocolos de alto nivel no se preocupan de cómo se transportan sus mensajes, y los protocolos de bajo nivel no se preocupan de la información que están transportando.&lt;/p&gt;
+
+&lt;p&gt;A los mensajes también se les conoce con el nombre de &lt;strong&gt;paquetes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;creemos-nuestro-propio-protocolo&quot;&gt;Creemos nuestro propio protocolo&lt;/h2&gt;
+&lt;p&gt;Vamos a crear un protocolo muy simple que permita a dos computadores (un cliente y un servidor) saludarse y despedirse. Las características de nuestro protocolo van a ser las siguientes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Va a ser de alto nivel (de aplicación).&lt;/li&gt;
+  &lt;li&gt;Va a ser de petición-respuesta, es decir que el cliente envía un mensaje y el servidor responde con un mensaje de vuelta.&lt;/li&gt;
+  &lt;li&gt;Va a ser un protocolo sin estado, es decir, que cada mensaje va a ser independiente del anterior.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Las reglas de nuestro protocolo son las siguientes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cuando el cliente envía el texto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HOLA&lt;/code&gt;, el servidor responderá con el texto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;BUENAS&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Cuando el cliente envíe el texto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHAO&lt;/code&gt;, el servidor responderá con el texto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ADIOS&lt;/code&gt; y cerrará la conexión.&lt;/li&gt;
+  &lt;li&gt;Si el cliente envía un texto diferente a los anteriores el servidor responderá con el texto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NO ENTIENDO&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;¡Eso es todo! Cualquier persona puede implementar un cliente o un servidor de este protocolo en cualquier lenguaje de programación. Vamos a implementar un servidor en &lt;a href=&quot;https://nodejs.org/&quot; target=&quot;\_blank&quot;&gt;Node.js&lt;/a&gt; que implemente este protocolo.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;net&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;net&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;net&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createServer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// convertimos la data en texto y quitamos el salto de línea&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;utf8&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[\r\n]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;+/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;HOLA&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;BUENAS&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\r&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;CHAO&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ADIOS&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\r&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;NO ENTIENDO&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\r&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1337&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;127.0.0.1&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para crear nuestro servidor en Node.js requerimos primero el módulo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;net&lt;/code&gt;, que nos permite interactuar con la capa de transporte (TCP). Después creamos el servidor que recibe conexiones a través de &lt;strong&gt;sockets&lt;/strong&gt; por los que vamos a recibir y enviar los mensajes de nuestro protocolo. Por último prendemos el servidor, que se va a quedar escuchando las conexiones que lleguen al puerto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1337&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Un &lt;strong&gt;socket&lt;/strong&gt; es una combinación de una IP y un &lt;strong&gt;puerto&lt;/strong&gt; (en este caso el puerto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1337&lt;/code&gt;). Los &lt;strong&gt;puertos&lt;/strong&gt; no son más que divisiones lógicas en la red que permiten a los computadores conectarse con más de un computador/servidor a la vez.&lt;/p&gt;
+
+&lt;p&gt;Para iniciar el servidor ejecutamos el comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node&lt;/code&gt; seguido del nombre del archivo, por ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;node index.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para detenerlo debes oprimir &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+C&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para probar el servidor vamos a conectarnos a través de &lt;a href=&quot;https://es.wikipedia.org/wiki/Telnet&quot; target=&quot;\_blank&quot;&gt;Telnet&lt;/a&gt;, que es una aplicación de la línea de comandos que va a abrir una conexión TCP al host y puerto que especifiquemos en los argumentos. En este caso nos vamos a conectar a nuestro propio computador, al puerto 1337:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;telnet localhost 1337
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si te aparece un mensaje de error diciendo que el comando no fue encontrado deberás primero instalarlo para tu sistema operativo&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. De lo contrario deberías ver algo similar a lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Trying ::1...
+telnet: connect to address ::1: Connection refused
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is &lt;span class=&quot;s1&quot;&gt;'^]'&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ahora podemos enviar algunos mensajes y ver las respuestas. Por ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;HOLA
+BUENAS
+HELLO
+NO ENTIENDO
+CHAO
+ADIOS
+Connection closed by foreign host.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Podemos seguir extendiendo nuestro protocolo con otros tipos de mensajes y organizar esta información en un documento para compartirlo con el mundo, y que otras personas puedan crear servidores o clientes a partir de nuestro protocolo :)&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Puedes pensar en los protocolos de red como las aplicaciones de Internet. Además de TCP e IP, que se utilizan para enrutar los mensajes de protocolos de más alto nivel, el primer protocolo que impulsó el crecimiento de Internet fue SMTP (correo electrónico).&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, no fue sino hasta principios de los 90’s, con la creación del protocolo HTTP y la creación de navegadores gráficos que realmente se disparó la adopción. Desafortunadamente, fue un crecimiento muy rápido y descontrolado, lo que ocasionó la burbuja del año 2000 (también conocida como la &lt;a href=&quot;https://es.wikipedia.org/wiki/Burbuja_puntocom&quot; target=&quot;\_blank&quot;&gt;burbuja del punto com&lt;/a&gt;), pero con el tiempo el mercado fue madurando y hoy tenemos todo tipo de aplicaciones interesantes sobre esta increíble tecnología que es Internet.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;El nombre es un remanente histórico. Antes estos documentos eran literal un solicitud de comentarios, pero hoy son documentos oficiales que estandarizan los protocolos. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Ethernet y WiFi no son protocolos como tal, pero se usan estos términos para hablar del conjunto de protocolos que tienen el mismo fin. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Puedes hacer una búsqueda en Internet de “telnet” seguido de tu sistema operativo, por ejemplo “telnet windows”. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Así como los humanos utilizamos protocolos para facilitar la comunicación, los computadores necesitan reglas específicas para comunicarse entre ellos. En este post vamos a ver qué son, cómo funcionan y cómo crear nuestro propio protocolo!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/protocolo-de-red.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/protocolo-de-red.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Reconocimiento facial con ml5.js</title><link href="http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/" rel="alternate" type="text/html" title="Reconocimiento facial con ml5.js" /><published>2020-12-20T07:00:00+00:00</published><updated>2020-12-20T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js</id><content type="html" xml:base="http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/">&lt;p&gt;En este post vamos a utilizar &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; y una librería de Machine Learning llamada &lt;a href=&quot;https://ml5js.org/&quot; target=&quot;\_blank&quot;&gt;ml5.js&lt;/a&gt; para implementar una solución de reconocimiento facial en el navegador!&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;La solución aprenderá a identificar personas por su nombre:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/face-recognition.gif&quot; alt=&quot;Face Recognition&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;La solución final me reconoce correctamente! A la derecha está el resultado del entrenamiento a la red neuronal.&lt;/p&gt;
+
+&lt;p&gt;Los pasos que vamos a implementar en este tutorial son los siguientes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Mostrar el video capturado por la cámara en la pantalla utilizando &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Detectar las caras en el video utilizando &lt;a href=&quot;https://ml5js.org/&quot; target=&quot;\_blank&quot;&gt;ml5.js&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Entrenar un clasificador facial (una red neuronal) para que identifique el nombre de la persona.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Puedes seguir cada paso de este tutorial en un &lt;a href=&quot;https://editor.p5js.org/&quot; target=&quot;\_blank&quot;&gt;editor de p5.js&lt;/a&gt; o puedes ver y ejecutar el código final &lt;a href=&quot;https://editor.p5js.org/germanescobar/sketches/sEc369bfv&quot; target=&quot;\_blank&quot;&gt;en este enlace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;1-mostrar-el-video-de-la-cámara&quot;&gt;1. Mostrar el video de la cámara&lt;/h2&gt;
+
+&lt;p&gt;Vamos a modificar el código inicial de &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; para capturar el video de la cámara utilizando la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createCapture&lt;/code&gt; y después lo mostramos en el navegador con la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;image&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;createCanvas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;900&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;520&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createCapture&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;VIDEO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;640&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;520&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hide&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Si aún no conoces &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; te recomendamos &lt;a href=&quot;/practicando-programacion-con-p5js/&quot; target=&quot;\_blank&quot;&gt;ver este post&lt;/a&gt; primero.&lt;/p&gt;
+
+&lt;p&gt;Al ejecutar este código deberías ver el video de la cámara en el lienzo de p5.js (es posible que primero te pida permisos para acceder a la cámara).&lt;/p&gt;
+
+&lt;h2 id=&quot;2-detección-facial&quot;&gt;2. Detección Facial&lt;/h2&gt;
+
+&lt;p&gt;El siguiente paso es detectar las caras en el video y dibujar un rectángulo alrededor de ellas. Para eso debes abrir el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.html&lt;/code&gt; y agregar la librería de &lt;a href=&quot;https://ml5js.org/&quot; target=&quot;\_blank&quot;&gt;ml5.js&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://unpkg.com/ml5@0.6.0/dist/ml5.js&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Volvamos a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sketch.js&lt;/code&gt;  y escribamos el código que va a identificar las caras:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detector&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;imgSize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detectionOptions&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;withLandmarks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;withDescriptors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;detector&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ml5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;faceApi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detectionOptions&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Face API Model Loaded!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;detectFace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;detectFace&lt;/code&gt; es la que va a hacer la detección facial utilizando el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;detect&lt;/code&gt; del &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;detector&lt;/code&gt; que inicializamos en el código anterior:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detectFace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;detector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;detect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;c1&quot;&gt;// caras detectadas!!&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createBoxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// llamamos a este método continuamente&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;detectFace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Este código utiliza una función llamada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createBoxes&lt;/code&gt; que va a crear un arreglo de cajas:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createBoxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alignedRect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detections&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alignedRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alignedRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alignedRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alignedRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alignedRect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Por cada cara detectada el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createBoxes&lt;/code&gt; crea un objeto con las coordenadas y longitudes que después vamos a utilizar en el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt;. Fíjate que también hay una llave &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;label&lt;/code&gt; que después vamos a utilizar para guardar el nombre de la persona que está en esa caja.&lt;/p&gt;
+
+&lt;p&gt;Modifiquemos el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt; para pintar las cajas:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawBoxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawBoxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;noFill&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;stroke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;161&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;95&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;251&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;strokeWeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;rect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;nx&quot;&gt;strokeWeight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;textSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;textAlign&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;CENTER&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;SI ejecutas el código hasta acá deberías ver un rectángulo sobre cada cara que se encuentre en la pantalla:&lt;/p&gt;
+
+&lt;p&gt;Puedes también consultar el código completo hasta este punto &lt;a href=&quot;https://editor.p5js.org/germanescobar/sketches/7PMaiV2Ha&quot; target=&quot;\_blank&quot;&gt;en este enlace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;3-clasificación-facial&quot;&gt;3. Clasificación Facial&lt;/h2&gt;
+
+&lt;p&gt;Vamos a entrenar una red neuronal para que clasifique a las personas por nombre. Este proceso se divide en 3 pasos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tomar varias fotos de cada persona y agregarlas al clasificador con su respectiva etiqueta (el nombre de la persona).&lt;/li&gt;
+  &lt;li&gt;Entrenar el modelo.&lt;/li&gt;
+  &lt;li&gt;Clasificar!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Primero inicialicemos el clasificador en el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;inputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;imgSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;imgSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;imageClassification&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;debug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ml5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;neuralNetwork&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;options&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ok, ahora necesitamos un campo de entrada y un botón para capturar y etiquetar las fotos. Hagamos eso:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nameInput&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;drawInputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawInputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;nameInput&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;nameInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;650&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;takePhotoBtn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Capture&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;takePhotoBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;810&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;takePhotoBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mousePressed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addExample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nameInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()))&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Cuando el usuario hace click sobre el botón estamos llamando una función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;addExample&lt;/code&gt; que agrega la foto con el nombre al clasificador:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;addExample&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;No face found&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;resize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;imgSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;imgSize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Adding example: &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Only one face should appear&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Este código utiliza las cajas que creamos al detectar las caras. Primero valida que sólo haya una en el video y, si es así, le ajusta el tamaño y la agrega al clasificador.&lt;/p&gt;
+
+&lt;p&gt;Agreguemos un botón a la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drawInputs&lt;/code&gt; para entrenar el modelo:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trained&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawInputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trainBtn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Train&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;trainBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;650&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;trainBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mousePressed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;trainModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;trainModel&lt;/code&gt; es la siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;trainModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;normalizeData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;train&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;epochs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;training complete&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;trained&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Por último, vamos a modificar la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;detectFace&lt;/code&gt; para que clasifique las caras cuando el modelo ya esté entrenado:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;detectFace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;faceapi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;detect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getBoxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;results&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;trained&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boxes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;classifyFace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;detectFace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Necesitas al menos dos personas, y tomar mínimo 10 fotos de cada una para entrenar el modelo. Puedes ver y probar el código hasta este punto &lt;a href=&quot;https://editor.p5js.org/germanescobar/sketches/7PMaiV2Ha&quot; target=&quot;\_blank&quot;&gt;en este enlace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;algunas-mejoras&quot;&gt;Algunas mejoras&lt;/h2&gt;
+
+&lt;p&gt;Hasta ahora, siempre que ejecutamos el código debemos tomar las fotos y entrenar el modelo. Para evitar esto tenemos dos opciones:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Guardar la información de las fotos en un JSON. Cada vez que ejecutamos el código las cargamos y volvemos a entrenar el modelo.&lt;/li&gt;
+  &lt;li&gt;Guardar el modelo ya entrenado.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Afortunadamente ml5.js incluye funciones para hacer todas estas operaciones. Podemos guardar la información de las fotos en un archivo JSON con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;saveData&lt;/code&gt; y volverlo a cargar con &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;loadData&lt;/code&gt;. Agreguemos botones en el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drawInputs&lt;/code&gt; para esto:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;drawInputs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// botón para guardar las fotos en un JSON&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;saveDataBtn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Save Data&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;saveDataBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;650&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;180&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;saveDataBtn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mousePressed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;saveData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+  &lt;span class=&quot;c1&quot;&gt;// botón para cargar las fotos de un JSON&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;loadDataInput&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createFileInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;classifier&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loadData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Data Loaded&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;loadDataInput&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;650&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;130&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;También existen las funciones &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;save&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;load&lt;/code&gt; para guardar y cargar el modelo ya entrenado que puedes &lt;a href=&quot;https://learn.ml5js.org/#/reference/neural-network?id=save&quot; target=&quot;\_blank&quot;&gt;consultar en la documentación&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;En este tutorial vimos cómo utilizar dos modelos de Machine Learning. El primero es el que utilizamos para identificar las caras en el video que ya viene incluido en &lt;a href=&quot;https://ml5js.org/&quot; target=&quot;\_blank&quot;&gt;ml5.js&lt;/a&gt;. Existen otros modelos ya entrenados que te permiten identificar poses, detectar objetos, clasificar sonidos e identificar el sentimiento de un texto, entre otros que puedes consultar en la documentación!&lt;/p&gt;
+
+&lt;p&gt;El otro modelo fue una red neuronal que debemos entrenar capturando imágenes del video y etiquetándolas con nombres de personas. Inténtalo con tus amigos y/o familiares y cuéntanos cómo funciona!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">En este post vamos a utilizar p5.js y una librería de Machine Learning llamada ml5.js para implementar una solución de reconocimiento facial en el navegador!</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/reconocimiento-facial-monalisa.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/reconocimiento-facial-monalisa.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Practicando programación con p5.js</title><link href="http://blog.makeitreal.camp/practicando-programacion-con-p5js/" rel="alternate" type="text/html" title="Practicando programación con p5.js" /><published>2020-12-15T07:00:00+00:00</published><updated>2020-12-15T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/practicando-programacion-con-p5js</id><content type="html" xml:base="http://blog.makeitreal.camp/practicando-programacion-con-p5js/">&lt;p&gt;&lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt;  es una librería de código abierto escrita en JavaScript que nos permite crear dibujos y animaciones en el navegador utilizando código. En este post vas a aprender cómo empezar con esta interesante librería y algunas ideas para practicar.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; Para aprovechar más esta librería deberías conocer los conceptos básicos de programación en JavaScript como variables, condicionales, ciclos, arreglos, funciones y objetos literales. Si no es así te recomendamos &lt;a href=&quot;https://www.youtube.com/playlist?list=PLxyfMWnjW2kvlPTL3CXFtb40587w62wMs&quot; target=&quot;\_blank&quot;&gt;ver estos videos primero&lt;/a&gt; y consultar &lt;a href=&quot;https://guias.makeitreal.camp/javascript-i&quot; target=&quot;\_blank&quot;&gt;la sección de JavaScript en las guías de Make It Real&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Existe un editor de &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; que puedes abrir desde tu navegador en &lt;a href=&quot;https://editor.p5js.org/&quot; target=&quot;\_blank&quot;&gt;https://editor.p5js.org/&lt;/a&gt; y es la forma más fácil de empezar a crear con esta librería.&lt;/p&gt;
+
+&lt;p&gt;Cuando abres el editor de &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; vas a encontrar código en el archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sketch.js&lt;/code&gt;. Si oprimes el botón de ejecutar (el botón “play” rojo en la parte superior) vas a ver algo similar a lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/p5js-editor.jpg&quot; alt=&quot;Editor de p5.js&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En el código hay dos funciones: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup&lt;/code&gt; y &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup&lt;/code&gt; se invoca una única vez cuando oprimes ejecutar, mientras que &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt; se ejecuta dentro de un ciclo hasta que detienes el programa (con el botón de detener).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; incluye funciones para hacer todo tipo de cosas interesantes: dibujar figuras, trabjar con imágenes y video, escuchar eventos y hacer animaciones, entre muchas otras.&lt;/p&gt;
+
+&lt;p&gt;La función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createCanvas&lt;/code&gt; que está en &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setup&lt;/code&gt; crea el lienzo (canvas) sobre el que vamos a “dibujar”. Y en la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt; se invoca &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;background&lt;/code&gt;, que cambia el color de fondo.&lt;/p&gt;
+
+&lt;p&gt;Vamos ahora a pintar un cuadrado en nuestro lienzo utilizando la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;square&lt;/code&gt;. Modifica la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt; para que quede de la siguiente forma.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;220&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si oprimes ejecutar deberías ver un cuadrado de fondo blanco en el lienzo. La función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;square&lt;/code&gt; recibe 3 argumentos: los dos primeros son las coordenadas para ubicar el cuadrado y el tercero es la longitud de los lados.&lt;/p&gt;
+
+&lt;p&gt;La mayoría de funciones que nos permiten dibujar reciben primero la ubicación. &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; utiliza un sistema de coordenadas que inicia en la esquina superior izquierda con la posición (0, 0), y termina en la esquina inferior con el ancho y el alto del lienzo, que es (400,400) por defecto.&lt;/p&gt;
+
+&lt;h2 id=&quot;creando-animaciones&quot;&gt;Creando animaciones&lt;/h2&gt;
+
+&lt;p&gt;Como el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;draw&lt;/code&gt; se invoca constantemente por &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; podemos crear animaciones utilizando variables. Por ejemplo, en vez de que la coordenada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; sea siempre 10, vamos a utilizar una variable que vamos a ir aumentando para crear la ilusión de movimiento horizontal:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;220&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si ejecutas el código vas a ver al cuadrado moviéndose por la pantalla hasta que desaparece. Mejoremos el código para que se devuelva cuando llegue a los límites:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;220&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;370&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En este código agregamos una variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt; que va a ser 1 o -1, y que vamos a utilizar para cambiar la dirección de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x&lt;/code&gt; (incrementa cuando es 1 y decrementa cuando es -1). Cuando llegamos a los límites invertimos &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d&lt;/code&gt;. El resultado es el siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/p5js-animation.gif&quot; alt=&quot;Animación de p5.js&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;escuchando-eventos&quot;&gt;Escuchando eventos&lt;/h2&gt;
+
+&lt;p&gt;Con &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; puedes escuchar eventos del teclado, del mouse y de aceleración (para móviles).&lt;/p&gt;
+
+&lt;p&gt;Creemos un nuevo ejemplo en donde podamos mover el cuadrado con las flechas del teclado:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;220&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyIsDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;LEFT_ARROW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyIsDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;RIGHT_ARROW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyIsDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;UP_ARROW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;keyIsDown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;DOWN_ARROW&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;square&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En este ejemplo estamos usando la función &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keyIsDown&lt;/code&gt; que nos permite saber si una tecla está siendo oprimida. Para conocer todos los eventos que puedes &lt;a href=&quot;https://p5js.org/reference/&quot; target=&quot;\_blank&quot;&gt;consultar la documentación&lt;/a&gt;, en la sección de Eventos.&lt;/p&gt;
+
+&lt;p&gt;Puedes ver el resultado de este ejemplo en &lt;a href=&quot;https://editor.p5js.org/germanescobar/sketches/C4GEq4_ou&quot; target=&quot;\_blank&quot;&gt;este enlace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;algunas-ideas&quot;&gt;Algunas ideas&lt;/h2&gt;
+
+&lt;p&gt;¿Qué tal si empezamos a agregar obstáculos en nuestro ejemplo anterior o si creamos un laberinto? Las posibilidades de lo que puedes hacer en &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; son infinitas.&lt;/p&gt;
+
+&lt;p&gt;Una función que puede ser muy útil para tus creaciones es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;random&lt;/code&gt;, que permite generar valores aleatorios dentro de un rango de números. Por ejemplo, podemos generar círculos de forma aleatoria por toda la pantalla:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;draw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;circle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para más inspiración puedes ir al sitio de &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; donde vas a encontrar una &lt;a href=&quot;https://p5js.org/examples/&quot; target=&quot;\_blank&quot;&gt;galería de ejemplos&lt;/a&gt; y &lt;a href=&quot;https://showcase.p5js.org/#/&quot; target=&quot;\_blank&quot;&gt;creaciones de otras personas&lt;/a&gt;. También hay un canal en YouTube llamado &lt;a href=&quot;https://www.youtube.com/user/shiffman&quot; target=&quot;\_blank&quot;&gt;The Coding Train&lt;/a&gt; donde puedes aprender y seguir tutoriales de &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En una próxima entrada vamos a utilizar &lt;a href=&quot;https://p5js.org/&quot; target=&quot;\_blank&quot;&gt;p5.js&lt;/a&gt; y otra librería llamada &lt;a href=&quot;https://ml5js.org/&quot; target=&quot;\_blank&quot;&gt;ml5.js&lt;/a&gt; para hacer reconocimiento facial con Machine Learning en el navegador!&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">p5.js es una librería de código abierto escrita en JavaScript que nos permite crear dibujos y animaciones en el navegador utilizando código. En este post vas a aprender cómo empezar con esta interesante librería y algunas ideas para practicar.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/practicando-programacion-p5js.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/practicando-programacion-p5js.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

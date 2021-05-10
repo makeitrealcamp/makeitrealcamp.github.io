@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Diseñando un Producto Mínimo Viable </title>
+  <meta name="description" content="En los últimos días hemos estado trabajando sin descanso en Challenges, una aplicación para administrar los retos de programación que los alumnos de Make it ...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Diseñando un Producto Mínimo Viable">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/disenando-un-producto-viable-minimo/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/startup-photos-reduced.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2014-08-29T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/disenando-un-producto-viable-minimo/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/startup-photos-reduced.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Aug 29, 2014</time>
+                </div>
+                <h1>Diseñando un Producto Mínimo Viable</h1>
+                <div class="post-body"><p>En los últimos días hemos estado trabajando sin descanso en <strong>Challenges</strong>, una aplicación para administrar los retos de programación que los alumnos de <strong>Make it Real</strong> tendrán que completar durante las 12 semanas del Bootcamp.<!-- more --> En este post vamos a utilizar <strong>Challenges</strong> como ejemplo para explicar el proceso de diseño de un producto mínimo viable (MVP por sus siglas en inglés).</p>
+
+<p><img src="/assets/images/challenges.png" alt="Challenges" /></p>
+
+<p><strong>Challenges</strong> es una aplicación que se puede volver tan compleja como queramos (leaderboards, badges, tagging, integración a Github, manejo de archivos, y peer reviews, son solo algunas de las ideas que se me ocurren ahora) ¿Por dónde empezar?</p>
+
+<h2 id="el-primer-paso">El primer paso</h2>
+
+<p>Podríamos durar meses haciendo una especificación detallada de todas las funcionalidades que queremos implementar antes de escribir nuestra primera línea de código; es un error que cometen muchas empresas cuando están diseñando sus aplicaciones.</p>
+
+<p>Una mejor estrategia es concentrarnos únicamente en la <strong>esencia de la aplicación</strong>, en aquellas funcionalidades críticas sin las que no existiría aplicación, en el producto mínimo viable. Después podemos agregar más funcionalidades y mejorar la implementación actual. Lo importante es entender que <strong>una aplicación Web es un sistema en constante evolución que nunca va a estar terminado</strong>.</p>
+
+<p>Pero eso no quiere decir que debamos empezar a escribir nuestro código inmediatamente. Necesitamos al menos identificar quiénes van a utilizar nuestro producto (actores), qué puede hacer cada actor en nuestra aplicación (casos de uso), qué información necesitamos almacenar (diagrama de base de datos), y cómo se va a ver nuestra aplicación (wireframes).</p>
+
+<h2 id="actores-y-casos-de-uso">Actores y casos de uso</h2>
+
+<p>Para <strong>Challenges</strong> identificamos dos actores: alumnos y administradores. La siguiente imagen muestra el diagrama de casos de uso:</p>
+
+<p><img src="/assets/images/makeitchallenges-use-cases.jpg" alt="Actores y Casos de Uso" /></p>
+
+<p><em>Sí, existen herramientas para hacer estos diagramas, pero a veces lo único que se tiene a la mano es una servilleta y un bolígrafo.</em></p>
+
+<p>Estos ocho casos de uso son los más importantes. Podríamos agregar más si quisiéramos pero con estos ocho podemos crear un producto mínimo viable. Los casos de uso más críticos son: <strong>crear reto</strong> y <strong>solucionar reto</strong>. Fueron los primeros que implementamos y en los que más nos enfocamos!</p>
+
+<p>Hay varias estrategias para detallar los casos de uso. Lo mínimo es una descripción de los pasos que debe seguir el usuario para completar la acción, los datos que debe ingresar, y/o la información que va a recibir/visualizar.</p>
+
+<h2 id="wireframes">Wireframes</h2>
+
+<p>Los wireframes son un boceto de la interfaz gráfica de nuestra aplicación y nos dan una idea de los diferentes elementos que necesitamos diseñar.</p>
+
+<p><img src="/assets//images/makeitchallenges-wireframes.jpg" alt="Wireframes" /></p>
+
+<p>Lo más importante es no enfocarse en los detalles, solo en la funcionalidad. Por eso es preferible hacer cada pantalla de máximo 5cm x 5cm.</p>
+
+<h2 id="la-base-de-datos">La base de datos</h2>
+
+<p>A partir de los casos de uso y wireframes nos damos una idea de la información que necesitamos almacenar. En nuestro caso son los <strong>usuarios</strong>, los <strong>retos</strong>, y las <strong>soluciones</strong>. La siguiente figura muestra el diagrama de base de datos.</p>
+
+<p><img src="/assets//images/makeitchallenges-database.jpg" alt="Diagrama de Base de Datos" /></p>
+
+<p>Cada caja representa una tabla y sus columnas. Las líneas representan relaciones entre las tablas. En este caso, los <strong>retos</strong> y los <strong>usuarios</strong> están relacionados a través de las <strong>soluciones</strong>. También es necesario definir el tipo de datos de cada columna y una descripción más detallada de ser necesario.</p>
+
+<p>¡Eso es todo! La implementación del MVP nos tomó aproximadamente 12 horas. La mayor parte de ese tiempo fue ajustando el editor embebido y encontrando la mejor forma de validar los retos ;) Desde entonces hemos estado trabajando en mejorar el diseño, la experiencia, y subiendo los retos al sistema. Pero en un futuro post publicaremos un video de cómo implementar este MVP.</p>
+
+<hr />
+
+<p>El proceso de diseño de una aplicación Web puede ser tan básico e informal como lo hicimos acá, o tan sofisticado y formal como cada empresa lo considere necesario. Lo importante es concentrarse en la esencia de la aplicación y especificar lo mínimo necesario para la implementación, independientemente de quién vaya a escribir el código.</p>
+
+<p>Si tienes un verdadero interés por la programación y quieres aprender a diseñar e implementar tus propias aplicaciones Web no dudes en <a href="/apply">aplicar a Make it Real</a>!</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Diseñando un Producto Mínimo Viable&url=http://blog.makeitreal.camp/disenando-un-producto-viable-minimo/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/disenando-un-producto-viable-minimo/&p[title]=Diseñando un Producto Mínimo Viable" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/disenando-un-producto-viable-minimo/&title=Diseñando un Producto Mínimo Viable&summary=&source=http://blog.makeitreal.camp/disenando-un-producto-viable-minimo/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=disenando-un-producto-viable-minimo">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

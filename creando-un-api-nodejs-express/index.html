@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Creando una Web API con Node.js y Express </title>
+  <meta name="description" content="Una Web API nos permite exponer funcionalidad de una aplicación a través del protocolo HTTP. En este tutorial vamos a crear una Web API utilizando Node.js y ...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Creando una Web API con Node.js y Express">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/creando-un-api-nodejs-express/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/nodejs.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2020-09-30T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/creando-un-api-nodejs-express/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/nodejs.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Sep 30, 2020</time>
+                </div>
+                <h1>Creando una Web API con Node.js y Express</h1>
+                <div class="post-body"><p>Una Web API nos permite exponer funcionalidad de una aplicación a través del protocolo HTTP. En este tutorial vamos a crear una Web API utilizando <a href="https://nodejs.org/en/" target="\_blank">Node.js</a> y una librería llamada <a href="https://expressjs.com/" target="\_blank">Express</a>. <!-- more --></p>
+
+<p>Para seguir este tutorial vas a necesitar lo siguiente:</p>
+
+<ul>
+  <li>Estar familiarizado con JavaScript y <a href="https://nodejs.org/en/" target="\_blank">Node.js</a>. Si no lo estás te recomiendo el siguiente post: <a href="/introduccion-a-nodejs/" target="\_blank">Introducción a Node.js</a>.</li>
+  <li>Estar familiarizado con la línea de comandos. Si no lo estás te recomiendo el siguiente post: <a href="/la-linea-de-comandos/" target="\_blank">La línea de comandos</a>.</li>
+  <li>Tener instalado <a href="https://nodejs.org/en/" target="\_blank">Node.js</a> en tu computador. Si no lo tienes puedes seguir <a href="https://github.com/makeitrealcamp/node-installation" target="\_blank">estas instrucciones</a>.</li>
+  <li>Tener instalado un editor de texto como <a href="https://code.visualstudio.com/" target="\_blank">VSCode</a>, <a href="https://atom.io/" target="\_blank">Atom</a> o uno similar.</li>
+  <li>Estar familiarizado con el protocolo HTTP. Si no lo estás te recomiendo el siguiente post: <a href="/el-protocolo-http/" target="\_blank">El protocolo HTTP</a>.</li>
+</ul>
+
+<hr />
+
+<p>Un API (por sus siglas en Ingles Application Programming Interface) es, en general, una forma en que un software interactúa con otro software. Una <strong>Web API</strong> es un tipo de API que utiliza el protocolo HTTP como forma de comunicación utilizando algún formato de intercambio de información como XML o JSON.</p>
+
+<p>El servicio que vamos a crear le va a permitir a otras aplicaciones publicar, editar, eliminar y listar <strong>frases célebres</strong>. Cada frase célebre va a estar compuesta de un texto y un autor. Por ejemplo:</p>
+
+<ul>
+  <li><strong>Texto:</strong> No hay caminos para la paz; la paz es el camino.</li>
+  <li><strong>Autor:</strong> Mahatma Gandhi</li>
+</ul>
+
+<h2 id="json-javascript-object-notation">JSON (JavaScript Object Notation)</h2>
+
+<p>Para nuestra API vamos a utilizar JSON como formato de intercambio de información. JSON es un formato que es fácil de interpretar por una aplicación y al mismo tiempo legible por un humano.</p>
+
+<p>Veamos un ejemplo de JSON en el que estamos representando un vuelo:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"airline"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oceanic"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"crashed"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"departure"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"iata"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYD"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2004-09-22 14:55"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>JSON es parecido a un objeto de JavaScript pero con algunas diferencias importantes:</p>
+
+<ol>
+  <li>Los nombres de las propiedades <strong>deben</strong> estar entre comillas.</li>
+  <li>Los valores pueden ser de los siguientes tipos únicamente: String, Number, Boolean, Array, JSON Object.</li>
+</ol>
+
+<h2 id="configurando-el-proyecto">Configurando el proyecto</h2>
+
+<p>Abre una línea de comandos y crea una carpeta para el proyecto:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>quotes
+</code></pre></div></div>
+
+<p>Ingresa a la carpeta e inicializa el proyecto ejecutando los siguientes comandos:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>quotes
+npm init <span class="nt">-y</span>
+</code></pre></div></div>
+
+<p>Ahora instala <a href="https://expressjs.com/" target="\_blank">Express</a> con el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install </span>express
+</code></pre></div></div>
+
+<h2 id="creando-la-primera-ruta">Creando la primera ruta</h2>
+
+<p>Abre la carpeta del proyecto en tu editor de texto preferido (<a href="https://code.visualstudio.com/" target="\_blank">VSCode</a>, <a href="https://atom.io/" target="\_blank">Atom</a>, etc.) y crea el archivo <code class="language-plaintext highlighter-rouge">index.js</code> con el siguiente contenido:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">express</span><span class="dl">"</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+
+<span class="c1">// nuestra primera ruta</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">([</span>
+    <span class="p">{</span> <span class="na">text</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Quote 1</span><span class="dl">"</span><span class="p">,</span> <span class="na">author</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Author 1</span><span class="dl">"</span> <span class="p">},</span>
+    <span class="p">{</span> <span class="na">text</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Quote 2</span><span class="dl">"</span><span class="p">,</span> <span class="na">author</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Author 2</span><span class="dl">"</span><span class="p">}</span>
+  <span class="p">])</span>
+<span class="p">})</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Servidor listo ...</span><span class="dl">"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Guarda el archivo y ejecútalo con el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node index.js
+</code></pre></div></div>
+
+<p>Deberías ver el texto “Servidor listo …“. Abre un navegador en la dirección http://localhost:3000/quotes, deberías ver el JSON que estamos retornando de la ruta:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[{</span><span class="nl">"text"</span><span class="p">:</span><span class="s2">"Quote 1"</span><span class="p">,</span><span class="nl">"author"</span><span class="p">:</span><span class="s2">"Author 1"</span><span class="p">},{</span><span class="nl">"text"</span><span class="p">:</span><span class="s2">"Quote 2"</span><span class="p">,</span><span class="nl">"author"</span><span class="p">:</span><span class="s2">"Author 2"</span><span class="p">}]</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Para detener el servidor oprime <code class="language-plaintext highlighter-rouge">Ctrl + C</code>.</p>
+
+<h2 id="almacenando-las-frases">Almacenando las frases</h2>
+
+<p>Aunque no vamos a guardar las frases en una base de datos, sí vamos a crear un módulo que nos almacene las frases en memoria. Crea un archivo <code class="language-plaintext highlighter-rouge">quotes.js</code> con el siguiente contenido:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">quotes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="kd">let</span> <span class="nx">nextId</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="kd">function</span> <span class="nx">list</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">quotes</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">create</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">quote</span> <span class="o">=</span> <span class="p">{</span> <span class="na">id</span><span class="p">:</span> <span class="nx">nextId</span><span class="p">,</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">author</span> <span class="p">}</span>
+  <span class="nx">quotes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">quote</span><span class="p">)</span>
+  <span class="nx">nextId</span><span class="o">++</span>
+
+  <span class="k">return</span> <span class="nx">quote</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">list</span><span class="p">,</span> <span class="nx">create</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ahora vamos a importarlo y utilizarlo desde <code class="language-plaintext highlighter-rouge">index.js</code>, que debería quedar de la siguiente forma:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">express</span><span class="dl">"</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">quotes</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./quotes</span><span class="dl">"</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+
+<span class="c1">// nuestra primera ruta</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">quotes</span><span class="p">.</span><span class="nx">list</span><span class="p">())</span>
+<span class="p">})</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Servidor listo ...</span><span class="dl">"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Reinicia el servidor (lo detienes oprimiendo <code class="language-plaintext highlighter-rouge">Ctrl + C</code> y lo inicias con el comando <code class="language-plaintext highlighter-rouge">node index.js</code>) y refresca el navegador, deberías ver un arreglo vacío:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[]</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="la-ruta-para-crear-frases">La ruta para crear frases</h2>
+
+<p>Vamos ahora a crear la ruta que nos va a permitir crear las frases. Para eso debemos decirle a <a href="https://expressjs.com/" target="\_blank">Express</a> que vamos a recibir JSON de los clientes. Eso se hace con la siguiente línea:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+</code></pre></div></div>
+
+<p>Y la ruta sería la siguiente. Fíjate que la ruta es la misma que la anterior, <code class="language-plaintext highlighter-rouge">/quotes</code>, pero cambia el método, ahora vamos a utilizar POST:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">author</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span>
+  <span class="kd">const</span> <span class="nx">quote</span> <span class="o">=</span> <span class="nx">quotes</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">author</span><span class="p">)</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">quote</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>Unido con lo anterior el archivo <code class="language-plaintext highlighter-rouge">index.js</code> debería quedar de la siguiente forma:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">express</span><span class="dl">"</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">quotes</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">./quotes</span><span class="dl">"</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">express</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+
+<span class="c1">// nuestra primera ruta</span>
+<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">quotes</span><span class="p">.</span><span class="nx">list</span><span class="p">())</span>
+<span class="p">})</span>
+
+<span class="c1">// ruta para crear frases</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">author</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span>
+  <span class="kd">const</span> <span class="nx">quote</span> <span class="o">=</span> <span class="nx">quotes</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">author</span><span class="p">)</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="nx">quote</span><span class="p">)</span>
+<span class="p">})</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Servidor listo ...</span><span class="dl">"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>El método POST no se puede probar desde un navegador como hicimos con la ruta de listar, así que vamos a utilizar una herramienta llamada curl en la línea de comandos.</p>
+
+<p>Inicia el servidor y abre otra pestaña en la línea de comandos para probar la nueva ruta:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="nt">-d</span> <span class="s1">'{ "text": "Quote 1", "author": "Author 1" }'</span> http://localhost:3000/quotes
+</code></pre></div></div>
+
+<p>Crea varias rutas y revisa que la ruta de listar las muestre, puedes utilizar el siguiente comando:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:3000/quotes
+</code></pre></div></div>
+
+<p><strong>Nota:</strong> En vez de curl puedes utilizar una herramienta gráfica como <a href="https://www.postman.com/">Postman</a>.</p>
+
+<h2 id="las-rutas-para-editar-y-eliminar">Las rutas para editar y eliminar</h2>
+
+<p>Para crear las rutas de editar y eliminar primero tenemos que modificar el archivo <code class="language-plaintext highlighter-rouge">quotes.js</code> para agregar los métodos de editar y eliminar:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">quotes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="kd">const</span> <span class="nx">nextId</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="kd">function</span> <span class="nx">list</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">quotes</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">create</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+<span class="p">}</span>
+
+<span class="c1">// nuevas funciones</span>
+<span class="kd">function</span> <span class="nx">edit</span><span class="p">(</span><span class="nx">id</span><span class="p">,</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">author</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">idx</span> <span class="o">=</span> <span class="nx">quotes</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">(</span><span class="nx">q</span> <span class="o">=&gt;</span> <span class="nx">q</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="nx">id</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">quotes</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">text</span> <span class="o">=</span> <span class="nx">text</span>
+    <span class="nx">quotes</span><span class="p">[</span><span class="nx">idx</span><span class="p">].</span><span class="nx">author</span> <span class="o">=</span> <span class="nx">author</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">destroy</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">idx</span> <span class="o">=</span> <span class="nx">quotes</span><span class="p">.</span><span class="nx">findIndex</span><span class="p">(</span><span class="nx">q</span> <span class="o">=&gt;</span> <span class="nx">q</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="nx">id</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">idx</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">arry</span><span class="p">.</span><span class="nx">splice</span><span class="p">(</span><span class="nx">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span> <span class="nx">list</span><span class="p">,</span> <span class="nx">create</span><span class="p">,</span> <span class="nx">edit</span><span class="p">,</span> <span class="nx">destroy</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Y ahora creamos las nuevas rutas en <code class="language-plaintext highlighter-rouge">index.js</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// ...</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">patch</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes/:id</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">author</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">body</span>
+  <span class="nx">quotes</span><span class="p">.</span><span class="nx">edit</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">id</span><span class="p">,</span> <span class="nx">text</span><span class="p">,</span> <span class="nx">author</span><span class="p">)</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">204</span><span class="p">).</span><span class="nx">send</span><span class="p">()</span>
+<span class="p">})</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="dl">'</span><span class="s1">/quotes/:id</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">quotes</span><span class="p">.</span><span class="nx">destroy</span><span class="p">(</span><span class="nx">req</span><span class="p">.</span><span class="nx">params</span><span class="p">.</span><span class="nx">id</span><span class="p">)</span>
+  <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">204</span><span class="p">).</span><span class="nx">send</span><span class="p">()</span>
+<span class="p">})</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Servidor listo ...</span><span class="dl">"</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>Reinicia el servidor. Puedes utilizar los siguientes comandos para probar la ruta de crear, editar y eliminar frases respectivamente:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-d</span> <span class="s1">'{ "text": "Quote 1", "author": "Author 1" }'</span> http://localhost:3000/quotes
+curl <span class="nt">-X</span> PATCH <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-d</span> <span class="s1">'{ "text": "Quote 2", "author": "Author 2" }'</span> http://localhost:3000/quotes/0
+curl <span class="nt">-X</span> DELETE http://localhost:3000/quotes/0
+</code></pre></div></div>
+
+<p>Felicitaciones, has creado tu primera Web API! Puedes encontrar el código completo en <a href="https://github.com/makeitrealcamp/quotes-app">este enlace</a>.</p>
+
+<h2 id="por-qué-restful-api">¿Por qué RESTful API?</h2>
+
+<p>REST es una arquitectura que se utiliza para las Web API en donde se hace uso de la semántica del protocolo HTTP, es decir, los métodos, los códigos de respuesta y encabezados HTTP, entre otros. Además, las rutas se definen con un patrón muy estándar. Para nuestro ejemplo de frases (quotes) sería el siguiente:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">GET /quotes</code> para listar.</li>
+  <li><code class="language-plaintext highlighter-rouge">POST /quotes</code> para crear.</li>
+  <li><code class="language-plaintext highlighter-rouge">PATCH /quotes/:id</code> para editar.</li>
+  <li><code class="language-plaintext highlighter-rouge">DELETE /quotes/:id</code> para eliminar.</li>
+  <li><code class="language-plaintext highlighter-rouge">GET /quotes/:id</code> para mostrar una frase específica.</li>
+</ul>
+
+<p>En vez de <code class="language-plaintext highlighter-rouge">quotes</code> podría ser cualquier otro recurso como productos, facturas, empleados, etc.</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>En este tutorial vimos cómo crear y probar una RESTful API con <a href="https://nodejs.org/en/" target="\_blank">Node.js</a> y <a href="https://expressjs.com/" target="\_blank">Express</a>, que le permite a una aplicación exponer funcionalidad a otros clientes o aplicaciones. Los siguientes pasos serían:</p>
+
+<ul>
+  <li>Agregar validaciones.</li>
+  <li>Utilizar una base de datos como <a href="https://www.mongodb.com/" target="\_blank">MongoDB</a> en vez de guardar las frases en memoria.</li>
+  <li>Implementar algún mecanismo de autenticación.</li>
+  <li>Publicar el Web API en Internet utilizando un servicio como <a href="https://heroku.com/" target="\_blank">Heroku</a>.</li>
+  <li>Crear un front-end que consuma nuestro Web API y permita a las personas administrar las frases célebres a través de un navegador.</li>
+</ul>
+
+<p>Si deseas aprender esto y mucho más de la mano de mentores experimentados te invito a que conozcas nuestro programa <a href="https://makeitreal.camp/full-stack-online?utm_source=blog&amp;utm_medium=web&amp;utm_campaign=inbound&amp;utm_content=post">Full Stack JavaScript Web Developer</a>.</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Creando una Web API con Node.js y Express&url=http://blog.makeitreal.camp/creando-un-api-nodejs-express/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/creando-un-api-nodejs-express/&p[title]=Creando una Web API con Node.js y Express" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/creando-un-api-nodejs-express/&title=Creando una Web API con Node.js y Express&summary=&source=http://blog.makeitreal.camp/creando-un-api-nodejs-express/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=creando-un-api-nodejs-express">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

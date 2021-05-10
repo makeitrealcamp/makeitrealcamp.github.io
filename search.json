@@ -1,0 +1,1107 @@
+[
+  
+    {
+      "title"    : "¿Cómo pedir ayuda en programación?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/como-pedir-ayuda-programacion/",
+      "date"     : "May 9, 2021",
+      "excerpt"  : "Aprender a pedir ayuda es una de las habilidades más importantes que necesita un programador para acelerar su aprendizaje y avanzar su carrera. En este post vamos a ver cuándo y cómo pedir ayuda de forma efectiva.",
+      "image"    : "/assets/images/bg-images/help.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "var vs let vs const en JavaScript",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/diferencia-entre-var-let-const-javascript/",
+      "date"     : "Apr 11, 2021",
+      "excerpt"  : "En JavaScript existen 3 formas de declarar una variable: var, let y const. En este post veremos cuáles son sus diferencias y cuándo usar cada una.",
+      "image"    : "/assets/images/bg-images/javascript-var-let-const.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "De productor a desarrollador Web Frontend en Rappi",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/de-productor-a-frontend-developer-en-rappi/",
+      "date"     : "Mar 17, 2021",
+      "excerpt"  : "En este post Leonardo Omaña nos cuenta como pasó de ser director de producción a desarrollador Web, una historia realmente inspiradora. Actualmente Leonardo trabaja en Rappi como desarrollador Frontend.",
+      "image"    : "/assets/images/music.jpg",
+      "author"   : "Leonardo Omaña",
+      "gravatar" : "/assets/images/people/leonardo-omana.jpg"
+    } ,
+  
+    {
+      "title"    : "Mujeres programadoras: Carolina Salazar",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mujeres-programadoras-carolina-salazar/",
+      "date"     : "Mar 7, 2021",
+      "excerpt"  : "Le pedimos a Carolina que nos compartiera su historia como programadora y cómo Make it Real la ayudó a hacer ese sueño realidad.",
+      "image"    : "/assets/images/people/caro-salazar.jpg",
+      "author"   : "Diana Vanegas",
+      "gravatar" : "/assets/images/diana-vanegas.jpg"
+    } ,
+  
+    {
+      "title"    : "Buscamos talento basado en conocimientos",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/buscamos-talento-basado-en-conocimientos/",
+      "date"     : "Mar 1, 2021",
+      "excerpt"  : "Ayer tuvimos el placer de tener con nosotros a Santiago Velez, CEO de Smart Talent en nuestro ciclo de Webinars sobre el desarrollo profesional en Make It Real",
+      "image"    : "/assets/images/bg-images/conocimiento-datos.jpg",
+      "author"   : "Pía Giudice",
+      "gravatar" : "/assets/images/people/pia-giudice.jpg"
+    } ,
+  
+    {
+      "title"    : "Mujeres programadoras: Daniela Jaramillo",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mujeres-programadoras-daniela-jaramillo/",
+      "date"     : "Feb 16, 2021",
+      "excerpt"  : "En esta ocasión queremos compartirles la increíble historia de Daniela, que realizó nuestro programa TOP y ahora trabaja como Full Stack Developer en VILIV.",
+      "image"    : "/assets/images/bg-images/daniela-jaramillo.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Cuál es la diferencia entre Java y JavaScript?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/cual-es-la-diferencia-entre-java-y-javascript/",
+      "date"     : "Jan 30, 2021",
+      "excerpt"  : "Java y JavaScript son dos lenguajes de programación completamente diferentes. En este post explicaremos cuál es la diferencia y por qué JavaScript incluye la palabra Java en su nombre.",
+      "image"    : "/assets/images/bg-images/java-vs-javascript.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué son y cómo funcionan los protocolos de red?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-son-y-como-funcionan-los-protocolos-de-red/",
+      "date"     : "Jan 20, 2021",
+      "excerpt"  : "Así como los humanos utilizamos protocolos para facilitar la comunicación, los computadores necesitan reglas específicas para comunicarse entre ellos. En este post vamos a ver qué son, cómo funcionan y cómo crear nuestro propio protocolo!",
+      "image"    : "/assets/images/bg-images/protocolo-de-red.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Reconocimiento facial con ml5.js",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/reconocimiento-facial-con-ml5js/",
+      "date"     : "Dec 20, 2020",
+      "excerpt"  : "En este post vamos a utilizar p5.js y una librería de Machine Learning llamada ml5.js para implementar una solución de reconocimiento facial en el navegador!",
+      "image"    : "/assets/images/bg-images/reconocimiento-facial-monalisa.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Practicando programación con p5.js",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/practicando-programacion-con-p5js/",
+      "date"     : "Dec 15, 2020",
+      "excerpt"  : "p5.js  es una librería de código abierto escrita en JavaScript que nos permite crear dibujos y animaciones en el navegador utilizando código. En este post vas a aprender cómo empezar con esta interesante librería y algunas ideas para practicar.",
+      "image"    : "/assets/images/bg-images/practicando-programacion-p5js.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Todo lo que debes saber sobre los acuerdos de ingresos compartidos",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/todo-lo-que-debes-saber-sobre-los-acuerdos-de-ingresos-compartidos/",
+      "date"     : "Dec 7, 2020",
+      "excerpt"  : "En el programa TOP de Make It Real ofrecemos un modelo donde el estudiante empieza a pagar sólo si encuentra un empleo, conocido como un Acuerdo de Ingresos Compartidos (AIC).",
+      "image"    : "/assets/images/bg-images/acuerdo-ingresos-compartidos.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Github Actions (Video)",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/github-actions/",
+      "date"     : "Nov 15, 2020",
+      "excerpt"  : "En este post (y video) vamos a ver cómo automatizar tareas del ciclo de desarrollo de software utilizando Github Actions.",
+      "image"    : "/assets/images/bg-images/gears.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Entendiendo el método .map de los arreglos",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/entendiendo-el-metodo-map-de-los-arreglos/",
+      "date"     : "Nov 11, 2020",
+      "excerpt"  : "El método map se utiliza para transformar todos los elementos de un arreglo ejecutando una lógica u operación por cada uno de ellos. Map crea un nuevo arreglo y almacena el resultado de cada operación en este arreglo para no modificar o afectar el arreglo original.",
+      "image"    : "/assets/images/bg-images/rock-pattern.jpg",
+      "author"   : "Simón Hoyos",
+      "gravatar" : "//www.gravatar.com/avatar/e37afad6dc0bf97b742c2a51e0446ab8.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Mujeres programadoras: Ana María Sosa",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mujeres-programadoras-ana-maria-sosa/",
+      "date"     : "Nov 3, 2020",
+      "excerpt"  : "Tuvimos la oportunidad de entrevistar a Ana María Sosa para que nos contara sobre su experiencia como programadora y por qué es importante que las mujeres se involucren en este campo.",
+      "image"    : "/assets/images/ana-maria-sosa.jpg",
+      "author"   : "Diana Vanegas",
+      "gravatar" : "/assets/images/diana-vanegas.jpg"
+    } ,
+  
+    {
+      "title"    : "Mujeres programadoras: Leslie Restrepo",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/mujeres-programadoras-leslie-restrepo/",
+      "date"     : "Nov 3, 2020",
+      "excerpt"  : "Le pedimos a Leslie que nos compartiera su historia como programadora y cómo Make it Real la ayudó a hacer ese sueño realidad.",
+      "image"    : "/assets/images/leslie-restrepo.jpg",
+      "author"   : "Diana Vanegas",
+      "gravatar" : "/assets/images/diana-vanegas.jpg"
+    } ,
+  
+    {
+      "title"    : "Introducción al Aprendizaje Automático (Machine Learning)",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/introduccion-al-aprendizaje-automatico-machine-learning/",
+      "date"     : "Oct 9, 2020",
+      "excerpt"  : "El Aprendizaje Automático está en todas partes: filtra correos en tu bandeja de entrada, te sugiere artículos en Amazon y películas en Netflix, etiqueta tus fotos de Facebook, identifica tu voz en Siri, identifica frases en la búsqueda de Google y detecta fraudes financieros, por nombrar algunas aplicaciones.",
+      "image"    : "/assets/images/bg-images/data-points.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Creando una Web API con Node.js y Express",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/creando-un-api-nodejs-express/",
+      "date"     : "Sep 30, 2020",
+      "excerpt"  : "Una Web API nos permite exponer funcionalidad de una aplicación a través del protocolo HTTP. En este tutorial vamos a crear una Web API utilizando Node.js y una librería llamada Express.",
+      "image"    : "/assets/images/bg-images/nodejs.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué seré capaz de hacer después de Make it Real?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-sere-capaz-despues-de-make-it-real/",
+      "date"     : "Aug 20, 2020",
+      "excerpt"  : "Aprender a programar es un reto, es todo un desafío en el cual no solo tendremos que entender cómo la tecnología y diferentes componentes interactúan entre sí para crear una aplicación, sino también la manera en que aprendemos, resolvemos problemas y nos enfrentamos al cambio, porque si de algo estamos seguros es que las tecnologías cambian cada día.",
+      "image"    : "/assets/images/bg-images/roadway.jpg",
+      "author"   : "Sebastian Zapata Mardini",
+      "gravatar" : "https://s.gravatar.com/avatar/cf822fcc399ecdc04f3f3155bc264563?s=80"
+    } ,
+  
+    {
+      "title"    : "Módulos de JavaScript",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/modulos-de-javascript/",
+      "date"     : "Aug 4, 2020",
+      "excerpt"  : "En este post explicaremos qué son los módulos de JavaScript, cuándo utilizarlos y cómo se comparan con otras soluciones como CommonJS.",
+      "image"    : "/assets/images/bg-images/javascript-modules.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Recursos de diseño para programadores",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/recursos-de-diseno-para-programadores/",
+      "date"     : "Jul 28, 2020",
+      "excerpt"  : "¿Cómo podemos mejorar la apariencia de nuestras aplicaciones? En este post veremos algunos recursos que te ayudarán a crear diseños más llamativos cuando no tienes la posibilidad de contratar un diseñador.",
+      "image"    : "/assets/images/bg-images/decor-design.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Cómo piensa un programador?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/como-piensa-un-programador/",
+      "date"     : "Apr 27, 2020",
+      "excerpt"  : "Ser programador no es sólo obtener los conocimientos, es desarrollar la mentalidad correcta. En este post veremos cuál es esa mentalidad y una técnica para adquirirla.",
+      "image"    : "/assets/images/bg-images/como-piensa-un-programador.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Por qué aprender Data Science?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-aprender-data-science/",
+      "date"     : "Apr 15, 2020",
+      "excerpt"  : "Data Science es una de las áreas de mayor crecimiento en la actualidad y una gran oportunidad para las personas que quieren dar el siguiente paso en sus carreras como programadores.",
+      "image"    : "/assets/images/bg-images/data-science-2.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Sobre el aprendizaje",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/sobre-el-aprendizaje/",
+      "date"     : "Feb 17, 2020",
+      "excerpt"  : "Dicen que hay dos tipos de aprendices de idiomas: los que quieren hacerse entender y los que no se quieren equivocar. Los primeros avanzan increíblemente rápido, los segundos se quedan atascados, a veces sin lograr mantener una conversación básica. ¿Por qué ocurre esto?",
+      "image"    : "/assets/images/bg-images/seaport-during-daytime.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "La magia de la criptografía asimétrica",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-magia-de-la-criptografia-asimetrica/",
+      "date"     : "Feb 7, 2020",
+      "excerpt"  : "En este post vamos a ver cómo funciona el cifrado de mensajes usando llaves públicas y privadas, y cómo puedes intercambiar mensaje cifrados con otras personas escribiendo un poco de código JavaScript.",
+      "image"    : "/assets/images/bg-images/gold-padlock.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué aprender en 2020?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-aprender-en-2020/",
+      "date"     : "Jan 17, 2020",
+      "excerpt"  : "Asumiendo que ya encontraste un empleo como desarrollador (o estás en proceso de encontrar uno) ¿qué tecnologías aprender este nuevo año? Veamos algunas opciones interesantes.",
+      "image"    : "/assets/images/bg-images/neo-morpheus-kungfu.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Expresiones regulares",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/expresiones-regulares/",
+      "date"     : "Nov 22, 2019",
+      "excerpt"  : "Las expresiones regulares son una poderosa herramienta que todo programador debería conocer. En este post vamos a ver qué son, para qué sirven y cómo utilizarlas.",
+      "image"    : "/assets/images/bg-images/pillars.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Es valioso un certificado en desarrollo Web?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/es-valioso-un-certificado-en-desarrollo-web/",
+      "date"     : "Jan 15, 2018",
+      "excerpt"  : "Aunque existen industrias donde las certificaciones son importantes, en desarrollo Web una certificación no te va a ayudar a encontrar un empleo. En este post te explicaremos por qué y cuál es la alternativa.",
+      "image"    : "/assets/images/bg-images/chess.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Manejadores de paquetes en Node.js",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/manejadores-de-paquetes-en-nodejs/",
+      "date"     : "Dec 28, 2017",
+      "excerpt"  : "Las librerías son una parte fundamental de cualquier lenguaje de programación y nos permiten reutilizar código que otros desarrolladores han escrito y publicado. En este post vamos a hablar de npm y Yarn, los dos manejadores de paquetes más populares de Node.js.",
+      "image"    : "/assets/images/bg-images/boxes.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Introducción a Node.js",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/introduccion-a-nodejs/",
+      "date"     : "Dec 25, 2017",
+      "excerpt"  : "Node.js es una plataforma que nos permite ejecutar código JavaScript fuera del navegador. En este post explicaremos cómo empezar con Node.js, qué tipo de aplicaciones puedes construir y una introducción a su poderoso manejador de paquetes.",
+      "image"    : "/assets/images/bg-images/nodejs.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Lenguajes compilados e interpretados",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/lenguajes-compilados-e-interpretados/",
+      "date"     : "Nov 6, 2017",
+      "excerpt"  : "C, C++ y Go son lenguajes de programación compilados. JavaScript, Python y Ruby son lenguajes interpretados. ¿Cuál es la diferencia y las ventajas/desventajas de un lenguaje compilado versus uno interpretado? En este post lo vamos a explicar.",
+      "image"    : "/assets/images/bg-images/lights-exposure.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "La era de la información digital",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-era-de-la-informacion-digital/",
+      "date"     : "Oct 28, 2017",
+      "excerpt"  : "¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.",
+      "image"    : "/assets/images/bg-images/digital-analog.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "La fortuna de ser programador",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-fortuna-de-ser-programador/",
+      "date"     : "Oct 2, 2017",
+      "excerpt"  : "La programación es uno de los trabajos con mejores salarios de la actualidad y una de las carreras más importantes del futuro. Y sin embargo, esto no es lo que me hace sentir más afortunado de ser un programador.",
+      "image"    : "/assets/images/bg-images/sunset-tree.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Cómo aprovechar al máximo los mentores de Make it Real?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/como-aprovechar-al-maximo-los-mentores/",
+      "date"     : "Sep 18, 2017",
+      "excerpt"  : "Quizá la principal ventaja de nuestros programas es la guía y retroalimentación de los mentores. En este post aprenderás cómo aprovecharlos al máximo para acelerar tu aprendizaje.",
+      "image"    : "/assets/images/bg-images/traffic-light.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "El nombre Make it Real",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/el-nombre-make-it-real/",
+      "date"     : "Aug 31, 2017",
+      "excerpt"  : "La recomendación fue clara: Make it Real es un nombre muy genérico y eso lo hace difícil de posicionar en buscadores. Además, la terminación poco conocida .camp no iba a colaborar 😂",
+      "image"    : "/assets/images/bg-images/bg-makeitreal.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Por qué no es tarde para cambiar de carrera?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-no-es-tarde-para-cambiar-de-carrera/",
+      "date"     : "Aug 15, 2017",
+      "excerpt"  : "Siempre me ha gustado considerarme un emprendedor. Siempre he creído que emprender es tener una idea de negocio y sacar esta idea adelante. Hoy precisamente me dio la curiosidad y quise aprender más, no de lo que significa ser emprendedor, sino de saber más de los origenes de esta palabra, tan común hoy en día.",
+      "image"    : "/assets/images/bg-images/never-too-late.jpg",
+      "author"   : "Simón Hoyos",
+      "gravatar" : "/assets/images/people/simon-hoyos.jpeg"
+    } ,
+  
+    {
+      "title"    : "El protocolo HTTP",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/el-protocolo-http/",
+      "date"     : "Aug 9, 2017",
+      "excerpt"  : "El protocolo HTTP (HyperText Transfer Protocol) es quizá el protocolo más importante que debemos conocer como desarrolladores Web y la razón por la que muchos tenemos hoy un empleo ;)",
+      "image"    : "/assets/images/bg-images/lights.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Arriesgarlo todo por cumplir nuestras metas y sueños",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/arriesgarlo-todo-por-cumplir-nuestras-metas-y-suenos/",
+      "date"     : "Jul 30, 2017",
+      "excerpt"  : "Todo empezó por simple curiosidad. ¿Que significaba la programación? ¿Cómo era posible que las personas construyeran algo tan grande simplemente con palabras? ¿Cómo así que con palabras?",
+      "image"    : "/assets/images/bg-images/metas-y-suenos.jpeg",
+      "author"   : "Alejandro Estrada",
+      "gravatar" : "/assets/images/people/alejandro-estrada.jpeg"
+    } ,
+  
+    {
+      "title"    : "Responsive design: media queries",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/responsive-design-media-queries/",
+      "date"     : "Jul 26, 2017",
+      "excerpt"  : "En este post hablaremos sobre media queries, una característica de CSS3 que nos permite crear sitios y aplicaciones Web que se adaptan a diferentes tipos de pantallas.",
+      "image"    : "/assets/images/bg-images/responsive-design.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué es concurrencia?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/concurrencia/",
+      "date"     : "Jul 12, 2017",
+      "excerpt"  : "En este post vamos ver qué es concurrencia, cuáles son los dos modelos más populares que existen actualmente y cómo la concurrencia afecta el código que escribes.",
+      "image"    : "/assets/images/bg-images/concurrency.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Turbolinks",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/turbolinks/",
+      "date"     : "Jun 12, 2017",
+      "excerpt"  : "En este post vamos a ver qué es Turbolinks y lo que debes tener en cuenta para sacar el mayor provecho de esta increíble herramienta sin frustrate en el proceso.",
+      "image"    : "/assets/images/bg-images/turbolinks.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Aprende a leer en código binario",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aprende-a-leer-en-codigo-binario/",
+      "date"     : "May 30, 2017",
+      "excerpt"  : "En dos años (2019) The Matrix cumplirá 20 años y aún sigue siendo de una de mis películas favoritas.",
+      "image"    : "/assets/images/bg-images/the-matrix.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué hace diferente a Make it Real?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-hace-diferente-a-make-it-real/",
+      "date"     : "May 20, 2017",
+      "excerpt"  : "Cualquier persona puede aprender a programar por su cuenta. ¿Por qué pagar por un programa como el de Make it Real y qué lo hace diferente de cualquier otro programa?",
+      "image"    : "/assets/images/bg-images/the-path.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Por qué es tan difícil aprender a programar?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-es-tan-dificil-aprender-a-programar/",
+      "date"     : "Apr 2, 2017",
+      "excerpt"  : "Muchos dirían que aprender a programar es relativamente fácil. Sin embargo, después de ver a cientos de personas intentarlo, es claro que es un proceso muy frustrante para la mayoría.",
+      "image"    : "/assets/images/bg-images/hot-air-balloon-valley-sky-99551.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "La nueva ciencia del aprendizaje",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-nueva-ciencia-del-aprendizaje/",
+      "date"     : "Jan 1, 2017",
+      "excerpt"  : "Conoce cómo en Make it Real aplicamos los últimos hallazgos científicos para acelerar el proceso de aprendizaje y que tengas éxito en cualquiera de nuestros programas.",
+      "image"    : "/assets/images/bg-images/deliberate-practice.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Manejo de dependencias en Ruby con Bundler",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/manejo-de-dependencias-en-ruby-con-bundler/",
+      "date"     : "Oct 17, 2016",
+      "excerpt"  : "Bundler es una manejador de dependencias para Ruby. Aunque viene incluido con Rails, Bundler no es exclusivo de Rails, lo puedes usar para manejar las dependencias de cualquier proyecto de Ruby.",
+      "image"    : "/assets/images/bg-images/bundler.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Manejadores de versiones para Ruby",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/manejadores-de-versiones-en-ruby/",
+      "date"     : "Oct 16, 2016",
+      "excerpt"  : "Un manejador de versiones para Ruby te permite instalar varias versiones de Ruby en tu máquina y cambiar entre versiones fácilmente.",
+      "image"    : "/assets/images/bg-images/ruby-version-management.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "2 años después de Make It Real",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/dos-anios-despues/",
+      "date"     : "Sep 4, 2016",
+      "excerpt"  : "Esta historia comienza hace ya casi dos años, cuando cursaba octavo semestre de Ingeniería Electrónica en la Universidad de Antioquia, para ese entonces estaba un poco insatisfecho y decepcionado de lo que había recogido hasta ese momento en la Universidad",
+      "image"    : "/assets/images/bg-images/two-years-after-make-it-real.jpg",
+      "author"   : "Sebastian Zapata Mardini",
+      "gravatar" : "https://s.gravatar.com/avatar/cf822fcc399ecdc04f3f3155bc264563?s=80"
+    } ,
+  
+    {
+      "title"    : "Guía para trabajar como freelance en desarrollo Web",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/guia-freelance-desarrollo-web/",
+      "date"     : "Sep 1, 2016",
+      "excerpt"  : "Un freelancer es una persona que ofrece sus servicios profesionales a empresas de forma independiente. Es una alternativa a un empleo con salario fijo que ofrece varias ventajas como flexibilidad horaria, capacidad de cobrar más por tu trabajo y no tener un jefe. Pero también presenta retos como encontrar clientes y cobrarles.",
+      "image"    : "/assets/images/bg-images/freelancing.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 16 ¡Lo logré!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-11-a-15/",
+      "date"     : "Jul 25, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/landscape-mountains-nature-man.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 7 a 10",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-7-a-10/",
+      "date"     : "Jul 18, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/city-sunny-people-street.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 6",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-6/",
+      "date"     : "Jul 13, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/landscape-mountains-nature-rocks.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 5",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-5/",
+      "date"     : "Jul 11, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/nature-sky-sunset-man.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 4",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-4/",
+      "date"     : "Jul 10, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/landscape-toy-car.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 3",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-3/",
+      "date"     : "Jul 9, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/landscape-mountains.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 2",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-2/",
+      "date"     : "Jul 8, 2016",
+      "excerpt"  : "En esta serie de posts estoy documentando mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/city-night.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HackerRank Challenge - Día 1",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/hackerrank-challenge-dia-1/",
+      "date"     : "Jul 7, 2016",
+      "excerpt"  : "En esta serie de posts voy a documentar mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicios de programación.",
+      "image"    : "/assets/images/bg-images/hackerrank.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Análisis encuesta desarrolladores en Colombia 2016",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/analisis-encuesta-desarrolladores-colombia-2016/",
+      "date"     : "Feb 21, 2016",
+      "excerpt"  : "La comunidad de ColombiaDev ha publicado los datos de la encuesta a desarrolladores en Colombia realizada a principios del 2016. Este es nuestro analisis no oficial.",
+      "image"    : "/assets/images/bg-images/colombia-jardin.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Descubre si Make it Real es para ti",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/descubre-si-make-it-real-es-para-ti/",
+      "date"     : "Feb 9, 2016",
+      "excerpt"  : "En Make it Real buscamos entrenar a los desarrolladores Web que nosotros mismos quisiéramos contratar. Personas con autodisciplina que sean capaces de resolver problemas complejos y se adapten rápidamente a nuevas tecnologías y escenarios. En este post vamos a discutir algunas características de nuestro programa para que descubras si Make it Real es para ti.",
+      "image"    : "/assets/images/bg-images/laptop-sublime.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Lanzamiento de nuestro programa Front End",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/lanzamiento-programa-front-end/",
+      "date"     : "Jan 20, 2016",
+      "excerpt"  : "En Make it Real estamos muy emocionados de presentarte nuestro nuevo programa: Desarrollador Web Front End con AngularJS.",
+      "image"    : "/assets/images/bg-images/front-end.png",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué es código?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-codigo/",
+      "date"     : "Jan 11, 2016",
+      "excerpt"  : "Semáforos, automóviles, aviones, aeropuertos, satélites, el sistema financiero, gran parte de nuestras vidas depende del código que varias generaciones de programadores han escrito.",
+      "image"    : "/assets/images/bg-images/code.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Por qué el desarrollo front-end es tan difícil ahora?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-el-desarrollo-front-end-es-tan-dificil/",
+      "date"     : "Dec 29, 2015",
+      "excerpt"  : "Solía ser mucho más fácil. Antes, el desarrollador Web escribía tanto el front-end como el back-end. Hoy el desarrollador front-end debe ser un experto en JavaScript.",
+      "image"    : "/assets/images/bg-images/creative-apple-desk-office.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Aprende Desarrollo Web gratis",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aprende-desarrollo-web-gratis/",
+      "date"     : "Dec 14, 2015",
+      "excerpt"  : "¿Quieres iniciar en el mundo del desarrollo Web y no sabes por dónde empezar? Conoce Aprende Desarrollo Web, un curso completamente gratis dirigido a personas sin experiencia en el que aprenderás a crear y publicar sitios interactivos en Internet con HTML, CSS y JavaScript.",
+      "image"    : "/assets/images/bg-images/aprende-desarrollo-web-bg.png",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Desarrollo ágil con Scrum",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/desarrollo-agil-con-scrum/",
+      "date"     : "Oct 8, 2015",
+      "excerpt"  : "Scrum es una metodología de desarrollo ágil que ayuda a equipos pequeños a construir productos complejos de software. En este post te explicamos de dónde surge, conceptos, ventajas y desventajas.",
+      "image"    : "/assets/images/bg-images/athletics-scrum.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Módulos en Ruby",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/modulos-en-ruby/",
+      "date"     : "Oct 4, 2015",
+      "excerpt"  : "Los módulos en Ruby cumplen una doble función: evitan colisiones de nombres y nos ayudan a reutilizar código. En este post te explicamos qué son, cómo se definen y cómo se utilizan.",
+      "image"    : "/assets/images/bg-images/modules.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué es un stack overflow (no el sitio)?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-un-stack-overflow-desbordamiento-de-pila/",
+      "date"     : "Sep 21, 2015",
+      "excerpt"  : "Sí, el sitio más popular de preguntas y respuestas de programación es, por mucho, StackOverflow. Pero ¿qué es realmente un stack overflow (en español desbordamiento de pila)? En este post te lo explicamos en detalle.",
+      "image"    : "/assets/images/bg-images/stackoverflow.png",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué es un API?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-un-api/",
+      "date"     : "Sep 17, 2015",
+      "excerpt"  : "Un API (Application Programming Interface) es la interfaz que un software utiliza para interactuar con otro software. Empecemos con una analogía. Observa la siguiente lavadora:",
+      "image"    : "/assets/images/bg-images/api-controls.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué es recursión?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/que-es-la-recursion/",
+      "date"     : "Sep 15, 2015",
+      "excerpt"  : "Uno de los conceptos más poderosos de la programación es la recursión. Es un concepto simple pero confuso al mismo tiempo porque no es la forma en que estamos acostumbrados a pensar.",
+      "image"    : "/assets/images/bg-images/recursion.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Los niveles en Make it Real",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/niveles-make-it-real/",
+      "date"     : "Sep 15, 2015",
+      "excerpt"  : "Conoce el sistema de niveles y puntos con el que Make it Real cuenta, para poder ver los avances de nuestros alumnos y a la vez hacer más divertido el aprendizaje en nuestra plataforma.",
+      "image"    : "/assets/images/03.png",
+      "author"   : "Hey Joe",
+      "gravatar" : "http://s.gravatar.com/avatar/fd6b127ea49aa9a59198eaa23bb6165c?s=80.jpg"
+    } ,
+  
+    {
+      "title"    : "Modales de Bootstrap en Ruby on Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/modales-bootstrap-ruby-on-rails/",
+      "date"     : "Sep 13, 2015",
+      "excerpt"  : "Un requerimiento muy frecuente en las aplicaciones Web que usan Bootstrap es que los formularios de crear y editar se abran en ventanas modales, y no en otra página, como se muestra en la siguiente animación:",
+      "image"    : "/assets/images/bg-images/modals-ruby-on-rails.png",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Una nueva mentalidad",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/una-nueva-mentalidad/",
+      "date"     : "Jul 27, 2015",
+      "excerpt"  : "Estamos atravesando por un momento muy interesante en la historia de la humanidad. A través de la programación estamos creando y transformando industrias que han cambiado la forma en que compramos, viajamos, nos comunicamos, creamos, y consumimos contenido.",
+      "image"    : "/assets/images/bg-images/sunset-summer-golden-hour-paul-filitchkin.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Tiempo y dedicación",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/tiempo-y-dedicacion/",
+      "date"     : "Jul 27, 2015",
+      "excerpt"  : "¿Cuánto tiempo necesitas invertir para poder hacer tus propias aplicaciones Web y/o conseguir un empleo como programador(a) Junior?",
+      "image"    : "/assets/images/bg-images/fashion-wristwatch-time-watch.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Optimismo y mentalidad de crecimiento",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/optimismo-mentalidad-de-crecimiento/",
+      "date"     : "Jul 27, 2015",
+      "excerpt"  : "Aprender a programar es difícil. La mayoría de la programación no requiere ser bueno en matemáticas, ni tener un cerebro especial; requiere mucha práctica. Aprender un nuevo lenguaje de programación es parecido a aprender un nuevo instrumento, o un nuevo idioma.",
+      "image"    : "/assets/images/bg-images/road-dawn-mountains-sky.jpeg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Motivación, entusiasmo y disciplina",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/motivacion-entusiasmo-disciplina/",
+      "date"     : "Jul 27, 2015",
+      "excerpt"  : "Es muy probable que en este momento estés motivado y lleno de entusiasmo por aprender a programar. ¡Eso es genial! Pero, aunque la motivación y el entusiasmo son importantes, desafortunadamente no son suficientes.",
+      "image"    : "/assets/images/bg-images/sky-rocks-forest-trees.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "3 consejos para aprender a programar",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/consejos-para-aprender-a-programar/",
+      "date"     : "Jul 27, 2015",
+      "excerpt"  : "Si quieres aprender, o estás aprendiendo a programar, estos tres consejos te ayudarán:",
+      "image"    : "/assets/images/bg-images/start-wars.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Por qué un programa virtual?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/por-que-programa-virtual/",
+      "date"     : "Jun 12, 2015",
+      "excerpt"  : "Make it Real empezó en el 2014 con Bootcamps presenciales, de 12 semanas tiempo completo. El modelo estuvo fuertemente inspirado en iniciativas similares en Estados Unidos como Dev Bootcamp y Hack Reactor que cuestan entre $10,000 y $20,000 dólares.",
+      "image"    : "/assets/images/bg-images/virtual.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¿Qué significa saber programar y cómo aprender?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/saber-programar-y-como-aprender/",
+      "date"     : "Jun 3, 2015",
+      "excerpt"  : "Estamos acostumbrados a dividir el mundo en dos: los buenos de los malos, los ricos de los pobres, los que saben programar de los que no. Pero la realidad es que esos conceptos son muy relativos.",
+      "image"    : "/assets/images/bg-images/photo-ruby@2x.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Herramientas de desarrollador o developer tools",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/herramientas-de-desarrollador-o-developer-tools/",
+      "date"     : "May 29, 2015",
+      "excerpt"  : "Las herramientas de desarrollador, o en inglés developer tools, son un conjunto de herramientas integradas en el navegador, diseñadas para facilitar el desarrollo de aplicaciones web.",
+      "image"    : "/assets/images/bg-images/developer-tools.png",
+      "author"   : "Simón Soriano",
+      "gravatar" : "//www.gravatar.com/avatar/0a5c5ad25ae54bd2be9c5091cf5eb1d1.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "La línea de comandos",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/la-linea-de-comandos/",
+      "date"     : "Apr 7, 2015",
+      "excerpt"  : "También llamada “consola” o “terminal”, la línea de comandos es una de las herramientas más importantes de todo programador. ¿Qué es? ¿Para qué sirve? ¿Por qué los programadores la usamos tanto? Esas son las preguntas que vamos a intentar responder en este post.",
+      "image"    : "/assets/images/bg-images/matrix.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Introducción a Ruby on Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/introduccion-ruby-on-rails/",
+      "date"     : "Mar 22, 2015",
+      "excerpt"  : "Ruby on Rails es un framework para crear aplicaciones Web, escrito en el lenguaje de programación Ruby, y diseñado para que el desarrollo de aplicaciones Web sea fácil y divertido.",
+      "image"    : "/assets/images/bg-images/ruby-on-rails.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HTML y CSS",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/html-css/",
+      "date"     : "Mar 10, 2015",
+      "excerpt"  : "Para hacer páginas Web necesitas aprender dos lenguajes: HTML y CSS. Estos son los lenguajes que los navegadores (Firefox, Chrome, Internet Explorer) entienden e interpretan para mostrarte lo que ves cuando abres alguna página.",
+      "image"    : "/assets/images/bg-images/html5-css3.png",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Programación Orientada por Objetos en Ruby",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/programacion-orientada-por-objetos-ruby/",
+      "date"     : "Feb 23, 2015",
+      "excerpt"  : "La Programación Orientada por Objetos, también conocida por las siglas OOP (Object Oriented Programming), surgió a principios de los años 80’s como respuesta a la dificultad que estaban experimentando los programadores manteniendo aplicaciones de tamaño y complejidad considerables.",
+      "image"    : "/assets/images/bg-images/object-oriented-programming.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Una muy breve historia de Internet",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/una-breve-historia-de-internet/",
+      "date"     : "Feb 17, 2015",
+      "excerpt"  : "A principios de los años 60’s, en Estados Unidos, varias universidades tenían computadores de tiempo compartido: enormes máquinas, con una fracción de la capacidad de tu teléfono móvil actual, que se accedían a través de terminales sin pantalla, permitiendo a varios compartir los recursos del computador de forma simultánea.",
+      "image"    : "/assets/images/mainframe3.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "¡Felicitaciones, lo hicieron realidad!",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/felicitaciones-lo-hicieron-realidad/",
+      "date"     : "Jan 25, 2015",
+      "excerpt"  : "Es indescriptible la alegría y el orgullo que sentía mientras presentaban sus proyectos personales el pasado viernes 23 de Enero durante el Demo Day.",
+      "image"    : "/assets/images/screenshots.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Formularios de Búsqueda en Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/formularios-de-busqueda-en-rails/",
+      "date"     : "Dec 27, 2014",
+      "excerpt"  : "En Ruby on Rails, los formularios generalmente se usan para crear o editar modelos. Sin embargo, un caso de uso muy frecuente es el de buscar o filtrar información usando un formulario. Por ejemplo, imaginemos una aplicación que tiene una lista de gastos que se puede filtrar por los siguientes criterios:",
+      "image"    : "/assets/images/bg-images/modals-ruby-on-rails.png",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Git y Github",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/git-y-github/",
+      "date"     : "Oct 18, 2014",
+      "excerpt"  : "Git es un sistema de control de versiones distribuido, diseñado y desarrollado inicialmente por Linus Torvalds en el 2005 cuando BitKeeper, el sistema de control de versiones que utilizaban para el desarrollo de Linux, cambiara su licencia y no permitiera su uso libre.",
+      "image"    : "/assets/images/bg-images/github-logo.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "JavaScript, jQuery y Ajax",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/javascript-jquery-y-ajax/",
+      "date"     : "Oct 12, 2014",
+      "excerpt"  : "A mediados de los 90’s, la mayoría de sitios Web consistían de páginas estáticas sin ninguna interactividad. Algunos sitios ya generaban páginas dinámicas en el servidor, pero toda acción del usuario requería refrescar la página completamente para ver los cambios. Se necesitaba un lenguaje de programación que corriera en el navegador.",
+      "image"    : "/assets/images/bg-images/jquery.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "HTTP y HTML",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/http-y-html/",
+      "date"     : "Oct 5, 2014",
+      "excerpt"  : "¿Qué es HTTP? ¿Qué es HTML? ¿Qué relación tienen? En este post vamos a intentar responder estas preguntas. Pero antes un poco de historia.",
+      "image"    : "/assets/images/bg-images/http.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Conceptos básicos de programación",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/conceptos-basicos-de-programacion/",
+      "date"     : "Oct 2, 2014",
+      "excerpt"  : "Todos los lenguajes de programación comparten algunos elementos básicos que funcionan y se usan de forma diferente en cada lenguaje, pero que cumplen el mismo objetivo. Esos elementos son:",
+      "image"    : "/assets/images/bg-images/traffic-car-vehicle-black.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Aprendiendo a Programar",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/aprendiendo-a-programar/",
+      "date"     : "Sep 22, 2014",
+      "excerpt"  : "Aprender a programar es difícil. La mayoría de la programación no requiere ser bueno en matemáticas, ni tener un cerebro especial; requiere mucha práctica. Aprender un nuevo lenguaje de programación es parecido a aprender un nuevo instrumento, o un nuevo idioma.",
+      "image"    : "/assets/images/bg-images/wood-coffee-iphone-notebook.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Diseñando un Producto Mínimo Viable",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/disenando-un-producto-viable-minimo/",
+      "date"     : "Aug 29, 2014",
+      "excerpt"  : "En los últimos días hemos estado trabajando sin descanso en Challenges, una aplicación para administrar los retos de programación que los alumnos de Make it Real tendrán que completar durante las 12 semanas del Bootcamp.",
+      "image"    : "/assets/images/bg-images/startup-photos-reduced.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Entrevista a Sebastián Sogamoso",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/entrevista-a-sebastian-sogamoso/",
+      "date"     : "Aug 12, 2014",
+      "excerpt"  : "Tuvimos la oportunidad de hacerle algunas preguntas a Sebastián Sogamoso para que nos contara un poco sobre su experiencia como desarrollador trabajando remotamente para una empresa en Estados Unidos:",
+      "image"    : "/assets/images/bg-images/night-skyline-usa-manhattan.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } ,
+  
+    {
+      "title"    : "Transformando la educación",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/transformando-la-educacion/",
+      "date"     : "Jul 27, 2014",
+      "excerpt"  : "El sistema educativo actual es muy efectivo generando trabajadores reemplazables, obedientes y productivos, pero ineficiente y anticuado para las necesidades del mundo actual. En Make it Real queremos ser el inicio del cambio.",
+      "image"    : "/assets/images/bg-images/laptop-blackboard.jpg",
+      "author"   : "Germán Escobar",
+      "gravatar" : "//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"
+    } 
+  
+]

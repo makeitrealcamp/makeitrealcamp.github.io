@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Conceptos básicos de programación </title>
+  <meta name="description" content="Todos los lenguajes de programación comparten algunos elementos básicos que funcionan y se usan de forma diferente en cada lenguaje, pero que cumplen el mism...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Conceptos básicos de programación">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/conceptos-basicos-de-programacion/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/traffic-car-vehicle-black.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2014-10-02T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/conceptos-basicos-de-programacion/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/traffic-car-vehicle-black.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 2, 2014</time>
+                </div>
+                <h1>Conceptos básicos de programación</h1>
+                <div class="post-body"><p>Todos los lenguajes de programación comparten algunos elementos básicos que funcionan y se usan de forma diferente en cada lenguaje, pero que cumplen el mismo objetivo. Esos elementos son:<!-- more --></p>
+
+<ul>
+  <li>Tipos de datos</li>
+  <li>Variables</li>
+  <li>Control de flujo</li>
+  <li>Ciclos</li>
+  <li>Estructuras de datos</li>
+  <li>Funciones</li>
+</ul>
+
+<p>Acepto que entender cómo funcionan estos elementos no es diversión pura, pero es la base de la programación. Recuerda que la programación no es más que una herramienta, un medio para lograr algún fin: ¿escribir un juego? ¿hacer una aplicación web? ¿una aplicación móvil?.</p>
+
+<h2 id="tipos-de-datos">Tipos de datos</h2>
+
+<p>Algunos lenguajes de programación tienen más tipos de datos que otros, pero, en general, todos incluyen al menos los siguientes: <strong>caracteres</strong> (char), <strong>cadenas de caracteres</strong> (string), <strong>enteros</strong> (integer), <strong>decimales</strong> (decimal, float), y <strong>booleanos</strong> (true y false). Por ejemplo:</p>
+
+<p><strong>En JavaScript:</strong></p>
+
+<pre><code class="language-javascript">“Hola Mundo”
+34
+23.45
+false</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">“Hola Mundo”
+34
+23.45
+false</code></pre>
+
+<h2 id="variables">Variables</h2>
+
+<p>Las variables nos permiten almacenar información temporalmente. Por ejemplo, podemos almacenar la cadena “Hola Mundo” en una variable.</p>
+
+<p><strong>En JavaScript:</strong></p>
+
+<pre><code class="language-javascript">var miPrimeraVariable = “Hola Mundo”</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">mi_primera_variable = “Hola Mundo”</code></pre>
+
+<p>Acá se empiezan a notar algunas diferencias entre los lenguajes. En <strong>JavaScript</strong>, una variable se define empezando con la palabra <code>var</code> (es posible omitirla pero eso se considera una mala práctica). En <strong>Ruby</strong> se empieza con el nombre de la variable.</p>
+
+<p>En <strong>JavaScript</strong>, si el nombre de una variable se compone de varias palabras, las palabras inician con mayúscula excepto la primera (a eso se le conoce como CamelCase … porqueTieneFormaDeCamello). En <strong>Ruby</strong> las palabras se separan con underscore (a esto se le conoce como snake_case … porque_parece_una_culebra). (Esto es solo una notación y no hay nada que impida utilizar snake_case en <strong>JavaScript</strong>, o CamelCase en <strong>Ruby</strong>. En los tutorials más básicos de cada lenguaje generalmente le dicen a uno qué notación utilizar).</p>
+
+<h2 id="un-mecanismo-para-tomar-de-decisiones">Un mecanismo para tomar de decisiones</h2>
+
+<p>Un elemento muy importante en todo lenguaje de programación es cómo tomar una decisión según la información que se tenga en las variables. Por ejemplo:</p>
+
+<p><strong>En JavaScript:</strong></p>
+
+<pre><code class="language-javascript">var puntos = 20;
+if (puntos &gt; 15) {
+  console.log("Felicitaciones, tienes más de 15 puntos!");
+} else {
+  console.log("Muy Regular, tienes menos de 15 puntos");
+}</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">puntos = 5
+if puntos &gt; 15
+  puts "Felicitaciones, tienes más de 15 puntos!"
+else
+  puts "Muy Regular, tienes menos de 15 puntos"
+end</code></pre>
+
+<p>De nuevo, la sintaxis cambia de lenguaje a lenguaje, pero el principio es el mismo.</p>
+
+<p>A esto se le llama <strong>control de flujo</strong> porque cuando el programa está corriendo, los <code class="language-plaintext highlighter-rouge">if</code> deciden qué código se ejecuta.</p>
+
+<h2 id="un-mecanismo-para-iterar-ciclos">Un mecanismo para iterar (ciclos)</h2>
+
+<p>Por ejemplo, cuando queremos imprimir los números de 0 hasta 9.</p>
+
+<p><strong>En JavaScript:</strong></p>
+
+<pre><code class="language-javascript">for (var i = 0; i &lt;  10; i++) {
+  console.log(i);
+}</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">9.times do |i|
+  puts i
+end</code></pre>
+
+<h2 id="estructuras-de-datos">Estructuras de datos</h2>
+
+<p>Si vieron programación en la universidad el título los puede asustar. Pero las estructuras de datos existen porque programar únicamente con los tipos básicos (char, integer, boolean, etc) sería muy difícil. A veces necesitamos almacenar colecciones de datos e información más estructurada.</p>
+
+<p>Los arreglos son los más conocidos, nos permiten almacenar varios datos <em>en una sola variable</em>.</p>
+
+<p><strong>En Javascript:</strong></p>
+
+<pre><code class="language-javascript">var arreglo = [1, 2, 3, 4, 5]
+console.log(arreglo[2]); // 3 - el primer elemento está en la posición 0</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">arreglo = [1, 2, 3, 4, 5]
+puts arreglo[2] # 3 - el primer elemento está en la posición 0</code></pre>
+
+<p>A veces se necesita guardar información más estructurada. Por ejemplo, los datos de una persona.</p>
+
+<p><strong>En JavaScript:</strong></p>
+
+<pre><code class="language-javascript">var german = {
+  name: “German Escobar”,
+  gender: ‘male’,
+  age: 32
+};
+
+console.log(german.gender); // male</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">class Person
+  attr_accessor :name, :gender, :age
+end
+
+german = Person.new
+german.name = “German Escobar”
+german.gender = “male”
+german.age = 32
+
+puts german.gender # male</code></pre>
+
+<h2 id="funciones">Funciones</h2>
+
+<p>Las funciones, también llamadas procedimientos o métodos, encapsulan algunas instrucciones y se pueden llamar utilizando el nombre de la función.</p>
+
+<p><strong>En JavaScript:</strong></p>
+
+<pre><code class="language-javascript">function rockear(lenguaje) {
+  console.log(lenguaje + " rocks!");
+}
+
+rockear("JavaScript");</code></pre>
+
+<p><strong>En Ruby:</strong></p>
+
+<pre><code class="language-ruby">def rockear(lenguaje)
+  puts lenguaje + " rocks!"
+end
+
+rockear("Ruby")</code></pre>
+
+<p>Existen muchos más elementos de cada lenguaje de programación, pero con estos podemos empezar a leer código y jugar con el lenguaje.</p>
+
+<h2 id="preguntas-básicas-sobre-un-lenguaje-de-programación">Preguntas básicas sobre un lenguaje de programación</h2>
+
+<ul>
+  <li>¿Qué tipos de datos existen?</li>
+  <li>¿Cómo se define y se asigna un valor a una variable?</li>
+  <li>¿Cómo se itera sobre un rango de números?</li>
+  <li>¿Cómo se define un arreglo?</li>
+  <li>¿Cómo se itera sobre un arreglo?</li>
+  <li>¿Cómo se define una función?</li>
+  <li>¿Cómo se comenta el código?</li>
+  <li>¿En qué se usa principalmente el lenguaje?</li>
+</ul>
+
+<h2 id="más-recursos">Más recursos</h2>
+
+<ul>
+  <li>En Codecademy existe un curso de <a href="http://www.codecademy.com/en/tracks/javascript" target="_blank">JavaScript</a> y otro de <a href="http://www.codecademy.com/tracks/ruby" target="_blank">Ruby</a>.</li>
+  <li>Treehouse también tiene cursos básicos de programación. Uno de <a href="http://teamtreehouse.com/library/introduction-to-programming" target="_blank">JavaScript</a> y el otro de <a href="http://teamtreehouse.com/library/ruby-foundations" target="_blank">Ruby</a>.</li>
+</ul>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Conceptos básicos de programación&url=http://blog.makeitreal.camp/conceptos-basicos-de-programacion/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/conceptos-basicos-de-programacion/&p[title]=Conceptos básicos de programación" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/conceptos-basicos-de-programacion/&title=Conceptos básicos de programación&summary=&source=http://blog.makeitreal.camp/conceptos-basicos-de-programacion/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=conceptos-basicos-de-programacion">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>
