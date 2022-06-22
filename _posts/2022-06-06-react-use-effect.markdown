@@ -133,8 +133,6 @@ En el ejemplo anterior, notaremos que el mensaje de la función de limpieza se a
 
 Un buen ejemplo de cuándo podríamos necesitar una limpieza es cuando configuramos una suscripción a nuestro efecto, pero queremos eliminar la suscripción cada vez que se realice la próxima llamada de suscripción, para evitar memory leaks.
 
-A good example of when we might need a cleanup is when we set up a subscription in our effect but want to remove the subscription whenever the next subscription call is to be made, to avoid memory leaks.
-
 Estas son principalmente todas las diferentes formas en que el hook `useEffect` se puede utilizar para ejecutar efectos secundarios en componentes. Te invito a ver esta [guia visual de useEffect](https://alexsidorenko.com/blog/useeffect/) de ALEX SIDORENKO que ilustra estos conceptos a través de una serie de GIF es a la vez inteligente y eficaz, especialmente para los estudiantes visuales. También hay una visualización de cómo funcionan las funciones de primera clase si quieres más.
 
 [https://alexsidorenko.com/blog/useeffect/](https://alexsidorenko.com/blog/useeffect/)
