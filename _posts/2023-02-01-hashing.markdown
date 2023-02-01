@@ -1,0 +1,131 @@
+---
+layout: post
+title:  "Hashing"
+date:   2023-02-01 02:00:00 -0500
+author: Germán Escobar
+image: /assets/images/bg-images/hashing.jpg
+gravatar: //www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80
+---
+
+Hashing es un concepto muy importante en computación y la base de tecnologías como [blockchain](https://es.wikipedia.org/wiki/Cadena_de_bloques){:target="\_blank"} y [git](https://git-scm.com/){:target="\_blank"}. En este post vamos a ver qué es, para qué sirve y cuáles son los algoritmos más usados.<!-- more -->
+
+## ¿Qué es?
+
+**Hashing es una técnica que se utiliza para convertir una entrada (como un texto o una contraseña) a una cadena de texto de tamaño fijo llamada un "hash"[^1].**
+
+Lo interesante del hashing es que siempre generará el mismo hash para una misma entrada, pero un hash completamente diferente para cualquier variación en la entrada, por pequeña que sea.
+
+Por ejemplo, fíjate en estas dos frases y mira el hash de cada una (utilizamos un algoritmo llamado [MD5](https://es.wikipedia.org/wiki/MD5){:target="\_blank"} para generar el hash pero de esto hablaremos más adelante):
+
+* “Lorem ipsum dolor sit amet”: fea80f2db003d4ebc4536023814aa885
+* “Lorem ipsum dolar sit amet”: ffd6ea42d44d707aef85d2d3d2ba277e
+
+Aunque sólo cambia una letra en el texto (¿la encontraste?) el hash es completamente diferente.
+
+## ¿Para qué se utiliza?
+
+La técnica del hashing tiene una gran variedad de aplicaciones. Veamos algunas:
+
+* **En los blockchains** (p.e. Bitcoin): se utiliza para identificar las transacciones, los bloques, las direcciones de las billeteras, entre otras, y garantizar que las transacciones no sean manipuladas.
+* **En git** (el sistema de control de versiones): se utiliza para identificar los commits y que el contenido de cada commit no haya sido manipulado.
+* **Almacenar contraseñas de forma segura**: en las bases de datos se almacena el hash en vez de la contraseña plana. Cuando un usuario ingresa con su contraseña se genera un hash y se compara con el que está en la base de datos; si coincide es porque el usuario ingresó correctamente su contraseña. Si la base de datos se ve comprometida no van a tener acceso a las contraseñas.
+* **Indexación y búsquedas**: Los hashes se pueden usar para realizar búsquedas más eficientes en una base o estructura de datos.
+* **Integridad de datos**: Verificar la integridad de información, que no haya sido manipulada (p.e.  archivos descargados, los commits en git, las transacciones en un blockchain, etc.)
+* **Verificar si un contenido cambió**: por ejemplo, Google lo debe usar para verificar cuando cambia una página Web y volverla a indexar.
+* Generar firmas digitales.
+
+## Algoritmos de generación de hash
+
+Existen muchos algoritmos para generar hashes (también conocidos como funciones de hashing), algunos mejores que otros. 
+
+Por ejemplo, podemos crear una función de hash simple en JavaScript que retorne la primera letra de la entrada (en minúscula):
+
+```javascript
+function hash(str) {
+  return str[0].toLowerCase();
+}
+```
+
+Aunque esto se puede considerar una función de hash, y en algunos casos puede ser útil (por ejemplo para hacer búsquedas), el problema es que va a generar muchas **colisiones**, es decir, muchas entradas que van a generar el mismo hash.
+
+Por eso una buena función de hash debería tener las siguientes características:
+
+1. **Determinística**: siempre genera el mismo hash para la misma entrada.
+2. **Computación rápida**: no se demora mucho tiempo generando el hash.
+3. **Resistente a determinar la información de entrada**: especialmente si se va a utilizar para representar información sensible.
+4. Cambios pequeños en la entrada generan grandes cambios en la salida.
+5. **Resistente a colisiones**: aunque no existe una función de hash sin colisiones, el objetivo es minimizarlos.
+6. **Puzzle friendly**: que no sea fácil de determinar cómo está generando el hash.
+
+Generar una buena función de hash no es tarea fácil así que existen algoritmos de hashing, siendo [MD5](https://es.wikipedia.org/wiki/MD5){:target="\_blank"} y [SHA-256](https://es.wikipedia.org/wiki/SHA-2){:target="\_blank"} (a veces abreviado a SHA-2) los más populares. Sin embargo, [MD5](https://es.wikipedia.org/wiki/MD5){:target="\_blank"} ya no se recomienda porque se considera obsoleto e inseguro.
+
+Veamos cómo generar un [SHA-256](https://es.wikipedia.org/wiki/SHA-2){:target="\_blank"} con Node.js (versión 16) utilizando el módulo `node:crypto`:
+
+```javascript
+// const { createHash } = require('node:crypto')
+import { createHash } from 'node:crypto'
+
+const input = "Lorem ipsum dolor sit amet"
+const hash = createHash('sha256').update(input).digest('hex')
+
+console.log(hash)
+```
+
+Al ejecutar este código vamos a ver el siguiente resultado:
+
+```
+16aba5393ad72c0041f5600ad3c2c52ec437a2f0c7fc08fadfc3c0fe9641d7a3
+```
+
+Si cambiamos una letra del texto, por ejemplo si cambiamos última “o”  en “dolor” por una “a” veríamos este otro resultado completamente diferente:
+
+```
+b68285a110c074039ec9a177ac890b88322e361c6e0ee41b4ba89d42251826c6
+```
+
+## Tablas de hashes (hash tables)
+
+Una de las aplicaciones más importantes de los hashes son las **tablas de hashes**, también conocidas como diccionarios en Python, objetos en JavaScript[^2], hashes en Ruby, HashMap en Java, entre otros (la mayoría de lenguajes de programación tienen su equivalente).
+
+Las **tablas de hashes** son importantes porque permiten agrupar la información según algún criterio y así optimizar las búsquedas.
+
+La forma en que funcionan las **tablas de hashes** es la siguiente: guardamos la información en un arreglo y creamos una **función de hash** que reciba una llave y nos diga en qué posición del arreglo se encuentra su valor.
+
+En cada posición del arreglo pueden existir varios elementos a la vez, pero la búsqueda va a ser más rápida que recorrer todos los elementos sin agruparlos. 
+
+Por ejemplo, imagina que debemos almacenar una lista de contactos (p.e. 1 millón de contactos). Podemos agruparlos por la primera letra (similar a la **función de hash** que hicimos en la sección anterior). La información quedaría almacenada de la siguiente forma:
+
+<table border="1" style="width: 100%; margin-bottom: 20px;">
+  <tr>
+    <td>Alejandro, Alberto, ...</td> 
+  </tr>
+  <tr>
+    <td>Bibiana, Belisario, ...</td> 
+  </tr>
+  <tr>
+    <td>...</td> 
+  </tr>
+  <tr>
+    <td>Zoe, Zoraida, ...</td> 
+  </tr>
+</table>
+
+Si nuestro millón de contactos está bien distribuído entre las 26 posiciones[^3], en promedio, para encontrar un contacto sólo tendremos que buscar entre 38 contactos (1'000,000 / 26 = 38.5).
+
+Si cambiamos nuestra **función de hash** para que utilice las dos primeras letras (en vez de sólo la primera), en promedio, tendremos que buscar entre 2 contactos únicamente!
+
+Las **funciones de hash** que los lenguajes de programación implementan son más complejas que las que acabamos de mencionar pero la idea es la misma. Aunque siempre van a existir colisiones, el espacio de búsqueda se reduce significativamente permitiendo hacer búsquedas en tiempo constante.
+
+## Conclusiones
+
+Aunque el hashing es parte fundamental de nuestra infraestructura digital, es una técnica muy poco conocida, incluso entre programadores. 
+
+Sin el hashing, tecnologías como bases de datos, git, blockchains y critpografía, entre muchas otras, no serían posibles.
+
+Espero que este post te haya permitido entender qué es hashing y para qué se utiliza. Quién sabe, quizá te sirva más adelante para solucionar algún problema!
+
+---
+
+[^1]: A la salida también se le conoce como "digest" pero vamos a seguir llamándola "hash" por el resto del post.
+[^2]: En JavaScript también existe una estructura llamada [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map){:target="\_blank"} que sería más preciso en este caso.
+[^3]: Asumiendo que estamos utilizando el alfabeto inglés.
