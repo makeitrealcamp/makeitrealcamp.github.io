@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Cómo incluir ChatGPT en tus aplicaciones </title>
+  <meta name="description" content="ChatGPT cuenta con un API que nos permite agregar, a nuestras aplicaciones Web y móviles, funcionalidades como chatbots, análisis y extracción de texto, crea...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Cómo incluir ChatGPT en tus aplicaciones">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/chatgpt-api/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/openai-chatgpt.png">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2023-05-01T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/chatgpt-api/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/openai-chatgpt.png)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">May 1, 2023</time>
+                </div>
+                <h1>Cómo incluir ChatGPT en tus aplicaciones</h1>
+                <div class="post-body"><p>ChatGPT cuenta con un API que nos permite agregar, a nuestras aplicaciones Web y móviles, funcionalidades como chatbots, análisis y extracción de texto, creación de resúmenes, explicación de código, entre muchas otras. En este post vamos a ver cómo usar este poderoso API desde <strong>Node.js</strong>.<!-- more --></p>
+
+<p>Para empezar necesitas crear una cuenta en <a href="https://openai.com/" target="\_blank">OpenAI</a> y obtener el <a href="https://beta.openai.com/account/api-keys" target="\_blank">API key</a>. Al registrarte recibirás automáticamente créditos gratuitos para hacer pruebas<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p>El siguiente paso es instalar el <a href="https://www.npmjs.com/package/openai" target="\_blank">paquete de OpenAI</a> usando <strong>npm</strong>. Ejecuta el siguiente comando en la consola:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install openai
+</code></pre></div></div>
+
+<p>Crea ahora un archivo llamado <code class="language-plaintext highlighter-rouge">index.js</code> con el siguiente código de prueba:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> <span class="nx">Configuration</span><span class="p">,</span> <span class="nx">OpenAIApi</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">openai</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">configuration</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Configuration</span><span class="p">({</span>
+  <span class="na">apiKey</span><span class="p">:</span> <span class="dl">"</span><span class="s2">API-KEY</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">});</span>
+<span class="kd">const</span> <span class="nx">openai</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OpenAIApi</span><span class="p">(</span><span class="nx">configuration</span><span class="p">);</span>
+
+<span class="nx">openai</span><span class="p">.</span><span class="nx">createChatCompletion</span><span class="p">({</span>
+  <span class="na">model</span><span class="p">:</span> <span class="dl">"</span><span class="s2">gpt-3.5-turbo</span><span class="dl">"</span><span class="p">,</span>
+  <span class="na">messages</span><span class="p">:</span> <span class="p">[{</span> <span class="na">role</span><span class="p">:</span> <span class="dl">"</span><span class="s2">user</span><span class="dl">"</span><span class="p">,</span> <span class="na">content</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Hello world</span><span class="dl">"</span> <span class="p">}],</span>
+  <span class="na">max_tokens</span><span class="p">:</span> <span class="mi">100</span>
+<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">completion</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">completion</span><span class="p">)</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">completion</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">message</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+<p><strong>Nota:</strong> No olvides reemplazar el texto <code class="language-plaintext highlighter-rouge">API-KEY</code> con el API key que obtuviste en el primer paso.</p>
+
+<p>Lo primero que estamos haciendo es requerir la librería y crear una configuración con el API key para instanciar el API (<code class="language-plaintext highlighter-rouge">OpenAIApi</code>). Después utilizamos el método <code class="language-plaintext highlighter-rouge">createChatCompletion</code> que hace el llamado al API y retorna un objeto de resultados similar al siguiente:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="nl">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">chatcmpl-123</span><span class="dl">"</span><span class="p">,</span>
+  <span class="nx">object</span><span class="p">:</span> <span class="dl">"</span><span class="s2">chat.completion</span><span class="dl">"</span><span class="p">,</span>
+  <span class="nx">created</span><span class="p">:</span> <span class="mi">1677652288</span><span class="p">,</span>
+  <span class="nx">choices</span><span class="p">:</span> <span class="p">[{</span>
+    <span class="na">index</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="na">message</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">role</span><span class="p">:</span> <span class="dl">"</span><span class="s2">assistant</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">content</span><span class="p">:</span> <span class="dl">"</span><span class="se">\n\n</span><span class="s2">Hello there, how may I assist you today?</span><span class="dl">"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="na">finish_reason</span><span class="p">:</span> <span class="dl">"</span><span class="s2">stop</span><span class="dl">"</span>
+  <span class="p">}],</span>
+  <span class="nx">usage</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nl">prompt_tokens</span><span class="p">:</span> <span class="mi">9</span><span class="p">,</span>
+    <span class="nx">completion_tokens</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+    <span class="nx">total_tokens</span><span class="p">:</span> <span class="mi">21</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Las respuestas vienen en la llave <code class="language-plaintext highlighter-rouge">choices</code>. Por defecto sólo llega una respuesta pero podemos pedir más. Para ver todas las opciones que recibe <code class="language-plaintext highlighter-rouge">createChatCompletion</code> <a href="https://platform.openai.com/docs/api-reference/chat/create" target="\_blank">consulta la documentación en este link</a>.</p>
+
+<p>¡Eso es todo! El límite está en tu imaginación.</p>
+
+<p>Ten en cuenta que una vez consumas tus créditos deberás ingresar una tarjeta de crédito para poder continuar usando el servicio. Consulta la <a href="https://openai.com/pricing#language-models" target="\_blank">página de precios</a> para más información.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Al momento de escribir este post son $5 dólares que expiran en 3 meses. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Cómo incluir ChatGPT en tus aplicaciones&url=http://blog.makeitreal.camp/chatgpt-api/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/chatgpt-api/&p[title]=Cómo incluir ChatGPT en tus aplicaciones" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/chatgpt-api/&title=Cómo incluir ChatGPT en tus aplicaciones&summary=&source=http://blog.makeitreal.camp/chatgpt-api/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=chatgpt-api">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

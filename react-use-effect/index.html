@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> React useEffect </title>
+  <meta name="description" content="useEffect es probablemente el hook más confuso e incomprendido en React. Hoy quiero aclararte eso. Usamos hooks todo el tiempo en Make It Real y comprender u...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="React useEffect">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/react-use-effect/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/react-use-effect.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2022-06-06T07:00:00+00:00">
+  <meta property="article:author" content="Cristian Moreno">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/react-use-effect/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/react-use-effect.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="/assets/images/people/cristian-moreno.jpg"/>
+                    <span>Cristian Moreno</span>
+                  </div>
+                  <time class="post-date">Jun 6, 2022</time>
+                </div>
+                <h1>React useEffect</h1>
+                <div class="post-body"><p><code class="language-plaintext highlighter-rouge">useEffect</code> es probablemente el <a href="https://guias.makeitreal.camp/react/react-hooks">hook</a> más confuso e incomprendido en React. Hoy quiero aclararte eso.</p>
+
+<p>Usamos hooks todo el tiempo en <a href="http://makeitreal.camp/?utm_source=blog&amp;utm_medium=web&amp;utm_campaign=inbound&amp;utm_content=react-use-effect">Make It Real</a> y comprender <code class="language-plaintext highlighter-rouge">useEffect</code> es crucial si vamos a escribir código React de estilo moderno.<!-- more --></p>
+
+<p>A continuación veremos:</p>
+
+<ul>
+  <li>Qué es <code class="language-plaintext highlighter-rouge">useEffect</code>.</li>
+  <li>Cómo ejecutar un effect(efecto) en cada <code class="language-plaintext highlighter-rouge">render</code>.</li>
+  <li>Cómo ejecutar un efecto solo en el primer <code class="language-plaintext highlighter-rouge">render</code>.</li>
+  <li>Cómo ejecutar un efecto en el primer <code class="language-plaintext highlighter-rouge">render</code> y volver a ejecutarlo cuando cambia una “dependencia”.</li>
+  <li>Cómo ejecutar un efecto con limpieza.</li>
+</ul>
+
+<h2 id="qué-es-useeffect">¿Qué es useEffect?</h2>
+
+<p>El hook <a href="https://is-tracking-link-api-prod.appspot.com/api/v1/click/5979720297742336/4956748072878080"><code class="language-plaintext highlighter-rouge">useEffect</code></a> nos permite realizar <em>side effects</em> (efectos secundarios) en nuestros componentes de función. Los side effects son acciones externas al código que se está ejecutando, por ejemplo:</p>
+
+<ul>
+  <li>Llamadas a API</li>
+  <li>Actualizar el DOM</li>
+  <li>Suscribirse a eventos (event listeners).</li>
+</ul>
+
+<p>Todos estos son efectos secundarios que podríamos necesitar que un componente realice en diferentes momentos.</p>
+
+<h2 id="ejecutar-useeffect-en-cada-render">Ejecutar useEffect en cada render</h2>
+
+<p>El hook <code class="language-plaintext highlighter-rouge">useEffect</code> no devuelve ningún valor, sino que toma dos argumentos, siendo el primero obligatorio y el segundo opcional. El primer argumento <strong>es la función callback del efecto que queremos que ejecute hook (es decir, el efecto en sí)</strong>. Supongamos que queríamos colocar un mensaje <code class="language-plaintext highlighter-rouge">console.log()</code> dentro del callback del useEffect.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">FunctionComponent</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">run for every componentrender</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="c1">// ...</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>De forma predeterminada, el efecto establecido en el hook <code class="language-plaintext highlighter-rouge">useEffect</code> se ejecuta cuando el componente <strong>se renderiza por primera vez</strong> y <strong>después de cada actualización</strong>. Si ejecutamos el código anterior, notaremos que se genera el mensaje <code class="language-plaintext highlighter-rouge">console.log('run for every componentrender')</code> a medida que se renderiza nuestro componente. <em>Si</em> nuestro componente alguna vez se volviera a renderizar (por ejemplo, de un cambio de estado con algo como <code class="language-plaintext highlighter-rouge">useState</code>), el efecto se ejecutaría nuevamente.</p>
+
+<p>A veces, volver a ejecutar un efecto en cada renderizado es exactamente lo que quieres. Pero la mayoría de las veces, <strong>solo desea ejecutar el efecto en ciertas situaciones</strong>, como en el primer renderizado.</p>
+
+<h2 id="cómo-ejecutar-el-useeffect-solo-en-el-primer-render">Cómo ejecutar el useEffect solo en el primer render</h2>
+
+<p>El segundo argumento del hook <code class="language-plaintext highlighter-rouge">useEffect</code> es opcional y es una <strong>lista de dependencias</strong> que nos permite decirle a React que <em>omita</em> la aplicación del efecto solo hasta que se den ciertas condiciones. En otras palabras, el segundo argumento del hook <code class="language-plaintext highlighter-rouge">useEffect</code> nos permite limitar <strong>cuándo se ejecutará el efecto</strong>. Si simplemente colocamos un array vacío como segundo argumento, así es como le decimos a React que solo ejecute el efecto en el renderizado inicial.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">FunctionComponent</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">run only for first component render (i.e.component mount)</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">},</span> <span class="p">[]);</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="c1">// ...</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Con el código anterior, el mensaje <code class="language-plaintext highlighter-rouge">console.log()</code> solo se activará cuando el componente se monte por primera vez y no se volverá a generar, incluso si el componente se vuelve a renderizar varias veces.</p>
+
+<p>Esto es mucho más “eficiente” que ejecutar en cada renderizado, pero ¿no hay un término medio feliz? ¿Qué pasa si queremos rehacer el efecto, si algo cambia?</p>
+
+<h2 id="ejecutar-el-useeffect-en-el-primer-render-y-volver-a-ejecutarlo-cuando-cambie-la-dependencia">Ejecutar el useEffect en el primer render y volver a ejecutarlo cuando cambie la dependencia</h2>
+
+<p>En lugar de hacer que un efecto se ejecute una vez al principio y en cada actualización, podemos intentar restringir el efecto para que se ejecute solo al principio y <strong>cuando cambie cierta dependencia</strong>.</p>
+
+<p>Supongamos que queríamos lanzar un mensaje <code class="language-plaintext highlighter-rouge">console.log()</code> cada vez que cambiara el valor de una propiedad de estado. Podemos lograr esto colocando la propiedad de estado como una <em>dependencia</em> del callback del efecto. Mira el siguiente ejemplo de código:</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">FunctionComponent</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="dl">"</span><span class="s2">run for first component render and re-run when 'count' changes</span><span class="dl">"</span>
+    <span class="p">);</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">count</span><span class="p">]);</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span><span class="o">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
+      Click to increment count and trigger effect
+    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Arriba tenemos un botón en el template del componente responsable de cambiar el valor de la propiedad de estado de <code class="language-plaintext highlighter-rouge">count</code> cuando se hace click. Cada vez que se cambie la propiedad de estado <code class="language-plaintext highlighter-rouge">count</code> (es decir, cada vez que se haga click en el botón), notaremos que se ejecuta el callback del efecto y se activa el mensaje <code class="language-plaintext highlighter-rouge">console.log()</code>.</p>
+
+<h2 id="ejecutar-efecto-con-limpieza">Ejecutar efecto con limpieza</h2>
+
+<p>Se ejecuta un callbak de efecto cada vez en el procesamiento inicial y cuando especificamos cuándo se debe ejecutar un efecto. El hook <code class="language-plaintext highlighter-rouge">useEffect</code> también brinda la capacidad de ejecutar una limpieza <em>después</em> del efecto. Esto se puede hacer especificando una función de retorne al final de nuestro efecto.</p>
+
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useState</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">FunctionComponent</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">count</span><span class="p">,</span> <span class="nx">setCount</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span>
+      <span class="dl">"</span><span class="s2">run for first component render and re-run when 'count' changes</span><span class="dl">"</span>
+    <span class="p">);</span>
+
+    <span class="k">return</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">run before the next effectand when component unmounts</span><span class="dl">"</span><span class="p">);</span>
+    <span class="p">};</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">count</span><span class="p">]);</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span><span class="o">=&gt;</span> <span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
+      Click to increment count and trigger effect
+    <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>En el ejemplo anterior, notaremos que el mensaje de la función de limpieza se activa antes de que se ejecute el efecto deseado. Además, si nuestro componente alguna vez se desmonta, la función de limpieza también se ejecutará.</p>
+
+<p>Un buen ejemplo de cuándo podríamos necesitar una limpieza es cuando configuramos una suscripción a nuestro efecto, pero queremos eliminar la suscripción cada vez que se realice la próxima llamada de suscripción, para evitar memory leaks.</p>
+
+<p>Estas son principalmente todas las diferentes formas en que el hook <code class="language-plaintext highlighter-rouge">useEffect</code> se puede utilizar para ejecutar efectos secundarios en componentes. Te invito a ver esta <a href="https://alexsidorenko.com/blog/useeffect/">guia visual de useEffect</a> de ALEX SIDORENKO que ilustra estos conceptos a través de una serie de GIF es a la vez inteligente y eficaz, especialmente para los estudiantes visuales. También hay una visualización de cómo funcionan las funciones de primera clase si quieres más.</p>
+
+<p><a href="https://alexsidorenko.com/blog/useeffect/">https://alexsidorenko.com/blog/useeffect/</a></p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=React useEffect&url=http://blog.makeitreal.camp/react-use-effect/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/react-use-effect/&p[title]=React useEffect" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/react-use-effect/&title=React useEffect&summary=&source=http://blog.makeitreal.camp/react-use-effect/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=react-use-effect">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

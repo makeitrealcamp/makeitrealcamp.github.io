@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Reconocimiento facial con ml5.js </title>
+  <meta name="description" content="En este post vamos a utilizar p5.js y una librería de Machine Learning llamada ml5.js para implementar una solución de reconocimiento facial en el navegador!">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Reconocimiento facial con ml5.js">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/reconocimiento-facial-monalisa.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2020-12-20T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/reconocimiento-facial-monalisa.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Dec 20, 2020</time>
+                </div>
+                <h1>Reconocimiento facial con ml5.js</h1>
+                <div class="post-body"><p>En este post vamos a utilizar <a href="https://p5js.org/" target="\_blank">p5.js</a> y una librería de Machine Learning llamada <a href="https://ml5js.org/" target="\_blank">ml5.js</a> para implementar una solución de reconocimiento facial en el navegador!<!-- more --></p>
+
+<p>La solución aprenderá a identificar personas por su nombre:</p>
+
+<p><img src="/assets/images/face-recognition.gif" alt="Face Recognition" class="photo border" /></p>
+<p class="photo-description">La solución final me reconoce correctamente! A la derecha está el resultado del entrenamiento a la red neuronal.</p>
+
+<p>Los pasos que vamos a implementar en este tutorial son los siguientes:</p>
+
+<ol>
+  <li>Mostrar el video capturado por la cámara en la pantalla utilizando <a href="https://p5js.org/" target="\_blank">p5.js</a>.</li>
+  <li>Detectar las caras en el video utilizando <a href="https://ml5js.org/" target="\_blank">ml5.js</a>.</li>
+  <li>Entrenar un clasificador facial (una red neuronal) para que identifique el nombre de la persona.</li>
+</ol>
+
+<p>Puedes seguir cada paso de este tutorial en un <a href="https://editor.p5js.org/" target="\_blank">editor de p5.js</a> o puedes ver y ejecutar el código final <a href="https://editor.p5js.org/germanescobar/sketches/sEc369bfv" target="\_blank">en este enlace</a>.</p>
+
+<h2 id="1-mostrar-el-video-de-la-cámara">1. Mostrar el video de la cámara</h2>
+
+<p>Vamos a modificar el código inicial de <a href="https://p5js.org/" target="\_blank">p5.js</a> para capturar el video de la cámara utilizando la función <code class="language-plaintext highlighter-rouge">createCapture</code> y después lo mostramos en el navegador con la función <code class="language-plaintext highlighter-rouge">image</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">video</span>
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">createCanvas</span><span class="p">(</span><span class="mi">900</span><span class="p">,</span> <span class="mi">520</span><span class="p">)</span>
+  <span class="nx">video</span> <span class="o">=</span> <span class="nx">createCapture</span><span class="p">(</span><span class="nx">VIDEO</span><span class="p">)</span>
+  <span class="nx">video</span><span class="p">.</span><span class="nx">size</span><span class="p">(</span><span class="mi">640</span><span class="p">,</span> <span class="mi">520</span><span class="p">)</span>
+  <span class="nx">video</span><span class="p">.</span><span class="nx">hide</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">image</span><span class="p">(</span><span class="nx">video</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Nota:</strong> Si aún no conoces <a href="https://p5js.org/" target="\_blank">p5.js</a> te recomendamos <a href="/practicando-programacion-con-p5js/" target="\_blank">ver este post</a> primero.</p>
+
+<p>Al ejecutar este código deberías ver el video de la cámara en el lienzo de p5.js (es posible que primero te pida permisos para acceder a la cámara).</p>
+
+<h2 id="2-detección-facial">2. Detección Facial</h2>
+
+<p>El siguiente paso es detectar las caras en el video y dibujar un rectángulo alrededor de ellas. Para eso debes abrir el archivo <code class="language-plaintext highlighter-rouge">index.html</code> y agregar la librería de <a href="https://ml5js.org/" target="\_blank">ml5.js</a>:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://unpkg.com/ml5@0.6.0/dist/ml5.js"</span> <span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>
+
+<p>Volvamos a <code class="language-plaintext highlighter-rouge">sketch.js</code>  y escribamos el código que va a identificar las caras:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">detector</span>
+<span class="kd">const</span> <span class="nx">imgSize</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+  <span class="kd">const</span> <span class="nx">detectionOptions</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">withLandmarks</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">withDescriptors</span><span class="p">:</span> <span class="kc">false</span>
+  <span class="p">};</span>
+
+  <span class="nx">detector</span> <span class="o">=</span> <span class="nx">ml5</span><span class="p">.</span><span class="nx">faceApi</span><span class="p">(</span><span class="nx">video</span><span class="p">,</span> <span class="nx">detectionOptions</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Face API Model Loaded!</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">detectFace</span><span class="p">()</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>La función <code class="language-plaintext highlighter-rouge">detectFace</code> es la que va a hacer la detección facial utilizando el método <code class="language-plaintext highlighter-rouge">detect</code> del <code class="language-plaintext highlighter-rouge">detector</code> que inicializamos en el código anterior:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">boxes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="kd">function</span> <span class="nx">detectFace</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">detector</span><span class="p">.</span><span class="nx">detect</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span> <span class="nx">detections</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">detections</span> <span class="o">&amp;&amp;</span> <span class="nx">detections</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// caras detectadas!!</span>
+      <span class="nx">boxes</span> <span class="o">=</span> <span class="nx">createBoxes</span><span class="p">(</span><span class="nx">detections</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">// llamamos a este método continuamente</span>
+    <span class="nx">detectFace</span><span class="p">()</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Este código utiliza una función llamada <code class="language-plaintext highlighter-rouge">createBoxes</code> que va a crear un arreglo de cajas:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">createBoxes</span><span class="p">(</span><span class="nx">detections</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">boxes</span> <span class="o">=</span> <span class="p">[]</span>
+  <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">detections</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="kd">const</span> <span class="nx">alignedRect</span> <span class="o">=</span> <span class="nx">detections</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">alignedRect</span><span class="p">;</span>
+
+    <span class="kd">const</span> <span class="nx">box</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">x</span><span class="p">:</span> <span class="nx">alignedRect</span><span class="p">.</span><span class="nx">_box</span><span class="p">.</span><span class="nx">_x</span><span class="p">,</span>
+      <span class="na">y</span><span class="p">:</span> <span class="nx">alignedRect</span><span class="p">.</span><span class="nx">_box</span><span class="p">.</span><span class="nx">_y</span><span class="p">,</span>
+      <span class="na">width</span><span class="p">:</span> <span class="nx">alignedRect</span><span class="p">.</span><span class="nx">_box</span><span class="p">.</span><span class="nx">_width</span><span class="p">,</span>
+      <span class="na">height</span><span class="p">:</span> <span class="nx">alignedRect</span><span class="p">.</span><span class="nx">_box</span><span class="p">.</span><span class="nx">_height</span><span class="p">,</span>
+      <span class="na">label</span><span class="p">:</span> <span class="dl">""</span>
+    <span class="p">}</span>
+    <span class="nx">boxes</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">box</span><span class="p">)</span>
+  <span class="p">}</span>
+
+  <span class="k">return</span> <span class="nx">boxes</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Por cada cara detectada el método <code class="language-plaintext highlighter-rouge">createBoxes</code> crea un objeto con las coordenadas y longitudes que después vamos a utilizar en el método <code class="language-plaintext highlighter-rouge">draw</code>. Fíjate que también hay una llave <code class="language-plaintext highlighter-rouge">label</code> que después vamos a utilizar para guardar el nombre de la persona que está en esa caja.</p>
+
+<p>Modifiquemos el método <code class="language-plaintext highlighter-rouge">draw</code> para pintar las cajas:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+  <span class="nx">drawBoxes</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">drawBoxes</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">boxes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">box</span> <span class="o">=</span> <span class="nx">boxes</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span>
+    <span class="nx">noFill</span><span class="p">()</span>
+    <span class="nx">stroke</span><span class="p">(</span><span class="mi">161</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">251</span><span class="p">)</span>
+    <span class="nx">strokeWeight</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+    <span class="nx">rect</span><span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span>
+
+    <span class="nx">strokeWeight</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nx">textSize</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span>
+    <span class="nx">textAlign</span><span class="p">(</span><span class="nx">CENTER</span><span class="p">)</span>
+    <span class="nx">text</span><span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">label</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">x</span> <span class="o">+</span> <span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span> <span class="nx">box</span><span class="p">.</span><span class="nx">y</span> <span class="o">+</span> <span class="nx">box</span><span class="p">.</span><span class="nx">height</span> <span class="o">+</span> <span class="mi">20</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>SI ejecutas el código hasta acá deberías ver un rectángulo sobre cada cara que se encuentre en la pantalla:</p>
+
+<p>Puedes también consultar el código completo hasta este punto <a href="https://editor.p5js.org/germanescobar/sketches/7PMaiV2Ha" target="\_blank">en este enlace</a>.</p>
+
+<h2 id="3-clasificación-facial">3. Clasificación Facial</h2>
+
+<p>Vamos a entrenar una red neuronal para que clasifique a las personas por nombre. Este proceso se divide en 3 pasos:</p>
+
+<ol>
+  <li>Tomar varias fotos de cada persona y agregarlas al clasificador con su respectiva etiqueta (el nombre de la persona).</li>
+  <li>Entrenar el modelo.</li>
+  <li>Clasificar!</li>
+</ol>
+
+<p>Primero inicialicemos el clasificador en el método <code class="language-plaintext highlighter-rouge">setup</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">classifier</span>
+<span class="kd">function</span> <span class="nx">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+
+  <span class="kd">let</span> <span class="nx">options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">inputs</span><span class="p">:</span> <span class="p">[</span><span class="nx">imgSize</span><span class="p">,</span> <span class="nx">imgSize</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+    <span class="na">task</span><span class="p">:</span> <span class="dl">'</span><span class="s1">imageClassification</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">debug</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="p">}</span>
+  <span class="nx">classifier</span> <span class="o">=</span> <span class="nx">ml5</span><span class="p">.</span><span class="nx">neuralNetwork</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Ok, ahora necesitamos un campo de entrada y un botón para capturar y etiquetar las fotos. Hagamos eso:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">nameInput</span>
+<span class="kd">function</span> <span class="nx">draw</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+  <span class="nx">drawInputs</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">drawInputs</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">nameInput</span> <span class="o">=</span> <span class="nx">createInput</span><span class="p">(</span><span class="dl">''</span><span class="p">);</span>
+  <span class="nx">nameInput</span><span class="p">.</span><span class="nx">position</span><span class="p">(</span><span class="mi">650</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+
+  <span class="kd">const</span> <span class="nx">takePhotoBtn</span> <span class="o">=</span> <span class="nx">createButton</span><span class="p">(</span><span class="dl">"</span><span class="s2">Capture</span><span class="dl">"</span><span class="p">)</span>
+  <span class="nx">takePhotoBtn</span><span class="p">.</span><span class="nx">position</span><span class="p">(</span><span class="mi">810</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+  <span class="nx">takePhotoBtn</span><span class="p">.</span><span class="nx">mousePressed</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">addExample</span><span class="p">(</span><span class="nx">nameInput</span><span class="p">.</span><span class="nx">value</span><span class="p">()))</span>
+  <span class="p">}</span>
+</code></pre></div></div>
+
+<p>Cuando el usuario hace click sobre el botón estamos llamando una función <code class="language-plaintext highlighter-rouge">addExample</code> que agrega la foto con el nombre al clasificador:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">addExample</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">boxes</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">"</span><span class="s2">No face found</span><span class="dl">"</span><span class="p">)</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">boxes</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">box</span> <span class="o">=</span> <span class="nx">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="nx">img</span> <span class="o">=</span> <span class="kd">get</span><span class="p">(</span><span class="nx">box</span><span class="p">.</span><span class="nx">x</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">y</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">width</span><span class="p">,</span> <span class="nx">box</span><span class="p">.</span><span class="nx">height</span><span class="p">)</span>
+    <span class="nx">img</span><span class="p">.</span><span class="nx">resize</span><span class="p">(</span><span class="nx">imgSize</span><span class="p">,</span> <span class="nx">imgSize</span><span class="p">)</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Adding example: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">label</span><span class="p">);</span>
+    <span class="nx">classifier</span><span class="p">.</span><span class="nx">addData</span><span class="p">({</span> <span class="na">image</span><span class="p">:</span> <span class="nx">img</span> <span class="p">},</span> <span class="p">{</span> <span class="nx">label</span> <span class="p">});</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="dl">"</span><span class="s2">Only one face should appear</span><span class="dl">"</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Este código utiliza las cajas que creamos al detectar las caras. Primero valida que sólo haya una en el video y, si es así, le ajusta el tamaño y la agrega al clasificador.</p>
+
+<p>Agreguemos un botón a la función <code class="language-plaintext highlighter-rouge">drawInputs</code> para entrenar el modelo:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">trained</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="kd">function</span> <span class="nx">drawInputs</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+  <span class="kd">const</span> <span class="nx">trainBtn</span> <span class="o">=</span> <span class="nx">createButton</span><span class="p">(</span><span class="dl">"</span><span class="s2">Train</span><span class="dl">"</span><span class="p">)</span>
+  <span class="nx">trainBtn</span><span class="p">.</span><span class="nx">position</span><span class="p">(</span><span class="mi">650</span><span class="p">,</span> <span class="mi">80</span><span class="p">)</span>
+  <span class="nx">trainBtn</span><span class="p">.</span><span class="nx">mousePressed</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">trainModel</span><span class="p">()</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>La función <code class="language-plaintext highlighter-rouge">trainModel</code> es la siguiente:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">trainModel</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">classifier</span><span class="p">.</span><span class="nx">normalizeData</span><span class="p">();</span>
+  <span class="nx">classifier</span><span class="p">.</span><span class="nx">train</span><span class="p">({</span> <span class="na">epochs</span><span class="p">:</span> <span class="mi">50</span> <span class="p">},</span> <span class="p">()</span> <span class="o">=&gt;</span>  <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">training complete</span><span class="dl">'</span><span class="p">)</span>
+    <span class="nx">trained</span> <span class="o">=</span> <span class="kc">true</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Por último, vamos a modificar la función <code class="language-plaintext highlighter-rouge">detectFace</code> para que clasifique las caras cuando el modelo ya esté entrenado:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">detectFace</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">faceapi</span><span class="p">.</span><span class="nx">detect</span><span class="p">((</span><span class="nx">err</span><span class="p">,</span> <span class="nx">results</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="k">return</span> <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">results</span> <span class="o">&amp;&amp;</span> <span class="nx">results</span><span class="p">.</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">boxes</span> <span class="o">=</span> <span class="nx">getBoxes</span><span class="p">(</span><span class="nx">results</span><span class="p">)</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">trained</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">boxes</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+          <span class="kd">const</span> <span class="nx">box</span> <span class="o">=</span> <span class="nx">boxes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+          <span class="nx">classifyFace</span><span class="p">(</span><span class="nx">box</span><span class="p">)</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nx">detectFace</span><span class="p">()</span>
+  <span class="p">})</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Necesitas al menos dos personas, y tomar mínimo 10 fotos de cada una para entrenar el modelo. Puedes ver y probar el código hasta este punto <a href="https://editor.p5js.org/germanescobar/sketches/7PMaiV2Ha" target="\_blank">en este enlace</a>.</p>
+
+<h2 id="algunas-mejoras">Algunas mejoras</h2>
+
+<p>Hasta ahora, siempre que ejecutamos el código debemos tomar las fotos y entrenar el modelo. Para evitar esto tenemos dos opciones:</p>
+
+<ol>
+  <li>Guardar la información de las fotos en un JSON. Cada vez que ejecutamos el código las cargamos y volvemos a entrenar el modelo.</li>
+  <li>Guardar el modelo ya entrenado.</li>
+</ol>
+
+<p>Afortunadamente ml5.js incluye funciones para hacer todas estas operaciones. Podemos guardar la información de las fotos en un archivo JSON con <code class="language-plaintext highlighter-rouge">saveData</code> y volverlo a cargar con <code class="language-plaintext highlighter-rouge">loadData</code>. Agreguemos botones en el método <code class="language-plaintext highlighter-rouge">drawInputs</code> para esto:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">drawInputs</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// ...</span>
+
+  <span class="c1">// botón para guardar las fotos en un JSON</span>
+  <span class="kd">const</span> <span class="nx">saveDataBtn</span> <span class="o">=</span> <span class="nx">createButton</span><span class="p">(</span><span class="dl">"</span><span class="s2">Save Data</span><span class="dl">"</span><span class="p">)</span>
+  <span class="nx">saveDataBtn</span><span class="p">.</span><span class="nx">position</span><span class="p">(</span><span class="mi">650</span><span class="p">,</span> <span class="mi">180</span><span class="p">)</span>
+  <span class="nx">saveDataBtn</span><span class="p">.</span><span class="nx">mousePressed</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">classifier</span><span class="p">.</span><span class="nx">saveData</span><span class="p">(</span><span class="dl">'</span><span class="s1">model</span><span class="dl">'</span><span class="p">))</span>
+
+  <span class="c1">// botón para cargar las fotos de un JSON</span>
+  <span class="kd">const</span> <span class="nx">loadDataInput</span> <span class="o">=</span> <span class="nx">createFileInput</span><span class="p">(</span><span class="nx">file</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">classifier</span><span class="p">.</span><span class="nx">loadData</span><span class="p">([</span><span class="nx">file</span><span class="p">.</span><span class="nx">file</span><span class="p">],</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Data Loaded</span><span class="dl">"</span><span class="p">));</span>
+  <span class="p">})</span>
+  <span class="nx">loadDataInput</span><span class="p">.</span><span class="nx">position</span><span class="p">(</span><span class="mi">650</span><span class="p">,</span> <span class="mi">130</span><span class="p">)</span>  
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>También existen las funciones <code class="language-plaintext highlighter-rouge">save</code> y <code class="language-plaintext highlighter-rouge">load</code> para guardar y cargar el modelo ya entrenado que puedes <a href="https://learn.ml5js.org/#/reference/neural-network?id=save" target="\_blank">consultar en la documentación</a>.</p>
+
+<hr />
+
+<p>En este tutorial vimos cómo utilizar dos modelos de Machine Learning. El primero es el que utilizamos para identificar las caras en el video que ya viene incluido en <a href="https://ml5js.org/" target="\_blank">ml5.js</a>. Existen otros modelos ya entrenados que te permiten identificar poses, detectar objetos, clasificar sonidos e identificar el sentimiento de un texto, entre otros que puedes consultar en la documentación!</p>
+
+<p>El otro modelo fue una red neuronal que debemos entrenar capturando imágenes del video y etiquetándolas con nombres de personas. Inténtalo con tus amigos y/o familiares y cuéntanos cómo funciona!</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Reconocimiento facial con ml5.js&url=http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/&p[title]=Reconocimiento facial con ml5.js" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/&title=Reconocimiento facial con ml5.js&summary=&source=http://blog.makeitreal.camp/reconocimiento-facial-con-ml5js/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=reconocimiento-facial-con-ml5js">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> ¿Qué es un stack overflow (no el sitio)? </title>
+  <meta name="description" content="Sí, el sitio más popular de preguntas y respuestas de programación es, por mucho, StackOverflow. Pero ¿qué es realmente un stack overflow (en español desbord...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="¿Qué es un stack overflow (no el sitio)?">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/que-es-un-stack-overflow-desbordamiento-de-pila/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/stackoverflow.png">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2015-09-21T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/que-es-un-stack-overflow-desbordamiento-de-pila/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/stackoverflow.png)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Sep 21, 2015</time>
+                </div>
+                <h1>¿Qué es un stack overflow (no el sitio)?</h1>
+                <div class="post-body"><p>Sí, el sitio más popular de preguntas y respuestas de programación es, por mucho, <a href="http://stackoverflow.com/" target="_blank">StackOverflow</a>. Pero ¿qué es realmente un stack overflow (en español desbordamiento de pila)? En este post te lo explicamos en detalle.<!-- more --></p>
+
+<p>Todo lenguaje de programación tiene algún mecanismo para definir procedimientos, subrutinas, funciones o métodos, que son diferentes nombres que se refieren a lo mismo: secuencias de instrucciones empaquetadas en una unidad que se pueden llamar desde otras partes del programa (de ahora en adelante las llamaremos subrutinas).</p>
+
+<p>Una subrutina puede llamar a su vez a otra subrutina que a su vez puede llamar otra subrutina que a su vez puede llamar otra subrutina, y así sucesivamente. Cuando esta cadena se vuelve muy profunda, se genera un stack overflow.</p>
+
+<p>La forma más fácil de generar un stack overflow en un lenguaje de programación es crear una subrutina que se llama a sí misma como en el siguiente ejemplo en Ruby:</p>
+
+<pre><code class="language-ruby">def hola
+  hola
+end
+
+hola</code></pre>
+
+<p>Si ejecutamos ese código eventualmente aparece un error que dice: <code class="language-plaintext highlighter-rouge">stack level too deep (SystemStackError)</code>. Eso es un stack overflow.</p>
+
+<p>Pero ¿por qué ocurre un stack overflow? Cada vez que se llama una subrutina se almacena en memoria una referencia a la subrutina que la llamó<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>, los argumentos que recibió la subrutina y cualquier variable local que se cree en esa subrutina. A la ubicación donde se almacena esta información se le conoce como el <strong>call stack</strong>, el <strong>execution stack</strong> o simplemente el <strong>stack</strong>.</p>
+
+<p><img src="/assets/images/book-stack.png" alt="Pila de libros" class="photo" /></p>
+
+<p class="photo-description">El <strong>stack</strong> funciona como una pila de libros. Cada uno de estos libros representa una subrutina.</p>
+
+<p>La forma en que funciona el <strong>stack</strong> es similar a como funciona una pila de libros<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>. Cada vez que una subrutina llama a otra es como si ubicáramos un nuevo libro encima de la pila. Imagina que cada libro almacena la información de la subrutina y una referencia a la subrutina que la llamó.</p>
+
+<p>Cuando termina una subrutina se remueve del <strong>stack</strong> (como si tomáramos el libro de la parte superior de la pila) y se le devuelve al control a la subrutina que la llamó para que continúe su ejecución.</p>
+
+<p>Un stack overflow, en español <strong>desbordamiento de pila</strong>, es un error que ocurre cuando se llena el <strong>stack</strong> y por lo tanto no se pueden crear más subrutinas anidadas (imagina que la pila de libros llegó al techo y no hay forma de ubicar más libros sobre esa pila).</p>
+
+<p>La cantidad de memoria que se le asigna al <strong>stack</strong> depende de múltiples factores, pero lo más importante es entender que es una cantidad limitada.</p>
+
+<h2 id="el-stack-trace">El stack trace</h2>
+
+<p>Otro concepto relacionado a la pila de ejecución (el <strong>stack</strong>) es el stack trace o, en español, la <strong>traza de pila</strong> (de nuevo, nadie la llama así).</p>
+
+<p>Cuando ocurre un error en nuestra aplicación, generalmente en la consola aparece el problema en la primera línea y una gran lista como la siguiente:</p>
+
+<pre><code class="language-none">$ ruby myprogram.rb
+no implicit conversion of nil into String
+/Users/germanescobar/.rvm/gems/ruby-2.1.5/gems/signature-0.1.8/lib/signature.rb:173:in `hexdigest'
+/Users/germanescobar/.rvm/gems/ruby-2.1.5/gems/signature-0.1.8/lib/signature.rb:173:in `signature'
+/Users/germanescobar/.rvm/gems/ruby-2.1.5/gems/signature-0.1.8/lib/signature.rb:53:in `sign'
+/Users/germanescobar/.rvm/gems/ruby-2.1.5/gems/pusher-0.14.5/lib/pusher/request.rb:20:in `initialize'
+/Users/germanescobar/.rvm/gems/ruby-2.1.5/gems/pusher-0.14.5/lib/pusher/resource.rb:29:in `new'
+/Users/germanescobar/.rvm/gems/ruby-2.1.5/gems/pusher-0.14.5/lib/pusher/resource.rb:29:in `create_request'
+...</code></pre>
+
+<p>Ese es el <strong>stack trace</strong>: la lista de las subrutinas que existen en ese momento en el <strong>stack</strong>. La primera línea muestra el archivo y la línea en la que ocurrió el error. La siguiente línea muestra el archivo y la línea que llamó a la primera, y así sucesivamente.</p>
+
+<hr />
+
+<h3 id="notas">Notas</h3>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Realmente se almacena una referencia a la línea que llamó la subrutina actual. Para ser más exactos, se almacena la dirección de memoria a la que debe retornar una vez termine esta subrutina. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>De hecho, <strong>stack</strong> traduce a <strong>pila</strong> en español. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=¿Qué es un stack overflow (no el sitio)?&url=http://blog.makeitreal.camp/que-es-un-stack-overflow-desbordamiento-de-pila/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/que-es-un-stack-overflow-desbordamiento-de-pila/&p[title]=¿Qué es un stack overflow (no el sitio)?" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/que-es-un-stack-overflow-desbordamiento-de-pila/&title=¿Qué es un stack overflow (no el sitio)?&summary=&source=http://blog.makeitreal.camp/que-es-un-stack-overflow-desbordamiento-de-pila/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=que-es-un-stack-overflow-desbordamiento-de-pila">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

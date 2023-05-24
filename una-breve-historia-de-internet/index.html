@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Una muy breve historia de Internet </title>
+  <meta name="description" content="A principios de los años 60’s, en Estados Unidos, varias universidades tenían computadores de tiempo compartido: enormes máquinas, con una fracción de la cap...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Una muy breve historia de Internet">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/una-breve-historia-de-internet/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/mainframe3.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2015-02-17T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/una-breve-historia-de-internet/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/mainframe3.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Feb 17, 2015</time>
+                </div>
+                <h1>Una muy breve historia de Internet</h1>
+                <div class="post-body"><p>A principios de los años 60’s, en Estados Unidos, varias universidades tenían computadores de tiempo compartido: enormes máquinas, con una fracción de la capacidad de tu teléfono móvil actual, que se accedían a través de terminales sin pantalla, permitiendo a varios compartir los recursos del computador de forma simultánea.<!-- more --></p>
+
+<p>Muchos creían que los computadores habían llegado a una cúspide evolutiva y no había mucho por desarrollar en ese campo. Así que la atención se centró en pensar cómo podrían comunicarse estos computadores de forma remota. Las aplicaciones serían infinitas: chat, juegos, transferencia de archivos, publicación de documentos, etc.</p>
+
+<p>La idea fue desarrollada paralelamente por Paul Baran en Estados Unidos y Donald Davies en Inglaterra. Consistía de <strong>una red parecida a la telefónica</strong> pero con dos cambios importantes. El primero era construir la red a partir de muchos nodos interconectados entre sí (la red telefónica es centralizada o descentralizada con unos cuantos nodos principales).</p>
+
+<p><img src="/assets/images/topologies.jpg" alt="Screenshots" class="photo" /></p>
+
+<p class="photo-description">La nueva red tendría la topología distribuída. Imagen tomada de http://www2.cffn.ca/usha/part-iii-article-by-pramod-dhakal/129-the-law-of-rule-centralized-decentralized-and-distributed-systems</p>
+
+<p>El segundo cambio era mucho más revolucionario: <strong>partir la información en paquetes que volverían a ser reensamblados por el receptor</strong>. Cuando descuelgas el teléfono y haces una llamada, ocupas un canal por la duración de la llamada. La red soporta un número limitado de canales simultáneos por lo que se satura rápidamente. Pero lo realmente inaceptable es la subutilización del canal (piensa en las pausas para respirar, los incómodos silencios, o cuando dejas descolgado el teléfono para abrir la puerta). Al dividir la información en paquetes se puede hacer un mejor uso del medio, porque solo se usa cuando se está enviando información. Otra ventaja es que los paquetes pueden tomar diferentes rutas de ser necesario.</p>
+
+<p>Pero para lograr una red basada en enrutamiento de paquetes (packet switching), los computadores tendrían que implementar algoritmos de enrutamiento, detección de errores, reensamblado de paquetes, etc. La solución parecía viable en un principio, al fin y al cabo los computadores son muy buenos para ese tipo de tareas. Desafortunadamente a AT&amp;T, en Estados Unidos, no le interesó la idea en 1965 y el tema se congeló.</p>
+
+<h2 id="el-surgimiento-de-arpanet">El surgimiento de ARPANET</h2>
+
+<p>Dos años después, en 1967, se inició un proyecto en una pequeña agencia del gobierno de Estados Unidos llamada <strong>ARPA (Advanced Research Projects Agency)</strong> que había nacido en 1958 como respuesta al lanzamiento del <a href="http://en.wikipedia.org/wiki/Sputnik_1" target="_blank">Sputnik 1</a>, pero que, después del nacimiento de la NASA, se había reducido a financiar proyectos exploratorios en universidades.</p>
+
+<p>El proyecto consistía en crear una red que conectara a varias universidades a través de líneas telefónicas. Sin embargo, a ninguna universidad le interesaba asignar recursos de su computador para ejecutar las tareas que requería la red (implementación de algoritmos de enrutamiento, detección de errores, reensamblado de paquetes, etc.) La solución fue crear e instalar una máquina adicional en cada universidad entre el computador y la línea telefónica que se encargaría de las tareas propias de la red. <strong>A esta máquina se le dio el nombre de IMP (Interface Message Processor) y es lo que hoy en día conocemos como routers (enrutadores)</strong>.</p>
+
+<p><img src="/assets/images/imp.jpg" alt="Screenshots" class="photo" /></p>
+
+<p class="photo-description">Un IMP. Equivalente al router que usas en tu hogar para conectarte a Internet. Imágen tomada de http://galleryhip.com/interface-message-processor.html</p>
+
+<p>La idea era muy simple. Cuando un computador (host) se quería comunicar con otro, enviaba un mensaje a través del IMP. El IMP partía el mensaje en paquetes (cada paquete tenía un encabezado y parte del mensaje) y los redireccionaba al IMP destino que reensamblaba el mensaje y se lo pasaba al computador (host). <strong>La forma en la que se interpretaba el mensaje era responsabilidad de los computadores (hosts), los IMP’s se limitaban a transportar la información</strong>.</p>
+
+<h2 id="protocolos">Protocolos</h2>
+
+<p>En 1968 un grupo de jóvenes se empezó a reunir periódicamente y a definir los primeros protocolos que se utilizarían sobre la red. Para evitar ofender a los creadores del IMP y de la red, llamaron los documentos “petición para comentarios”. <strong>El 7 de Abril de 1969 lanzaron el primer RFC (Request For Comments), el <a href="https://tools.ietf.org/html/rfc1" target="_blank">RFC 1</a>, que define la comunicación entre el host y el IMP</strong>. El grupo se empezó a llamar a sí mismo el Network Working Group (NWG) y en los siguientes años definieron otros protocolos como el <strong>FTP - File Transfer Protocol (RFC 114) y el Email (RFC 196)</strong>.</p>
+
+<p>En Octubre de 1969 se hizo la primera comunicación entre dos hosts, uno en UCLA (University of California) y el otro en SRI (Stanford Research Institute), cada uno con su respectivo IMP. La comunicación fue un éxito y aproximádamente cada mes se agregaba un nuevo nodo (universidad) a la red.</p>
+
+<p>Algunas personas empezaron a pensar cómo implementar una red de packet-switching sobre medios distintos a las costosas líneas telefónicas que usaba ARPANET. La ALOHANET, en Hawaii, fue una de las primeras y utilizaba pequeños radios, idénticos a los que utilizaban los taxis hace algunos años, para transportar los mensajes. Otras redes empezaron a surgir, pero no estaban interconectadas  porque utilizaban diferentes medios, y diferentes tamaños y encabezados de paquetes para transmitir la información.</p>
+
+<p>La solución, propuesta en Mayo de 1974, fue usar routers que conectaran las diferentes redes que existían en el momento. El router entendería los paquetes de las dos redes a las que estaba conectada. Pero el principal problema del esquema era que el router necesitaría recibir el mensaje completo de una red antes de redireccionarlo a la otra; tampoco había una forma estándar de identificar los hosts dentro de cada red. Se divisó una solución que se convirtió en lo que hoy conocemos como los protocolos TCP/IP.</p>
+
+<p><strong>El objetivo era que las redes sirvieran de transporte para otros paquetes “estándar” que todos entendieran. Los llamaron datagramas para mayor claridad y es lo que hoy conocemos como el protocolo <a href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol" target="_blank">TCP (Transmission Control Protocol)</a></strong>.</p>
+
+<p>La forma en que hoy funciona el transporte de carga nos sirve como analogía. Los datagramas TCP son equivalentes a los contenedores, que pueden ser transportados por diferentes medios (tierra, aire, o mar), sin importar su contenido. TCP también se encargaría de establecer la conexión, y garantizar la confiabilidad de la comunicación.</p>
+
+<p><img src="/assets/images/container-ship.jpg" alt="Screenshots" class="photo" /></p>
+
+<p class="photo-description">Los datagramas TCP son equivalentes a los contenedores de carga, no importa por qué red están siendo transportados, ni la mercancia que contengan. Imagen tomada de http://www.shippingherald.com/NEWS/Containers/tabid/72/currentpage/2/Default.aspx</p>
+
+<p>Los datagramas TCP se encapsulan en otro paquete con encabezados que definen hacia dónde se dirige el mensaje. Esto se definió en el <a href="http://en.wikipedia.org/wiki/Internet_Protocol" target="_blank"><strong>IP (Internet Protocol)</strong></a> y es por eso que se les llama <strong>direcciones IP</strong>.</p>
+
+<p><img src="/assets/images/tcp-ip.gif" alt="Screenshots" class="photo" /></p>
+
+<p class="photo-description">Las capas TCP/IP. Paquetes viajando dentro de otros paquetes de la misma forma en que las cajas con mercancia viajan dentro de otras cajas. Imagen tomada de http://www.technologyuk.net/the_internet/internet/tcp_ip_stack.shtml</p>
+
+<p>Las ventajas para las aplicaciones son enormes porque solo necesitan definir el contenido y el destino (la dirección IP) de los mensajes. TCP/IP se encarga de dividir el contenido, envolverlo y redireccionarlo sin importar el medio que se esté utilizando. <strong>Gracias a TCP/IP es que hoy en día puedes navegar por Internet a través de una red Wifi, una red celular, o a través de un cable conectado al router de tu hogar</strong>.</p>
+
+<h2 id="el-final-de-arpanet-el-inicio-de-internet">El final de ARPANET, el inicio de Internet</h2>
+
+<p>A mediados de los años 80’s nuevas redes proliferaban en todo el mundo. <strong>Se había creado una red de redes, o Internet</strong>. En 1983 ARPANET hizo la migración a TCP/IP, pero los costos del mantenimiento de la red seguían creciendo, mientras otras redes, más rápidas, eran más fáciles de mantener. En 1998 la ARPANET fue dada de baja. Ese año, la Universidad de California patrocinó un simposio para conmemorar la ARPANET. En su discurso, David Cohen dijo las siguientes palabras:</p>
+
+<blockquote>In the beginning ARPA created ARPANET.<br />
+	And the ARPANET was without form and void.<br />
+	And the darkness was upon the deep.<br />
+	And the spirit of the ARPA moved upon the face of the network and ARPA said, 'Let there be a protocol', and there was a protocol. And ARPA saw that it was good. <br />
+	And ARPA said, 'Let there be more protocols' and it was so. And ARPA saw that it was good.<br />
+	And ARPA said, 'Let there be more networks' and it was so.</blockquote>
+
+<p>En 1989 <a href="http://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a> propuso el proyecto World Wide Web (WWW) trabajando para <a href="http://en.wikipedia.org/wiki/CERN" target="_blank">CERN</a>, que era en su momento el nodo de Internet más grande en Europa … fue el inicio de una nueva revolución que hoy seguimos viviendo.</p>
+
+<p><em>La historia en detalle la encuentras en el libro <a href="http://www.amazon.com/Where-Wizards-Stay-Up-Late-ebook/dp/B000FC0WP6/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1424226000&amp;sr=1-1&amp;keywords=where+wizards+stay+up+late" target="_blank">Where Wizards Stay Up Late: The Origins of the Internet</a>.</em></p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=Una muy breve historia de Internet&url=http://blog.makeitreal.camp/una-breve-historia-de-internet/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/una-breve-historia-de-internet/&p[title]=Una muy breve historia de Internet" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/una-breve-historia-de-internet/&title=Una muy breve historia de Internet&summary=&source=http://blog.makeitreal.camp/una-breve-historia-de-internet/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=una-breve-historia-de-internet">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> La arquitectura de software </title>
+  <meta name="description" content="La arquitectura de software y el rol del arquitecto son de los conceptos más incomprendidos en el desarrollo de software. En este post vamos a explicar qué e...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="La arquitectura de software">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/arquitectura-de-software/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/software-architecture.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2022-10-17T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/arquitectura-de-software/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/software-architecture.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 17, 2022</time>
+                </div>
+                <h1>La arquitectura de software</h1>
+                <div class="post-body"><p>La arquitectura de software y el rol del arquitecto son de los conceptos más incomprendidos en el desarrollo de software. En este post vamos a explicar qué es la arquitectura, qué hace un arquitecto y cómo se relaciona con otros temas como patrones de diseño y los principios SOLID.<!-- more --></p>
+
+<p>La arquitectura de software surge en los años 70’s como una analogía a la construcción civil. En ese momento se creía que construir software era similar a construir un edificio o un puente, y se tomaron varios procesos y roles de esa disciplina, entre ellos la arquitectura y el arquitecto.</p>
+
+<p>En la construcción civil, la arquitectura define el diseño de lo que se va a construir a través de planos y maquetas que otros después construyen.</p>
+
+<p>La idea de la arquitectura de software (y el arquitecto) es que fuera similar a la construcción civil y para eso se crearon lenguajes de modelado como <a href="https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado" target="\_blank">UML (Unified Modeling Language)</a>, que le permitía a los arquitectos plasmar el diseño de una aplicación en diagramas que después otros construirían.</p>
+
+<p>Sin embargo, lo que nos dimos cuenta en los años 90’s es que el software es muy diferente a la construcción civil. Aunque definimos nuevos procesos como el desarrollo ágil (y descartamos otros como el <a href="https://es.wikipedia.org/wiki/Desarrollo_en_cascada" target="\_blank">modelo en cascada</a>). Es hora también de repensar la arquitectura y el rol del arquitecto.</p>
+
+<h2 id="qué-es-la-arquitectura-de-software">¿Qué es la arquitectura de software?</h2>
+
+<p>La arquitectura de software, en términos generales, define la estructura y el diseño técnico de una aplicación: cuáles van a ser los componentes principales, cuál va a ser la responsabilidad de cada uno, y cómo se van a comunicar entre ellos. A la arquitectura se le conoce hoy como el <strong>diseño del sistema</strong><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p>Por ejemplo, si vamos a desarrollar una aplicación Web seguramente necesitaremos al menos los siguientes componentes: frontend, backend y alguna base de datos para almacenar la información.</p>
+
+<p>Existen varias formas de representar el sistema en diagramas. Por ejemplo, utilizando un diagrama de componentes de UML, una aplicación Web se vería así:</p>
+
+<p><img src="/assets/images/software-architecture-components.png" alt="Componentes" class="photo border" /></p>
+<p class="photo-description">Diagrama de Componentes</p>
+
+<p>También podríamos crear un diagrama de despliegue, que tendría detalles más específicos del diseño:</p>
+
+<p><img src="/assets/images/software-architecture-deployment.png" alt="Despliegue" class="photo border" /></p>
+<p class="photo-description">Diagrama de Despliegue</p>
+
+<p>Parte importante del diseño del sistema es decidir qué tecnologías se van a usar dependiendo de los requerimientos funcionales y no funcionales de la aplicación.</p>
+
+<p>Una buen diseño del sistema debe permitir modificar y evolucionar la aplicación en el tiempo. También debe permitir escalar rápidamente sin necesidad de realizar cambios en el código.</p>
+
+<h2 id="el-rol-del-arquitecto-líder-técnico">El rol del arquitecto (líder técnico)</h2>
+
+<p>Hoy existen varias definiciones de un arquitecto de software, pero sería mejor cambiar el nombre del rol completamente. El arquitecto es, al final, un <strong>líder técnico</strong> que toma decisiones técnicas de una aplicación.</p>
+
+<p>El líder técnico (arquitecto) es el responsable de definir el diseño del sistema (la arquitectura): qué componentes van a existir, cómo se van a comunicar esos componentes, y qué tecnologías se van a utilizar.</p>
+
+<p>El líder técnico no necesariamente escribe código de la aplicación pero sí está involucrado en las discusiones y retos que los demás desarrolladores tengan. Adicionalmente, revisa código y aporta al proyecto haciendo los ajustes necesarios a medida que avanza el desarrollo.</p>
+
+<p>Una parte importante del rol del líder técnico es estar constantemente probando nuevas tecnologías y compartiendo con el resto de la compañía los aprendizajes obtenidos.</p>
+
+<p>Un buen líder técnico conoce y ha implementado diferentes estilos de arquitectura (microservicios, monolito, serverless, etc.), sabe cómo diseñar aplicaciones escalables, sabe cómo funcionan diferentes bases de datos (relacionales, documentales, llave-valor, etc.), cómo medir y monitorear los componentes a través de logs y herramientas de monitoreo (p.e. <a href="https://newrelic.com/" target="\_blank">NewRelic</a>, <a href="https://www.datadoghq.com/" target="\_blank">Datadog</a>, <a href="https://sentry.io/" target="\_blank">Sentry</a> etc.).</p>
+
+<h2 id="patrones-de-diseño">Patrones de diseño</h2>
+
+<p>Cuando se habla de arquitectura de software muchas personas lo asocian con patrones de diseño. Sin embargo, son dos conceptos diferentes.</p>
+
+<p>La arquitectura (diseño del sistema) se refiere a la estructura de la aplicación y cómo se va a mover la información entre componentes. Los patrones de diseño son soluciones a problemas comunes que se repiten en el desarrollo de una aplicación.</p>
+
+<p>Existen patrones de diseño para cada uno de los paradigmas de programación (orientado a objetos, funcional, etc.) y componentes de software (frontend, backend, acceso a datos, etc.).</p>
+
+<p>Por ejemplo, en Programación Orientada a Objetos tenemos patrones como <a href="https://refactoring.guru/design-patterns/singleton" target="\_blank">Singleton</a>, <a href="https://refactoring.guru/design-patterns/factory-method" target="\_blank">Factory</a>, <a href="https://refactoring.guru/design-patterns/adapter" target="\_blank">Adapter</a>, <a href="https://refactoring.guru/design-patterns/observer" target="\_blank">Observer</a>, etc. En React existen patrones como el <a href="https://reactjs.org/docs/higher-order-components.html" target="\_blank">HOC (Higher Order Component)</a>, <a href="https://reactjs.org/docs/hooks-intro.html" target="\_blank">Hooks</a>, <a href="https://reactjs.org/docs/context.html" target="\_blank">Context</a>, etc.</p>
+
+<p>Los patrones de diseño también permiten una mejor comunicación entre desarrolladores, una especie de lenguaje en común.</p>
+
+<h2 id="solid">SOLID</h2>
+
+<p>Los <a href="https://es.wikipedia.org/wiki/SOLID">principios SOLID</a> aplican principalmente al paradigma de programación orientada por objetos. Son 5 principios que corresponden a cada una de las letras:</p>
+
+<ul>
+  <li>Single Responsability (Única Responsabilidad)</li>
+  <li>Open Close (Abierto / Cerrado)</li>
+  <li>Liskov Substitution (Sustitución de Liskov)</li>
+  <li>Interface Segregation (Segregación de Interfaces)</li>
+  <li>Dependency Inversion (Inversión de Dependencias)</li>
+</ul>
+
+<p>Aunque algunas empresas aún preguntan por estos principios en las entrevistas, la realidad es que la mayoría no tiene mucho sentido cuando se está en ambiente más funcional como hoy ocurre con Node.js y React, por ejemplo.</p>
+
+<p>Quizá el principio más importante es el primero: Única Responsabilidad. Este principio también aplica al paradigma funcional en el sentido que es recomendable que nuestras funciones, nuestros componentes, nuestros módulos tengan una única responsabilidad.</p>
+
+<p>Otro principio importante es hacer nuestra aplicación modular, de modo que podamos cambiar ciertos componentes fácilmente, que es la idea detrás de la sustitución de Liskov (tercer principio). Por ejemplo, si nuestro proveedor de envío de correos es <a href="https://sendgrid.com/" target="\_blank">Sendgrid</a> ¿Qué tan fácil es migrar a otro servicio como <a href="https://www.mailgun.com/" target="\_blank">Mailgun</a> o <a href="https://postmarkapp.com/" target="\_blank">Postmark</a>? ¿Qué tendríamos que cambiar?</p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Aunque la metodología ágil no habla nada explícito sobre el diseño del sistema (arquitectura), eso no significa que debamos ignorarlo. Al contrario, un buen diseño es fundamental para el éxito de un proyecto.</p>
+
+<p>Lo anterior no significa que debamos hacer una especificación completa del sistema antes de escribir nuestra primera línea de código, lo ideal es tener el diseño mínimo necesario para iniciar con la implementación, pero si deberíamos tener en cuenta al menos lo siguiente:</p>
+
+<ul>
+  <li>Cuáles van a ser los componentes de nuestro sistema. Acá debemos listar también componentes externos como sistemas de almacenamiento (p.e. <a href="https://cloudinary.com/" target="\_blank">Cloudinary</a>, <a href="https://aws.amazon.com/s3/" target="\_blank">S3</a>, etc.), sistemas de correo (<a href="https://sendgrid.com/" target="\_blank">Sendgrid</a>, <a href="https://www.mailgun.com/" target="\_blank">Mailgun</a>, etc.), sistemas de pago, etc.</li>
+  <li>Cuál va a ser la responsabilidad de cada componente que vamos a desarrollar y cómo es el flujo de comunicación entre los componentes.</li>
+  <li>Cómo vamos a desplegar el sistema y cómo lo vamos a monitorear.</li>
+  <li>Cómo va a escalar, qué va a pasar si la carga se incrementa.</li>
+  <li>Qué tecnologías vamos a utilizar en cada uno de los componentes.</li>
+</ul>
+
+<p>Estas decisiones las hace el líder técnico del proyecto, que debe ser alguien Senior con experiencia en el diseño de diferentes sistemas.</p>
+
+<h2 id="recursos-adicionales">Recursos adicionales</h2>
+
+<ul>
+  <li><a href="https://www.educative.io/blog/complete-guide-to-system-design" target="\_blank">Complete guide to system design</a></li>
+  <li><a href="https://martinfowler.com/architecture/" target="\_blank">Software architecture guide</a></li>
+  <li><a href="https://gist.github.com/vasanthk/485d1c25737e8e72759f" target="\_blank">System Design Cheatsheet</a></li>
+  <li><a href="https://www.freecodecamp.org/news/systems-design-for-interviews/" target="\_blank">System Design Interview Questions</a></li>
+  <li><a href="https://systemdesigntutorial.com/" target="\_blank">System Design Tutorial</a></li>
+</ul>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Esto es debatible pero para efectos prácticos son lo mismo. Lo que estamos intentando es simplificar la terminología. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=La arquitectura de software&url=http://blog.makeitreal.camp/arquitectura-de-software/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/arquitectura-de-software/&p[title]=La arquitectura de software" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/arquitectura-de-software/&title=La arquitectura de software&summary=&source=http://blog.makeitreal.camp/arquitectura-de-software/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=arquitectura-de-software">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

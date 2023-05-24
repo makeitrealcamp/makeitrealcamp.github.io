@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> HackerRank Challenge - Día 1 </title>
+  <meta name="description" content="En esta serie de posts voy a documentar mi experiencia intentando entrar entre los mil mejores programadores de HackerRank, un sitio para practicar ejercicio...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="HackerRank Challenge - Día 1">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/hackerrank-challenge-dia-1/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/hackerrank.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2016-07-07T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/hackerrank-challenge-dia-1/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/hackerrank.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Jul 7, 2016</time>
+                </div>
+                <h1>HackerRank Challenge - Día 1</h1>
+                <div class="post-body"><p>En esta serie de posts voy a documentar mi experiencia intentando entrar entre los mil mejores programadores de <a href="https://www.hackerrank.com" target="_blank">HackerRank</a>, un sitio para practicar ejercicios de programación.<!-- more --></p>
+
+<p><strong>Julio 11 de 2016</strong>: Me di cuenta que el ranking es por tema, así que este reto solo aplica para el área de matemáticas de <a href="https://www.hackerrank.com" target="_blank">HackerRank</a>. Disculpas por la confusión!</p>
+
+<p>La mayor parte de mi vida como programador he estado enfocado en arquitectura de software y esta es una excelente oportunidad para mejorar en la resolución de problemas de programación específicos. <a href="https://www.hackerrank.com" target="_blank">HackerRank</a> está dividio por temas y he decidido empezar por matemáticas, que es un tema que me interesa y en el que sé que puedo mejorar bastante.</p>
+
+<p>Voy a intentar escribir un post al día describiendo el ejercicio en el que trabaje ese día, pero no es promesa.</p>
+
+<p>El ejercicio de hoy se llama <a href="https://www.hackerrank.com/challenges/sherlock-and-permutations" target="_blank">Sherlock and Permutations</a>. Nos piden calcular el número de permutaciones únicas dado un número determinado de ceros (<strong>N</strong>) y unos (<strong>M</strong>) que comiencen con uno (1).</p>
+
+<p>Por ejemplo, si <strong>N</strong> es 1 y <strong>M</strong> es 1 (un cero y un uno), las posibles permutaciones son <code class="language-plaintext highlighter-rouge">01</code> y <code class="language-plaintext highlighter-rouge">10</code>. Solo la segunda permutación satisface la condición que empiece con 1, y por lo tanto la respuesta es <strong>1</strong> (solo existe una permutación que satisface la condición).</p>
+
+<p>Veamos otro ejemplo. Si <strong>N</strong> es 1 y <strong>M</strong> es 2 (un cero y dos unos), las posibles permutaciones son <code class="language-plaintext highlighter-rouge">011</code>, <code class="language-plaintext highlighter-rouge">101</code> y <code class="language-plaintext highlighter-rouge">110</code>. Solo las dos últimas satisfacen la condición, así que la respuesta es <strong>2</strong>.</p>
+
+<p>Una posible solución sería diseñar un algoritmo que realice todas las combinaciones y solo tenga en cuenta las que comienzan con <code class="language-plaintext highlighter-rouge">1</code>. Sin embargo, estos ejercicios de matemáticas generalmente se pueden resolver con alguna fórmula, así que decidí investigar primero un poco sobre permutaciones. Los videos de <a href="https://www.khanacademy.org/math/precalculus/prob-comb/prob-combinatorics-precalc/v/probability-using-combinations" target="_blank">Khan Academy sobre el tema</a> me llevaron a la solución.</p>
+
+<p>El <a href="https://es.wikipedia.org/wiki/Coeficiente_binomial" target="_blank">coeficiente binomial</a> (n k) es el número de modos en los que se pueden escoger k objetos de un total de n.</p>
+
+<p>Si llevamos esa frase a nuestro ejemplo, es el número de modos en los que se pueden escoger <strong>M</strong> unos (1) de un total <strong>N</strong> + <strong>M</strong> (el número de ceros + el número de unos). Sin embargo, como solo queremos los casos que comienzan en <code class="language-plaintext highlighter-rouge">1</code>, el total es <strong>N</strong> + <strong>M</strong> - 1 (restamos 1 del número de unos).</p>
+
+<p>La fórmula del coeficiente binomial es <code class="language-plaintext highlighter-rouge">(n k) = n!/(n-k)!*k!</code> (el <code class="language-plaintext highlighter-rouge">!</code> significa factorial). Aplicado a nuestro caso el numerador sería <code class="language-plaintext highlighter-rouge">(N + M - 1)!</code> y el denominador simplificado sería <code class="language-plaintext highlighter-rouge">(M-1)!*N!</code>. Convirtamos eso a código Ruby:</p>
+
+<pre><code class="language-ruby">def permutations(zeros, ones)
+  numerator = fact(zeros + ones - 1)
+  denominator = fact(ones - 1) * fact(zeros)
+  numerator / denominator
+end</code></pre>
+
+<p>También creé una función <code class="language-plaintext highlighter-rouge">fact</code> para sacar el factorial:</p>
+
+<pre><code class="language-ruby">def fact(i)
+  return 1 if i == 0
+  (1..i).inject(:*)
+end</code></pre>
+
+<p>Lo único es que el camino hacia esta solución fue más complicado de lo que lo hace parecer este post!</p>
+
+<p>Mi nuevo ranking en <a href="https://www.hackerrank.com" target="_blank">HackerRank</a> después de terminar este ejercicio es <strong>9,945</strong>!</p>
+
+<p>Te invito a hacer este reto conmigo. Puedes definir tu propio objetivo. Por ejemplo, si estás en el ranking 50,000, intenta llegar a 10,000. Si ya estás entre los primeros 1,000, intenta llegar a 100. Y así.</p>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=HackerRank Challenge - Día 1&url=http://blog.makeitreal.camp/hackerrank-challenge-dia-1/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/hackerrank-challenge-dia-1/&p[title]=HackerRank Challenge - Día 1" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/hackerrank-challenge-dia-1/&title=HackerRank Challenge - Día 1&summary=&source=http://blog.makeitreal.camp/hackerrank-challenge-dia-1/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=hackerrank-challenge-dia-1">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

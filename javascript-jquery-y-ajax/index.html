@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> JavaScript, jQuery y Ajax </title>
+  <meta name="description" content="A mediados de los 90’s, la mayoría de sitios Web consistían de páginas estáticas sin ninguna interactividad. Algunos sitios ya generaban páginas dinámicas en...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="JavaScript, jQuery y Ajax">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/javascript-jquery-y-ajax/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/jquery.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2014-10-12T17:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/javascript-jquery-y-ajax/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/jquery.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 12, 2014</time>
+                </div>
+                <h1>JavaScript, jQuery y Ajax</h1>
+                <div class="post-body"><p>A mediados de los 90’s, la mayoría de sitios Web consistían de páginas estáticas sin ninguna interactividad. Algunos sitios ya generaban páginas dinámicas en el servidor, pero toda acción del usuario requería refrescar la página completamente para ver los cambios. Se necesitaba un lenguaje de programación que corriera en el navegador.<!-- more --></p>
+
+<h2 id="javascript">JavaScript</h2>
+
+<p>A finales del 1995 surge <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a>, un lenguaje creado por <a href="http://en.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan Eich</a>, trabajando en ese entonces para <a href="http://en.wikipedia.org/wiki/Netscape" target="_blank">Netscape</a>. (<strong>No confundas <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> con <a href="http://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a></strong>, son lenguajes muy diferentes; simplemente fue una movida de mercadeo porque Java era muy popular en ese momento). <strong>JavaScript permitía manipular HTML</strong> y agregar interactividad en Netscape, que era el navegador más popular en ese momento.</p>
+
+<p>Microsoft lanzó un lenguaje muy similar llamado <a href="http://en.wikipedia.org/wiki/JScript" target="_blank">Jscript</a> para Internet Explorer, y aunque hubo intentos de unificar el lenguaje, nunca hubo consenso. Para el momento en que Internet Explorer se convirtió en el navegador más popular, JavaScript ya era el estándar para escribir código interactivo en el navegador.</p>
+
+<p>Pero había un problema. Aunque el lenguaje era muy similar en los dos navegadores, <strong>la forma de manipular HTML era muy diferente</strong>. A medida que más navegadores aparecían en el mercado, el problema se hacía cada vez más inmanejable. Cada navegador lo hacía a su manera.</p>
+
+<h2 id="jquery">jQuery</h2>
+
+<p>En 2006 surge una librería de <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> llamada <a href="http://jquery.com/" target="_blank">jQuery</a>, escrita por <a href="http://en.wikipedia.org/wiki/John_Resig" target="_blank">John Resig</a>, para solucionar las diferencias al manipular HTML y escuchar eventos en los navegadores. Aunque ya existían intentos similares en JavaScript, <strong>una de las genialidades de <a href="http://jquery.com/" target="_blank">jQuery</a> era que utilizaba los mismo selectores CSS para ubicar y manipular los diferentes elementos del DOM</strong>.</p>
+
+<div class="well">
+<h3>¿Qué es el DOM?</h3>
+
+EL DOM (Document Object Model) es una representación de un documento HTML que nos permite interactuar con los elementos (etiquetas) del documento HTML. La estructura es en forma de árbol similar a como se organizan los directorios y archivos en un sistema operativo. Puedes encontrar más información del DOM <a href="http://javascript.info/tutorial/dom-nodes" target="_blank">acá</a>.
+</div>
+
+<p>Veamos un ejemplo que cambia el color de un <code class="language-plaintext highlighter-rouge">div</code> al hacer click:</p>
+
+<div class="square" style="height: 100px; width: 100px; background: blue; margin: 0 auto 20px;"></div>
+
+<pre><code class="language-javascript">jQuery('.square').click(function() {
+  jQuery(this).css('background', 'yellow');
+});</code></pre>
+
+<p>En este ejemplo estamos escuchando el evento <code class="language-plaintext highlighter-rouge">click</code> sobre el <code class="language-plaintext highlighter-rouge">div</code> con clase <code class="language-plaintext highlighter-rouge">square</code> y cambiando el color a amarillo cuando el evento es disparado. (Recuerda descargar jQuery en <a href="http://jquery.com/">jquery.com</a> e incluirlo en tu página para que el ejemplo funcione).</p>
+
+<p>Podemos simplificar un poco más el ejemplo reemplazando la palabra <code class="language-plaintext highlighter-rouge">jQuery</code> por <code class="language-plaintext highlighter-rouge">$</code>, que ahorra algunos caracteres y es la forma más conocida:</p>
+
+<pre><code class="language-javascript">$('.square').click(function() {
+  $(this).css('background', 'yellow');
+});</code></pre>
+
+<p>jQuery se encarga de las diferencias de los navegadores exponiendo una interfaz clara y fácil de usar que le permite a los desarrolladores concentrarse en la funcionalidad de la aplicación, y no en los detalles de cada navegador.</p>
+
+<h2 id="ajax">Ajax</h2>
+
+<p>¿Cómo intercambiar información con el servidor sin tener que refrescar la página? Ese es el problema que soluciona <a href="http://en.wikipedia.org/wiki/Ajax_(programming)" target="_blank">Ajax</a>. Recuerdo la primera vez que lo vi en acción en la página del <a href="http://www.ausopen.com/" target="_blank">Australian Open</a> viendo el puntaje en vivo; cada vez que cambiaba el puntaje de un partido, parpadeaba y se actualizaba en tiempo real.</p>
+
+<p>Para entender Ajax, es importante primero entender <a href="/2014/10/05/http-y-html/" target="_blank">cómo funciona el protocolo HTTP</a>. <strong>La idea es que escribiendo un poco de JavaScript sea posible hacer una petición HTTP y recibir una respuesta del servidor con información que podemos utilizar para actualizar la página</strong>.</p>
+
+<p>La forma de utilizar Ajax en los navegadores es engorrosa y no la voy a mostrar acá. En cambio, jQuery ofrece una interfaz mucho más sencilla y unificada para todos los navegadores:</p>
+
+<pre><code class="language-javascript">$.get('/url_to_fetch', function(data) {
+  // do something with data
+});</code></pre>
+
+<p>En este ejemplo estamos haciendo una petición HTTP a la ruta <code class="language-plaintext highlighter-rouge">/url_to_fetch</code>. La respuesta la encontraremos en <code class="language-plaintext highlighter-rouge">data</code>, que puede ser HTML, <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML</a>, <a href="http://www.json.org/" target="_blank">JSON</a>, o cualquier otra cosa. Últimamente el formato que más se utiliza es <a href="http://www.json.org/" target="_blank">JSON</a> sin embargo.</p>
+
+<div class="well">
+<h3>¿Qué es XML y JSON?</h3>
+
+<p>Son formatos de intercambio de información. Hace unos años <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML (Extensible Markup Language)</a> era muy popular, pero últimamente <a href="http://www.json.org/" target="_blank">JSON (JavaScript Object Notation)</a> es más usado. La razón es que <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML</a> es muy verboso y más difícil de interpretar.</p>
+
+<p>Por ejemplo, podríamos representar un vuelo en <a href="http://en.wikipedia.org/wiki/XML" target="_blank">XML</a>:</p>
+
+<pre><code class="language-xml">&lt;flight&gt;
+    &lt;airline&gt;Oceanic&lt;/airline&gt;
+    &lt;number&gt;815&lt;/number&gt;
+    &lt;departure&gt;
+        &lt;iata&gt;SYD&lt;/iata&gt;
+        &lt;time&gt;2004-09-22 14:55&lt;/time&gt;
+    &lt;/departure&gt;
+    &lt;arrival&gt;
+        &lt;iata&gt;LAX&lt;/iata&gt;
+        &lt;time&gt;2004-09-23 10:42&lt;/time&gt;
+    &lt;/arrival&gt;
+&lt;/flight&gt;</code></pre>
+
+<p>O en <a href="http://www.json.org/" target="_blank">JSON</a>:</p>
+
+<pre><code class="language-javascript">{
+  "airline": “Oceanic”,
+  "number": 815,
+  "departure": {
+   "iata": “SYD”,
+   "time": “2004-09-22 14:55”
+  },
+  "arrival": {
+   "iata": “LAX”,
+   "time": “2004-09-23 10:42”
+  }
+}</code></pre>
+
+Otra ventaja de <a href="http://www.json.org/" target="_blank">JSON</a> es que es muy fácil de manipular en JavaScript.
+</div>
+
+<h2 id="más-recursos">Más recursos</h2>
+
+<ul>
+  <li><a href="http://try.jquery.com/">http://try.jquery.com/</a></li>
+  <li><a href="http://javascript.info/tutorial/dom-nodes">http://javascript.info/tutorial/dom-nodes</a></li>
+  <li><a href="http://teamtreehouse.com/library/ajax-basics">http://teamtreehouse.com/library/ajax-basics</a></li>
+</ul>
+
+<script>
+	jQuery('.square').click(function() {
+	  jQuery(this).css('background', 'yellow');
+	});
+</script>
+
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=JavaScript, jQuery y Ajax&url=http://blog.makeitreal.camp/javascript-jquery-y-ajax/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/javascript-jquery-y-ajax/&p[title]=JavaScript, jQuery y Ajax" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/javascript-jquery-y-ajax/&title=JavaScript, jQuery y Ajax&summary=&source=http://blog.makeitreal.camp/javascript-jquery-y-ajax/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=javascript-jquery-y-ajax">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

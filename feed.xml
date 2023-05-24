@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es"><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://blog.makeitreal.camp/feed.xml" rel="self" type="application/atom+xml" /><link href="http://blog.makeitreal.camp/" rel="alternate" type="text/html" hreflang="es" /><updated>2023-05-24T20:34:38+00:00</updated><id>http://blog.makeitreal.camp/feed.xml</id><title type="html">El Blog de Make it Real</title><subtitle>Un espacio para compartir conocimiento en programación y emprendimiento.</subtitle><entry><title type="html">¿ChatGPT reemplazará a los programadores?</title><link href="http://blog.makeitreal.camp/chatgpt-reemplazara-programadores/" rel="alternate" type="text/html" title="¿ChatGPT reemplazará a los programadores?" /><published>2023-05-24T07:00:00+00:00</published><updated>2023-05-24T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/chatgpt-reemplazara-programadores</id><content type="html" xml:base="http://blog.makeitreal.camp/chatgpt-reemplazara-programadores/">&lt;p&gt;El surgimiento de &lt;a href=&quot;https://openai.com/product/chatgpt&quot; target=&quot;\_blank&quot;&gt;ChatGPT&lt;/a&gt; y otros LLMs (Modelos de Lenguaje Avanzado) ha despertado temor por la posibilidad de que pueda reemplazar varios trabajos, incluyendo el de los programadores.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-funcionan-los-llms-como-chatgpt&quot;&gt;¿Cómo funcionan los LLMs como ChatGPT?&lt;/h2&gt;
+
+&lt;p&gt;Un &lt;a href=&quot;https://es.wikipedia.org/wiki/LLM_(modelo_grande_de_lenguaje)&quot; target=&quot;\_blank&quot;&gt;LLM (Large Language Model)&lt;/a&gt; se alimenta de una gran cantidad de información (p.e. la información pública que existe hoy en Internet) para crear un &lt;strong&gt;modelo estadístico&lt;/strong&gt; que dada una entrada (p.e. una pregunta) genere una salida (una respuesta).&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, al ingresar el texto “Había una vez” en &lt;a href=&quot;https://openai.com/product/chatgpt&quot; target=&quot;\_blank&quot;&gt;ChatGPT&lt;/a&gt; recibí la siguiente continuación: “Había una vez una pequeña aldea en lo profundo del bosque. Esta aldea estaba rodeada de exuberante vegetación y habitada por personas amables y trabajadoras …”.  Y ahí continúa.&lt;/p&gt;
+
+&lt;p&gt;Como es un &lt;strong&gt;modelo estadístico&lt;/strong&gt; la respuesta puede cambiar así usemos el mismo texto. Por ejemplo, la segunda vez generó el siguiente texto: “Había una vez una historia.”. Y ahí terminó.&lt;/p&gt;
+
+&lt;p&gt;Ignorando lo aburrido de la última respuesta, es increíble que el concepto funcione y que genere respuestas coherentes.&lt;/p&gt;
+
+&lt;p&gt;Muchos LLMs también son capaces de generar código y ¡lo hacen muy bien!&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, debemos tener en cuenta que los LLMs dependen de la información de la que se alimenten y del &lt;strong&gt;modelo estadístico&lt;/strong&gt; que genere. Se necesitan enormes cantidades de datos y un gran poder computacional para generar estos modelos.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-hace-una-programadora&quot;&gt;¿Qué hace un(a) programador(a)?&lt;/h2&gt;
+
+&lt;p&gt;Hay muchos tipos de programadores. Algunos trabajan aplicaciones Web, otros en aplicaciones móviles, otros en crear herramientas para otros programadores, etc. En este post nos vamos a centrar en programadores Web y móvil Juniors, que son los que más nos interesan en esta discusión.&lt;/p&gt;
+
+&lt;p&gt;Generalmente, cuando una persona termina el &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=chatgpt-reemplazara-programadores&quot;&gt;programa TOP de Make It Real&lt;/a&gt; y empieza a trabajar en una empresa como desarrollador Web y/o móvil, el primer paso es descargar el código de la aplicación que le hayan asignado y hacerlo funcionar en su propia máquina. Cada aplicación es diferente así que la instalación puede tomar desde algunas horas hasta algunos días.&lt;/p&gt;
+
+&lt;p&gt;Luego le asignarán tareas para desarrollar nuevas funcionalidades y solucionar errores o problemas. Esto requiere entender el contexto del problema, identificar el código que se necesita escribir o cambiar, investigar cómo hacerlo, escribir o modificar el código (idealmente escribir algunas pruebas automatizadas) y seguir el proceso que tenga la empresa para desplegarlo en producción para que los usuarios finales lo puedan utilizar.&lt;/p&gt;
+
+&lt;p&gt;La programación es un proceso que requiere personas creativas y recursivas que puedan entender el contexto de la aplicación (cómo está la aplicación estructurada, qué tecnologías se están usando, cómo afectan el código que estamos escribiendo, qué es realmente lo que quiere el cliente, qué restricciones existen, etc.) y generen una solución.&lt;/p&gt;
+
+&lt;p&gt;Escribir código es sólo una fracción del trabajo.&lt;/p&gt;
+
+&lt;h2 id=&quot;los-llms-reemplazaran-a-los-programadores&quot;&gt;¿Los LLMs reemplazaran a los programadores?&lt;/h2&gt;
+
+&lt;p&gt;La programación es de las disciplinas más documentadas en Internet y de las comunidades más abiertas a compartir conocimiento.&lt;/p&gt;
+
+&lt;p&gt;Incluso antes de &lt;a href=&quot;https://openai.com/product/chatgpt&quot; target=&quot;\_blank&quot;&gt;ChatGPT&lt;/a&gt; se podían encontrar respuestas a la mayoría de problemas a las que uno se puede enfrentar en programación en sitios como &lt;a href=&quot;https://stackoverflow.com/&quot; target=&quot;\_blank&quot;&gt;StackOverflow&lt;/a&gt; o en la infinidad de blogs de programación.&lt;/p&gt;
+
+&lt;p&gt;Esto ha permitido que la productividad de los programadores haya crecido de forma exponencial desde la llegada de la Web en los noventas. Pero ese incremento en productividad no desaceleró la demanda de programadores, al contrario, las aplicaciones se hicieron mucho más complejas y se crearon nuevas tecnologías como voz sobre IP, servicios de streaming, criptomonedas, entre muchas otras.&lt;/p&gt;
+
+&lt;p&gt;Mi predicción es que las empresas no van a requerir menos programadores, al contrario, van a requerir más, porque cada vez van a querer hacer cosas más interesantes y complejas, que les den una mayor ventaja competitiva y les permita aumentar sus ingresos.&lt;/p&gt;
+
+&lt;h2 id=&quot;reemplazará-algún-día-la-inteligencia-artificial-a-los-programadores&quot;&gt;¿Reemplazará algún día la Inteligencia Artificial a los programadores?&lt;/h2&gt;
+
+&lt;p&gt;Los logros de los LLMs son impresionantes, pero son solo el inicio de la revolución hacia una automatización mucho más completa.&lt;/p&gt;
+
+&lt;p&gt;Se va a necesitar mucho más que LLMs para automatizar nuestro trabajo como programadores, pero ese debería ser nuestro objetivo a largo plazo, porque una vez lo logremos, lo más probable es que también hayamos automatizado el trabajo del resto de la humanidad y nadie más necesite un trabajo para sobrevivir.&lt;/p&gt;
+
+&lt;p&gt;Es muy temprano para predecir qué pasará pero lo único cierto es que los programadores tendremos una gran influencia en ese futuro.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;No, los LLMs no reemplazarán a los programadores&lt;/strong&gt;. Escribir código es sólo una fracción del trabajo de un(a) programador(a) y los LLMs son una herramienta que incrementará la productividad (o eso es lo que esperamos).&lt;/p&gt;
+
+&lt;p&gt;Un aumento en productividad no significa que las empresas dejarán de contratar programadores, al contrario, los avances en Inteligencia Artificial están creando nuevas oportunidades para que las empresas creen y actualicen sus soluciones, y aumenten su ventaja competitiva.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, a largo plazo, nuestro objetivo como progradores sí debería ser el de lograr reemplazarnos, porque es muy posible que cuando lo logremos nadie más tenga que volver a trabajar para sobrevivir.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.freepik.com/free-photo/multi-dimensional-urban-space-exotic-concepts-digital-painting_14541132.htm#query=dystopian%20city&amp;amp;position=1&amp;amp;from_view=keyword&amp;amp;track=ais&quot; target=&quot;\_blank&quot;&gt;Imagen del encabezado por liuzishan&lt;/a&gt; en Freepik&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">El surgimiento de ChatGPT y otros LLMs (Modelos de Lenguaje Avanzado) ha despertado temor por la posibilidad de que pueda reemplazar varios trabajos, incluyendo el de los programadores.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/dystopian-city.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/dystopian-city.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cómo incluir ChatGPT en tus aplicaciones</title><link href="http://blog.makeitreal.camp/chatgpt-api/" rel="alternate" type="text/html" title="Cómo incluir ChatGPT en tus aplicaciones" /><published>2023-05-01T07:00:00+00:00</published><updated>2023-05-01T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/chatgpt-api</id><content type="html" xml:base="http://blog.makeitreal.camp/chatgpt-api/">&lt;p&gt;ChatGPT cuenta con un API que nos permite agregar, a nuestras aplicaciones Web y móviles, funcionalidades como chatbots, análisis y extracción de texto, creación de resúmenes, explicación de código, entre muchas otras. En este post vamos a ver cómo usar este poderoso API desde &lt;strong&gt;Node.js&lt;/strong&gt;.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Para empezar necesitas crear una cuenta en &lt;a href=&quot;https://openai.com/&quot; target=&quot;\_blank&quot;&gt;OpenAI&lt;/a&gt; y obtener el &lt;a href=&quot;https://beta.openai.com/account/api-keys&quot; target=&quot;\_blank&quot;&gt;API key&lt;/a&gt;. Al registrarte recibirás automáticamente créditos gratuitos para hacer pruebas&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;El siguiente paso es instalar el &lt;a href=&quot;https://www.npmjs.com/package/openai&quot; target=&quot;\_blank&quot;&gt;paquete de OpenAI&lt;/a&gt; usando &lt;strong&gt;npm&lt;/strong&gt;. Ejecuta el siguiente comando en la consola:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install openai
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Crea ahora un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.js&lt;/code&gt; con el siguiente código de prueba:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;OpenAIApi&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;openai&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;configuration&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;apiKey&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;API-KEY&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;openai&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;OpenAIApi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;configuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;openai&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createChatCompletion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;gpt-3.5-turbo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;messages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello world&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;max_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;then&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completion&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;completion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;choices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Nota:&lt;/strong&gt; No olvides reemplazar el texto &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;API-KEY&lt;/code&gt; con el API key que obtuviste en el primer paso.&lt;/p&gt;
+
+&lt;p&gt;Lo primero que estamos haciendo es requerir la librería y crear una configuración con el API key para instanciar el API (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OpenAIApi&lt;/code&gt;). Después utilizamos el método &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createChatCompletion&lt;/code&gt; que hace el llamado al API y retorna un objeto de resultados similar al siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;chatcmpl-123&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;chat.completion&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;created&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1677652288&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;choices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;assistant&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello there, how may I assist you today?&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;finish_reason&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;stop&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}],&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;usage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;prompt_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;completion_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;total_tokens&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Las respuestas vienen en la llave &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;choices&lt;/code&gt;. Por defecto sólo llega una respuesta pero podemos pedir más. Para ver todas las opciones que recibe &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;createChatCompletion&lt;/code&gt; &lt;a href=&quot;https://platform.openai.com/docs/api-reference/chat/create&quot; target=&quot;\_blank&quot;&gt;consulta la documentación en este link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;¡Eso es todo! El límite está en tu imaginación.&lt;/p&gt;
+
+&lt;p&gt;Ten en cuenta que una vez consumas tus créditos deberás ingresar una tarjeta de crédito para poder continuar usando el servicio. Consulta la &lt;a href=&quot;https://openai.com/pricing#language-models&quot; target=&quot;\_blank&quot;&gt;página de precios&lt;/a&gt; para más información.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Al momento de escribir este post son $5 dólares que expiran en 3 meses. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">ChatGPT cuenta con un API que nos permite agregar, a nuestras aplicaciones Web y móviles, funcionalidades como chatbots, análisis y extracción de texto, creación de resúmenes, explicación de código, entre muchas otras. En este post vamos a ver cómo usar este poderoso API desde Node.js.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/openai-chatgpt.png" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/openai-chatgpt.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Nuevo proceso de admisión al programa TOP</title><link href="http://blog.makeitreal.camp/nuevo-proceso-seleccion/" rel="alternate" type="text/html" title="Nuevo proceso de admisión al programa TOP" /><published>2023-02-21T07:00:00+00:00</published><updated>2023-02-21T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/nuevo-proceso-seleccion</id><content type="html" xml:base="http://blog.makeitreal.camp/nuevo-proceso-seleccion/">&lt;p&gt;En Make It Real, desde 2014 venimos acompañando a personas que quieren iniciarse en el mundo del Desarrollo Web y móvil.&lt;/p&gt;
+
+&lt;p&gt;Nuestro &lt;a href=&quot;http://www.makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=nuevo-proceso-seleccion&quot; target=&quot;\_blank&quot;&gt;programa TOP&lt;/a&gt;, desde hace años recibe cientos de estudiantes que quieren cambiar su vida y convertirse en desarrolladores Full Stack JavaScript.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;El nuevo proceso de admisiones para el programa TOP incluye un &lt;a href=&quot;https://makeitreal.camp/aspirantes-top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=nuevo-proceso-seleccion&quot; target=&quot;\_blank&quot;&gt;curso gratuito llamado Aspirantes TOP&lt;/a&gt;. Este curso es obligatorio, con clases en vivo, con una duración de 4 semanas, y se cursará los lunes, miércoles y viernes de 6 p.m. a 8 p.m.&lt;/p&gt;
+
+&lt;p&gt;En el curso vas a ver:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fundamentos de Desarollo Web&lt;/li&gt;
+  &lt;li&gt;Git: Sistemas de control de versiones, para qué se utiliza&lt;/li&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+  &lt;li&gt;DOM (manipulación del DOM, escuchar eventos, manipular el HTML.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;¿Cuál es la metodología?&lt;/p&gt;
+
+&lt;p&gt;Te entregamos contenidos cada sesión que deberás estudiar por tu cuenta antes de llegar.
+En la sesión, dirigida por ex estudiantes se hacen en parejas, trabajarás resolviendo ciertos ejercicios aplicando lo que aprendiste.
+Al final de la sesión se solucionan dudas, se asigna contenido para la siguiente sesión y entregas tu solución a través de la plataforma de aprendizaje de Make It Real.
+Si tienes dudas, las puedes resolver a través de &lt;a href=&quot;https://discord.gg/frPm9qaMPH&quot; target=&quot;\_blank&quot;&gt;discord&lt;/a&gt;, que es la plataforma de comunicación que utilizaremos para el curso.&lt;/p&gt;
+
+&lt;p&gt;Este curso te permite ver la dinámica de Make It Real, como trabajamos, que nos conozcamos un poco antes de entrar al programa. 
+Durante este curso de Aspirantes TOP además tendrás una entrevista de perfilamiento y una entrevista técnica para poder ingresar al programa TOP.&lt;/p&gt;
+
+&lt;p&gt;Entonces… ¿De qué se trata el nuevo proceso de admisiones?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Aplicas al &lt;a href=&quot;http://www.makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=nuevo-proceso-seleccion&quot; target=&quot;\_blank&quot;&gt;programa TOP&lt;/a&gt; (te sugerimos que puedas hacer una aplicación lo más completa posible)&lt;/li&gt;
+  &lt;li&gt;Haces el curso de Aspirantes TOP&lt;/li&gt;
+  &lt;li&gt;Haces entrevista de perfilamiento&lt;/li&gt;
+  &lt;li&gt;Haces entrevista técnica&lt;/li&gt;
+  &lt;li&gt;¡Te aceptamos al programa! (ojalá!!) y si eso no sucede porque no estás list@, puedes volver a hacer el &lt;a href=&quot;https://makeitreal.camp/aspirantes-top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=nuevo-proceso-seleccion&quot; target=&quot;\_blank&quot;&gt;curso de aspirantes TOP&lt;/a&gt; para poder ser parte del programa.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;¿Estás List@ para ser Full Stack JavaScript?
+Te esperamos!&lt;/p&gt;
+
+&lt;p&gt;Si quieres conocer más sobre el programa TOP no te pierdas &lt;a href=&quot;https://www.youtube.com/watch?v=HYzNy4cA9to&quot; target=&quot;\_blank&quot;&gt;este vivo&lt;/a&gt;.&lt;/p&gt;</content><author><name>Pía Giudice</name></author><summary type="html">En Make It Real, desde 2014 venimos acompañando a personas que quieren iniciarse en el mundo del Desarrollo Web y móvil. Nuestro programa TOP, desde hace años recibe cientos de estudiantes que quieren cambiar su vida y convertirse en desarrolladores Full Stack JavaScript.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/programa-top-nuevo.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/programa-top-nuevo.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Hashing</title><link href="http://blog.makeitreal.camp/hashing/" rel="alternate" type="text/html" title="Hashing" /><published>2023-02-01T07:00:00+00:00</published><updated>2023-02-01T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/hashing</id><content type="html" xml:base="http://blog.makeitreal.camp/hashing/">&lt;p&gt;Hashing es un concepto muy importante en computación y la base de tecnologías como &lt;a href=&quot;https://es.wikipedia.org/wiki/Cadena_de_bloques&quot; target=&quot;\_blank&quot;&gt;blockchain&lt;/a&gt; y &lt;a href=&quot;https://git-scm.com/&quot; target=&quot;\_blank&quot;&gt;git&lt;/a&gt;. En este post vamos a ver qué es, para qué sirve y cuáles son los algoritmos más usados.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es&quot;&gt;¿Qué es?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Hashing es una técnica que se utiliza para convertir una entrada (como un texto o una contraseña) a una cadena de texto de tamaño fijo llamada un “hash”&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo interesante del hashing es que siempre generará el mismo hash para una misma entrada, pero un hash completamente diferente para cualquier variación en la entrada, por pequeña que sea.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, fíjate en estas dos frases y mira el hash de cada una (utilizamos un algoritmo llamado &lt;a href=&quot;https://es.wikipedia.org/wiki/MD5&quot; target=&quot;\_blank&quot;&gt;MD5&lt;/a&gt; para generar el hash pero de esto hablaremos más adelante):&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;“Lorem ipsum dolor sit amet”: fea80f2db003d4ebc4536023814aa885&lt;/li&gt;
+  &lt;li&gt;“Lorem ipsum dolar sit amet”: ffd6ea42d44d707aef85d2d3d2ba277e&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aunque sólo cambia una letra en el texto (¿la encontraste?) el hash es completamente diferente.&lt;/p&gt;
+
+&lt;h2 id=&quot;para-qué-se-utiliza&quot;&gt;¿Para qué se utiliza?&lt;/h2&gt;
+
+&lt;p&gt;La técnica del hashing tiene una gran variedad de aplicaciones. Veamos algunas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;En los blockchains&lt;/strong&gt; (p.e. Bitcoin): se utiliza para identificar las transacciones, los bloques, las direcciones de las billeteras, entre otras, y garantizar que las transacciones no sean manipuladas.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;En git&lt;/strong&gt; (el sistema de control de versiones): se utiliza para identificar los commits y que el contenido de cada commit no haya sido manipulado.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Almacenar contraseñas de forma segura&lt;/strong&gt;: en las bases de datos se almacena el hash en vez de la contraseña plana. Cuando un usuario ingresa con su contraseña se genera un hash y se compara con el que está en la base de datos; si coincide es porque el usuario ingresó correctamente su contraseña. Si la base de datos se ve comprometida no van a tener acceso a las contraseñas.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Indexación y búsquedas&lt;/strong&gt;: Los hashes se pueden usar para realizar búsquedas más eficientes en una base o estructura de datos.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Integridad de datos&lt;/strong&gt;: Verificar la integridad de información, que no haya sido manipulada (p.e.  archivos descargados, los commits en git, las transacciones en un blockchain, etc.)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Verificar si un contenido cambió&lt;/strong&gt;: por ejemplo, Google lo debe usar para verificar cuando cambia una página Web y volverla a indexar.&lt;/li&gt;
+  &lt;li&gt;Generar firmas digitales.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;algoritmos-de-generación-de-hash&quot;&gt;Algoritmos de generación de hash&lt;/h2&gt;
+
+&lt;p&gt;Existen muchos algoritmos para generar hashes (también conocidos como funciones de hashing), algunos mejores que otros.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, podemos crear una función de hash simple en JavaScript que retorne la primera letra de la entrada (en minúscula):&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toLowerCase&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Aunque esto se puede considerar una función de hash, y en algunos casos puede ser útil (por ejemplo para hacer búsquedas), el problema es que va a generar muchas &lt;strong&gt;colisiones&lt;/strong&gt;, es decir, muchas entradas que van a generar el mismo hash.&lt;/p&gt;
+
+&lt;p&gt;Por eso una buena función de hash debería tener las siguientes características:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Determinística&lt;/strong&gt;: siempre genera el mismo hash para la misma entrada.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Computación rápida&lt;/strong&gt;: no se demora mucho tiempo generando el hash.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resistente a determinar la información de entrada&lt;/strong&gt;: especialmente si se va a utilizar para representar información sensible.&lt;/li&gt;
+  &lt;li&gt;Cambios pequeños en la entrada generan grandes cambios en la salida.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Resistente a colisiones&lt;/strong&gt;: aunque no existe una función de hash sin colisiones, el objetivo es minimizarlos.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Puzzle friendly&lt;/strong&gt;: que no sea fácil de determinar cómo está generando el hash.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Generar una buena función de hash no es tarea fácil así que existen algoritmos de hashing, siendo &lt;a href=&quot;https://es.wikipedia.org/wiki/MD5&quot; target=&quot;\_blank&quot;&gt;MD5&lt;/a&gt; y &lt;a href=&quot;https://es.wikipedia.org/wiki/SHA-2&quot; target=&quot;\_blank&quot;&gt;SHA-256&lt;/a&gt; (a veces abreviado a SHA-2) los más populares. Sin embargo, &lt;a href=&quot;https://es.wikipedia.org/wiki/MD5&quot; target=&quot;\_blank&quot;&gt;MD5&lt;/a&gt; ya no se recomienda porque se considera obsoleto e inseguro.&lt;/p&gt;
+
+&lt;p&gt;Veamos cómo generar un &lt;a href=&quot;https://es.wikipedia.org/wiki/SHA-2&quot; target=&quot;\_blank&quot;&gt;SHA-256&lt;/a&gt; con Node.js (versión 16) utilizando el módulo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node:crypto&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// const { createHash } = require('node:crypto')&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createHash&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;node:crypto&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Lorem ipsum dolor sit amet&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;createHash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sha256&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;update&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;digest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;hex&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Al ejecutar este código vamos a ver el siguiente resultado:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;16aba5393ad72c0041f5600ad3c2c52ec437a2f0c7fc08fadfc3c0fe9641d7a3
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Si cambiamos una letra del texto, por ejemplo si cambiamos última “o”  en “dolor” por una “a” veríamos este otro resultado completamente diferente:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;b68285a110c074039ec9a177ac890b88322e361c6e0ee41b4ba89d42251826c6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;tablas-de-hashes-hash-tables&quot;&gt;Tablas de hashes (hash tables)&lt;/h2&gt;
+
+&lt;p&gt;Una de las aplicaciones más importantes de los hashes son las &lt;strong&gt;tablas de hashes&lt;/strong&gt;, también conocidas como diccionarios en Python, objetos en JavaScript&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, hashes en Ruby, HashMap en Java, entre otros (la mayoría de lenguajes de programación tienen su equivalente).&lt;/p&gt;
+
+&lt;p&gt;Las &lt;strong&gt;tablas de hashes&lt;/strong&gt; son importantes porque permiten agrupar la información según algún criterio y así optimizar las búsquedas.&lt;/p&gt;
+
+&lt;p&gt;La forma en que funcionan las &lt;strong&gt;tablas de hashes&lt;/strong&gt; es la siguiente: guardamos la información en un arreglo y creamos una &lt;strong&gt;función de hash&lt;/strong&gt; que reciba una llave y nos diga en qué posición del arreglo se encuentra su valor.&lt;/p&gt;
+
+&lt;p&gt;En cada posición del arreglo pueden existir varios elementos a la vez, pero la búsqueda va a ser más rápida que recorrer todos los elementos sin agruparlos.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, imagina que debemos almacenar una lista de contactos (p.e. 1 millón de contactos). Podemos agruparlos por la primera letra (similar a la &lt;strong&gt;función de hash&lt;/strong&gt; que hicimos en la sección anterior). La información quedaría almacenada de la siguiente forma:&lt;/p&gt;
+
+&lt;table border=&quot;1&quot; style=&quot;width: 100%; margin-bottom: 20px;&quot;&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Alejandro, Alberto, ...&lt;/td&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bibiana, Belisario, ...&lt;/td&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;...&lt;/td&gt; 
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Zoe, Zoraida, ...&lt;/td&gt; 
+  &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Si nuestro millón de contactos está bien distribuído entre las 26 posiciones&lt;sup id=&quot;fnref:3&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, en promedio, para encontrar un contacto sólo tendremos que buscar entre 38 contactos (1’000,000 / 26 = 38.5).&lt;/p&gt;
+
+&lt;p&gt;Si cambiamos nuestra &lt;strong&gt;función de hash&lt;/strong&gt; para que utilice las dos primeras letras (en vez de sólo la primera), en promedio, tendremos que buscar entre 2 contactos únicamente!&lt;/p&gt;
+
+&lt;p&gt;Las &lt;strong&gt;funciones de hash&lt;/strong&gt; que los lenguajes de programación implementan son más complejas que las que acabamos de mencionar pero la idea es la misma. Aunque siempre van a existir colisiones, el espacio de búsqueda se reduce significativamente permitiendo hacer búsquedas en tiempo constante.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusiones&quot;&gt;Conclusiones&lt;/h2&gt;
+
+&lt;p&gt;Aunque el hashing es parte fundamental de nuestra infraestructura digital, es una técnica muy poco conocida, incluso entre programadores.&lt;/p&gt;
+
+&lt;p&gt;Sin el hashing, tecnologías como bases de datos, git, blockchains y critpografía, entre muchas otras, no serían posibles.&lt;/p&gt;
+
+&lt;p&gt;Espero que este post te haya permitido entender qué es hashing y para qué se utiliza. Quién sabe, quizá te sirva más adelante para solucionar algún problema!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;A la salida también se le conoce como “digest” pero vamos a seguir llamándola “hash” por el resto del post. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;En JavaScript también existe una estructura llamada &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map&quot; target=&quot;\_blank&quot;&gt;Map&lt;/a&gt; que sería más preciso en este caso. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Asumiendo que estamos utilizando el alfabeto inglés. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Hashing es un concepto muy importante en computación y la base de tecnologías como blockchain y git. En este post vamos a ver qué es, para qué sirve y cuáles son los algoritmos más usados.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/hashing.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/hashing.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">La arquitectura de software</title><link href="http://blog.makeitreal.camp/arquitectura-de-software/" rel="alternate" type="text/html" title="La arquitectura de software" /><published>2022-10-17T07:00:00+00:00</published><updated>2022-10-17T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/arquitectura-de-software</id><content type="html" xml:base="http://blog.makeitreal.camp/arquitectura-de-software/">&lt;p&gt;La arquitectura de software y el rol del arquitecto son de los conceptos más incomprendidos en el desarrollo de software. En este post vamos a explicar qué es la arquitectura, qué hace un arquitecto y cómo se relaciona con otros temas como patrones de diseño y los principios SOLID.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;La arquitectura de software surge en los años 70’s como una analogía a la construcción civil. En ese momento se creía que construir software era similar a construir un edificio o un puente, y se tomaron varios procesos y roles de esa disciplina, entre ellos la arquitectura y el arquitecto.&lt;/p&gt;
+
+&lt;p&gt;En la construcción civil, la arquitectura define el diseño de lo que se va a construir a través de planos y maquetas que otros después construyen.&lt;/p&gt;
+
+&lt;p&gt;La idea de la arquitectura de software (y el arquitecto) es que fuera similar a la construcción civil y para eso se crearon lenguajes de modelado como &lt;a href=&quot;https://es.wikipedia.org/wiki/Lenguaje_unificado_de_modelado&quot; target=&quot;\_blank&quot;&gt;UML (Unified Modeling Language)&lt;/a&gt;, que le permitía a los arquitectos plasmar el diseño de una aplicación en diagramas que después otros construirían.&lt;/p&gt;
+
+&lt;p&gt;Sin embargo, lo que nos dimos cuenta en los años 90’s es que el software es muy diferente a la construcción civil. Aunque definimos nuevos procesos como el desarrollo ágil (y descartamos otros como el &lt;a href=&quot;https://es.wikipedia.org/wiki/Desarrollo_en_cascada&quot; target=&quot;\_blank&quot;&gt;modelo en cascada&lt;/a&gt;). Es hora también de repensar la arquitectura y el rol del arquitecto.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-la-arquitectura-de-software&quot;&gt;¿Qué es la arquitectura de software?&lt;/h2&gt;
+
+&lt;p&gt;La arquitectura de software, en términos generales, define la estructura y el diseño técnico de una aplicación: cuáles van a ser los componentes principales, cuál va a ser la responsabilidad de cada uno, y cómo se van a comunicar entre ellos. A la arquitectura se le conoce hoy como el &lt;strong&gt;diseño del sistema&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, si vamos a desarrollar una aplicación Web seguramente necesitaremos al menos los siguientes componentes: frontend, backend y alguna base de datos para almacenar la información.&lt;/p&gt;
+
+&lt;p&gt;Existen varias formas de representar el sistema en diagramas. Por ejemplo, utilizando un diagrama de componentes de UML, una aplicación Web se vería así:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/software-architecture-components.png&quot; alt=&quot;Componentes&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Diagrama de Componentes&lt;/p&gt;
+
+&lt;p&gt;También podríamos crear un diagrama de despliegue, que tendría detalles más específicos del diseño:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/software-architecture-deployment.png&quot; alt=&quot;Despliegue&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Diagrama de Despliegue&lt;/p&gt;
+
+&lt;p&gt;Parte importante del diseño del sistema es decidir qué tecnologías se van a usar dependiendo de los requerimientos funcionales y no funcionales de la aplicación.&lt;/p&gt;
+
+&lt;p&gt;Una buen diseño del sistema debe permitir modificar y evolucionar la aplicación en el tiempo. También debe permitir escalar rápidamente sin necesidad de realizar cambios en el código.&lt;/p&gt;
+
+&lt;h2 id=&quot;el-rol-del-arquitecto-líder-técnico&quot;&gt;El rol del arquitecto (líder técnico)&lt;/h2&gt;
+
+&lt;p&gt;Hoy existen varias definiciones de un arquitecto de software, pero sería mejor cambiar el nombre del rol completamente. El arquitecto es, al final, un &lt;strong&gt;líder técnico&lt;/strong&gt; que toma decisiones técnicas de una aplicación.&lt;/p&gt;
+
+&lt;p&gt;El líder técnico (arquitecto) es el responsable de definir el diseño del sistema (la arquitectura): qué componentes van a existir, cómo se van a comunicar esos componentes, y qué tecnologías se van a utilizar.&lt;/p&gt;
+
+&lt;p&gt;El líder técnico no necesariamente escribe código de la aplicación pero sí está involucrado en las discusiones y retos que los demás desarrolladores tengan. Adicionalmente, revisa código y aporta al proyecto haciendo los ajustes necesarios a medida que avanza el desarrollo.&lt;/p&gt;
+
+&lt;p&gt;Una parte importante del rol del líder técnico es estar constantemente probando nuevas tecnologías y compartiendo con el resto de la compañía los aprendizajes obtenidos.&lt;/p&gt;
+
+&lt;p&gt;Un buen líder técnico conoce y ha implementado diferentes estilos de arquitectura (microservicios, monolito, serverless, etc.), sabe cómo diseñar aplicaciones escalables, sabe cómo funcionan diferentes bases de datos (relacionales, documentales, llave-valor, etc.), cómo medir y monitorear los componentes a través de logs y herramientas de monitoreo (p.e. &lt;a href=&quot;https://newrelic.com/&quot; target=&quot;\_blank&quot;&gt;NewRelic&lt;/a&gt;, &lt;a href=&quot;https://www.datadoghq.com/&quot; target=&quot;\_blank&quot;&gt;Datadog&lt;/a&gt;, &lt;a href=&quot;https://sentry.io/&quot; target=&quot;\_blank&quot;&gt;Sentry&lt;/a&gt; etc.).&lt;/p&gt;
+
+&lt;h2 id=&quot;patrones-de-diseño&quot;&gt;Patrones de diseño&lt;/h2&gt;
+
+&lt;p&gt;Cuando se habla de arquitectura de software muchas personas lo asocian con patrones de diseño. Sin embargo, son dos conceptos diferentes.&lt;/p&gt;
+
+&lt;p&gt;La arquitectura (diseño del sistema) se refiere a la estructura de la aplicación y cómo se va a mover la información entre componentes. Los patrones de diseño son soluciones a problemas comunes que se repiten en el desarrollo de una aplicación.&lt;/p&gt;
+
+&lt;p&gt;Existen patrones de diseño para cada uno de los paradigmas de programación (orientado a objetos, funcional, etc.) y componentes de software (frontend, backend, acceso a datos, etc.).&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, en Programación Orientada a Objetos tenemos patrones como &lt;a href=&quot;https://refactoring.guru/design-patterns/singleton&quot; target=&quot;\_blank&quot;&gt;Singleton&lt;/a&gt;, &lt;a href=&quot;https://refactoring.guru/design-patterns/factory-method&quot; target=&quot;\_blank&quot;&gt;Factory&lt;/a&gt;, &lt;a href=&quot;https://refactoring.guru/design-patterns/adapter&quot; target=&quot;\_blank&quot;&gt;Adapter&lt;/a&gt;, &lt;a href=&quot;https://refactoring.guru/design-patterns/observer&quot; target=&quot;\_blank&quot;&gt;Observer&lt;/a&gt;, etc. En React existen patrones como el &lt;a href=&quot;https://reactjs.org/docs/higher-order-components.html&quot; target=&quot;\_blank&quot;&gt;HOC (Higher Order Component)&lt;/a&gt;, &lt;a href=&quot;https://reactjs.org/docs/hooks-intro.html&quot; target=&quot;\_blank&quot;&gt;Hooks&lt;/a&gt;, &lt;a href=&quot;https://reactjs.org/docs/context.html&quot; target=&quot;\_blank&quot;&gt;Context&lt;/a&gt;, etc.&lt;/p&gt;
+
+&lt;p&gt;Los patrones de diseño también permiten una mejor comunicación entre desarrolladores, una especie de lenguaje en común.&lt;/p&gt;
+
+&lt;h2 id=&quot;solid&quot;&gt;SOLID&lt;/h2&gt;
+
+&lt;p&gt;Los &lt;a href=&quot;https://es.wikipedia.org/wiki/SOLID&quot;&gt;principios SOLID&lt;/a&gt; aplican principalmente al paradigma de programación orientada por objetos. Son 5 principios que corresponden a cada una de las letras:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Single Responsability (Única Responsabilidad)&lt;/li&gt;
+  &lt;li&gt;Open Close (Abierto / Cerrado)&lt;/li&gt;
+  &lt;li&gt;Liskov Substitution (Sustitución de Liskov)&lt;/li&gt;
+  &lt;li&gt;Interface Segregation (Segregación de Interfaces)&lt;/li&gt;
+  &lt;li&gt;Dependency Inversion (Inversión de Dependencias)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Aunque algunas empresas aún preguntan por estos principios en las entrevistas, la realidad es que la mayoría no tiene mucho sentido cuando se está en ambiente más funcional como hoy ocurre con Node.js y React, por ejemplo.&lt;/p&gt;
+
+&lt;p&gt;Quizá el principio más importante es el primero: Única Responsabilidad. Este principio también aplica al paradigma funcional en el sentido que es recomendable que nuestras funciones, nuestros componentes, nuestros módulos tengan una única responsabilidad.&lt;/p&gt;
+
+&lt;p&gt;Otro principio importante es hacer nuestra aplicación modular, de modo que podamos cambiar ciertos componentes fácilmente, que es la idea detrás de la sustitución de Liskov (tercer principio). Por ejemplo, si nuestro proveedor de envío de correos es &lt;a href=&quot;https://sendgrid.com/&quot; target=&quot;\_blank&quot;&gt;Sendgrid&lt;/a&gt; ¿Qué tan fácil es migrar a otro servicio como &lt;a href=&quot;https://www.mailgun.com/&quot; target=&quot;\_blank&quot;&gt;Mailgun&lt;/a&gt; o &lt;a href=&quot;https://postmarkapp.com/&quot; target=&quot;\_blank&quot;&gt;Postmark&lt;/a&gt;? ¿Qué tendríamos que cambiar?&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h2&gt;
+
+&lt;p&gt;Aunque la metodología ágil no habla nada explícito sobre el diseño del sistema (arquitectura), eso no significa que debamos ignorarlo. Al contrario, un buen diseño es fundamental para el éxito de un proyecto.&lt;/p&gt;
+
+&lt;p&gt;Lo anterior no significa que debamos hacer una especificación completa del sistema antes de escribir nuestra primera línea de código, lo ideal es tener el diseño mínimo necesario para iniciar con la implementación, pero si deberíamos tener en cuenta al menos lo siguiente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Cuáles van a ser los componentes de nuestro sistema. Acá debemos listar también componentes externos como sistemas de almacenamiento (p.e. &lt;a href=&quot;https://cloudinary.com/&quot; target=&quot;\_blank&quot;&gt;Cloudinary&lt;/a&gt;, &lt;a href=&quot;https://aws.amazon.com/s3/&quot; target=&quot;\_blank&quot;&gt;S3&lt;/a&gt;, etc.), sistemas de correo (&lt;a href=&quot;https://sendgrid.com/&quot; target=&quot;\_blank&quot;&gt;Sendgrid&lt;/a&gt;, &lt;a href=&quot;https://www.mailgun.com/&quot; target=&quot;\_blank&quot;&gt;Mailgun&lt;/a&gt;, etc.), sistemas de pago, etc.&lt;/li&gt;
+  &lt;li&gt;Cuál va a ser la responsabilidad de cada componente que vamos a desarrollar y cómo es el flujo de comunicación entre los componentes.&lt;/li&gt;
+  &lt;li&gt;Cómo vamos a desplegar el sistema y cómo lo vamos a monitorear.&lt;/li&gt;
+  &lt;li&gt;Cómo va a escalar, qué va a pasar si la carga se incrementa.&lt;/li&gt;
+  &lt;li&gt;Qué tecnologías vamos a utilizar en cada uno de los componentes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estas decisiones las hace el líder técnico del proyecto, que debe ser alguien Senior con experiencia en el diseño de diferentes sistemas.&lt;/p&gt;
+
+&lt;h2 id=&quot;recursos-adicionales&quot;&gt;Recursos adicionales&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.educative.io/blog/complete-guide-to-system-design&quot; target=&quot;\_blank&quot;&gt;Complete guide to system design&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://martinfowler.com/architecture/&quot; target=&quot;\_blank&quot;&gt;Software architecture guide&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/vasanthk/485d1c25737e8e72759f&quot; target=&quot;\_blank&quot;&gt;System Design Cheatsheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freecodecamp.org/news/systems-design-for-interviews/&quot; target=&quot;\_blank&quot;&gt;System Design Interview Questions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://systemdesigntutorial.com/&quot; target=&quot;\_blank&quot;&gt;System Design Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Esto es debatible pero para efectos prácticos son lo mismo. Lo que estamos intentando es simplificar la terminología. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Germán Escobar</name></author><summary type="html">La arquitectura de software y el rol del arquitecto son de los conceptos más incomprendidos en el desarrollo de software. En este post vamos a explicar qué es la arquitectura, qué hace un arquitecto y cómo se relaciona con otros temas como patrones de diseño y los principios SOLID.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/software-architecture.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/software-architecture.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cómo resolver una prueba técnica en casa</title><link href="http://blog.makeitreal.camp/como-resolver-prueba-tecnica-casa/" rel="alternate" type="text/html" title="Cómo resolver una prueba técnica en casa" /><published>2022-06-27T07:00:00+00:00</published><updated>2022-06-27T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/como-resolver-prueba-tecnica-casa</id><content type="html" xml:base="http://blog.makeitreal.camp/como-resolver-prueba-tecnica-casa/">&lt;p&gt;Algunas empresas envían pruebas técnicas para hacer en casa como parte de su proceso de selección. En este post vamos a ver cómo abordarlas para mejorar nuestras posibilidades de ser contratad@s.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Generalmente estas pruebas consisten en hacer un pequeño proyecto que no tome más de un día de trabajo, y que le permitan a la empresa conocer tus habilidades técnicas así como medir tu nivel de profesionalismo: comunicación, ética, uso de buenas prácticas, etc.&lt;/p&gt;
+
+&lt;p&gt;Muchas personas pierden oportunidades interesantes por errores que se podrían evitar fácilmente, así que hemos creado un proceso con los siguientes 3 pasos que puedes seguir cada vez que recibas una prueba técnica:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Entender lo que se debe hacer:
+    &lt;ul&gt;
+      &lt;li&gt;Leer la prueba tan pronto la recibamos y hacer preguntas si es necesario.&lt;/li&gt;
+      &lt;li&gt;Dividir el problema y planear cómo la vamos a solucionar.&lt;/li&gt;
+      &lt;li&gt;Estimar el tiempo que nos va a tomar.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Implementar y entregar la prueba.&lt;/li&gt;
+  &lt;li&gt;Extraer aprendizajes&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;entender-lo-que-se-debe-hacer&quot;&gt;Entender lo que se debe hacer&lt;/h2&gt;
+
+&lt;p&gt;Quizá el error más común que cometen los candidatos cuando se enfrentan con una prueba técnica es lanzarse a escribir código sin saber bien lo que deben hacer.&lt;/p&gt;
+
+&lt;p&gt;Nuestra recomendación es leer la prueba tan pronto la recibas y no esperar hasta que la vayas a empezar a solucionar. De esa forma aprovechas el tiempo para hacerle algunas preguntas al entrevistador y esperar su respuesta antes de comenzar.&lt;/p&gt;
+
+&lt;p&gt;Algunas preguntas que te deberías hacer en este momento son las siguientes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Cuánto tiempo tengo para entregar la prueba?&lt;/li&gt;
+  &lt;li&gt;¿Qué tecnologías y librerías puedo o no puedo usar?&lt;/li&gt;
+  &lt;li&gt;¿Cómo debo entregar la prueba?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Si no ves la solución a estas preguntas en la prueba es mejor preguntar. Si nos piden tecnologías que no conocemos podemos preguntar si las podemos cambiar.&lt;/p&gt;
+
+&lt;p&gt;Ok, es hora de hacer una corta planeación. ¿Cómo dividimos el problema? ¿Qué vamos a hacer primero? ¿Qué sabemos y qué no sabemos hacer?&lt;/p&gt;
+
+&lt;p&gt;El resultado de este proceso debería ser una secuencia de pasos, por ejemplo:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Crear la base de datos y las tablas/colecciones.&lt;/li&gt;
+  &lt;li&gt;Crear el proyecto del backend.&lt;/li&gt;
+  &lt;li&gt;Implementar los modelos.&lt;/li&gt;
+  &lt;li&gt;Crear las rutas.&lt;/li&gt;
+  &lt;li&gt;Implementar algunas pruebas automatizadas.&lt;/li&gt;
+  &lt;li&gt;Desplegar el proyecto.&lt;/li&gt;
+  &lt;li&gt;Crear un README para la entrega con la arquitectura, tecnologías, instrucciones de ejecución y las suposiciones que hicimos.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Fíjate especialmente en los tres últimos puntos que muchas personas omiten y que son muy importantes a la hora de entregar una buena prueba.&lt;/p&gt;
+
+&lt;p&gt;Una vez tengas la planeación es una buena idea validar con alguien experimentado si nuestra planeación está completa y solucionar las dudas que nos surjan.&lt;/p&gt;
+
+&lt;p&gt;Por último intenta hacer una estimación de cuántas horas te va a tomar implementar la prueba y anótalo, la idea es compararlo al final para los aprendizajes.&lt;/p&gt;
+
+&lt;p&gt;Todo lo que hemos hablado hasta ahora no te debería tomar más de una hora.&lt;/p&gt;
+
+&lt;p&gt;¡Es momento de empezar a escribir código!&lt;/p&gt;
+
+&lt;h2 id=&quot;2-implementar-y-entregar-la-prueba&quot;&gt;2. Implementar y entregar la prueba&lt;/h2&gt;
+
+&lt;p&gt;La prueba puede ser similar a proyectos que has trabajado o puede ser algo completamente nuevo. En el primer caso te puedes guiar de tus proyectos anteriores. En el segundo caso es importante hacer una investigación en Internet, buscar soluciones a retos similares, seguir tutoriales, etc.&lt;/p&gt;
+
+&lt;p&gt;La mayoría de veces, sin embargo, va a ser una combinación de las dos anteriores: similar a proyectos anteriores pero con retos completamente nuevos.&lt;/p&gt;
+
+&lt;p&gt;Está bien buscar y utilizar código de Internet con dos excepciones:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Si encuentras una solución a la misma prueba nuestra recomendación sería implementar tu propia solución y compartir con el entrevistador la solución que encontraste.&lt;/li&gt;
+  &lt;li&gt;Si encuentras una librería o un código que soluciona en gran parte lo que debes hacer en la prueba sería buena idea preguntar si está bien utilizarla.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Recuerda que una parte importante de lo que quieren medir las empresas con estas pruebas es tu comunicación y ética.&lt;/p&gt;
+
+&lt;p&gt;El siguiente paso es hacer al menos un par de pruebas automatizadas, esto demuestra profesionalismo y es siempre bien visto por los entrevistadores.&lt;/p&gt;
+
+&lt;p&gt;No olvides crear un README los siguientes puntos como mínimo:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Descripción y links (si está publicado en Internet).&lt;/li&gt;
+  &lt;li&gt;Las tecnologías que utilizaste.&lt;/li&gt;
+  &lt;li&gt;Instrucciones para ejecutar el proyecto.&lt;/li&gt;
+  &lt;li&gt;Suposiciones. Si asumiste algo que no era claro de las instrucciones anótalo acá.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Por último, nuestra recomendación es que pidas retroalimentación de alguien experimentado que pueda hacer una revisión final para evitar errores triviales o malas prácticas que puedan arruinar el proceso. &lt;strong&gt;Recuerda que si eres estudiante de &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=resolver-prueba-tecnica-casa&quot;&gt;Make It Real&lt;/a&gt; tendrás acceso a mentores a los que puedes acudir en estos casos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;extraer-aprendizajes&quot;&gt;Extraer aprendizajes&lt;/h2&gt;
+
+&lt;p&gt;Lo interesante de las pruebas para hacer en casa es que te van a permitir aprender y seguir practicando. Por eso es importante tomarse al menos 10 minutos para recopilar algunos aprendizajes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué salió bien?&lt;/li&gt;
+  &lt;li&gt;¿Qué no salió bien?&lt;/li&gt;
+  &lt;li&gt;¿Qué podría hacer diferente la próxima vez?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anota las respuestas a estas preguntas. Es normal cometer errores, lo importante es aprender de ellos.&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Algunas empresas envían pruebas técnicas para hacer en casa como parte de su proceso de selección. En este post vamos a ver cómo abordarlas para mejorar nuestras posibilidades de ser contratad@s.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/como-enfrentar-prueba-tecnica-casa.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/como-enfrentar-prueba-tecnica-casa.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">React useEffect</title><link href="http://blog.makeitreal.camp/react-use-effect/" rel="alternate" type="text/html" title="React useEffect" /><published>2022-06-06T07:00:00+00:00</published><updated>2022-06-06T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/react-use-effect</id><content type="html" xml:base="http://blog.makeitreal.camp/react-use-effect/">&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; es probablemente el &lt;a href=&quot;https://guias.makeitreal.camp/react/react-hooks&quot;&gt;hook&lt;/a&gt; más confuso e incomprendido en React. Hoy quiero aclararte eso.&lt;/p&gt;
+
+&lt;p&gt;Usamos hooks todo el tiempo en &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=react-use-effect&quot;&gt;Make It Real&lt;/a&gt; y comprender &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; es crucial si vamos a escribir código React de estilo moderno.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;A continuación veremos:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Qué es &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Cómo ejecutar un effect(efecto) en cada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Cómo ejecutar un efecto solo en el primer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Cómo ejecutar un efecto en el primer &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render&lt;/code&gt; y volver a ejecutarlo cuando cambia una “dependencia”.&lt;/li&gt;
+  &lt;li&gt;Cómo ejecutar un efecto con limpieza.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;qué-es-useeffect&quot;&gt;¿Qué es useEffect?&lt;/h2&gt;
+
+&lt;p&gt;El hook &lt;a href=&quot;https://is-tracking-link-api-prod.appspot.com/api/v1/click/5979720297742336/4956748072878080&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt;&lt;/a&gt; nos permite realizar &lt;em&gt;side effects&lt;/em&gt; (efectos secundarios) en nuestros componentes de función. Los side effects son acciones externas al código que se está ejecutando, por ejemplo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Llamadas a API&lt;/li&gt;
+  &lt;li&gt;Actualizar el DOM&lt;/li&gt;
+  &lt;li&gt;Suscribirse a eventos (event listeners).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Todos estos son efectos secundarios que podríamos necesitar que un componente realice en diferentes momentos.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-useeffect-en-cada-render&quot;&gt;Ejecutar useEffect en cada render&lt;/h2&gt;
+
+&lt;p&gt;El hook &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; no devuelve ningún valor, sino que toma dos argumentos, siendo el primero obligatorio y el segundo opcional. El primer argumento &lt;strong&gt;es la función callback del efecto que queremos que ejecute hook (es decir, el efecto en sí)&lt;/strong&gt;. Supongamos que queríamos colocar un mensaje &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; dentro del callback del useEffect.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FunctionComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;run for every componentrender&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;De forma predeterminada, el efecto establecido en el hook &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; se ejecuta cuando el componente &lt;strong&gt;se renderiza por primera vez&lt;/strong&gt; y &lt;strong&gt;después de cada actualización&lt;/strong&gt;. Si ejecutamos el código anterior, notaremos que se genera el mensaje &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log('run for every componentrender')&lt;/code&gt; a medida que se renderiza nuestro componente. &lt;em&gt;Si&lt;/em&gt; nuestro componente alguna vez se volviera a renderizar (por ejemplo, de un cambio de estado con algo como &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useState&lt;/code&gt;), el efecto se ejecutaría nuevamente.&lt;/p&gt;
+
+&lt;p&gt;A veces, volver a ejecutar un efecto en cada renderizado es exactamente lo que quieres. Pero la mayoría de las veces, &lt;strong&gt;solo desea ejecutar el efecto en ciertas situaciones&lt;/strong&gt;, como en el primer renderizado.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-ejecutar-el-useeffect-solo-en-el-primer-render&quot;&gt;Cómo ejecutar el useEffect solo en el primer render&lt;/h2&gt;
+
+&lt;p&gt;El segundo argumento del hook &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; es opcional y es una &lt;strong&gt;lista de dependencias&lt;/strong&gt; que nos permite decirle a React que &lt;em&gt;omita&lt;/em&gt; la aplicación del efecto solo hasta que se den ciertas condiciones. En otras palabras, el segundo argumento del hook &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; nos permite limitar &lt;strong&gt;cuándo se ejecutará el efecto&lt;/strong&gt;. Si simplemente colocamos un array vacío como segundo argumento, así es como le decimos a React que solo ejecute el efecto en el renderizado inicial.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FunctionComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;run only for first component render (i.e.component mount)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]);&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// ...&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Con el código anterior, el mensaje &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; solo se activará cuando el componente se monte por primera vez y no se volverá a generar, incluso si el componente se vuelve a renderizar varias veces.&lt;/p&gt;
+
+&lt;p&gt;Esto es mucho más “eficiente” que ejecutar en cada renderizado, pero ¿no hay un término medio feliz? ¿Qué pasa si queremos rehacer el efecto, si algo cambia?&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-el-useeffect-en-el-primer-render-y-volver-a-ejecutarlo-cuando-cambie-la-dependencia&quot;&gt;Ejecutar el useEffect en el primer render y volver a ejecutarlo cuando cambie la dependencia&lt;/h2&gt;
+
+&lt;p&gt;En lugar de hacer que un efecto se ejecute una vez al principio y en cada actualización, podemos intentar restringir el efecto para que se ejecute solo al principio y &lt;strong&gt;cuando cambie cierta dependencia&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Supongamos que queríamos lanzar un mensaje &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log()&lt;/code&gt; cada vez que cambiara el valor de una propiedad de estado. Podemos lograr esto colocando la propiedad de estado como una &lt;em&gt;dependencia&lt;/em&gt; del callback del efecto. Mira el siguiente ejemplo de código:&lt;/p&gt;
+
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FunctionComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;run for first component render and re-run when 'count' changes&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+      Click to increment count and trigger effect
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Arriba tenemos un botón en el template del componente responsable de cambiar el valor de la propiedad de estado de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; cuando se hace click. Cada vez que se cambie la propiedad de estado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;count&lt;/code&gt; (es decir, cada vez que se haga click en el botón), notaremos que se ejecuta el callback del efecto y se activa el mensaje &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;console.log()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;ejecutar-efecto-con-limpieza&quot;&gt;Ejecutar efecto con limpieza&lt;/h2&gt;
+
+&lt;p&gt;Se ejecuta un callbak de efecto cada vez en el procesamiento inicial y cuando especificamos cuándo se debe ejecutar un efecto. El hook &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; también brinda la capacidad de ejecutar una limpieza &lt;em&gt;después&lt;/em&gt; del efecto. Esto se puede hacer especificando una función de retorne al final de nuestro efecto.&lt;/p&gt;
+
+&lt;div class=&quot;language-jsx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FunctionComponent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+      &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;run for first component render and re-run when 'count' changes&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;run before the next effectand when component unmounts&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setCount&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+      Click to increment count and trigger effect
+    &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;En el ejemplo anterior, notaremos que el mensaje de la función de limpieza se activa antes de que se ejecute el efecto deseado. Además, si nuestro componente alguna vez se desmonta, la función de limpieza también se ejecutará.&lt;/p&gt;
+
+&lt;p&gt;Un buen ejemplo de cuándo podríamos necesitar una limpieza es cuando configuramos una suscripción a nuestro efecto, pero queremos eliminar la suscripción cada vez que se realice la próxima llamada de suscripción, para evitar memory leaks.&lt;/p&gt;
+
+&lt;p&gt;Estas son principalmente todas las diferentes formas en que el hook &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;useEffect&lt;/code&gt; se puede utilizar para ejecutar efectos secundarios en componentes. Te invito a ver esta &lt;a href=&quot;https://alexsidorenko.com/blog/useeffect/&quot;&gt;guia visual de useEffect&lt;/a&gt; de ALEX SIDORENKO que ilustra estos conceptos a través de una serie de GIF es a la vez inteligente y eficaz, especialmente para los estudiantes visuales. También hay una visualización de cómo funcionan las funciones de primera clase si quieres más.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://alexsidorenko.com/blog/useeffect/&quot;&gt;https://alexsidorenko.com/blog/useeffect/&lt;/a&gt;&lt;/p&gt;</content><author><name>Cristian Moreno</name></author><summary type="html">useEffect es probablemente el hook más confuso e incomprendido en React. Hoy quiero aclararte eso. Usamos hooks todo el tiempo en Make It Real y comprender useEffect es crucial si vamos a escribir código React de estilo moderno.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/react-use-effect.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/react-use-effect.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Serverless (FaaS)</title><link href="http://blog.makeitreal.camp/serverless-faas/" rel="alternate" type="text/html" title="Serverless (FaaS)" /><published>2022-02-20T07:00:00+00:00</published><updated>2022-02-20T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/serverless-faas</id><content type="html" xml:base="http://blog.makeitreal.camp/serverless-faas/">&lt;p&gt;Serverless es una nueva tendencia en el despliegue de aplicaciones que cada día adquiere más fuerza. En este post vamos a ver qué es, cómo funciona y cuál es la relación entre Serverless y FaaS (Functions as a Service).&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;La forma tradicional de desplegar aplicaciones es alquilar un servidor (p.e. una máquina virtual de &lt;a href=&quot;https://aws.amazon.com/ec2/&quot; target=&quot;\_blank&quot;&gt;AWS EC2&lt;/a&gt;) o un contenedor (p.e. &lt;a href=&quot;https://heroku.com/&quot; target=&quot;\_blank&quot;&gt;Heroku&lt;/a&gt;) y pagar por horas o meses por tener nuestra aplicación disponible.&lt;/p&gt;
+
+&lt;p&gt;Una desventaja de este modelo es el desperdicio de recursos: si nuestra aplicación no está recibiendo tráfico o ejecutando alguna tarea estamos pagando por recursos que no están siendo utilizados.&lt;/p&gt;
+
+&lt;p&gt;Otra desventaja es que si recibimos un pico de tráfico o de tareas vamos a tener que reaccionar para incrementar la capacidad o configurar alguna forma de escalamiento automático.&lt;/p&gt;
+
+&lt;p&gt;Serverless elimina estas desventajas. Por un lado, sólo pagamos por el tráfico o las tareas que ejecutemos y, por otro lado, el proveedor se encarga de escalar automáticamente la infraestructura a medida que incrementa el tráfico.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es&quot;&gt;¿Qué es?&lt;/h2&gt;
+
+&lt;p&gt;Serverless (“sin servidor” en Español) es un concepto muy amplio y un poco confuso, porque no es que no haya necesidad de un servidor, es que &lt;strong&gt;nosotros no vamos a mantener esos servidores, alguien más lo va a hacer por nosotros&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bajo esa definición servicios como &lt;a href=&quot;https://heroku.com/&quot; target=&quot;\_blank&quot;&gt;Heroku&lt;/a&gt;, &lt;a href=&quot;https://firebase.google.com/&quot; target=&quot;\_blank&quot;&gt;Firebase&lt;/a&gt;, &lt;a href=&quot;https://aws.amazon.com/s3/&quot; target=&quot;\_blank&quot;&gt;S3&lt;/a&gt; (el servicio de almacenamiento de AWS) o cualquier servicio de cómputo o almacenamiento donde no tengamos que mantener un servidor se podría considerar Serverless.&lt;/p&gt;
+
+&lt;p&gt;Dentro del mundo Serverless existen las &lt;strong&gt;funciones como servicio&lt;/strong&gt; (en Inglés Functions as a Service o FaaS), que permiten ejecutar código (funciones) en la nube sin necesidad de mantener un servidor. En este post hablaremos principalmente de FaaS.&lt;/p&gt;
+
+&lt;p&gt;FaaS (Functions as a Service) empezó a ser popularizado en 2014 con el &lt;a href=&quot;https://www.youtube.com/watch?v=9eHoyUVo-yg&quot; target=&quot;\_blank&quot;&gt;lanzamiento de AWS Lambda&lt;/a&gt;, un servicio de cómputo basado en eventos utilizando funciones en la nube. En los siguientes años &lt;a href=&quot;https://cloud.google.com/functions&quot; target=&quot;\_blank&quot;&gt;Google&lt;/a&gt;, &lt;a href=&quot;https://azure.microsoft.com/en-us/services/functions/&quot; target=&quot;\_blank&quot;&gt;Microsoft&lt;/a&gt;, &lt;a href=&quot;https://www.ibm.com/cloud/functions&quot; target=&quot;\_blank&quot;&gt;IBM&lt;/a&gt; y otros lanzaron soluciones similares.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-funciona&quot;&gt;¿Cómo funciona?&lt;/h2&gt;
+
+&lt;p&gt;La idea de FaaS es simple:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Escribimos una función en alguno de los lenguaje de programación que soporte el proveedor que vayamos a utilizar (p.e. &lt;a href=&quot;https://aws.amazon.com/lambda/&quot; target=&quot;\_blank&quot;&gt;AWS Lambda&lt;/a&gt;, &lt;a href=&quot;https://vercel.com/&quot; target=&quot;\_blank&quot;&gt;Vercel&lt;/a&gt;, &lt;a href=&quot;https://netlify.com/&quot; target=&quot;\_blank&quot;&gt;Netlify&lt;/a&gt;, etc.).&lt;/li&gt;
+  &lt;li&gt;Subimos nuestra función al proveedor.&lt;/li&gt;
+  &lt;li&gt;En algunos proveedores (p.e. AWS Lambda) es necesario configurar un evento que va a disparar la función (p.e. una petición HTTP, la recepción de un email, almacenamiento en S3, etc.). En otros proveedores la única forma de invocar la función es a través de HTTP.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Y eso es todo, cada vez que ocurra el evento se va a ejecutar la función.&lt;/p&gt;
+
+&lt;p&gt;Por debajo, las soluciones FaaS hacen uso de contenedores para ejecutar las funciones.&lt;/p&gt;
+
+&lt;h2 id=&quot;casos-de-uso&quot;&gt;Casos de uso&lt;/h2&gt;
+
+&lt;p&gt;FaaS es ideal para casos de uso como:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El backend de aplicaciones.&lt;/li&gt;
+  &lt;li&gt;Tareas cortas esporádicas como envíos de correo, procesamiento de imágenes, generación dinámica de archivos, etc.&lt;/li&gt;
+  &lt;li&gt;Recepción y procesamiento de datos de dispositivos IoT.&lt;/li&gt;
+  &lt;li&gt;Webhooks. Reaccionar ante eventos que ocurren en otras aplicaciones o servicios.&lt;/li&gt;
+  &lt;li&gt;Creación de bots (de Slack o conversacionales).&lt;/li&gt;
+  &lt;li&gt;… entre otros!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;limitaciones-y-desventajas&quot;&gt;Limitaciones y desventajas&lt;/h2&gt;
+
+&lt;p&gt;Antes de empezar con FaaS debes tener en cuenta que existen algunas limitaciones y desventajas de usar esta tecnología:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Tiempo máximo de ejecución. La mayoría de soluciones FaaS no están diseñadas para tareas que tomen más de unos minutos.&lt;/li&gt;
+  &lt;li&gt;Concurrencia. Existen límites en el número de ejecuciones concurrentes de una función. Por ejemplo, AWS Lambda tiene un límite de 1000 ejecuciones concurrentes por defecto que se pueden incrementar a decenas de miles a través de una solicitud.&lt;/li&gt;
+  &lt;li&gt;Capacidad de disco y memoria RAM. Depende del proveedor.&lt;/li&gt;
+  &lt;li&gt;Tamaño de la función. Depende del proveedor.&lt;/li&gt;
+  &lt;li&gt;Tamaño máximo de la petición y la respuesta. Depende del proveedor pero no está hecho para recibir archivos grandes (máximo algunos megabytes).&lt;/li&gt;
+  &lt;li&gt;Número máximo de funciones desplegadas. Depende del proveedor.&lt;/li&gt;
+  &lt;li&gt;Seguridad. Dependemos del proveedor para evitar ataques que generen costos para nosotros.&lt;/li&gt;
+  &lt;li&gt;Precio. Generalmente se cobra por número de ejecuciones y/o tiempo de procesamiento, así que es necesario estimar estos valores para cada caso y cada proveedor.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El último punto es particularmente importante porque el precio varía entre proveedores y está cambiando constantemente. La capa gratuita de &lt;a href=&quot;https://aws.amazon.com/lambda/&quot; target=&quot;\_blank&quot;&gt;AWS Lambda&lt;/a&gt; es particularmente generosa al momento de escribir este post: 1 millón de ejecuciones y hasta 3.2 millones de segundos de ejecución al mes (dependiendo de la cantidad de memoria que se le asigne a cada función), pero es importante revisar los costos y compararlos con otras soluciones.&lt;/p&gt;
+
+&lt;h2 id=&quot;cómo-empezar&quot;&gt;Cómo empezar&lt;/h2&gt;
+
+&lt;p&gt;Existen varios proveedores de FaaS. El más popular es &lt;a href=&quot;https://aws.amazon.com/lambda/&quot; target=&quot;\_blank&quot;&gt;AWS Lambda&lt;/a&gt; pero no es el más fácil para empezar. Incluso muchas empresas utilizan &lt;a href=&quot;https://www.serverless.com/&quot; target=&quot;\_blank&quot;&gt;Serverless Framework&lt;/a&gt; para desplegar sus funciones a &lt;a href=&quot;https://aws.amazon.com/lambda/&quot; target=&quot;\_blank&quot;&gt;AWS Lambda&lt;/a&gt; y otros proveedores como &lt;a href=&quot;https://azure.microsoft.com/en-us/services/functions/&quot; target=&quot;\_blank&quot;&gt;Microsoft Azure&lt;/a&gt;, &lt;a href=&quot;https://cloud.google.com/functions&quot; target=&quot;\_blank&quot;&gt;Google Cloud Platform&lt;/a&gt;, entre otros.&lt;/p&gt;
+
+&lt;p&gt;Existen otros proveedores más pequeños, como &lt;a href=&quot;https://vercel.com/&quot; target=&quot;\_blank&quot;&gt;Vercel&lt;/a&gt; y &lt;a href=&quot;https://netlify.com/&quot; target=&quot;\_blank&quot;&gt;Netlify&lt;/a&gt;, que ofrecen alternativas más simples y fáciles de empezar. Para este ejemplo vamos a utilizar &lt;a href=&quot;https://vercel.com/&quot; target=&quot;\_blank&quot;&gt;Vercel&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;El primer paso es crear una cuenta en &lt;a href=&quot;https://vercel.com/&quot; target=&quot;\_blank&quot;&gt;Vercel&lt;/a&gt;, puedes hacerlo utilizando email y contraseña o puedes utilizar Github como método de autenticación.&lt;/p&gt;
+
+&lt;p&gt;El siguiente paso es crear una carpeta llamada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ejemplo-faas&lt;/code&gt;, una subcarpeta llamada &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;api&lt;/code&gt; (por defecto Vercel toma las funciones de esta carpeta) y un archivo llamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.js&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ mkdir ejemplo-faas
+$ cd ejemplo-faas
+$ mkdir api
+$ cd api
+$ touch index.js
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Abre el proyecto en tu editor preferido y agrega el siguiente contenido al archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.js&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;handler&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;req&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Guarda el archivo, inicializa el repositorio de Git y crea un commit:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git init
+$ git add .
+$ git commit -m 'Versión Inicial'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Crea un &lt;a href=&quot;https://github.com/new&quot;&gt;repositorio en Github&lt;/a&gt; y hazle push con los siguientes comandos (también los vas a encontrar en las instrucciones del repositorio que crees en Github):&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$ git remote add origin &amp;lt;url_al_repo&amp;gt;
+$ git branch -M main
+$ git push -u origin main
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Vuelve a &lt;a href=&quot;https://vercel.com/&quot; target=&quot;\_blank&quot;&gt;Vercel&lt;/a&gt; y agrega un nuevo proyecto desde el Dashboard:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/vercel-1.jpg&quot; alt=&quot;Dashboard de Vercel&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;El Dashboard de Vercel al momento de escribir este post. Puede que cambie pero debe existir la opción de crear un nuevo proyecto.&lt;/p&gt;
+
+&lt;p&gt;Selecciona el repostorio que acabaste de crear y sigue las instrucciones para desplegarlo:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/vercel-2.jpg&quot; alt=&quot;Selección de proyecto en Vercel&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Selección de proyecto en Vercel. Busca el proyecto de Github que creaste e impórtalo como muestra la flecha roja.&lt;/p&gt;
+
+&lt;p&gt;En Vercel, en la página del proyecto, vas a encontrar la URL de la aplicación para probar tu función, recuerda agregar &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;api/index&lt;/code&gt; al final de la URL para probar la función que creamos. Deberías ver el siguiente resultado:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/vercel-3.jpg&quot; alt=&quot;Resultado del llamado a la función&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Resultado del llamado a la función desde el navegador.&lt;/p&gt;
+
+&lt;p&gt;¡Felicitaciones, acabas de desplegar tu primera función en la nube! No parece muy diferente a desplegar una aplicación Web normal, pero la diferencia es que sólo vas a pagar por el uso real de tu aplicación y no necesitas preocuparte por la escalabilidad (aunque es bueno estar pendiente de los costos).&lt;/p&gt;</content><author><name>Germán Escobar</name></author><summary type="html">Serverless es una nueva tendencia en el despliegue de aplicaciones que cada día adquiere más fuerza. En este post vamos a ver qué es, cómo funciona y cuál es la relación entre Serverless y FaaS (Functions as a Service).</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/butterflies.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/butterflies.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">¿Cómo hacer una buena aplicación para el programa TOP?</title><link href="http://blog.makeitreal.camp/como-hacer-una-buena-aplicacion-programa-top/" rel="alternate" type="text/html" title="¿Cómo hacer una buena aplicación para el programa TOP?" /><published>2021-12-10T07:00:00+00:00</published><updated>2021-12-10T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/como-hacer-una-buena-aplicacion-programa-top</id><content type="html" xml:base="http://blog.makeitreal.camp/como-hacer-una-buena-aplicacion-programa-top/">&lt;p&gt;Para ser parte del &lt;a href=&quot;http://makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=buena-aplicacion-top&quot;&gt;programa TOP de Make It Real&lt;/a&gt; debes de pasar por un proceso de admisión. En este post te daremos unos tips para que puedas mejorar tus posibilidades y puedas ser parte del programa.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;El programa TOP de Make It Real está dirigido a personas con conocimientos básicos en programación que deseen encontrar un empleo o mejorar sus ingresos en la industria tech.&lt;/p&gt;
+
+&lt;p&gt;Lo que buscamos con este programa es acelerar tu aprendizaje y que puedas adquirir las herramientas necesarias para poder trabajar en el área de desarrollo Web. Es por esto que tenemos un proceso de admisión.&lt;/p&gt;
+
+&lt;p&gt;Veamos paso a paso como es el proceso de admisión:&lt;/p&gt;
+
+&lt;h2 id=&quot;1-llenar-el-formulario&quot;&gt;1. Llenar el formulario&lt;/h2&gt;
+
+&lt;p&gt;El primer paso para aplicar al programa es llenar el formulario que encontrarás en &lt;a href=&quot;http://makeitreal.camp/top?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=buena-aplicacion-top&quot;&gt;este enlace&lt;/a&gt;. En las dos primeras pantallas te van a pedir algunos datos, la modalidad del programa que quieres hacer y el esquema de pago.&lt;/p&gt;
+
+&lt;p&gt;En la tercera pantalla deberás responder unas preguntas. Esta es la parte más importante, queremos conocerte, saber quien eres, por qué quieres ser parte de este programa y qué has aprendido sobre programación. Mientras más te conozcamos y sepamos tus motivaciones, mejor aún!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/formulario-programa-top.jpg&quot; alt=&quot;Preguntas Programa TOP&quot; class=&quot;photo border&quot; /&gt;&lt;/p&gt;
+&lt;p class=&quot;photo-description&quot;&gt;Las preguntas que debes responder en el formulario de aplicación del programa TOP.&lt;/p&gt;
+
+&lt;p&gt;Si lo llenas con frases cortas que realmente no nos dejan saber quién eres te pediremos que por favor lo vuelvas a llenar con más información.&lt;/p&gt;
+
+&lt;p&gt;También tienes puntos extra si ingresas tu perfil de LinkedIn u otra información relevante como tu perfil de GitHub o enlaces a proyectos que hayas realizado.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-prueba-técnica&quot;&gt;2. Prueba Técnica&lt;/h2&gt;
+
+&lt;p&gt;Si tu perfil cumple con los requerimientos del programa y tus respuestas son lo suficientemente detalladas para entender tus motivaciones, te enviaremos una prueba técnica de programación que nos ayudarán a conocer tu nivel actual. Asegúrate de revisar tu bandeja de correo no deseado o spam, a veces allí está este correo.&lt;/p&gt;
+
+&lt;p&gt;Te puedes demorar en este paso el tiempo que necesites, incluso en el mismo correo te enviamos recursos para que puedas prepararte!&lt;/p&gt;
+
+&lt;p&gt;También puedes pedir ayuda, como recursos u orientación, no dudes en preguntar, te apoyaremos para que puedas hacer la prueba bien.&lt;/p&gt;
+
+&lt;p&gt;Ten en cuenta que aún falta para que seas parte de este programa. !No dejes esto para último minuto!&lt;/p&gt;
+
+&lt;h2 id=&quot;3-primera-entrevista&quot;&gt;3. Primera Entrevista&lt;/h2&gt;
+
+&lt;p&gt;Ya hiciste tu prueba y ahora tienes la primera entrevista (no técnica). ¡Vas muy bien!&lt;/p&gt;
+
+&lt;p&gt;Esta entrevista es para conocerte más a fondo, saber quién eres, las experiencias que has tenido, ver el nivel que tienes y solucionar todas las dudas que tengas sobre el programa.&lt;/p&gt;
+
+&lt;p&gt;Para esta entrevista ten en cuenta lo siguiente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No es obligatorio tener cámara prendida, pero si es preferible.&lt;/li&gt;
+  &lt;li&gt;Tener una conexión estable a internet y un micrófono que funcione correctamente.&lt;/li&gt;
+  &lt;li&gt;Llegar a tiempo a tu entrevista&lt;/li&gt;
+  &lt;li&gt;Si no puedes llegar, déjanos saber y reprogramamos&lt;/li&gt;
+  &lt;li&gt;Haz preguntas, este espacio es para responder todas tus dudas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Este espacio es para conocerte, déjanos saber quien eres, mientras más te conozcamos, mejor!&lt;/p&gt;
+
+&lt;p&gt;¡Cuidado! Todavía no se ha acabado este proceso, asegúrate de no hacer esto a último minuto, así podrás prepararte mejor.&lt;/p&gt;
+
+&lt;h2 id=&quot;4-entrevista-técnica&quot;&gt;4. Entrevista técnica&lt;/h2&gt;
+
+&lt;p&gt;Este es el último paso, estás a poco de ser parte del programa TOP.&lt;/p&gt;
+
+&lt;p&gt;El objetivo de esta entrevista es validar lo que hiciste en la prueba y que ya hayas empezado a aprender desarrollo Web por tu cuenta.&lt;/p&gt;
+
+&lt;p&gt;Los ejercicios que se hacen durante esta entrevista no son muy complicados, si ya tienes una buena lógica y conoces la sintaxis de JavaScript no será un problema. Sin embargo, no sobra que repases y que puedas hacer unos ejercicios antes, para llegar con la práctica y tener una mejor oportunidad de ser parte del programa.&lt;/p&gt;
+
+&lt;p&gt;Durante esta llamada no tengas miedo de preguntar por ayuda o buscar en Internet, los mentores del equipo de Make It te van a apoyar si no sabes bien qué hacer o cómo seguir.&lt;/p&gt;
+
+&lt;p&gt;Para esta entrevista ten en cuenta lo siguiente:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;No es obligatorio tener cámara prendida, pero si es preferible.&lt;/li&gt;
+  &lt;li&gt;Tener una conexión estable a internet, un micrófono que funcione correctamente y compartir tu pantalla.&lt;/li&gt;
+  &lt;li&gt;Llegar a tiempo a tu entrevista&lt;/li&gt;
+  &lt;li&gt;Si no puedes llegar, déjanos saber y reprogramamos&lt;/li&gt;
+  &lt;li&gt;Tener instalado todo lo necesario para escribir y ejecutar código.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Si te va bien en esta entrevista, &lt;strong&gt;¡Felicitaciones, serás parte del programa TOP de Make It Real!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cómo puedes ver este es un proceso largo (depende de tí) y no todas las personas son admitidas. Pero no te preocupes, si en algún punto te quedaste, puedes volver a aplicar para la siguiente versión, incluso, muchas de las personas que hacen parte de este programa aplicaron más de una vez.&lt;/p&gt;
+
+&lt;p&gt;Espero que este post te haya servido, si aún tienes más preguntas escríbenos a info@makeitreal.camp y con gusto te responderemos.&lt;/p&gt;</content><author><name>Nicolás Rodriguez</name></author><summary type="html">Para ser parte del programa TOP de Make It Real debes de pasar por un proceso de admisión. En este post te daremos unos tips para que puedas mejorar tus posibilidades y puedas ser parte del programa.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/bg-images/programa-top.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/bg-images/programa-top.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Mujeres programadoras: Tanya De La Torre</title><link href="http://blog.makeitreal.camp/mujeres-programadoras-tanya-de-la-torre/" rel="alternate" type="text/html" title="Mujeres programadoras: Tanya De La Torre" /><published>2021-08-08T07:00:00+00:00</published><updated>2021-08-08T07:00:00+00:00</updated><id>http://blog.makeitreal.camp/mujeres-programadoras-tanya-de-la-torre</id><content type="html" xml:base="http://blog.makeitreal.camp/mujeres-programadoras-tanya-de-la-torre/">&lt;p&gt;Le pedimos a Tanya que nos compartiera su historia como programadora y cómo &lt;a href=&quot;http://makeitreal.camp/?utm_source=blog&amp;amp;utm_medium=web&amp;amp;utm_campaign=inbound&amp;amp;utm_content=mujeres-programadoras-tanya-de-la-torre&quot;&gt;Make it Real&lt;/a&gt; la ayudó a hacer ese sueño realidad.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;cómo-cambió-tu-vida-make-it-real&quot;&gt;¿Cómo cambió tu vida Make It Real?&lt;/h3&gt;
+
+&lt;p&gt;Muchísimo! Tenia toda la ilusión de volver al desarrollo Web, pero hay demasiada información en Internet y era muy difícil para mi llevar un hilo o una secuencia lógica de las bases que realmente necesitaba aprender para estar lista para un empleo como desarrolladora Web. El programa TOP tiene precisamente toda el contenido perfectamente planeado y organizado para que todos los estudiantes recorramos ese camino, donde desde el inicio estamos haciendo código y creciendo en conocimientos, el cual nos lleva a sentirnos listos y empoderados al momento de salir nuevamente al mercado laboral y tocar las puertas como desarrolladores Web.&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-consejos-das-para-una-mujer-ó-persona-que-está-aprendiendo-a-programar&quot;&gt;¿Qué consejos das para una mujer ó persona que está aprendiendo a programar?&lt;/h3&gt;
+
+&lt;p&gt;Que no le tengan miedo a empezar el código. Hacer código es lo que realmente nos hace entender los conceptos y las herramientas disponibles, está muy bien leer, ver videos y documentarse, pero no se debe aplazar el hecho de hacer código. Empieza ya mismo!&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-estás-haciendo-ahora&quot;&gt;¿Qué estás haciendo ahora?&lt;/h3&gt;
+
+&lt;p&gt;Estoy trabajando en &lt;a href=&quot;https://www.globant.com/&quot; target=&quot;\_blank&quot;&gt;Globant&lt;/a&gt; como Sr. Web UI, 100% remoto de momento. Estoy feliz con mi nuevo empleo y pasando los ratos libres compartiendo con mi familia y mi bebe.&lt;/p&gt;
+
+&lt;h3 id=&quot;por-qué-crees-que-es-importante-que-las-mujeres-se-involucren-en-este-campo-desarrollo-web-programación&quot;&gt;¿Por qué crees que es importante que las mujeres se involucren en este campo (desarrollo web, programación)?&lt;/h3&gt;
+
+&lt;p&gt;Como todos saben es un campo liderado por los hombres, sin embargo las mujeres tenemos todas la cualidades y capacidades para sumergirnos en este hermoso mundo. La programación en general no es un area masculina, sino un area para personas con capacidad de solucionar problemas, de liderar procesos y brindar soluciones … y las mujeres precisamente tenemos todas esas cualidades, las cuales nos hacen usualmente muy buenas desarrolladoras y lideres en este campo.&lt;/p&gt;</content><author><name>Diana Vanegas</name></author><summary type="html">Le pedimos a Tanya que nos compartiera su historia como programadora y cómo Make it Real la ayudó a hacer ese sueño realidad.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://blog.makeitreal.camp/assets/images/people/tanya-de-la-torre.jpg" /><media:content medium="image" url="http://blog.makeitreal.camp/assets/images/people/tanya-de-la-torre.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

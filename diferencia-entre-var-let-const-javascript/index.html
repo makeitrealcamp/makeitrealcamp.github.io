@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> var vs let vs const en JavaScript </title>
+  <meta name="description" content="En JavaScript existen 3 formas de declarar una variable: var, let y const. En este post veremos cuáles son sus diferencias y cuándo usar cada una.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="var vs let vs const en JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/javascript-var-let-const.jpg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2021-04-11T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/javascript-var-let-const.jpg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Apr 11, 2021</time>
+                </div>
+                <h1>var vs let vs const en JavaScript</h1>
+                <div class="post-body"><p>En JavaScript existen 3 formas de declarar una variable: <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code>. En este post veremos cuáles son sus diferencias y cuándo usar cada una.<!-- more --></p>
+
+<p>El resumen sería el siguiente:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">const</code>: se utiliza para declarar una constante que no se puede reasignar.</li>
+  <li><code class="language-plaintext highlighter-rouge">let</code>: se utiliza para declarar una variable que puede ser reasignada.</li>
+  <li><code class="language-plaintext highlighter-rouge">var</code>: no se recomienda utilizarla, a menos de que tengamos que ejecutar el código en un ambiente que no soporte ES6 (la versión JavaScript que se lanzó en 2015<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>).</li>
+</ul>
+
+<p>Veamos ahora las razones por las cuáles no se recomienda usar <code class="language-plaintext highlighter-rouge">var</code>.</p>
+
+<h2 id="los-problemas-con-var">Los problemas con var</h2>
+
+<p>JavaScript fue diseñado en <strong>10 días</strong> en 1994 para hacer scripts simples en Netscape (el navegador más popular de ese momento que hoy conocemos como Firefox). Nunca se creyó que se convertiría en el lenguaje más popular 20 años después.</p>
+
+<p>Por el afán de lanzar el lenguaje rápidamente se cometieron muchos errores de diseño. Uno de ellos fue la forma en que se declaran las variables.</p>
+
+<p>Por un lado, es posible declarar una  variable sin utilizar <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">let</code> o <code class="language-plaintext highlighter-rouge">const</code>, lo que crea una variable global en la aplicación<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// mala práctica, crea una variable global</span>
+<span class="nx">nombre</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Pedro</span><span class="dl">"</span>
+</code></pre></div></div>
+
+<p>Sin embargo, esto se puede evitar utilizando la declaración <code class="language-plaintext highlighter-rouge">'use strict'</code> al principio del archivo:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="dl">'</span><span class="s1">use strict</span><span class="dl">'</span>
+<span class="nx">nombre</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Pedro</span><span class="dl">"</span> <span class="c1">// error!</span>
+</code></pre></div></div>
+
+<p>El problema de las variables declaradas con <code class="language-plaintext highlighter-rouge">var</code> es que se comportan diferente que en la mayoría de lenguajes de programación, que limitan el alcance <strong>por bloque</strong>, es decir, entre llaves (<code class="language-plaintext highlighter-rouge">{</code> y <code class="language-plaintext highlighter-rouge">}</code>). Esto no ocurre en JavaScript cuando utilizamos <code class="language-plaintext highlighter-rouge">var</code>. Por ejemplo:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">negro</span><span class="dl">"</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="c1">// "negro"</span>
+</code></pre></div></div>
+
+<p>Con <code class="language-plaintext highlighter-rouge">var</code>, la única forma de limitar el alcance es dentro de una función:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">miFuncion</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">negro</span><span class="dl">"</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="c1">// error</span>
+</code></pre></div></div>
+
+<h2 id="let-y-const">let y const</h2>
+
+<p>En ES6 (2015) se introdujeron dos nuevas formas de declarar una variable (además de muchas otras mejoras al lenguaje): <code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code>. A diferencia de <code class="language-plaintext highlighter-rouge">var</code>, <code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code> utilizan alcance por bloque:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">negro</span><span class="dl">"</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="c1">// error!</span>
+</code></pre></div></div>
+
+<p>El alcance por bloque se considera una mejor practica porque limita aún más el alcance de las variables, evitando colisiones con los nombres de otras variables y funciones.</p>
+
+<p>La diferencia entre <code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code>  es que, por un lado, una variable declarada con <code class="language-plaintext highlighter-rouge">const</code> no se puede reasignar:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">negro</span><span class="dl">"</span>
+<span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">verde</span><span class="dl">"</span> <span class="c1">// error!</span>
+</code></pre></div></div>
+
+<p>Mientras que con <code class="language-plaintext highlighter-rouge">let</code> si:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">negro</span><span class="dl">"</span>
+<span class="nx">color</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">verde</span><span class="dl">"</span> <span class="c1">// bien</span>
+</code></pre></div></div>
+
+<p>Por otro lado, una variable <code class="language-plaintext highlighter-rouge">let</code> se puede declarar sin un valor inicial, <code class="language-plaintext highlighter-rouge">const</code> necesita obligatoriamente un valor inicial:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">var1</span><span class="p">;</span> <span class="c1">// undefined  </span>
+<span class="kd">const</span> <span class="nx">var2</span><span class="p">;</span> <span class="c1">// error!</span>
+</code></pre></div></div>
+
+<h2 id="hoisting">Hoisting</h2>
+
+<p>Otra diferencia de <code class="language-plaintext highlighter-rouge">var</code> en relación con <code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code> es la forma en que funciona el <strong>hoisting</strong>.</p>
+
+<p><strong>Hoisting</strong> es un mecanismo por el cuál las declaraciones de variables y funciones se mueven al inicio de su alcance antes de que se ejecute el código. Por ejemplo, el siguiente codigo:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">saludo</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">saludo</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">hola!</span><span class="dl">"</span>
+</code></pre></div></div>
+
+<p>se interpretaría de la siguiente forma cuando se ejecuta:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">saludo</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">saludo</span><span class="p">)</span> <span class="c1">// undefined</span>
+<span class="nx">saludo</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">hola</span><span class="dl">"</span>
+</code></pre></div></div>
+
+<p>Fíjate que la variable <code class="language-plaintext highlighter-rouge">saludo</code> se movió al principio del archivo y se inicializó con <code class="language-plaintext highlighter-rouge">undefined</code>.</p>
+
+<p><code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code> funcionan de forma similar, pero no se inicializan con <code class="language-plaintext highlighter-rouge">undefined</code>. Por lo tanto, si modificamos el código anterior utilizando <code class="language-plaintext highlighter-rouge">let</code> o <code class="language-plaintext highlighter-rouge">const</code> nos saldría un error:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">saludo</span><span class="p">)</span> <span class="c1">// error!</span>
+<span class="kd">let</span> <span class="nx">saludo</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">hola!</span><span class="dl">"</span> <span class="c1">// utilizando let</span>
+</code></pre></div></div>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>La diferencia entre estas tres formas de declarar variables es quizá una de las preguntas más frecuentes entre las personas que están empezando con JavaScript.</p>
+
+<p>Si el lenguaje hubiese estado bien diseñado desde el principio nos hubiésemos evitado toda esta confusión. Sin embargo, la adición de <code class="language-plaintext highlighter-rouge">let</code> y <code class="language-plaintext highlighter-rouge">const</code> era necesaria para escribir código más predecible y mantenible.  Por esta razón se considera mala práctica utilizar <code class="language-plaintext highlighter-rouge">var</code>, aunque todavía se ve en proyectos antiguos.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Realmente es la versión de la especificación sobre la que se basa JavaScript, llamada ECMAScript. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Una variable global es una variable que es visible desde cualquier parte del programa. Las variables globales se consideran una mala práctica porque pueden ocasionar colisiones de nombres con otras variables o funciones. Estos problemas son difíciles de encontrar. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=var vs let vs const en JavaScript&url=http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/&p[title]=var vs let vs const en JavaScript" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/&title=var vs let vs const en JavaScript&summary=&source=http://blog.makeitreal.camp/diferencia-entre-var-let-const-javascript/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=diferencia-entre-var-let-const-javascript">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>

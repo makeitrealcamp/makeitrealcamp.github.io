@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> La era de la información digital </title>
+  <meta name="description" content="¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la e...">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="La era de la información digital">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/">
+
+
+  <meta property="og:image" content="http://blog.makeitreal.camp/assets/images/bg-images/digital-analog.jpeg">
+
+
+
+<meta property="og:site_name" content="El Blog de Make it Real">
+<meta property="og:locale" content="es_CO">
+
+
+  <meta property="article:published_time" content="2017-10-28T07:00:00+00:00">
+  <meta property="article:author" content="Germán Escobar">
+
+
+
+  <link rel="canonical" href="http://blog.makeitreal.camp/la-era-de-la-informacion-digital/">
+  <link rel="alternate" type="application/rss+xml" title="El Blog de Make it Real" href="/feed.xml">
+
+  <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:700|Open+Sans:400,300,600,700' type='text/css'>
+  <link rel="stylesheet" href="/assets/stylesheets/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a97e084bfc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-search@latest/dist/js-search.min.js"></script>
+  <script src="/assets/javascripts/main.js" charset="utf-8"></script>
+  <script src="/assets/javascripts/prism.min.js" charset="utf-8"></script>
+
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-18132057-9', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  
+</head>
+
+  <body>
+    <nav class="main">
+  <div class="container">
+    <div class="main-content">
+      <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=logo"><img src="/assets/images/logo-makeitreal-white.png" alt="Make it Real Logo"></a>
+      <div>
+        
+        <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+      </div>
+      <div class="secret" style="display: none;">HcUy6Re2LLBRtj</div>
+    </div>
+  </div>
+</nav>
+
+    <div class="content"><div class="post-page">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10 col-xl-9">
+        <a href="/">&larr; Volver a la lista de posts</a>
+
+        <div class="post">
+          <div class="post-image" style="background-image: url(/assets/images/bg-images/digital-analog.jpeg)"></div>
+          <div class="row justify-content-md-center">
+            <div class="col-md-10">
+              <div class="post-content">
+                <div class="post-details">
+                  <div class="post-author">
+                    <img class="img-responsive" src="//www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80"/>
+                    <span>Germán Escobar</span>
+                  </div>
+                  <time class="post-date">Oct 28, 2017</time>
+                </div>
+                <h1>La era de la información digital</h1>
+                <div class="post-body"><p>¿Qué significa digital? ¿qué podemos considerar información? ¿cómo podemos medirla? ¿qué es un bit? En este post explicaremos por qué nos encontramos en la era de la información digital.<!-- more --></p>
+
+<p>Alrededor del año 3000 AEC, en Mesopotamia, los sumerios implementaron la primera forma de escritura, llamada escritura cuneiforme. Antes de la escritura, la única forma de almacenar y replicar información era utilizando nuestros cerebros, que <strong>no</strong> son particularmente buenos para esa tarea.</p>
+
+<p>La escritura nos permitió almacenar texto, pero más adelante también fue posible almacenar música, imágenes y video en diferentes medios análogos como vinilos, fotografías y cintas magnéticas.</p>
+
+<p>Hoy podemos almacenar toda esa información en nuestros computadores de forma digital. Pero ¿cómo es eso posible?</p>
+
+<p>La respuesta es que en 1948 un personaje llamado <a href="https://es.wikipedia.org/wiki/Claude_Elwood_Shannon" target="_blank">Claude Shannon</a>, en su publicación <a href="https://es.wikipedia.org/wiki/Una_teor%C3%ADa_matem%C3%A1tica_de_la_comunicaci%C3%B3n" target="_blank">Una Teoría Matemática de la Comunicación</a> demostró cómo toda la información puede ser representada en números, sin importar de qué tipo sea (texto, audio, video, etc.). Su principal objetivo era demostrar que cualquier mensaje se puede transmitir utilizando números, pero su teoría también fue aplicada al almacenamiento de información.</p>
+
+<p>Por ejemplo, una forma en que podemos representar texto con números (la palabra correcta es <strong>codificar</strong>) es asignándole a cada letra del alfabeto un número único: 1 para representar la A, 2 para la B, 26 para la Z, 0 para el espacio, etc.</p>
+
+<p>También es posible representar audio, imágenes y video con técnicas similares, aunque un poco más sofisticadas: audio no son más que cambios de frecuencias en el tiempo, que también pueden ser representados con números. Una imagen puede ser separada en pixeles (cuadrados) y utilizar números para expresar el color de cada pixel.</p>
+
+<p>Al proceso de convertir la información en números se le conoce como digitalización, y por eso se habla de información digital (está almacenada en dígitos).</p>
+
+<p>La información digital tiene la ventaja de que es fácilmente replicable (y las réplicas son exactas), pero la desventaja es que se puede perder información en el proceso de digitalización, como cuando la música en vinilo pierde fidelidad al ser digitalizada o cuando una fotografía se ve pixelada por baja resolución.</p>
+
+<h2 id="dígitos-binarios">Dígitos binarios</h2>
+
+<p>El sistema numérico al que estamos acostumbrados es el decimal, que utiliza diez dígitos en cada posición: 0 a 9.</p>
+
+<p>Pero existen otros sistemas numéricos como el binario, compuesto de dos dígitos en cada posición (0 y 1), o el octal, compuesto por 8 dígitos en cada posición (0 a 7), o el hexadecimal, compuesto de 16 dígitos en cada posición (se utilizan las letras A, B, C, D, E y F para representar los números del 10 al 15).</p>
+
+<p>Cualquier número se puede convertir de un sistema a otro. La diferencia es que un sistema puede necesitar más o menos posiciones que otro para representar el mismo número. Por ejemplo, para representar el número doce necesitamos dos posiciones en el sistema decimal (12). En el sistema hexadecimal sólo necesitamos una posición (C) y en el sistema binario necesitamos cuatro posiciones (1100).</p>
+
+<p>Aunque es posible crear un computador utilizando el sistema decimal (de hecho los primeros computadores utilizaban este sistema), es mucho mejor utilizar el sistema binario. La razón es que los computadores utilizan diferentes voltajes eléctricos para representar cada dígito. Entre más voltajes necesitemos, mayor el consumo de energía y mayor la probabilidad de error.</p>
+
+<p>Es por eso que hoy en día almacenamos y transmitimos toda la información utilizando únicamente dos dígitos (0 y 1), más conocidos como <strong>bits</strong>, que es una contracción de las palabras <strong>binary digits</strong>.</p>
+
+<h2 id="medir-la-información">Medir la información</h2>
+
+<p>Una consecuencia interesante de representar la información en dígitos es que es posible medirla, sin importar si es texto, imágenes, audio o video.  Por ejemplo,  podemos decir que nuestro disco duro tiene 500 gigabytes ocupados, independiente si es texto, música, o cualquier otro tipo de información.</p>
+
+<p>Por cierto, 8 bits forman un byte, 1000 bytes forman un kilobyte, 1000 kilobytes forman un megabyte, 1000 megabytes forman un gigabyte, y así sucesivamente. Siguen los terabytes, petabytes, exabytes, etc.  Un petabyte, por ejemplo, son 8000000000000000 bits (esos son 15 ceros).</p>
+
+<p>También podemos medir la cantidad de información que estamos produciendo por alguna medida de tiempo, por ejemplo por día, hora, segundo, etc. Según <a href="http://www.new.vcloudnews.com/wp-content/uploads/2015/04/big-data-infographic1.png" target="_blank">esta infografía</a>, en 1992 estábamos generando 100GB de información digital al día, se calcula que para el 2018 estaremos generando 50 terabytes por segundo!</p>
+
+<p>Nuestros descendientes no van a tener el problema que tenemos nosotros encontrando información de nuestros antepasados, al contrario, su problema es que van a tener demasiada información por analizar. Y esa es la razón por la que a esta era la llamamos <strong>la era de la información digital</strong>.</p>
+
+<p>Otros posts relacionados:</p>
+
+<ul>
+  <li><a href="/que-es-codigo">¿Qué es código?</a></li>
+  <li><a href="/aprende-a-leer-en-codigo-binario">Aprende a leer en código binario</a></li>
+</ul>
+</div>
+
+                <div class="share-post">
+                  <span class="text">Compartir en:</span>
+                  <div class="social-networks">
+                    <a class="btn-share btn-share-twitter" target="_blank" href="http://twitter.com/share?text=La era de la información digital&url=http://blog.makeitreal.camp/la-era-de-la-informacion-digital/&via=makeitrealcamp" rel="nofollow" title="Compartir en Twitter">Twitter</a>
+                    <a class="btn-share btn-share-fb" target="_blank" href="http://www.facebook.com/sharer.php?u=http://blog.makeitreal.camp/la-era-de-la-informacion-digital/&p[title]=La era de la información digital" rel="nofollow" title="Compartir en Facebook">Facebook</a>
+                    <a class="btn-share btn-share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://blog.makeitreal.camp/la-era-de-la-informacion-digital/&title=La era de la información digital&summary=&source=http://blog.makeitreal.camp/la-era-de-la-informacion-digital/" rel="nofollow" title="Compartir en LinkedIn">LinkedIn</a>
+                  </div>
+                </div>
+
+                <div class="post-magnet">
+  <div class="row">
+    <div class="col-md-6 push-md-6 text-center">
+      <div class="img-wrapper">
+        <img src="https://makeitreal.s3.amazonaws.com/images/books/web-developer-guide-book.png" alt="¿Cómo convertirte en Desarrollador Web?">
+      </div>
+    </div>
+    <div class="col-md-6 pull-md-6">
+      <div class="content-wrapper">
+        <h3>Descarga gratis el e-book</h3>
+        <p>Conoce la mentalidad, los roles y las tecnologías que debes saber para convertirte en desarrollador Web.</p>
+        <a href="https://makeitreal.camp/como-convertirte-en-web-developer?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=web-developer-guide&utm_term=la-era-de-la-informacion-digital">Descargar e-book</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="main">
+  <div class="container text-right">
+    <a href="https://makeitreal.camp/?utm_source=blog&utm_medium=web&utm_campaign=inbound&utm_content=programs#programs" class="btn-cta">Conoce nuestros programas</a>
+  </div>
+</footer>
+
+  </body>
+</html>
