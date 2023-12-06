@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Mi super post"
+date:   2023-12-06 12:00:00 -0500
+author: Pia Giudice
+image: /assets/images/bg-images/concurrency.jpeg
+gravatar: //www.gravatar.com/avatar/12270acfe9b6842e1a5b6e594382f149.jpg?s=80
+---
